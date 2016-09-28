@@ -63,7 +63,7 @@ public abstract class TupleSerializerBase<T> extends TypeSerializer<T> {
 		if (length == -2) {
 			int sum = 0;
 			for (TypeSerializer<Object> serializer : fieldSerializers) {
-				if (serializer.getLength() > 0) {
+				if (serializer.getLength() >= 0) {
 					sum += serializer.getLength();
 				} else {
 					length = -1;
