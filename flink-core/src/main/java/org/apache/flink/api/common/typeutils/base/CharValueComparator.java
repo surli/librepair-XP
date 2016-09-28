@@ -126,21 +126,22 @@ public class CharValueComparator extends TypeComparator<CharValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(CharValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
+		target.writeChar(record.getValue());
 	}
 
 	@Override
 	public CharValue readWithKeyDenormalization(CharValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		reuse.setValue(source.readChar());
+		return reuse;
 	}
 }
