@@ -126,21 +126,22 @@ public class BooleanValueComparator extends TypeComparator<BooleanValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(BooleanValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
+		target.writeBoolean(record.getValue());
 	}
 
 	@Override
 	public BooleanValue readWithKeyDenormalization(BooleanValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		reuse.setValue(source.readBoolean());
+		return reuse;
 	}
 }

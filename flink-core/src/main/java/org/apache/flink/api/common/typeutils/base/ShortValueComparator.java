@@ -126,21 +126,22 @@ public class ShortValueComparator extends TypeComparator<ShortValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(ShortValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
+		target.writeShort(record.getValue() - Short.MIN_VALUE);
 	}
 
 	@Override
 	public ShortValue readWithKeyDenormalization(ShortValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		reuse.setValue((short)(source.readShort() + Short.MIN_VALUE));
+		return reuse;
 	}
 }
