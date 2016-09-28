@@ -126,21 +126,22 @@ public class LongValueComparator extends TypeComparator<LongValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(LongValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
+		target.writeLong(record.getValue() - Long.MIN_VALUE);
 	}
 
 	@Override
 	public LongValue readWithKeyDenormalization(LongValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		reuse.setValue(source.readLong() + Long.MIN_VALUE);
+		return reuse;
 	}
 }

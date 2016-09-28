@@ -18,11 +18,12 @@
 
 package org.apache.flink.api.common.typeutils.base;
 
-import java.io.IOException;
-
 import org.apache.flink.annotation.Internal;
 import org.apache.flink.core.memory.DataInputView;
+import org.apache.flink.core.memory.DataOutputView;
 import org.apache.flink.core.memory.MemorySegment;
+
+import java.io.IOException;
 
 @Internal
 public final class ShortComparator extends BasicTypeComparator<Short> {
@@ -87,5 +88,24 @@ public final class ShortComparator extends BasicTypeComparator<Short> {
 	@Override
 	public ShortComparator duplicate() {
 		return new ShortComparator(ascendingComparison);
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
+	@Override
+	public boolean supportsSerializationWithKeyNormalization() {
+		return true;
+	}
+
+	@Override
+	public void writeWithKeyNormalization(Short record, DataOutputView target) throws IOException {
+		target.writeShort(record - Short.MIN_VALUE);
+	}
+
+	@Override
+	public Short readWithKeyDenormalization(Short reuse, DataInputView source) throws IOException {
+		return (short)(source.readShort() + Short.MIN_VALUE);
 	}
 }

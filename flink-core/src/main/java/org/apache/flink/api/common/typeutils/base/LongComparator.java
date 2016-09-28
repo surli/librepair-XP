@@ -18,11 +18,12 @@
 
 package org.apache.flink.api.common.typeutils.base;
 
-import java.io.IOException;
-
 import org.apache.flink.annotation.Internal;
 import org.apache.flink.core.memory.DataInputView;
+import org.apache.flink.core.memory.DataOutputView;
 import org.apache.flink.core.memory.MemorySegment;
+
+import java.io.IOException;
 
 @Internal
 public final class LongComparator extends BasicTypeComparator<Long> {
@@ -60,7 +61,7 @@ public final class LongComparator extends BasicTypeComparator<Long> {
 
 	@Override
 	public void putNormalizedKey(Long lValue, MemorySegment target, int offset, int numBytes) {
-		long value = lValue.longValue() - Long.MIN_VALUE;
+		long value = lValue - Long.MIN_VALUE;
 		
 		// see IntValue for an explanation of the logic
 		if (numBytes == 8) {
@@ -85,5 +86,24 @@ public final class LongComparator extends BasicTypeComparator<Long> {
 	@Override
 	public LongComparator duplicate() {
 		return new LongComparator(ascendingComparison);
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
+	@Override
+	public boolean supportsSerializationWithKeyNormalization() {
+		return true;
+	}
+
+	@Override
+	public void writeWithKeyNormalization(Long record, DataOutputView target) throws IOException {
+		target.writeLong(record - Long.MIN_VALUE);
+	}
+
+	@Override
+	public Long readWithKeyDenormalization(Long reuse, DataInputView source) throws IOException {
+		return source.readLong() + Long.MIN_VALUE;
 	}
 }

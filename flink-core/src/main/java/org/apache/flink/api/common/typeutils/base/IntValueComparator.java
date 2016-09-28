@@ -126,21 +126,22 @@ public class IntValueComparator extends TypeComparator<IntValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(IntValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
+		target.writeInt(record.getValue() - Integer.MIN_VALUE);
 	}
 
 	@Override
 	public IntValue readWithKeyDenormalization(IntValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		reuse.setValue(source.readInt() + Integer.MIN_VALUE);
+		return reuse;
 	}
 }

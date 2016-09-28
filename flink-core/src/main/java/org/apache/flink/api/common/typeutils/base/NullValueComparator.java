@@ -116,21 +116,20 @@ public class NullValueComparator extends TypeComparator<NullValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(NullValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public NullValue readWithKeyDenormalization(NullValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		return NullValue.getInstance();
 	}
 }

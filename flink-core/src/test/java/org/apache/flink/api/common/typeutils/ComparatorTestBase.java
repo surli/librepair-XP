@@ -18,22 +18,24 @@
 
 package org.apache.flink.api.common.typeutils;
 
+import org.apache.flink.core.memory.DataInputView;
+import org.apache.flink.core.memory.DataOutputView;
+import org.apache.flink.core.memory.MemorySegment;
+import org.apache.flink.core.memory.MemorySegmentFactory;
+import org.apache.flink.util.TestLogger;
+import org.junit.Assert;
+import org.junit.Test;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-import static org.junit.Assert.*;
-
-import org.apache.flink.core.memory.DataInputView;
-import org.apache.flink.core.memory.DataOutputView;
-import org.apache.flink.core.memory.MemorySegment;
-import org.apache.flink.core.memory.MemorySegmentFactory;
-import org.apache.flink.util.TestLogger;
-
-import org.junit.Assert;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 /**
  * Abstract test base for comparators.
@@ -371,25 +373,24 @@ public abstract class ComparatorTestBase<T> extends TestLogger {
 	@Test
 	public void testNormalizedKeyReadWriter() {
 		try {
-			T[] data = getSortedData();
-			T reuse = getSortedData()[0];
-
 			TypeComparator<T> comp1 = getComparator(true);
-			if(!comp1.supportsSerializationWithKeyNormalization()){
+			if (!comp1.supportsSerializationWithKeyNormalization()){
 				return;
 			}
 			TypeComparator<T> comp2 = comp1.duplicate();
-			comp2.setReference(reuse);
 
-			TestOutputView out = new TestOutputView();
-			TestInputView in;
+			T reuse = getSerializer().createInstance();
 
-			for (T value : data) {
+			for (T value : getSortedData()) {
 				comp1.setReference(value);
-				comp1.writeWithKeyNormalization(value, out);
-				in = out.getInputView();
-				comp1.readWithKeyDenormalization(reuse, in);
-				
+
+				TestOutputView out = new TestOutputView();
+				comp2.writeWithKeyNormalization(value, out);
+
+				TestInputView in = out.getInputView();
+				reuse = comp2.readWithKeyDenormalization(reuse, in);
+				comp2.setReference(reuse);
+
 				assertTrue(comp1.compareToReference(comp2) == 0);
 			}
 		} catch (Exception e) {
