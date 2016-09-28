@@ -18,11 +18,12 @@
 
 package org.apache.flink.api.common.typeutils.base;
 
-import java.io.IOException;
-
 import org.apache.flink.annotation.Internal;
 import org.apache.flink.core.memory.DataInputView;
+import org.apache.flink.core.memory.DataOutputView;
 import org.apache.flink.core.memory.MemorySegment;
+
+import java.io.IOException;
 
 @Internal
 public final class IntComparator extends BasicTypeComparator<Integer> {
@@ -60,7 +61,7 @@ public final class IntComparator extends BasicTypeComparator<Integer> {
 
 	@Override
 	public void putNormalizedKey(Integer iValue, MemorySegment target, int offset, int numBytes) {
-		int value = iValue.intValue() - Integer.MIN_VALUE;
+		int value = iValue - Integer.MIN_VALUE;
 		
 		// see IntValue for an explanation of the logic
 		if (numBytes == 4) {
@@ -85,5 +86,24 @@ public final class IntComparator extends BasicTypeComparator<Integer> {
 	@Override
 	public IntComparator duplicate() {
 		return new IntComparator(ascendingComparison);
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
+	@Override
+	public boolean supportsSerializationWithKeyNormalization() {
+		return true;
+	}
+
+	@Override
+	public void writeWithKeyNormalization(Integer record, DataOutputView target) throws IOException {
+		target.writeInt(record - Integer.MIN_VALUE);
+	}
+
+	@Override
+	public Integer readWithKeyDenormalization(Integer reuse, DataInputView source) throws IOException {
+		return source.readInt() + Integer.MIN_VALUE;
 	}
 }
