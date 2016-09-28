@@ -126,21 +126,22 @@ public class ByteValueComparator extends TypeComparator<ByteValue> {
 	}
 
 	// --------------------------------------------------------------------------------------------
-	// unsupported normalization
+	// key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsSerializationWithKeyNormalization() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public void writeWithKeyNormalization(ByteValue record, DataOutputView target) throws IOException {
-		throw new UnsupportedOperationException();
+		target.writeByte(record.getValue() - Byte.MIN_VALUE);
 	}
 
 	@Override
 	public ByteValue readWithKeyDenormalization(ByteValue reuse, DataInputView source) throws IOException {
-		throw new UnsupportedOperationException();
+		reuse.setValue((byte)(source.readByte() + Byte.MIN_VALUE));
+		return reuse;
 	}
 }

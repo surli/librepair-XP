@@ -18,11 +18,12 @@
 
 package org.apache.flink.api.common.typeutils.base;
 
-import java.io.IOException;
-
 import org.apache.flink.annotation.Internal;
 import org.apache.flink.core.memory.DataInputView;
+import org.apache.flink.core.memory.DataOutputView;
 import org.apache.flink.core.memory.MemorySegment;
+
+import java.io.IOException;
 
 @Internal
 public final class BooleanComparator extends BasicTypeComparator<Boolean> {
@@ -61,8 +62,8 @@ public final class BooleanComparator extends BasicTypeComparator<Boolean> {
 	@Override
 	public void putNormalizedKey(Boolean value, MemorySegment target, int offset, int numBytes) {
 		if (numBytes > 0) {
-			target.put(offset, (byte) (value.booleanValue() ? 1 : 0));
-			
+			target.putBoolean(offset, value);
+
 			for (offset = offset + 1; numBytes > 1; numBytes--) {
 				target.put(offset++, (byte) 0);
 			}
@@ -72,5 +73,24 @@ public final class BooleanComparator extends BasicTypeComparator<Boolean> {
 	@Override
 	public BooleanComparator duplicate() {
 		return new BooleanComparator(ascendingComparison);
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
+	@Override
+	public boolean supportsSerializationWithKeyNormalization() {
+		return true;
+	}
+
+	@Override
+	public void writeWithKeyNormalization(Boolean record, DataOutputView target) throws IOException {
+		target.writeBoolean(record);
+	}
+
+	@Override
+	public Boolean readWithKeyDenormalization(Boolean reuse, DataInputView source) throws IOException {
+		return source.readBoolean();
 	}
 }
