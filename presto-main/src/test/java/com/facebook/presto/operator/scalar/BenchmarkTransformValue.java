@@ -67,6 +67,7 @@ import static com.facebook.presto.spi.type.TypeSignature.parseTypeSignature;
 import static com.facebook.presto.spi.type.TypeUtils.writeNativeValue;
 import static com.facebook.presto.spi.type.VarcharType.VARCHAR;
 import static com.facebook.presto.testing.TestingConnectorSession.SESSION;
+import static com.facebook.presto.util.StructuralTestUtil.mapType;
 import static java.lang.String.format;
 
 @SuppressWarnings("MethodMayBeStatic")
@@ -132,8 +133,8 @@ public class BenchmarkTransformValue
                 default:
                     throw new UnsupportedOperationException();
             }
-            MapType mapType = new MapType(elementType, elementType);
-            MapType returnType = new MapType(elementType, BOOLEAN);
+            MapType mapType = mapType(elementType, elementType);
+            MapType returnType = mapType(elementType, BOOLEAN);
             Signature signature = new Signature(
                     name,
                     FunctionKind.SCALAR,
