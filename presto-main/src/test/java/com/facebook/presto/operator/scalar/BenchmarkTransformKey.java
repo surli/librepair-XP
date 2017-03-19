@@ -65,6 +65,7 @@ import static com.facebook.presto.spi.type.DoubleType.DOUBLE;
 import static com.facebook.presto.spi.type.TypeSignature.parseTypeSignature;
 import static com.facebook.presto.spi.type.TypeUtils.writeNativeValue;
 import static com.facebook.presto.testing.TestingConnectorSession.SESSION;
+import static com.facebook.presto.util.StructuralTestUtil.mapType;
 import static java.lang.String.format;
 
 @SuppressWarnings("MethodMayBeStatic")
@@ -126,7 +127,7 @@ public class BenchmarkTransformKey
                 default:
                     throw new UnsupportedOperationException();
             }
-            MapType mapType = new MapType(elementType, elementType);
+            MapType mapType = mapType(elementType, elementType);
             Signature signature = new Signature(
                     name,
                     FunctionKind.SCALAR,
