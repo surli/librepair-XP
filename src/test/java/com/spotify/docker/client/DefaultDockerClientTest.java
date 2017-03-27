@@ -553,10 +553,12 @@ public class DefaultDockerClientTest {
       });
     }
 
-    // Verify that both images are loaded
-    assertEquals(loadedImages.size(), 2);
-    assertTrue(loadedImages.contains(image1));
-    assertTrue(loadedImages.contains(image2));
+    if (dockerApiVersionAtLeast("1.24")) {
+      // Verify that both images are loaded
+      assertEquals(loadedImages.size(), 2);
+      assertTrue(loadedImages.contains(image1));
+      assertTrue(loadedImages.contains(image2));
+    }
 
     // Verify that we have multiple messages, and each one has a non-null field
     assertThat(messages, not(empty()));
