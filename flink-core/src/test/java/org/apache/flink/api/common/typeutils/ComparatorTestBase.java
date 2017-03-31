@@ -252,10 +252,9 @@ public abstract class ComparatorTestBase<T> extends TestLogger {
 		}
 		return memSeg;
 	}
-	
-	// Help Function which return a normalizedKeyLength, either as done in the NormalizedKeySorter or it's half
-	private int getNormKeyLen(boolean halfLength, T[] data,
-			TypeComparator<T> comparator) throws Exception {
+
+	// Help Function which return a normalizedKeyLength, either as done in the NormalizedKeySorter or its half
+	private int getNormKeyLen(boolean halfLength, TypeComparator<T> comparator) throws Exception {
 		// Same as in the NormalizedKeySorter
 		int keyLen = Math.min(comparator.getNormalizeKeyLen(), DEFAULT_MAX_NORMALIZED_KEY_LEN);
 		if (keyLen < comparator.getNormalizeKeyLen()) {
@@ -292,7 +291,7 @@ public abstract class ComparatorTestBase<T> extends TestLogger {
 		try {
 			TypeComparator<T> comparator = getComparator(true);
 			T[] data = getSortedData();
-			int normKeyLen = getNormKeyLen(halfLength, data, comparator);
+			int normKeyLen = getNormKeyLen(halfLength, comparator);
 
 			MemorySegment memSeg1 = setupNormalizedKeysMemSegment(data, normKeyLen, comparator);
 			MemorySegment memSeg2 = setupNormalizedKeysMemSegment(data, normKeyLen, comparator);
@@ -334,7 +333,7 @@ public abstract class ComparatorTestBase<T> extends TestLogger {
 		try {
 			T[] data = getSortedData();
 			// Get the normKeyLen on which we are testing
-			int normKeyLen = getNormKeyLen(halfLength, data, comparator);
+			int normKeyLen = getNormKeyLen(halfLength, comparator);
 
 			// Write the data into different 2 memory segments
 			MemorySegment memSegLow = setupNormalizedKeysMemSegment(data, normKeyLen, comparator);
