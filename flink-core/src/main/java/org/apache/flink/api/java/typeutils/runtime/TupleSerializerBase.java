@@ -55,7 +55,7 @@ public abstract class TupleSerializerBase<T> extends TypeSerializer<T> {
 	
 	@Override
 	public boolean isImmutableType() {
-		return false;
+		return arity == 0;
 	}
 
 	@Override
