@@ -1,0 +1,26 @@
+package gwt.material.design.client.constants;
+
+import javax.annotation.Generated;
+
+import gwt.material.design.client.base.helper.EnumHelper;
+
+@Generated(value = "gwt.material.design.gen.IconTypeGenerator", date = "${generationDate}")
+public enum IconType implements CssType {
+    
+    ${enumValues}
+
+    private final String cssClass;
+
+    IconType(final String cssClass) {
+        this.cssClass = cssClass;
+    }
+
+    @Override
+    public String getCssName() {
+        return cssClass;
+    }
+
+    public static IconType fromStyleName(final String styleName) {
+        return EnumHelper.fromStyleName(styleName, IconType.class, DEFAULT);
+    }
+}
