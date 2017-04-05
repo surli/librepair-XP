@@ -1,3 +1,7 @@
+/* (c) 2017 Open Source Geospatial Foundation - all rights reserved
+ * This code is licensed under the GPL 2.0 license, available at the root
+ * application directory.
+ */
 package org.geoserver.rest.catalog;
 
 import java.util.AbstractCollection;
@@ -8,6 +12,12 @@ import java.util.Spliterator;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
+/**
+ * A named collection of strings, for output.
+ *
+ * @author Kevin Smith (Boundless)
+ */
+// TODO: This is a duplicate of StringsList
 public class AvailableResources extends AbstractCollection<String> {
     final Collection<String> delegate;
     final String name; 
@@ -18,6 +28,7 @@ public class AvailableResources extends AbstractCollection<String> {
         this.name = name;
     }
 
+    /** Name of collection */
     public String getName() {
         return name;
     }
@@ -80,5 +91,8 @@ public class AvailableResources extends AbstractCollection<String> {
         return delegate.parallelStream();
     }
     
-    
+    @Override
+    public String toString() {
+        return "AvailableResources name='"+name+"' "+delegate.toString();
+    }
 }
