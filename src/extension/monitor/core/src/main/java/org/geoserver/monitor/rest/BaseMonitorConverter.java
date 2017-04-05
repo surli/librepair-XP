@@ -7,31 +7,32 @@ package org.geoserver.monitor.rest;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
-import java.util.logging.Logger;
 
-import org.geoserver.catalog.Catalog;
-import org.geoserver.config.GeoServer;
-import org.geoserver.config.util.XStreamPersisterFactory;
 import org.geoserver.monitor.Monitor;
 import org.geoserver.monitor.Query;
 import org.geoserver.monitor.RequestData;
 import org.geoserver.monitor.RequestDataVisitor;
-import org.geoserver.platform.GeoServerExtensions;
-import org.geoserver.rest.converters.BaseMessageConverter;
-import org.geotools.util.logging.Logging;
+import org.geoserver.platform.ExtensionPriority;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.AbstractHttpMessageConverter;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 
 /**
- * Base class for monitor requests converters
+ * Base class for monitor requests converters, handles visiting results.
  */
-public abstract class AbstractMonitorRequestConverter
-        extends AbstractHttpMessageConverter<MonitorQueryResults> {
+public abstract class BaseMonitorConverter
+        extends AbstractHttpMessageConverter<MonitorQueryResults> implements ExtensionPriority {
 
-    protected AbstractMonitorRequestConverter(MediaType... mediaType) {
+    protected BaseMonitorConverter(MediaType... mediaType) {
         super(mediaType);
+    }
+
+    /**
+     * Returns the priority of the {@link BaseMessageConverte}.
+     */
+    public int getPriority() {
+        return ExtensionPriority.LOWEST;
     }
 
     @Override
