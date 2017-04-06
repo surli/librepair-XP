@@ -2,11 +2,11 @@
  * This code is licensed under the GPL 2.0 license, available at the root
  * application directory.
  */
-package org.geoserver.catalog.rest;
+package org.geoserver.rest.catalog;
 
 import java.io.IOException;
 
-import org.geoserver.catalog.rest.FormatCollectionWrapper.XMLCollectionWrapper;
+import org.geoserver.rest.catalog.FormatCollectionWrapper.XMLCollectionWrapper;
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.MediaType;
