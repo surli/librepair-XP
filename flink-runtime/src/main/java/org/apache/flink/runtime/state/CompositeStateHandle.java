@@ -35,19 +35,26 @@ package org.apache.flink.runtime.state;
 public interface CompositeStateHandle extends StateObject {
 
 	/**
-	 * Register shared states in the given {@link SharedStateRegistry}. This
-	 * method is called when the state handle is received by the
-	 * {@link org.apache.flink.runtime.checkpoint.CheckpointCoordinator}.
+	 * Register both created and referenced shared states in the given
+	 * {@link SharedStateRegistry}. This method is called when the checkpoint
+	 * successfully completes or is recovered from failures.
 	 *
 	 * @param stateRegistry The registry where shared states are registered.
 	 */
-	void register(SharedStateRegistry stateRegistry);
+	void registerSharedStates(SharedStateRegistry stateRegistry);
 
 	/**
-	 * Unregister shared states in the given {@link SharedStateRegistry}. This
-	 * method is called when the state handle is discarded.
+	 * Unregister both created and referenced shared states in the given
+	 * {@link SharedStateRegistry}. This method is called when the checkpoint is
+	 * subsumed or the job is shut down.
 	 *
 	 * @param stateRegistry The registry where shared states are registered.
 	 */
-	void unregister(SharedStateRegistry stateRegistry);
+	void unregisterSharedStates(SharedStateRegistry stateRegistry);
+
+	/**
+	 * Discard all shared states created in this checkpoint. This method is
+	 * called when the checkpoint fails to complete.
+	 */
+	void discardSharedStatesOnFail() throws Exception;
 }
