@@ -10,11 +10,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.NotImplementedException;
 import org.geoserver.catalog.CatalogFactory;
 import org.geoserver.catalog.DataStoreInfo;
 import org.geoserver.catalog.LayerInfo;
@@ -22,7 +20,6 @@ import org.geoserver.catalog.ResourceInfo;
 import org.geoserver.catalog.StoreInfo;
 import org.geoserver.catalog.StyleInfo;
 import org.geoserver.catalog.WorkspaceInfo;
-import org.geoserver.rest.catalog.CatalogController;
 import org.geoserver.config.util.XStreamPersister;
 import org.geoserver.importer.Archive;
 import org.geoserver.importer.Database;
@@ -56,11 +53,6 @@ import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.referencing.CRS;
 import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpInputMessage;
-import org.springframework.http.HttpOutputMessage;
-import org.springframework.http.MediaType;
-import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.http.converter.HttpMessageNotWritableException;
 import org.springframework.stereotype.Component;
 
 import net.sf.json.JSONArray;
@@ -70,55 +62,47 @@ import net.sf.json.JSONObject;
  * {@link BaseMessageConverter} implementation for reading {@link ImportContext} and {@link ImportTask} objects from JSON
  */
 @Component
-public class ImportContextJSONConverterReader extends BaseMessageConverter<Object> {
+public class ImportJSONReader {
 
     Importer importer;
-    JSONObject json;
 
     @Autowired
-    public ImportContextJSONConverterReader(Importer importer)  {
-        super(MediaType.APPLICATION_JSON,CatalogController.MEDIATYPE_TEXT_JSON);
+    public ImportJSONReader(Importer importer)  {
         this.importer = importer;
     }
-    
-    public ImportContextJSONConverterReader(Importer importer, InputStream in) throws IOException {
-        super(MediaType.APPLICATION_JSON,CatalogController.MEDIATYPE_TEXT_JSON);
-        this.importer = importer;
-        this.json = parse(in);
-    }
 
-    public JSONObject object() {
-        return json;
-    }
-    @Override
-    protected boolean supports(Class<?> clazz) {
-        return (ImportContext.class.isAssignableFrom(clazz) || ImportTask.class.isAssignableFrom(clazz) ||
-                ImportTransform.class.isAssignableFrom(clazz) || TransformChain.class.isAssignableFrom(clazz));
-    }
+//    public ImportContextJSONConverterReader(Importer importer, InputStream in) throws IOException {
+//        super(MediaType.APPLICATION_JSON,CatalogController.MEDIATYPE_TEXT_JSON);
+//        this.importer = importer;
+//        JSONObject json = parse(in);
+//    }
 
-    @Override
-    protected boolean canWrite(MediaType mediaType) {
-        return false; // write not supported
-    }
+//    @Override
+//    protected boolean supports(Class<?> clazz) {
+//        return (ImportContext.class.isAssignableFrom(clazz) || ImportTask.class.isAssignableFrom(clazz) ||
+//                ImportTransform.class.isAssignableFrom(clazz) || TransformChain.class.isAssignableFrom(clazz));
+//    }
 
-    @Override
-    protected Object readInternal(Class<? extends Object> clazz, HttpInputMessage inputMessage)
-            throws IOException, HttpMessageNotReadableException {
-        InputStream in = inputMessage.getBody();
-        json = parse(in);
-        if (ImportContext.class.isAssignableFrom(clazz)) {
-            return context();
-        } else if (ImportTask.class.isAssignableFrom(clazz)) {
-            return task();
-        } else if (ImportTransform.class.isAssignableFrom(clazz) || TransformChain.class.isAssignableFrom(clazz)) {
-            return transform();
-        }
-        return null;
-    }
+//    @Override
+//    protected boolean canWrite(MediaType mediaType) {
+//        return false; // write not supported
+//    }
 
-    public ImportContext context() throws IOException {
-        return context(json);
-    }
+//    @Override
+//    protected Object readInternal(Class<? extends Object> clazz, HttpInputMessage inputMessage)
+//            throws IOException, HttpMessageNotReadableException {
+//        InputStream in = inputMessage.getBody();
+//        JSONObject json = parse(in);
+//        if (ImportContext.class.isAssignableFrom(clazz)) {
+//            return context(json);
+//        } else if (ImportTask.class.isAssignableFrom(clazz)) {
+//            return task(json);
+//        } else if (ImportTransform.class.isAssignableFrom(clazz) || TransformChain.class.isAssignableFrom(clazz)) {
+//            return transform(json);
+//        }
+//        return null;
+//    }
+
     public ImportContext context(JSONObject json) throws IOException {
         ImportContext context = null;
         if (json.has("import")) {
@@ -154,9 +138,6 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         }
         return context;
     }
-    public LayerInfo layer() throws IOException {
-        return layer(json);
-    }
 
     LayerInfo layer(JSONObject json) throws IOException {
         CatalogFactory f = importer.getCatalog().getFactory();
@@ -181,7 +162,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
             catch(Exception e) {
                 //should fail later
             }
-            
+
         }
         if (json.has("bbox")) {
             r.setNativeBoundingBox(bbox(json.getJSONObject("bbox")));
@@ -199,7 +180,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         LayerInfo l = f.createLayer();
         l.setResource(r);
         //l.setName(); don't need to this, layer.name just forwards to name of underlying resource
-        
+
         if (json.has("style")) {
             JSONObject sobj = new JSONObject();
             sobj.put("defaultStyle", json.get("style"));
@@ -214,7 +195,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
             else {
                 sobj = new JSONObject();
                 sobj.put("style", json.get("style"));
-                
+
                 l.setDefaultStyle(fromJSON(sobj, StyleInfo.class));
             }
 
@@ -222,7 +203,11 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         return l;
     }
 
-    public ImportTask task() throws IOException {
+    public ImportTask task(InputStream inputStream) throws IOException {
+        JSONObject json = parse(inputStream);
+        return task(json);
+    }
+    public ImportTask task(JSONObject json) throws IOException {
 
         if (json.has("task")) {
             json =  json.getJSONObject("task");
@@ -262,7 +247,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
             task.setStore(fromJSON(json.getJSONObject("target"), StoreInfo.class));
         }
 
-        LayerInfo layer = null; 
+        LayerInfo layer = null;
         if (json.has("layer")) {
             layer = layer(json.getJSONObject("layer"));
         } else {
@@ -302,11 +287,14 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         return result;
     }
 
-    public ImportTransform transform() throws IOException {
+    public ImportTransform transform(String json) throws IOException {
+        return transform(IOUtils.toInputStream(json));
+    }
+    public ImportTransform transform(InputStream inputStream) throws IOException {
+        JSONObject json = parse(inputStream);
         return transform(json);
     }
-
-    ImportTransform transform(JSONObject json) throws IOException {
+    public ImportTransform transform(JSONObject json) throws IOException {
         ImportTransform transform;
         String type = json.getString("type");
         if ("DateFormatTransform".equalsIgnoreCase(type)) {
@@ -333,7 +321,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
 
             try {
                 transform = new ReprojectTransform(source, target);
-            } 
+            }
             catch(Exception e) {
                 throw new ValidationException("Error parsing reproject transform", e);
             }
@@ -368,10 +356,6 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         return options;
     }
 
-    public ImportData data() throws IOException {
-        return data(json);
-    }
-
     ImportData data(JSONObject json) throws IOException {
         String type = json.getString("type");
         if (type == null) {
@@ -393,7 +377,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         else if ("database".equalsIgnoreCase(type)) {
             return database(json);
         }
- else if ("remote".equalsIgnoreCase(type)) {
+        else if ("remote".equalsIgnoreCase(type)) {
             return remote(json);
         }
         else {
@@ -435,7 +419,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
     }
 
     Mosaic mosaic(JSONObject json) throws IOException {
-        Mosaic m = new Mosaic(json.has("location") ?  new File(json.getString("location")) : 
+        Mosaic m = new Mosaic(json.has("location") ?  new File(json.getString("location")) :
             Directory.createNew(importer.getUploadRoot()).getFile());
         if (json.has("name")) {
             m.setName(json.getString("name"));
@@ -457,11 +441,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         throw new UnsupportedOperationException("TODO: implement");
     }
 
-    public Directory directory() throws IOException {
-        return directory(json);
-    }
-
-    Directory directory(JSONObject json) throws IOException {
+    public Directory directory(JSONObject json) throws IOException {
         if (json.has("location")) {
             return new Directory(new File(json.getString("location")));
         }
@@ -473,15 +453,15 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
     Database database(JSONObject json) throws IOException {
         throw new UnsupportedOperationException("TODO: implement");
     }
-    
+
     ReferencedEnvelope bbox(JSONObject json) {
         CoordinateReferenceSystem crs = null;
         if (json.has("crs")) {
-            crs = (CoordinateReferenceSystem) 
+            crs = (CoordinateReferenceSystem)
                 new XStreamPersister.CRSConverter().fromString(json.getString("crs"));
         }
 
-        return new ReferencedEnvelope(json.getDouble("minx"), json.getDouble("maxx"), 
+        return new ReferencedEnvelope(json.getDouble("minx"), json.getDouble("maxx"),
             json.getDouble("miny"), json.getDouble("maxy"), crs);
     }
 
@@ -493,7 +473,7 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         }
     }
 
-    JSONObject parse(InputStream in) throws IOException {
+    public JSONObject parse(InputStream in) throws IOException {
         ByteArrayOutputStream bout = new ByteArrayOutputStream();
         IOUtils.copy(in, bout);
         return JSONObject.fromObject(new String(bout.toByteArray()));
@@ -514,19 +494,4 @@ public class ImportContextJSONConverterReader extends BaseMessageConverter<Objec
         return xp.load(new ByteArrayInputStream(json.toString().getBytes()), clazz);
     }
 
-    <T> T fromJSON(Class<T> clazz) throws IOException {
-        return fromJSON(json, clazz);
-    }
-
-    @Override
-    protected void writeInternal(Object t, HttpOutputMessage outputMessage)
-            throws IOException, HttpMessageNotWritableException {
-        throw new HttpMessageNotWritableException(
-                getClass().getName() + " does not support serialization");
-    }
-
-    @Override
-    public int getPriority() {
-        return super.getPriority()-5;
-    }
 }
