@@ -17,27 +17,28 @@
  */
 package org.apache.flink.table.runtime.aggregate
 
-import java.util.{List => JList, ArrayList => JArrayList}
+import java.util
+import java.util.{List => JList}
 
 import org.apache.flink.api.common.state._
 import org.apache.flink.api.common.typeinfo.{BasicTypeInfo, TypeInformation}
 import org.apache.flink.api.java.typeutils.{ListTypeInfo, RowTypeInfo}
 import org.apache.flink.configuration.Configuration
 import org.apache.flink.streaming.api.functions.ProcessFunction
-import org.apache.flink.table.codegen.{GeneratedAggregationsFunction, Compiler}
 import org.apache.flink.types.Row
 import org.apache.flink.util.{Collector, Preconditions}
+import org.apache.flink.table.codegen.{GeneratedAggregationsFunction, Compiler}
 import org.slf4j.LoggerFactory
 
 /**
- * Process Function for RANGE clause event-time bounded OVER window
+ * Process Function for ROWS clause event-time bounded OVER window
  *
   * @param genAggregations Generated aggregate helper function
   * @param aggregationStateType     row type info of aggregation
   * @param inputRowType             row type info of input row
   * @param precedingOffset          preceding offset
  */
-class RangeClauseBoundedOverProcessFunction(
+class RowTimeBoundedRowsOver(
     genAggregations: GeneratedAggregationsFunction,
     aggregationStateType: RowTypeInfo,
     inputRowType: RowTypeInfo,
@@ -52,6 +53,9 @@ class RangeClauseBoundedOverProcessFunction(
 
   // the state which keeps the last triggering timestamp
   private var lastTriggeringTsState: ValueState[Long] = _
+
+  // the state which keeps the count of data
+  private var dataCountState: ValueState[Long] = _
 
   // the state which used to materialize the accumulator for incremental calculation
   private var accumulatorState: ValueState[Row] = _
@@ -81,6 +85,10 @@ class RangeClauseBoundedOverProcessFunction(
       new ValueStateDescriptor[Long]("lastTriggeringTsState", classOf[Long])
     lastTriggeringTsState = getRuntimeContext.getState(lastTriggeringTsDescriptor)
 
+    val dataCountStateDescriptor =
+      new ValueStateDescriptor[Long]("dataCountState", classOf[Long])
+    dataCountState = getRuntimeContext.getState(dataCountStateDescriptor)
+
     val accumulatorStateDescriptor =
       new ValueStateDescriptor[Row]("accumulatorState", aggregationStateType)
     accumulatorState = getRuntimeContext.getState(accumulatorStateDescriptor)
@@ -107,15 +115,15 @@ class RangeClauseBoundedOverProcessFunction(
     val triggeringTs = ctx.timestamp
 
     val lastTriggeringTs = lastTriggeringTsState.value
-
     // check if the data is expired, if not, save the data and register event time timer
+
     if (triggeringTs > lastTriggeringTs) {
       val data = dataState.get(triggeringTs)
       if (null != data) {
         data.add(input)
         dataState.put(triggeringTs, data)
       } else {
-        val data = new JArrayList[Row]
+        val data = new util.ArrayList[Row]
         data.add(input)
         dataState.put(triggeringTs, data)
         // register event time timer
@@ -128,74 +136,85 @@ class RangeClauseBoundedOverProcessFunction(
     timestamp: Long,
     ctx: ProcessFunction[Row, Row]#OnTimerContext,
     out: Collector[Row]): Unit = {
+
     // gets all window data from state for the calculation
     val inputs: JList[Row] = dataState.get(timestamp)
 
     if (null != inputs) {
 
       var accumulators = accumulatorState.value
-      var dataListIndex = 0
-      var aggregatesIndex = 0
+      var dataCount = dataCountState.value
 
-      // initialize when first run or failover recovery per key
-      if (null == accumulators) {
-        accumulators = function.createAccumulators()
-        aggregatesIndex = 0
+      var retractList: JList[Row] = null
+      var retractTs: Long = Long.MaxValue
+      var retractCnt: Int = 0
+      var i = 0
+
+      while (i < inputs.size) {
+        val input = inputs.get(i)
+
+        // initialize when first run or failover recovery per key
+        if (null == accumulators) {
+          accumulators = function.createAccumulators()
+        }
+
+        var retractRow: Row = null
+
+        if (dataCount >= precedingOffset) {
+          if (null == retractList) {
+            // find the smallest timestamp
+            retractTs = Long.MaxValue
+            val dataTimestampIt = dataState.keys.iterator
+            while (dataTimestampIt.hasNext) {
+              val dataTs = dataTimestampIt.next
+              if (dataTs < retractTs) {
+                retractTs = dataTs
+              }
+            }
+            // get the oldest rows to retract them
+            retractList = dataState.get(retractTs)
+          }
+
+          retractRow = retractList.get(retractCnt)
+          retractCnt += 1
+
+          // remove retracted values from state
+          if (retractList.size == retractCnt) {
+            dataState.remove(retractTs)
+            retractList = null
+            retractCnt = 0
+          }
+        } else {
+          dataCount += 1
+        }
+
+        // copy forwarded fields to output row
+        function.setForwardedFields(input, output)
+
+        // retract old row from accumulators
+        if (null != retractRow) {
+          function.retract(accumulators, retractRow)
+        }
+
+        // accumulate current row and set aggregate in output row
+        function.accumulate(accumulators, input)
+        function.setAggregationResults(accumulators, output)
+        i += 1
+
+        out.collect(output)
       }
 
-      // keep up timestamps of retract data
-      val retractTsList: JList[Long] = new JArrayList[Long]
-
-      // do retraction
-      val dataTimestampIt = dataState.keys.iterator
-      while (dataTimestampIt.hasNext) {
-        val dataTs: Long = dataTimestampIt.next()
-        val offset = timestamp - dataTs
-        if (offset > precedingOffset) {
-          val retractDataList = dataState.get(dataTs)
-          dataListIndex = 0
-          while (dataListIndex < retractDataList.size()) {
-            val retractRow = retractDataList.get(dataListIndex)
-            function.retract(accumulators, retractRow)
-            dataListIndex += 1
-          }
-          retractTsList.add(dataTs)
+      // update all states
+      if (dataState.contains(retractTs)) {
+        if (retractCnt > 0) {
+          retractList.subList(0, retractCnt).clear()
+          dataState.put(retractTs, retractList)
         }
       }
-
-      // do accumulation
-      dataListIndex = 0
-      while (dataListIndex < inputs.size()) {
-        val curRow = inputs.get(dataListIndex)
-        // accumulate current row
-        function.accumulate(accumulators, curRow)
-        dataListIndex += 1
-      }
-
-      // set aggregate in output row
-      function.setAggregationResults(accumulators, output)
-
-      // copy forwarded fields to output row and emit output row
-      dataListIndex = 0
-      while (dataListIndex < inputs.size()) {
-        aggregatesIndex = 0
-        function.setForwardedFields(inputs.get(dataListIndex), output)
-        out.collect(output)
-        dataListIndex += 1
-      }
-
-      // remove the data that has been retracted
-      dataListIndex = 0
-      while (dataListIndex < retractTsList.size) {
-        dataState.remove(retractTsList.get(dataListIndex))
-        dataListIndex += 1
-      }
-
-      // update state
+      dataCountState.update(dataCount)
       accumulatorState.update(accumulators)
-      lastTriggeringTsState.update(timestamp)
     }
+
+    lastTriggeringTsState.update(timestamp)
   }
 }
-
-
