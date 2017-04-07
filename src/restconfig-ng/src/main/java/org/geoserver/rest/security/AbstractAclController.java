@@ -2,7 +2,7 @@
  * This code is licensed under the GPL 2.0 license, available at the root
  * application directory.
  */
-package org.geoserver.security.rest;
+package org.geoserver.rest.security;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -130,7 +130,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Returns the base path of the ACL resource
-     * 
+     *
      * @return
      */
     protected abstract String getBasePath();
@@ -143,7 +143,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Adds a rule to a map
-     * 
+     *
      * @param rule
      * @param map
      */
@@ -159,8 +159,8 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Calculate the the intersection of the keys
-     * 
-     * 
+     *
+     *
      * @param props
      * @param map
      *
@@ -186,8 +186,8 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Calculate the keys not contained in the rule data access object
-     * 
-     * 
+     *
+     *
      * @param props
      * @param map
      *
@@ -213,7 +213,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Returns the key string for a rule
-     * 
+     *
      * @param rule
      *
      */
@@ -221,7 +221,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Validate a rule, return an error message or <code>null</code> if the rule is ok
-     * 
+     *
      * @param ruleKey ,ruleValue
      * @param rule
      *
@@ -234,7 +234,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Validates the string representation of a rule key. Return an error message or <code>null</code> if the rule is ok
-     * 
+     *
      * @param ruleKey
      *
      */
@@ -242,7 +242,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Convert an {@link Entry} to a rule object
-     * 
+     *
      * @param entry
      *
      */
@@ -250,7 +250,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Validates the string representation of rule keys and values
-     * 
+     *
      * @param ruleMap
      */
     protected void validateMap(Map<String, String> ruleMap) {
@@ -301,7 +301,7 @@ public abstract class AbstractAclController<DAO extends AbstractAccessRuleDAO<Co
 
     /**
      * Parses a comma separated list of roles into a set of strings, with special handling for the {@link DataAccessRule#ANY} role
-     * 
+     *
      * @param roleCsv Comma separated list of roles.
      */
     protected Set<String> parseRoles(String roleCsv) {

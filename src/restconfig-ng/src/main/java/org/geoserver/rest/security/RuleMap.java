@@ -2,7 +2,7 @@
  * This code is licensed under the GPL 2.0 license, available at the root
  * application directory.
  */
-package org.geoserver.security.rest;
+package org.geoserver.rest.security;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -19,7 +19,7 @@ public class RuleMap<K, V> extends LinkedHashMap<K, V> {
     public RuleMap() {
         super();
     }
-    
+
     public RuleMap(Map<K, V> source) {
         super(source);
     }
