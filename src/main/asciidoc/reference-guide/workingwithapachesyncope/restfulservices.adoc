@@ -1,0 +1,409 @@
+//
+// Licensed to the Apache Software Foundation (ASF) under one
+// or more contributor license agreements.  See the NOTICE file
+// distributed with this work for additional information
+// regarding copyright ownership.  The ASF licenses this file
+// to you under the Apache License, Version 2.0 (the
+// "License"); you may not use this file except in compliance
+// with the License.  You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing,
+// software distributed under the License is distributed on an
+// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+// KIND, either express or implied.  See the License for the
+// specific language governing permissions and limitations
+// under the License.
+//
+=== RESTful services
+
+All the features provided by the <<core>> are available as RESTful services.
+
+The base URL for invoking such services is normally set as
+
+....
+protocol://host:port/syncope/rest/
+....
+
+where `protocol`, `host` and `port` reflect your Java EE container installation.
+
+[NOTE]
+.REST Reference
+====
+A complete REST reference generated from https://en.wikipedia.org/wiki/Web_Application_Description_Language[WADL^] is
+http://syncope.apache.org/rest/2.0/index.html[published^] as well as made available with each deployment at
+
+....
+protocol://host:port/syncope/
+....
+
+where `protocol`, `host` and `port` reflect your Java EE container installation.
+====
+
+[TIP]
+The <<swagger,Swagger extension>> might also help greatly when working with RESTful services.
+
+==== REST Authentication and Authorization
+
+The <<core>> authentication and authorization is based on http://projects.spring.io/spring-security/[Spring Security^].
+
+As an initial step, authentication is required to obtain, in the `X-Syncope-Token` HTTP header, the
+unique signed https://en.wikipedia.org/wiki/JSON_Web_Token[JSON Web Token^] to include in all subsequent requests.
+
+By providing the token received in the initial exchange, the requester can be identified and checked for authorization,
+based on owned <<entitlements,entitlements>>.
+
+[NOTE]
+Users can examine their own entitlements looking at the `<<x-syncope-entitlements,X-Syncope-Entitlements>>`
+header value.
+
+[TIP]
+====
+The relevant security configuration lies in
+ifeval::["{snapshotOrRelease}" == "release"]
+https://github.com/apache/syncope/blob/syncope-{docVersion}/core/spring/src/main/resources/securityContext.xml[securityContext.xml^];
+endif::[]
+ifeval::["{snapshotOrRelease}" == "snapshot"]
+https://github.com/apache/syncope/blob/2_0_X/core/spring/src/main/resources/securityContext.xml[securityContext.xml^];
+endif::[]
+while normally not needed, this configuration can be anyway customized via the <<override-behavior,override behavior>>.
+
+https://en.wikipedia.org/wiki/Basic_access_authentication[HTTP Basic Authentication] is set for use by default.
+====
+
+==== REST Headers
+
+Apache Syncope supports a number of HTTP headers as detailed below, in addition to the common HTTP headers such as
+`Accept`, `Content-Type`, etc.
+
+[TIP]
+It is possible to deal with the headers below when using the <<client-library>> via the `SyncopeClient` class methods.
+
+===== X-Syncope-Token
+
+`X-Syncope-Token` is returned on response to <<rest-authentication-and-authorization,successful authentication>>, and
+contains the unique signed https://en.wikipedia.org/wiki/JSON_Web_Token[JSON Web Token^] identifying the authenticated
+user.
+
+The same header with provided value must be included in all subsequent requests, in order for the requester to
+be checked for authorization.
+
+The token duration can be configured via the `jwt.lifetime.minutes` property - see
+<<configuration-parameters, below>> for details.
+
+===== X-Syncope-Domain
+
+`X-Syncope-Domain` can be optionally set for requests (when not set, `Master` is assumed) to select the target
+<<domains,domain>>. +
+The value for this header is provided in all responses.
+
+===== X-Syncope-Key and Location
+
+When creating an entity (User, Group, Schema, External Resource, ...) these two headers are populated respectively with
+the entity key (which may be auto-generated) and the absolute URI identifying the new REST resource.
+
+===== X-Application-Error-Code and X-Application-Error-Info
+
+If the requested operation is in error, `X-Application-Error-Code` will contain the error code (mostly from
+ifeval::["{snapshotOrRelease}" == "release"]
+https://github.com/apache/syncope/blob/syncope-{docVersion}/common/lib/src/main/java/org/apache/syncope/common/lib/types/ClientExceptionType.java[ClientExceptionType^])
+endif::[]
+ifeval::["{snapshotOrRelease}" == "snapshot"]
+https://github.com/apache/syncope/tree/2_0_X/common/lib/src/main/java/org/apache/syncope/common/lib/types/ClientExceptionType.java[ClientExceptionType^])
+endif::[]
+and `X-Application-Error-Info` might be optionally populated with more details, if available.
+
+===== X-Syncope-Null-Priority-Async
+
+When set to `true`, this request header instructs the <<propagation,propagation process>> not to wait for completion
+when communicating with <<external-resource-details,External Resources>> with no priority set.
+
+===== Prefer and Preference-Applied
+
+Some REST endpoints - typically for creating, updating or deleting Users, Groups or Any Objects - return the
+entity in the response payload by default. +
+If this is not required, the `Prefer` request header can be set to `return-no-content` (`return-content` will instead
+keep the default behavior).
+
+When `Prefer` is specified in the request, the response will feature the `Preference-Applied` header, with value set
+to the effective preference applied.
+
+[TIP]
+Use `Prefer` in scenarios where it is important to avoid unnecessary data in the response payload.
+
+===== ETag, If-Match and If-None-Match
+
+For each response containing Users, Groups or Any Objects, the https://en.wikipedia.org/wiki/HTTP_ETag[ETag^] header is
+generated, which contains the latest modification date.
+
+This value can be passed, during subsequent requests to modify the same entity, via the `If-Match` or
+`If-None-Match` headers. +
+When the provided `If-Match` value does not match the latest modification date of the entity, an error is reported and
+the requested operation is not performed.
+
+[TIP]
+The combined usage of `ETag` and `If-Match` can be enforced to implement optimistic concurrency control over Users,
+Groups and Any Objects operations.
+
+===== X-Syncope-Entitlements
+
+When invoking the REST endpoint `/users/self` in `GET`, the `X-Syncope-Entitlements` response header will list all
+the <<entitlements,entitlements>> owned by the requesting user.
+
+==== Bulk Operations
+
+Some REST endpoints feature the _bulk mode_, e.g. the capability to perform a given operation onto several items at the
+same time.
+
+The table below shows the bulk operations available.
+
+[cols="1,5a"]
+|===
+
+|Any Objects
+| * `DELETE` - remove several any objects at once
+
+|Groups
+| * `PROVISION` - provision all members of the given group onto all the associated external resources
+ * `DEPROVISION` - deprovision all members of the given group from all the associated external resources
+ * `DELETE` - remove several groups at once
+
+|Users
+| * `SUSPEND` - suspend several users at once
+* `REACTIVATE` - set several users at once back to the active state
+* `MUSTCHANGEPASSWORD` - force several users at once to change their passwords
+* `DELETE` - remove several users at once
+
+| Tasks
+| * `DRYRUN` - executes several tasks at once, with the <<dryrun>> option set
+* `EXECUTE` - executes several tasks at once
+* `DELETE` - remove several tasks at once
+
+| External Resources
+| * `DEPROVISION` - delete several users, groups or any objects at once from an external resource but keep in the
+internal storage and leave the external resource associated
+ * `UNLINK` - remove the association between several users, groups or any objects at once and an external resource,
+without performing any deprovisioning operation
+ * `UNASSIGN` - unlink and deprovision several users, groups or any objects at once from an external resource
+|===
+
+==== Client Library
+
+The Java client library simplifies the interaction with the <<core>> by hiding the underlying HTTP
+communication details and providing native methods and payload objects.
+
+The library is available as a Maven artifact:
+
+[source,xml,subs="verbatim,attributes"]
+----
+<dependency>
+  <groupId>org.apache.syncope.client</groupId>
+  <artifactId>syncope-client-lib</artifactId>
+  <version>{docVersion}</version>
+</dependency>
+----
+
+ifeval::["{snapshotOrRelease}" == "snapshot"]
+
+[WARNING]
+====
+Do not forget to add the following repository to your `pom.xml`:
+
+[source,xml]
+----
+<repository>
+  <id>ASF</id>
+  <url>https://repository.apache.org/content/repositories/snapshots/</url>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+----
+====
+
+endif::[]
+
+[discrete]
+===== Initialization
+
+First you need to build an instance of `SyncopeClientFactoryBean` by providing the deployment base URL, as follows:
+
+[source,java]
+----
+SyncopeClientFactoryBean clientFactory = new SyncopeClientFactoryBean().
+              setAddress("http://localhost:9080/syncope/rest/");
+----
+
+You might also select a specific <<domains,domain>> - other than `Master`, choose to exchange XML payloads - rather
+than JSON (default), or to select 
+https://en.wikipedia.org/wiki/HTTP_compression[HTTP compression^] (more options in the
+http://syncope.apache.org/apidocs/2.0/org/apache/syncope/client/lib/SyncopeClientFactoryBean.html[Javadoc^]):
+
+[source,java]
+----
+SyncopeClientFactoryBean clientFactory = new SyncopeClientFactoryBean().
+              setAddress("http://localhost:9080/syncope/rest/").
+              setDomain("Two").
+              setContentType(SyncopeClientFactoryBean.ContentType.XML).
+              setUseCompression(true);
+----
+
+At this point an instance of `SyncopeClient` can be obtained by passing the login credentials via:
+
+[source,java]
+----
+SyncopeClient client = clientFactory.create("admin", "password");
+----
+
+Or you can combine into a single statement as:
+
+[source,java]
+----
+SyncopeClient client = new SyncopeClientFactoryBean().
+              setAddress("http://localhost:9080/syncope/rest/").
+              create("admin", "password");
+----
+
+[discrete]
+===== Usage
+
+Select one of the
+http://syncope.apache.org/apidocs/2.0/org/apache/syncope/common/rest/api/service/package-summary.html[RESTful services^]
+and invoke one of the available methods:
+
+[source,java]
+----
+LoggerService loggerService = client.getService(LoggerService.class);
+
+LoggerTO loggerTO = loggerService.read(LoggerType.LOG, "org.apache.syncope.core.connid");
+loggerTO.setLevel(LoggerLevel.DEBUG);
+
+loggerService.update(LoggerType.LOG, loggerTO);
+----
+
+[NOTE]
+More RESTful services could be available besides the 
+http://syncope.apache.org/apidocs/2.0/org/apache/syncope/common/rest/api/service/package-summary.html[default set^],
+as there might be <<extensions,extensions>> installed in the given deployment; the
+<<apache-camel-provisioning-manager>> provides the
+http://syncope.apache.org/apidocs/2.0/org/apache/syncope/common/rest/api/service/CamelRouteService.html[CamelRouteService^],
+for instance.
+
+[TIP]
+Advanced REST features are also available from `SyncopeClient` instances: check
+http://syncope.apache.org/apidocs/2.0/org/apache/syncope/client/lib/SyncopeClient.html[the javadoc^]
+for more information.
+
+.Search for users, groups or any objects
+====
+All search operations return
+http://syncope.apache.org/apidocs/2.0/org/apache/syncope/common/lib/to/PagedResult.html[paged result handlers^]
+which can be exploited both for getting the actual results and for extrapolating pagination coordinates.
+
+[source,java]
+----
+UserService userService = client.getService(UserService.class);
+
+int count = userService.search(new AnyQuery.Builder().page(0).size(0).build()).getTotalCount(); // <1>
+
+PagedResult<UserTO> matchingUsers = userService.search(
+    new AnyQuery.Builder().realm(SyncopeConstants.ROOT_REALM).
+    fiql(SyncopeClient.getUserSearchConditionBuilder().is("username").equalTo("ros*ini").query()).
+    build()); // <2>
+
+PagedResult<UserTO> matchingUsers = userService.search(
+    new AnyQuery.Builder().realm(SyncopeConstants.ROOT_REALM).
+    fiql(SyncopeClient.getUserSearchConditionBuilder().isNull("loginDate").query()).
+    build()); // <3>
+
+PagedResult<UserTO> matchingUsers = userService.search(
+    new AnyQuery.Builder().realm(SyncopeConstants.ROOT_REALM).
+    fiql(SyncopeClient.getUserSearchConditionBuilder().inRoles("Other").query()).
+    build()); // <4>
+
+AnyObjectService anyObjectService = client.getService(AnyObjectService.class);
+
+PagedResult<AnyObjectTO> matchingAnyObjects = anyObjectService.search(
+    new AnyQuery.Builder().realm(SyncopeConstants.ROOT_REALM).
+    fiql(SyncopeClient.getAnyObjectSearchConditionBuilder("PRINTER").query()).
+    build()); // <5>
+
+GroupService groupService = client.getService(GroupService.class);
+
+PagedResult<GroupTO> matchingGroups = groupService.search(
+    new AnyQuery.Builder().realm("/even/two").page(3).size(150).
+    fiql(SyncopeClient.getGroupSearchConditionBuilder().isAssignable().
+        and("name").equalTo("palo*").query()).
+    build()); // <6>
+----
+<1> get the total number of users available in the given deployment (and <<domains,domain>>)
+<2> get users in the root realm with username matching the provided wildcard expression
+<3> get users in the root realm with no values for `loginDate`, i.e. that have never authenticated to the
+given deployment
+<4> get users in the root realm with <<roles,role>> `Other` assigned
+<5> get all any objects in the root realm with <<anytype,type>> `PRINTER`
+<6> get all groups that can be assigned to users or any objects in the `/even/two` realm - third page of the result,
+where each page contains 150 items
+====
+
+.Delete several users at once
+====
+[source,java]
+----
+UserService userService = client.getService(UserService.class);
+
+BulkAction bulkAction = new BulkAction();
+bulkAction.setType(BulkAction.Type.DELETE);
+
+final int pageSize = 100;
+final int count = userService.search(
+        new AnyQuery.Builder().page(0).size(0).build()).getTotalCount(); // <1>
+for (int page = 1; page <= (count / pageSize) + 1; page++) {
+    for (UserTO user : userService.search(
+            new AnyQuery.Builder().page(page).size(pageSize).build()).getResult()) {  // <2>
+
+        bulkAction.getTargets().add(user.getKey()); // <3>
+    }
+}
+
+BulkActionResult bulkResult = userService.bulk(bulkAction).
+        readEntity(BulkActionResult.class); // <4>
+Map<String, BulkActionResult.Status> results = bulkResult.getResults(); // <5>
+----
+<1> get the total number of users available in the given deployment (and <<domains,domain>>)
+<2> loop throgh all users available, using paginated search
+<3> add each user to the bulk action
+<4> execute the `DELETE` bulk action
+<5> examine the bulk action results
+====
+
+.Self-read own profile information
+====
+[source,java]
+----
+Pair<Map<String, Set<String>>, UserTO> self = client.self();
+UserTO userTO = self.getRight(); // <1>
+Map<String, Set<String>> realm2entitlements = self.getLeft(); // <2>
+----
+<1> http://syncope.apache.org/apidocs/2.0/org/apache/syncope/common/lib/to/UserTO.html[UserTO^] of the requesting user
+<2> for each <<realms,realm>>, the owned <<entitlements,entitlements>>
+====
+
+.Change user status
+====
+[source,java]
+----
+String key = ...; // <1>
+StatusPatch statusPatch = new StatusPatch();
+statusPatch.setKey(key);
+statusPatch.setType(StatusPatchType.SUSPEND); // <2>
+UserTO userTO = userService.status(statusPatch).
+  readEntity(new GenericType<ProvisioningResult<UserTO>>() {
+  }).getEntity(); // <3>
+----
+<1> assume the key of the user to be suspended is known in advance
+<2> `ACTIVATE`, `SUSPEND`, `REACTIVATE` values are accepted, and honored depending on the actual status of the user
+being updated
+<3> request for user update and read back the updated entity
+====

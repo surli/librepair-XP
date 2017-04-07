@@ -1,0 +1,141 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+package org.apache.syncope.fit.console;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+import de.agilecoders.wicket.core.markup.html.bootstrap.dialog.Modal;
+import org.apache.syncope.client.console.pages.Types;
+import org.apache.syncope.client.console.panels.AjaxDataTablePanel;
+import org.apache.syncope.client.console.wicket.extensions.markup.html.repeater.data.table.AjaxFallbackDataTable;
+import org.apache.syncope.client.console.wicket.markup.html.bootstrap.dialog.BaseModal;
+import org.apache.syncope.client.console.wicket.markup.html.form.IndicatingOnConfirmAjaxLink;
+import org.apache.wicket.Component;
+import org.apache.wicket.extensions.ajax.markup.html.IndicatingAjaxLink;
+import org.apache.wicket.util.tester.FormTester;
+import org.junit.Test;
+
+public class AnyTypeClassesITCase extends AbstractTypesITCase {
+
+    @Test
+    public void read() {
+        browsingToAnyTypeClasses();
+
+        Component result = findComponentByProp(KEY, DATATABLE_PATH, "csv");
+        TESTER.assertLabel(
+                result.getPageRelativePath() + ":cells:1:cell", "csv");
+
+        TESTER.assertComponent(
+                result.getPageRelativePath() + ":cells:6:cell:panelEdit:editLink", IndicatingAjaxLink.class);
+
+        TESTER.clickLink(result.getPageRelativePath() + ":cells:6:cell:panelEdit:editLink");
+
+        TESTER.assertComponent(
+                "body:content:tabbedPanel:panel:outerObjectsRepeater:0:outer", BaseModal.class);
+    }
+
+    @Test
+    public void create() {
+        browsingToAnyTypeClasses();
+        final String anyTypeClassTest = "anyTypeClassTest";
+
+        TESTER.clickLink("body:content:tabbedPanel:panel:container:content:add");
+
+        TESTER.assertComponent(
+                "body:content:tabbedPanel:panel:outerObjectsRepeater:0:outer", Modal.class);
+
+        FormTester formTester =
+                TESTER.newFormTester("body:content:tabbedPanel:panel:outerObjectsRepeater:0:outer:form");
+        formTester.setValue("content:anyTypeClassDetailsPanel:form:key:textField", anyTypeClassTest);
+        formTester.setValue(
+                "content:anyTypeClassDetailsPanel:form:container:derSchemas:paletteField:recorder", "mderiveddata");
+
+        TESTER.clearFeedbackMessages();
+        TESTER.clickLink(
+                "body:content:tabbedPanel:panel:outerObjectsRepeater:0:outer:dialog:footer:inputs:0:submit");
+        TESTER.assertInfoMessages("Operation executed successfully");
+
+        TESTER.clearFeedbackMessages();
+        TESTER.assertRenderedPage(Types.class);
+
+        TESTER.clickLink("body:content:tabbedPanel:tabs-container:tabs:2:link");
+        TESTER.assertComponent(DATATABLE_PATH + ":tablePanel:groupForm:checkgroup:dataTable",
+                AjaxFallbackDataTable.class);
+
+        TESTER.assertComponent(DATATABLE_PATH, AjaxDataTablePanel.class);
+
+        Component result = findComponentByProp(KEY, DATATABLE_PATH, anyTypeClassTest);
+
+        TESTER.assertLabel(result.getPageRelativePath() + ":cells:3:cell", "[mderiveddata]");
+    }
+
+    @Test
+    public void update() {
+        final String plainSchema = "anyPlainSchema";
+        createPlainSchema(plainSchema);
+        browsingToAnyTypeClasses();
+
+        TESTER.assertComponent(
+                DATATABLE_PATH
+                + ":tablePanel:groupForm:checkgroup:dataTable:"
+                + "body:rows:1:cells:6:cell:panelEdit:editLink", IndicatingAjaxLink.class);
+
+        TESTER.clickLink(
+                DATATABLE_PATH
+                + ":tablePanel:groupForm:checkgroup:dataTable:body:rows:1:cells:6:cell:panelEdit:editLink");
+
+        final FormTester formTester =
+                TESTER.newFormTester("body:content:tabbedPanel:panel:outerObjectsRepeater:0:outer:form");
+        formTester.setValue(
+                "content:anyTypeClassDetailsPanel:form:container:plainSchemas:paletteField:recorder", plainSchema);
+
+        TESTER.clickLink(
+                "body:content:tabbedPanel:panel:outerObjectsRepeater:0:outer:dialog:footer:inputs:0:submit");
+        TESTER.assertInfoMessages("Operation executed successfully");
+    }
+
+    @Test
+    public void delete() {
+        final String anyTypeClassName = "zStringDelete";
+        createAnyTypeClassWithoutSchema(anyTypeClassName);
+        browsingToAnyTypeClasses();
+        TESTER.assertComponent(DATATABLE_PATH, AjaxDataTablePanel.class);
+
+        Component result = findComponentByProp(KEY, DATATABLE_PATH, anyTypeClassName);
+
+        assertNotNull(result);
+        TESTER.assertComponent(
+                result.getPageRelativePath() + ":cells:6:cell:panelDelete:deleteLink",
+                IndicatingOnConfirmAjaxLink.class);
+
+        TESTER.getRequest().addParameter("confirm", "true");
+        TESTER.clickLink(TESTER.getComponentFromLastRenderedPage(
+                result.getPageRelativePath() + ":cells:6:cell:panelDelete:deleteLink"));
+
+        TESTER.executeAjaxEvent(TESTER.getComponentFromLastRenderedPage(
+                result.getPageRelativePath() + ":cells:6:cell:panelDelete:deleteLink"), "click");
+        TESTER.assertInfoMessages("Operation executed successfully");
+
+        TESTER.cleanupFeedbackMessages();
+        result = findComponentByProp(KEY, DATATABLE_PATH, anyTypeClassName);
+
+        assertNull(result);
+    }
+}

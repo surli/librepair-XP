@@ -1,0 +1,125 @@
+//
+// Licensed to the Apache Software Foundation (ASF) under one
+// or more contributor license agreements.  See the NOTICE file
+// distributed with this work for additional information
+// regarding copyright ownership.  The ASF licenses this file
+// to you under the Apache License, Version 2.0 (the
+// "License"); you may not use this file except in compliance
+// with the License.  You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing,
+// software distributed under the License is distributed on an
+// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+// KIND, either express or implied.  See the License for the
+// specific language governing permissions and limitations
+// under the License.
+//
+=== Users, Groups and Any Objects
+
+Users, Groups and Any Objects are definitely the key entities to manage: as explained <<introduction,above>>
+in fact, the whole identity management concept is literally about managing identity data.
+
+Starting with Apache Syncope 2.0, the following identities are supported:
+
+* *Users* represent the virtual identities build up of account information fragmented across the associated external 
+resources
+* *Groups* have the dual purpose of representing entities on external resources supporting this concept (say LDAP or
+Active Directory) and putting together Users or Any Objects for implementing group-based provisioning, e.g. to
+dynamically associate Users or Any Objects to external resources
+* *Any Objects* actually cover very different entities that can be modeled: printers, services, sensors, ...
+
+For each of the identities above, Apache Syncope is capable of maintaining:
+
+. `name` (`username`, for Users) - string value uniquely identifying a specific user, group or any object instance;
+. `password` (Users only) - hashed or encrypted value, depending on the selected `password.cipher.algorithm` - see
+<<configuration-parameters, below>> for details - which can be used for authentication;
+. set of attributes, with each attribute being a `(key,values)` pair where
+
+ ** `key` is a string label (e.g. `surname`);
+ ** `values` is a (possibly singleton) collection of data (e.g. `[Doe]` but also 
+`[\john.doe@syncope.apache.org, \jdoe@gmail.com]`)
+ ; the type of values that can be assigned to each attribute is defined via the <<schema,schema>> matching the `key`
+value (e.g. _plain_, _derived_ and _virtual_);
+. associations with <<external-resources,external resources>>, for <<provisioning,provisioning>>.
+
+[IMPORTANT]
+.Which schemas can be populated for a given user / group / any object?
+====
+Each user / group / any object will be able to hold values for all schemas:
+
+. defined in the <<AnyTypeClass,Any Type classes>> associated to their <<AnyType, Any Type>>;
+. defined in the <<AnyTypeClass,Any Type classes>> configured as *_auxiliary_* for the specific instance.
+====
+
+Moreover, Users and Any Objects can be part of Groups, or associated to other any objects.
+
+[[memberships-relationships]]
+[NOTE]
+.Memberships and Relationships
+====
+When an user or an any object is assigned to a group, a *_membership_* is defined; the (static) members of a group
+benefit from <<type-extensions,type extensions>>.
+
+When an user or an any object is associated to another any object, a *_relationship_* is defined, of one of available
+<<relationshiptype,relationship types>>.
+====
+
+[TIP]
+.Static and Dynamic Memberships
+====
+Users and Any Objects are _statically_ assigned to Groups when memberships are explicitly set.
+
+With group definition, however, a condition can be expressed so that all matching Users and Any Objects are
+_dynamic_ members of the group. +
+Dynamic memberships have some limitations: for example, <<type-extensions,type extensions>> do not apply;
+group-based provisioning is still effective.
+====
+
+==== Password Reset
+
+When users lost their password, a feature is available to help gaining back access to Apache Syncope: password reset.
+
+The process can be outlined as follows:
+
+. user asks for password reset, typically via <<enduser-component,end-user>>
+. user is asked to provide an answer to the security question that was selected during self-registration or self-update
+. if the expected answer is provided, a unique token with time-constrained validity is internally generated and an
+e-mail is sent to the configured address for the user with a link - again, typically to the
+<<enduser-component,end-user>> - containing such token value
+. user clicks on the received link and provides new password value, typically via <<enduser-component,end-user>>
+. user receives confirmation via e-mail
+
+[WARNING]
+====
+The outlined procedure requires a working <<e-mail-configuration,e-mail configuration>>.
+
+In particular:
+
+* the first e-mail is generated from the `requestPasswordReset` <<notification-templates, notification template>>:
+hence, the token-based access link to the <<enduser-component,end-user>> is managed there;
+* the second e-mail is generated from the `confirmPasswordReset` <<notification-templates, notification template>>.
+====
+
+[TIP]
+====
+The process above requires the availability of <<console-configuration-security-questions,security questions>> that
+users can pick up and provide answers for.
+
+The usage of security questions can be however disabled by setting the `passwordReset.securityQuestion` value - see
+<<configuration-parameters, below>> for details.
+====
+
+[[password-reset-no-security-answer]]
+[WARNING]
+====
+Once provided via Enduser Application, the answers to security questions are *never* reported, neither via REST or Admin UI to
+administrators, nor to end-users via Enduser Application.
+
+This to avoid any information disclosure which can potentially lead attackers to reset other users' passwords.
+====
+
+[NOTE]
+In addition to the password reset feature, administrators can set a flag on a given user so that he / she is forced to
+update their password value at next login.

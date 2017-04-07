@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+  <properties>
+    <title>Building</title>
+    <author email="dev@syncope.apache.org">Apache Syncope Documentation Team</author>
+  </properties>
+
+  <body>    
+    <div class="toc_container">
+      <macro name="toc">
+        <param name="class" value="toc"/>
+      </macro>
+    </div>
+
+    <section name="Prerequisites">
+      <p>
+        <ul>
+          <li>JDK 7 or higher for &le; 2.0; JDK 8 or higher for later versions</li>
+          <li>
+            <a href="http://maven.apache.org/download.html">Apache Maven</a> 3.0.3 or higher</li>
+          <li>
+            <a href="source-repository.html">Latest source code</a>
+          </li>
+        </ul>
+      </p>
+    </section>   
+
+    <section name="Building Syncope">
+      <p>
+        Before building Syncope, you need to setup an environment variable to give Maven more memory.
+      </p>
+      <p>
+        On Unix
+        <source>export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"</source>
+      </p>
+      <p>
+        On Windows
+        <source>set MAVEN_OPTS=-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m</source>
+      </p>
+      <p>
+        To build Syncope simply execute (from within the top-level source directory):
+        <source>$ mvn clean install</source>
+      </p>
+      <p>
+        To build Syncope without running any test nor check do:
+        <source>$ mvn -PskipTests,all</source>
+      </p>
+    </section>
+    
+    <section name="Building documentation">
+      <p>
+        To build Syncope documentation execute (from within the top-level source directory):
+        <source>$ mvn -N -P site clean generate-resources</source>
+        The documentation artifacts are now be available under <tt>target/generated-docs/</tt>.
+      </p>
+    </section>
+
+    <section name="More build profiles">
+      <p>
+        Besides default, other Maven 
+        <a href="http://maven.apache.org/guides/introduction/introduction-to-profiles.html">build profiles</a> are
+        provided, for developer convenience.<br/>
+        Such profiles are limited to a specific module, hence Maven needs to be invoked from the corresponding 
+        subdirectory, not from top-level.
+      </p>
+      <subsection name="fit/core-reference">
+        <h4>application/xml</h4>
+        By default, integration tests are run using <code>application/json</code> for both <code>Accept</code> and
+        <code>Content-Type</code> HTTP headers; it is possible, however, to use <code>application/xml</code>.
+        <source>$ mvn clean verify -DjaxrsContentType=application/xml</source>
+        
+        <h4>Debug</h4>
+        Starts the full environment used by integration tests (with same components available when running new project
+        in <a href="docs/getting-started.html#paths-and-components">embedded mode</a>
+        but console) and enables remote JPDA debugging on port 8000 in the running Java EE container (Tomcat).
+        <source>$ mvn -Pdebug,all</source>
+        or, without Activiti and Camel support
+        <source>$ mvn -Pdebug</source>
+
+        <p>
+          Once started in debug mode, individual test methods can be executed as follows (the
+          <a href="https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html">
+            Maven Surefire Plugins rules</a> apply here):
+          <source>$ mvn test -Dtest=UserITCase#list</source>
+        </p>
+
+        <h4>JRebel</h4>
+        As with Debug, but with <a href="http://zeroturnaround.com/software/jrebel/">JRebel</a> features enabled.
+        <source>$ export REBEL_HOME=/opt/jrebel
+$ mvn -Pjrebel,all</source>
+        or, without Activiti and Camel support
+        <source>$ export REBEL_HOME=/opt/jrebel
+$ mvn -Pjrebel</source>
+
+        <h4>DBMSes</h4>
+
+        <h5>PostgreSQL</h5>
+        After providing connection information in <code>src/main/resources/postgres/domains/Master.properties</code>,
+        perform the full test suite against a real <a href="http://www.postgresql.org/">PostgreSQL</a> database via
+        <source>$ mvn -Ppostgres-it</source>
+
+        <h5>MySQL</h5>
+        After providing connection information in <code>src/main/resources/mysql/domains/Master.properties</code>,
+        perform the full test suite against a real <a href="http://www.mysql.com/">MySQL</a> database via
+        <source>$ mvn -Pmysql-it</source>
+
+        <h5>MariaDB</h5>
+        After providing connection information in <code>src/main/resources/mariadb/domains/Master.properties</code>,
+        perform the full test suite against a <a href="https://mariadb.org/">MariaDB</a> database via
+        <source>$ mvn -Pmariadb-it</source>
+
+        <h5>Oracle database</h5>
+        After providing connection information in <code>src/main/resources/oracle/domains/Master.properties</code>
+        and having <a href="http://www.mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/">
+          set up the appropriate JDBC driver in your local Maven repository</a>, perform the full test suite
+        against a real <a href="http://www.oracle.com/products/database/">Oracle</a> database via
+        <source>$ mvn -Poracle-it</source>
+
+        <h5>MS SQL Server</h5>
+        After providing connection information in <code>src/main/resources/sqlserver/domains/Master.properties</code>
+        and having <a href="http://claude.betancourt.us/add-microsoft-sql-jdbc-driver-to-maven/">
+          set up the appropriate JDBC driver in your local Maven repository</a>, perform the full test suite
+        against a real <a href="http://www.microsoft.com/sqlserver/en/us/default.aspx">MS SQL Server</a> database via
+        <source>$ mvn -Psqlserver-it</source>
+
+        <h4>Java EE containers</h4>
+
+        <h5>Glassfish</h5>
+        Perform the full test suite by deploying Syncope core in 
+        <a href="https://glassfish.java.net/">Glassfish</a> via
+        <source>$ mvn -Pglassfish-it</source>
+
+        <h5>Payara</h5>
+        Perform the full test suite by deploying Syncope core in 
+        <a href="http://www.payara.fish/">Payara</a> via
+        <source>$ mvn -Ppayara-it</source>
+
+        <h5>Wildfly</h5>
+        Perform the full test suite by deploying Syncope core in 
+        <a href="http://www.wildfly.org">Wildfly</a> via
+        <source>$ mvn -Pjboss-it</source>
+      </subsection>
+      
+      <subsection name="fit/console-reference">
+        <h4>Debug</h4>
+        Starts the full environment used by core's integration tests (with same components available when running new 
+        project in <a href="docs/getting-started.html#paths-and-components">embedded mode</a>, including console) and 
+        enables remote JPDA debugging on port 8000 in the running Java EE container (Tomcat).
+        <source>$ mvn -Pdebug</source>
+
+        <h4>JRebel</h4>
+        As with Debug, but with <a href="http://zeroturnaround.com/software/jrebel/">JRebel</a> features enabled.
+        <source>$ export REBEL_HOME=/opt/jrebel
+$ mvn -Pjrebel</source>
+      </subsection>
+      
+      <subsection name="fit/enduser-reference">
+        <h4>Debug</h4>
+        Starts the full environment used by core's integration tests (with same components available when running new 
+        project in <a href="docs/getting-started.html#paths-and-components">embedded mode</a>, including console and 
+        enduser) and enables remote JPDA debugging on port 8000 in the running Java EE container (Tomcat).
+        <source>$ mvn -Pdebug</source>
+
+        <p>
+          Once started in debug mode, the test cases can be executed as follows:
+          <source>$ cd target/enduser-test
+$ nodejs/node/node nodejs/bin/protractor protractor-conf.js</source>
+          where the actual tests to be run can be selected by modifying the <code>protractor-conf.js</code> content.
+        </p>
+
+        <h4>JRebel</h4>
+        As with Debug, but with <a href="http://zeroturnaround.com/software/jrebel/">JRebel</a> features enabled.
+        <source>$ export REBEL_HOME=/opt/jrebel
+$ mvn -Pjrebel</source>
+      </subsection>
+
+      <subsection name="ide/eclipse/bundles/org.apache.syncope.ide.eclipse.tests">
+        <h4>Eclipse IDE Plugin</h4>
+        Starts the full environment used by core's integration tests (with same components available when running new 
+        project in <a href="docs/getting-started.html#paths-and-components">embedded mode</a>, and runs the Eclipse IDE
+        plugin tests against it. Cannot run headless.
+        <source>$ mvn -Peclipse-it</source>
+      </subsection>
+    </section>
+  </body>
+</document>
