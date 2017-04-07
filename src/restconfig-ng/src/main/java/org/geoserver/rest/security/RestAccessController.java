@@ -2,7 +2,7 @@
  * This code is licensed under the GPL 2.0 license, available at the root
  * application directory.
  */
-package org.geoserver.security.rest;
+package org.geoserver.rest.security;
 
 import java.util.Map;
 import java.util.Map.Entry;
@@ -49,7 +49,7 @@ public class RestAccessController extends AbstractAclController {
             return "Invalid '" + ruleKey + "' not matching " + KEYPATTERN;
         return null;
     }
-    
+
     @Override
     protected String getBasePath() {
         return "/security/acl/rest";
