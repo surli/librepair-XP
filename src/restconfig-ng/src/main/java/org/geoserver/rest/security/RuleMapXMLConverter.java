@@ -2,7 +2,7 @@
  * This code is licensed under the GPL 2.0 license, available at the root
  * application directory.
  */
-package org.geoserver.security.rest;
+package org.geoserver.rest.security;
 
 import java.util.List;
 import java.util.Map;
@@ -23,7 +23,7 @@ public class RuleMapXMLConverter extends MapXMLConverter {
     final static String RULEELEMENT = "rule";
 
     final static String RESOURCEATTR = "resource";
-    
+
     @Override
     public int getPriority() {
         // pretty specific, but leave some room for more specific converters just in case
@@ -60,7 +60,7 @@ public class RuleMapXMLConverter extends MapXMLConverter {
         } else {
             throw new IllegalArgumentException();
         }
-        
+
     }
 
     /**
