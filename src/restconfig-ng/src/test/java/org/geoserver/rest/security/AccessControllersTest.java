@@ -2,7 +2,7 @@
  * This code is licensed under the GPL 2.0 license, available at the root
  * application directory.
  */
-package org.geoserver.security.rest;
+package org.geoserver.rest.security;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -24,7 +24,7 @@ import net.sf.json.JSONObject;
 
 /**
  * Test for {@link DataAccessController},{@link ServiceAccessController} and {@link RestAccessController}
- * 
+ *
  * @author christian
  *
  */
@@ -101,9 +101,9 @@ public class AccessControllersTest extends SecurityRESTTestSupport {
 
     /**
      * Checks role strings for equality
-     * 
+     *
      * e. g. ROLE1,ROLE2 is equal to ROLE2,ROLE1
-     * 
+     *
      * @param roleString1
      * @param roleString2
      *
@@ -614,7 +614,7 @@ public class AccessControllersTest extends SecurityRESTTestSupport {
         assertEquals(403, deleteAsServletResponse(SERVICE_URI + "/fakerule").getStatus());
         assertEquals(403, deleteAsServletResponse(REST_URI + "/fakerule").getStatus());
 
-        
+
         String jsonTemplate = "{\"" + CatalogModeController.MODE_ELEMENT + "\":\"MIXED\"}";
         String xmlTemplate = "<" + CatalogModeController.XML_ROOT_ELEM + ">" + "\n";
         xmlTemplate += " <" + CatalogModeController.MODE_ELEMENT + ">MIXED";
