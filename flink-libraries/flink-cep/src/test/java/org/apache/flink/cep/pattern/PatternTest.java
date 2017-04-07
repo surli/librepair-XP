@@ -23,6 +23,8 @@ import org.apache.flink.cep.SubEvent;
 import org.apache.flink.cep.pattern.conditions.OrCondition;
 import org.apache.flink.cep.pattern.conditions.SimpleCondition;
 import org.apache.flink.cep.pattern.conditions.SubtypeCondition;
+import org.apache.flink.cep.pattern.quantifier.Quantifier;
+import org.apache.flink.cep.pattern.quantifier.Quantifier.ConsumingStrategy;
 import org.apache.flink.util.TestLogger;
 import org.junit.Test;
 
@@ -58,8 +60,8 @@ public class PatternTest extends TestLogger {
 		assertNotNull(previous2 = previous.getPrevious());
 		assertNull(previous2.getPrevious());
 
-		assertTrue(pattern instanceof FollowedByPattern);
-		assertTrue(previous instanceof FollowedByPattern);
+		assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, pattern.getQuantifier().getConsumingStrategy());
+		assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, previous.getQuantifier().getConsumingStrategy());
 
 		assertEquals(pattern.getName(), "end");
 		assertEquals(previous.getName(), "next");
@@ -137,7 +139,7 @@ public class PatternTest extends TestLogger {
 		assertNotNull(previous2 = previous.getPrevious());
 		assertNull(previous2.getPrevious());
 
-		assertTrue(pattern instanceof FollowedByPattern);
+		assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, pattern.getQuantifier().getConsumingStrategy());
 		assertNotNull(previous.getCondition());
 
 		assertEquals(pattern.getName(), "end");
@@ -177,7 +179,7 @@ public class PatternTest extends TestLogger {
 		assertNotNull(previous2 = previous.getPrevious());
 		assertNull(previous2.getPrevious());
 
-		assertTrue(pattern instanceof FollowedByPattern);
+		assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, pattern.getQuantifier().getConsumingStrategy());
 		assertFalse(previous.getCondition() instanceof OrCondition);
 		assertTrue(previous2.getCondition() instanceof OrCondition);
 

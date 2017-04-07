@@ -24,6 +24,11 @@ import org.apache.flink.cep.pattern.conditions.AndCondition;
 import org.apache.flink.cep.pattern.conditions.IterativeCondition;
 import org.apache.flink.cep.pattern.conditions.OrCondition;
 import org.apache.flink.cep.pattern.conditions.SubtypeCondition;
+import org.apache.flink.cep.pattern.quantifier.Quantifier;
+import org.apache.flink.cep.pattern.quantifier.QuantifierComplex;
+import org.apache.flink.cep.pattern.quantifier.QuantifierLooping;
+import org.apache.flink.cep.pattern.quantifier.QuantifierSingleton;
+import org.apache.flink.cep.pattern.quantifier.QuantifierTimes;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.util.Preconditions;
 
@@ -57,9 +62,7 @@ public class Pattern<T, F extends T> {
 	// window length in which the pattern match has to occur
 	private Time windowTime;
 
-	private Quantifier quantifier = Quantifier.ONE;
-
-	private int times;
+	private Quantifier quantifier = new QuantifierSingleton();
 
 	protected Pattern(final String name, final Pattern<T, ? extends T> previous) {
 		this.name = name;
@@ -84,10 +87,6 @@ public class Pattern<T, F extends T> {
 
 	public Quantifier getQuantifier() {
 		return quantifier;
-	}
-
-	public int getTimes() {
-		return times;
 	}
 
 	/**
@@ -182,8 +181,27 @@ public class Pattern<T, F extends T> {
 	 * @param name Name of the new pattern operator
 	 * @return A new pattern operator which is appended to this pattern operator
 	 */
-	public FollowedByPattern<T, T> followedBy(final String name) {
-		return new FollowedByPattern<T, T>(name, this);
+	public Pattern<T, T> followedBy(final String name) {
+		return followedBy(name, false);
+	}
+
+	/**
+	 * Appends a new pattern operator to the existing one. The new pattern operator enforces
+	 * non-strict temporal contiguity. This means that a matching event of this operator and the
+	 * preceding matching event might be interleaved with other events which are ignored.
+	 *
+	 * @param name       Name of the new pattern operator
+	 * @param allMatches if false only the first matching event will be consumed
+	 * @return A new pattern operator which is appended to this pattern operator
+	 */
+	public Pattern<T, T> followedBy(final String name, boolean allMatches) {
+		final Pattern<T, T> pattern = new Pattern<>(name, this);
+		if (allMatches) {
+			pattern.quantifier.setConsumingStrategy(Quantifier.ConsumingStrategy.SKIP_TILL_ANY);
+		} else {
+			pattern.quantifier.setConsumingStrategy(Quantifier.ConsumingStrategy.SKIP_TILL_NEXT);
+		}
+		return pattern;
 	}
 
 	/**
@@ -195,7 +213,7 @@ public class Pattern<T, F extends T> {
 	 * @return The first pattern operator of a pattern
 	 */
 	public static <X> Pattern<X, X> begin(final String name) {
-		return new Pattern<X, X>(name, null);
+		return new Pattern<>(name, null);
 	}
 
 	/**
@@ -223,12 +241,10 @@ public class Pattern<T, F extends T> {
 	 * @throws MalformedPatternException if quantifier already applied
 	 */
 	public Pattern<T, F> zeroOrMore(final boolean eager) {
-		checkIfQuantifierApplied();
-		if (eager) {
-			this.quantifier = Quantifier.ZERO_OR_MORE_EAGER;
-		} else {
-			this.quantifier = Quantifier.ZERO_OR_MORE_COMBINATIONS;
-		}
+		final QuantifierLooping quantifierLooping = new QuantifierLooping(this.quantifier);
+		quantifierLooping.setOptional(true);
+		quantifierLooping.setEager(eager);
+		this.quantifier = quantifierLooping;
 		return this;
 	}
 
@@ -257,12 +273,9 @@ public class Pattern<T, F extends T> {
 	 * @throws MalformedPatternException if quantifier already applied
 	 */
 	public Pattern<T, F> oneOrMore(final boolean eager) {
-		checkIfQuantifierApplied();
-		if (eager) {
-			this.quantifier = Quantifier.ONE_OR_MORE_EAGER;
-		} else {
-			this.quantifier = Quantifier.ONE_OR_MORE_COMBINATIONS;
-		}
+		final QuantifierLooping quantifierLooping = new QuantifierLooping(this.quantifier);
+		quantifierLooping.setEager(eager);
+		this.quantifier = quantifierLooping;
 		return this;
 	}
 
@@ -305,32 +318,10 @@ public class Pattern<T, F extends T> {
 	 * @return pattern with continuity changed to strict
 	 */
 	public Pattern<T, F> consecutive() {
-		switch (this.quantifier) {
-
-			case ZERO_OR_MORE_EAGER:
-				this.quantifier = Quantifier.ZERO_OR_MORE_EAGER_STRICT;
-				break;
-			case ZERO_OR_MORE_COMBINATIONS:
-				this.quantifier = Quantifier.ZERO_OR_MORE_COMBINATIONS_STRICT;
-				break;
-			case ONE_OR_MORE_EAGER:
-				this.quantifier = Quantifier.ONE_OR_MORE_EAGER_STRICT;
-				break;
-			case ONE_OR_MORE_COMBINATIONS:
-				this.quantifier = Quantifier.ONE_OR_MORE_COMBINATIONS_STRICT;
-				break;
-			case TIMES:
-				this.quantifier = Quantifier.TIMES_STRICT;
-				break;
-			case ZERO_OR_MORE_COMBINATIONS_STRICT:
-			case ONE_OR_MORE_EAGER_STRICT:
-			case ONE_OR_MORE_COMBINATIONS_STRICT:
-			case ZERO_OR_MORE_EAGER_STRICT:
-			case TIMES_STRICT:
-				throw new MalformedPatternException("Strict continuity already applied! consecutive() called twice.");
-			case ONE:
-			case OPTIONAL:
-				throw new MalformedPatternException("Strict continuity cannot be applied to " + this.quantifier);
+		if (this.quantifier instanceof QuantifierComplex) {
+			((QuantifierComplex)this.quantifier).setStrict(true);
+		} else {
+			throw new MalformedPatternException("Strict continuity cannot be applied to " + this.quantifier);
 		}
 
 		return this;
@@ -344,8 +335,7 @@ public class Pattern<T, F extends T> {
 	 * @throws MalformedPatternException if quantifier already applied
 	 */
 	public Pattern<T, F> optional() {
-		checkIfQuantifierApplied();
-		this.quantifier = Quantifier.OPTIONAL;
+		this.quantifier.setOptional(true);
 		return this;
 	}
 
@@ -358,17 +348,11 @@ public class Pattern<T, F extends T> {
 	 * @throws MalformedPatternException if quantifier already applied
 	 */
 	public Pattern<T, F> times(int times) {
-		checkIfQuantifierApplied();
 		Preconditions.checkArgument(times > 0, "You should give a positive number greater than 0.");
-		this.quantifier = Quantifier.TIMES;
-		this.times = times;
+		final QuantifierTimes quantifierTimes = new QuantifierTimes(this.quantifier, times);
+		quantifierTimes.setEager(true);
+		this.quantifier = quantifierTimes;
 		return this;
-	}
-
-	private void checkIfQuantifierApplied() {
-		if (this.quantifier != Quantifier.ONE) {
-			throw new MalformedPatternException("Already applied quantifier to this Pattern. Current quantifier is: " + this.quantifier);
-		}
 	}
 
 }

@@ -24,6 +24,7 @@ import org.apache.flink.cep.Event
 import org.apache.flink.cep.SubEvent
 import org.apache.flink.cep.pattern.conditions.IterativeCondition.Context
 import org.apache.flink.cep.pattern.conditions._
+import org.apache.flink.cep.pattern.quantifier.Quantifier.ConsumingStrategy
 
 class PatternTest {
 
@@ -69,8 +70,8 @@ class PatternTest {
     assertTrue(previous.getPrevious.isDefined)
     assertFalse(preprevious.getPrevious.isDefined)
 
-    assertTrue(pattern.isInstanceOf[FollowedByPattern[_, _]])
-    assertTrue(previous.isInstanceOf[FollowedByPattern[_, _]])
+    assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, pattern.getQuantifier.getConsumingStrategy)
+    assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, previous.getQuantifier.getConsumingStrategy)
 
     assertEquals(pattern.getName, "end")
     assertEquals(previous.getName, "next")
@@ -178,7 +179,7 @@ class PatternTest {
     assertTrue(previous.getPrevious.isDefined)
     assertFalse(preprevious.getPrevious.isDefined)
 
-    assertTrue(pattern.isInstanceOf[FollowedByPattern[_, _]])
+    assertEquals(ConsumingStrategy.SKIP_TILL_NEXT, pattern.getQuantifier.getConsumingStrategy)
     assertTrue(previous.getCondition().isDefined)
 
     assertEquals(pattern.getName, "end")

@@ -20,7 +20,8 @@ package org.apache.flink.cep.scala.pattern
 import org.apache.flink.cep
 import org.apache.flink.cep.pattern.conditions.IterativeCondition
 import org.apache.flink.cep.pattern.conditions.IterativeCondition.Context
-import org.apache.flink.cep.pattern.{Quantifier, Pattern => JPattern}
+import org.apache.flink.cep.pattern.quantifier.Quantifier
+import org.apache.flink.cep.pattern.{Pattern => JPattern}
 import org.apache.flink.streaming.api.windowing.time.Time
 
 /**
@@ -118,9 +119,23 @@ class Pattern[T , F <: T](jPattern: JPattern[T, F]) {
     * @param name Name of the new pattern operator
     * @return A new pattern operator which is appended to this pattern operator
     */
-  def followedBy(name: String): FollowedByPattern[T, T] = {
-    FollowedByPattern(jPattern.followedBy(name))
+  def followedBy(name: String): Pattern[T, T] = {
+    Pattern[T, T](jPattern.followedBy(name))
   }
+
+  /**
+    * Appends a new pattern operator to the existing one. The new pattern operator enforces
+    * non-strict temporal contiguity. This means that a matching event of this operator and the
+    * preceding matching event might be interleaved with other events which are ignored.
+    *
+    * @param name       Name of the new pattern operator
+    * @param allMatches if false only the first matching event will be consumed
+    * @return A new pattern operator which is appended to this pattern operator
+    */
+  def followedBy(name: String, allMatches: Boolean): Pattern[T, T] = {
+    Pattern[T, T](jPattern.followedBy(name, allMatches))
+  }
+
 
   /**
     * Specifies a filter condition which has to be fulfilled by an event in order to be matched.

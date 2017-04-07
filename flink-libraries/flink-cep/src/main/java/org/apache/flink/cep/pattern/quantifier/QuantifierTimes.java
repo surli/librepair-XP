@@ -15,19 +15,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-package org.apache.flink.cep.pattern;
+package org.apache.flink.cep.pattern.quantifier;
 
 /**
- * Pattern operator which signifies that the there is a non-strict temporal contiguity between
- * itself and its preceding pattern operator. This means that there might be events in between
- * two matching events. These events are then simply ignored.
+ * A complex quantifier that accepts exact number of events into this Pattern.
  *
- * @param <T> Base type of the events
- * @param <F> Subtype of T to which the operator is currently constrained
+ * <p>For more info on possible configuration see {@link QuantifierComplex} and {@link Quantifier}
  */
-public class FollowedByPattern<T, F extends T> extends Pattern<T, F> {
-	FollowedByPattern(final String name, Pattern<T, ?> previous) {
-		super(name, previous);
+public class QuantifierTimes extends QuantifierComplex {
+
+	private int times = 0;
+
+	public QuantifierTimes(Quantifier singleton, int times) {
+		super(singleton);
+		this.times = times;
+	}
+
+	public int getTimes() {
+		return times;
 	}
 }

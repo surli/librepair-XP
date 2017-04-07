@@ -282,6 +282,24 @@ Pattern<Event, ?> nonStrictNext = start.followedBy("middle");
 val nonStrictNext : Pattern[Event, _] = start.followedBy("middle")
 {% endhighlight %}
 </div>
+
+For non-strict contiguity one can specify if only the first succeeding matching event will be matched, or
+all. In the latter case multiple matches will be emitted for the same beginning. By default only the first
+event is matched. The other strategy can be enable by adding flag to `followedBy` method.
+
+<div class="codetabs" markdown="1">
+<div data-lang="java" markdown="1">
+{% highlight java %}
+Pattern<Event, ?> nonStrictNext = start.followedBy("middle", true);
+{% endhighlight %}
+</div>
+
+<div data-lang="scala" markdown="1">
+{% highlight scala %}
+val nonStrictNext : Pattern[Event, _] = start.followedBy("middle", true)
+{% endhighlight %}
+</div>
+
 </div>
 It is also possible to define a temporal constraint for the pattern to be valid.
 For example, one can define that a pattern should occur within 10 seconds via the `within` method. 

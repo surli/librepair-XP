@@ -20,23 +20,6 @@ package org.apache.flink.cep.nfa.compiler;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterators;
-import org.apache.flink.annotation.Internal;
-import org.apache.flink.api.common.typeutils.TypeSerializer;
-import org.apache.flink.cep.nfa.NFA;
-import org.apache.flink.cep.nfa.State;
-import org.apache.flink.cep.nfa.StateTransition;
-import org.apache.flink.cep.nfa.StateTransitionAction;
-import org.apache.flink.cep.pattern.conditions.BooleanConditions;
-import org.apache.flink.cep.pattern.FollowedByPattern;
-import org.apache.flink.cep.pattern.MalformedPatternException;
-import org.apache.flink.cep.pattern.conditions.NotCondition;
-import org.apache.flink.cep.pattern.Pattern;
-import org.apache.flink.cep.pattern.Quantifier;
-import org.apache.flink.cep.pattern.Quantifier.QuantifierProperty;
-import org.apache.flink.cep.pattern.conditions.IterativeCondition;
-import org.apache.flink.streaming.api.windowing.time.Time;
-
-import javax.annotation.Nullable;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -46,6 +29,23 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import javax.annotation.Nullable;
+import org.apache.flink.annotation.Internal;
+import org.apache.flink.api.common.typeutils.TypeSerializer;
+import org.apache.flink.cep.nfa.NFA;
+import org.apache.flink.cep.nfa.State;
+import org.apache.flink.cep.nfa.StateTransition;
+import org.apache.flink.cep.nfa.StateTransitionAction;
+import org.apache.flink.cep.pattern.MalformedPatternException;
+import org.apache.flink.cep.pattern.Pattern;
+import org.apache.flink.cep.pattern.conditions.BooleanConditions;
+import org.apache.flink.cep.pattern.conditions.IterativeCondition;
+import org.apache.flink.cep.pattern.conditions.NotCondition;
+import org.apache.flink.cep.pattern.quantifier.Quantifier;
+import org.apache.flink.cep.pattern.quantifier.QuantifierComplex;
+import org.apache.flink.cep.pattern.quantifier.QuantifierLooping;
+import org.apache.flink.cep.pattern.quantifier.QuantifierTimes;
+import org.apache.flink.streaming.api.windowing.time.Time;
 
 /**
  * Compiler class containing methods to compile a {@link Pattern} into a {@link NFA} or a
@@ -163,19 +163,21 @@ public class NFACompiler {
 				checkPatternNameUniqueness();
 				usedNames.add(currentPattern.getName());
 
-				if (currentPattern.getQuantifier().hasProperty(QuantifierProperty.LOOPING)) {
+				if (currentPattern.getQuantifier() instanceof QuantifierLooping) {
+					final QuantifierLooping quantifierLooping = (QuantifierLooping) currentPattern.getQuantifier();
 					final State<T> looping = createLooping(lastSink);
 
-					if (currentPattern.getQuantifier().hasProperty(QuantifierProperty.AT_LEAST_ONE)) {
+					if (!quantifierLooping.isOptional()) {
 						lastSink = createFirstMandatoryStateOfLoop(looping);
-					} else if (currentPattern instanceof FollowedByPattern &&
-								currentPattern.getQuantifier().hasProperty(QuantifierProperty.STRICT)) {
+					} else if (quantifierLooping.getConsumingStrategy() != Quantifier.ConsumingStrategy.STRICT &&
+								quantifierLooping.isStrict()) {
 						lastSink = createWaitingStateForZeroOrMore(looping, lastSink);
 					} else {
 						lastSink = looping;
 					}
-				} else if (currentPattern.getQuantifier().hasProperty(QuantifierProperty.TIMES)) {
-					lastSink = createTimesState(lastSink, currentPattern.getTimes());
+				} else if (currentPattern.getQuantifier() instanceof QuantifierTimes) {
+					final int times = ((QuantifierTimes) currentPattern.getQuantifier()).getTimes();
+					lastSink = createTimesState(lastSink, times);
 				} else {
 					lastSink = createSingletonState(lastSink);
 				}
@@ -235,15 +237,16 @@ public class NFACompiler {
 			usedNames.add(currentPattern.getName());
 
 			final State<T> beginningState;
-			if (currentPattern.getQuantifier().hasProperty(QuantifierProperty.LOOPING)) {
+			if (currentPattern.getQuantifier() instanceof QuantifierLooping) {
 				final State<T> loopingState = createLooping(sinkState);
-				if (currentPattern.getQuantifier().hasProperty(QuantifierProperty.AT_LEAST_ONE)) {
+				if (!currentPattern.getQuantifier().isOptional()) {
 					beginningState = createFirstMandatoryStateOfLoop(loopingState);
 				} else {
 					beginningState = loopingState;
 				}
-			} else if (currentPattern.getQuantifier().hasProperty(QuantifierProperty.TIMES)) {
-				beginningState = createTimesState(sinkState, currentPattern.getTimes());
+			} else if (currentPattern.getQuantifier() instanceof QuantifierTimes) {
+				final int times = ((QuantifierTimes) currentPattern.getQuantifier()).getTimes();
+				beginningState = createTimesState(sinkState, times);
 			} else {
 				beginningState = createSingletonState(sinkState);
 			}
@@ -266,9 +269,9 @@ public class NFACompiler {
 			for (int i = 0; i < times - 1; i++) {
 				lastSink = createSingletonState(
 					lastSink,
-					!currentPattern.getQuantifier().hasProperty(QuantifierProperty.STRICT));
+					getInnerIgnoreCondition(currentPattern));
 			}
-			return createSingletonState(lastSink, currentPattern instanceof FollowedByPattern);
+			return createSingletonState(lastSink, getIgnoreCondition(currentPattern));
 		}
 
 		/**
@@ -281,7 +284,7 @@ public class NFACompiler {
 		 */
 		@SuppressWarnings("unchecked")
 		private State<T> createSingletonState(final State<T> sinkState) {
-			return createSingletonState(sinkState, currentPattern instanceof FollowedByPattern);
+			return createSingletonState(sinkState, getIgnoreCondition(currentPattern));
 		}
 
 		/**
@@ -289,31 +292,31 @@ public class NFACompiler {
 		 * of a similar state without the PROCEED edge, so that for each PROCEED transition branches
 		 * in computation state graph  can be created only once.
 		 *
-		 * @param addIgnore if any IGNORE should be added
+		 * @param ignoreCondition condition that should be applied to IGNORE transition
 		 * @param sinkState state that the state being converted should point to
 		 * @return the created state
 		 */
 		@SuppressWarnings("unchecked")
-		private State<T> createSingletonState(final State<T> sinkState, boolean addIgnore) {
+		private State<T> createSingletonState(final State<T> sinkState, final IterativeCondition<T> ignoreCondition) {
 			final IterativeCondition<T> currentFilterFunction = (IterativeCondition<T>) currentPattern.getCondition();
 			final IterativeCondition<T> trueFunction = BooleanConditions.trueFunction();
 
 			final State<T> singletonState = createNormalState();
 			singletonState.addTake(sinkState, currentFilterFunction);
 
-			if (currentPattern.getQuantifier() == Quantifier.OPTIONAL) {
+			if (currentPattern.getQuantifier().isOptional()) {
 				singletonState.addProceed(sinkState, trueFunction);
 			}
 
-			if (addIgnore) {
+			if (ignoreCondition != null) {
 				final State<T> ignoreState;
-				if (currentPattern.getQuantifier() == Quantifier.OPTIONAL) {
+				if (currentPattern.getQuantifier().isOptional()) {
 					ignoreState = createNormalState();
 					ignoreState.addTake(sinkState, currentFilterFunction);
 				} else {
 					ignoreState = singletonState;
 				}
-				singletonState.addIgnore(ignoreState, trueFunction);
+				singletonState.addIgnore(ignoreState, ignoreCondition);
 			}
 			return singletonState;
 		}
@@ -332,8 +335,8 @@ public class NFACompiler {
 			final State<T> firstState = createNormalState();
 
 			firstState.addTake(sinkState, currentFilterFunction);
-			if (currentPattern instanceof FollowedByPattern) {
-				final IterativeCondition<T> ignoreCondition = getIgnoreCondition(currentPattern);
+			final IterativeCondition<T> ignoreCondition = getIgnoreCondition(currentPattern);
+			if (ignoreCondition != null) {
 				firstState.addIgnore(ignoreCondition);
 			}
 			return firstState;
@@ -356,10 +359,10 @@ public class NFACompiler {
 
 			loopingState.addProceed(sinkState, trueFunction);
 			loopingState.addTake(filterFunction);
-			if (!currentPattern.getQuantifier().hasProperty(QuantifierProperty.STRICT)) {
-				final State<T> ignoreState = createNormalState();
+			final IterativeCondition<T> ignoreCondition = getInnerIgnoreCondition(currentPattern);
 
-				final IterativeCondition<T> ignoreCondition = getIgnoreCondition(currentPattern);
+			if (ignoreCondition != null) {
+				final State<T> ignoreState = createNormalState();
 
 				ignoreState.addTake(loopingState, filterFunction);
 				ignoreState.addIgnore(ignoreCondition);
@@ -383,16 +386,52 @@ public class NFACompiler {
 
 		/**
 		 * @return The {@link IterativeCondition condition} for the {@code IGNORE} edge
-		 * that corresponds to the specified {@link Pattern}. If the pattern is
-		 * {@link QuantifierProperty#EAGER}, the negated user-specified condition is
-		 * returned. In other case, a condition that always evaluated to {@code true} is
-		 * returned.
+		 * that corresponds to the specified {@link Pattern}. It is applicable only for inner states of a complex
+		 * state like looping or times. For more on the strategy see {@link QuantifierComplex}.
 		 */
-		private IterativeCondition<T> getIgnoreCondition(Pattern<T, ?> pattern) {
-			return pattern.getQuantifier().hasProperty(QuantifierProperty.EAGER)
-					? new NotCondition<>((IterativeCondition<T>) pattern.getCondition())
-					: BooleanConditions.<T>trueFunction();
+		@SuppressWarnings("unchecked")
+		private IterativeCondition<T> getInnerIgnoreCondition(Pattern<T, ?> pattern) {
+			if (pattern.getQuantifier() instanceof QuantifierComplex) {
+				final QuantifierComplex quantifierComplex = (QuantifierComplex) pattern.getQuantifier();
+
+				if (quantifierComplex.isStrict() && quantifierComplex.isEager()) {
+					//no inner branching and no invalid elements in between
+					return null;
+				} else if (quantifierComplex.isStrict() && !quantifierComplex.isEager()) {
+					//inner branching and no invalid elements in between
+					return (IterativeCondition<T>) pattern.getCondition();
+				} else if (!quantifierComplex.isStrict() && quantifierComplex.isEager()) {
+					//no inner branching but possible invalid elements in between
+					return new NotCondition<>((IterativeCondition<T>) pattern.getCondition());
+				} else {
+					//inner branching and possible invalid elements in between
+					return BooleanConditions.trueFunction();
+				}
+
+			}
+
+			return null;
 		}
+
+
+		/**
+		 * @return The {@link IterativeCondition condition} for the {@code IGNORE} edge
+		 * that corresponds to the specified {@link Pattern}. For more on strategy see {@link Quantifier}
+		 */
+		@SuppressWarnings("unchecked")
+		private IterativeCondition<T> getIgnoreCondition(Pattern<T, ?> pattern) {
+			switch (pattern.getQuantifier().getConsumingStrategy()) {
+				case STRICT:
+					return null;
+				case SKIP_TILL_NEXT:
+					return new NotCondition<>((IterativeCondition<T>) pattern.getCondition());
+				case SKIP_TILL_ANY:
+					return BooleanConditions.trueFunction();
+			}
+
+			return null;
+		}
+
 	}
 
 	/**

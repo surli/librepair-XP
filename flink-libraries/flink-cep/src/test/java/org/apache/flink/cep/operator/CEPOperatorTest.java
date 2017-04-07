@@ -522,7 +522,7 @@ public class CEPOperatorTest extends TestLogger {
 							return value.getName().equals("start");
 						}
 					})
-					.followedBy("middle").subtype(SubEvent.class).where(new SimpleCondition<SubEvent>() {
+					.followedBy("middle", true).subtype(SubEvent.class).where(new SimpleCondition<SubEvent>() {
 						private static final long serialVersionUID = 6215754202506583964L;
 
 						@Override
@@ -530,7 +530,7 @@ public class CEPOperatorTest extends TestLogger {
 							return value.getVolume() > 5.0;
 						}
 					})
-					.followedBy("end").where(new SimpleCondition<Event>() {
+					.followedBy("end", true).where(new SimpleCondition<Event>() {
 						private static final long serialVersionUID = 7056763917392056548L;
 
 						@Override
