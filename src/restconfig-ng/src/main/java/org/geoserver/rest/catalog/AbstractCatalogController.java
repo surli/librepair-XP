@@ -26,13 +26,13 @@ import java.util.List;
 /**
  * Base controller for catalog info requests
  */
-public abstract class CatalogController extends RestBaseController {
+public abstract class AbstractCatalogController extends RestBaseController {
 
     protected final Catalog catalog;
     protected final GeoServerDataDirectory dataDir;
     protected final List<String> validImageFileExtensions;
 
-    public CatalogController(Catalog catalog) {
+    public AbstractCatalogController(Catalog catalog) {
         super();
         this.catalog = catalog;
         this.dataDir = new GeoServerDataDirectory(catalog.getResourceLoader());
@@ -100,7 +100,7 @@ public abstract class CatalogController extends RestBaseController {
             throw new RuntimeException("This is unexpected, the layer seems to be mis-configured", e);
         }
     }
-    
+
     /**
      * Determines if the current user is authenticated as full administrator.
      */
@@ -111,7 +111,7 @@ public abstract class CatalogController extends RestBaseController {
         return GeoServerExtensions.bean(GeoServerSecurityManager.class).
                 checkAuthenticationForAdminRole();
     }
-    
+
     /**
      * Validates the current user can edit the resource (full admin required if workspaceName is null)
      * @param workspaceName
@@ -119,7 +119,7 @@ public abstract class CatalogController extends RestBaseController {
     protected void checkFullAdminRequired(String workspaceName) {
         // global workspaces/styles can only be edited by a full admin
         if (workspaceName == null && !isAuthenticatedAsAdmin()) {
-            throw new RestException("Cannot edit global resource , full admin credentials required", 
+            throw new RestException("Cannot edit global resource , full admin credentials required",
                     HttpStatus.METHOD_NOT_ALLOWED);
         }
     }
