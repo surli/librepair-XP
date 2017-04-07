@@ -30,14 +30,19 @@ public class XStreamXMLMessageConverter extends XStreamMessageConverter<Object> 
 
     @Override
     protected boolean supports(Class<?> clazz) {
-        return RestWrapper.class.isAssignableFrom(clazz) && !RestListWrapper.class.isAssignableFrom(clazz);
+        if( RestWrapper.class.isAssignableFrom(clazz) ){
+            return !RestListWrapper.class.isAssignableFrom(clazz); // we can only read RestWrapper, not RestListWrapper
+        }
+        return true; // reading objects is fine
     }
 
-    @Override
-    public boolean canRead(Class<?> clazz, MediaType mediaType) {
-        return !RestListWrapper.class.isAssignableFrom(clazz) && canRead(mediaType);
-    }
-
+    //
+    // reading
+    //
+//    @Override
+//    public boolean canRead(Class<?> clazz, MediaType mediaType) {
+//        return !RestListWrapper.class.isAssignableFrom(clazz) && canRead(mediaType);
+//    }
 
 
     @Override
@@ -51,7 +56,16 @@ public class XStreamXMLMessageConverter extends XStreamMessageConverter<Object> 
         return p.load(inputMessage.getBody(), clazz);
     }
 
-
+    //
+    // writing
+    //
+    @Override
+    public boolean canWrite(Class<?> clazz, MediaType mediaType) {
+        if( RestListWrapper.class.isAssignableFrom(clazz) ){
+            return false; // we can only write RestWrapper, not RestListWrapper
+        }
+        return RestWrapper.class.isAssignableFrom(clazz) && canWrite(mediaType);
+    }
     @Override
     protected void writeInternal(Object o, HttpOutputMessage outputMessage)
             throws IOException, HttpMessageNotWritableException {
@@ -71,10 +85,10 @@ public class XStreamXMLMessageConverter extends XStreamMessageConverter<Object> 
     public String getExtension() {
         return "xml";
     }
-    
+
     @Override
     public String getMediaType() {
-        return MediaType.TEXT_XML_VALUE;
+        return MediaType.APPLICATION_XML_VALUE;
     }
 
     @Override
