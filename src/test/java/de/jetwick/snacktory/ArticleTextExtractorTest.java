@@ -36,6 +36,14 @@ public class ArticleTextExtractorTest {
     }
 
     @Test
+    public void testDataTrumpElection() throws Exception {
+//        JResult res = extractor.extractContent(readFileAsString("trump_election_protest.html"));
+        JResult res = extractor.extractContent(c.streamToString(getClass().getResourceAsStream("trump_election_protest.html")));
+        assertEquals("‘Not Our President’: Protests Spread After Donald Trump’s Election - The New York Times", res.getTitle());
+        assertTrue(res.getText(), res.getText().startsWith("Thousands of people across the country marched, shut down highways, burned effigies and shouted angry slogans on Wednesday night to protest the election of Donald J. Trump as president."));
+    }
+
+    @Test
     public void testData2() throws Exception {
         // http://benjaminste.in/post/1223476561/hey-guys-whatcha-doing
         JResult res = extractor.extractContent(readFileAsString("test_data/2.html"));

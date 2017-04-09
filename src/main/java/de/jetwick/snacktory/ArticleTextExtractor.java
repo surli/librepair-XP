@@ -126,6 +126,7 @@ public class ArticleTextExtractor {
     }
 
     public JResult extractContent(JResult res, Document doc, OutputFormatter formatter) throws Exception {
+        String finalText ="" ;
         if (doc == null)
             throw new NullPointerException("missing document");
 
@@ -149,7 +150,6 @@ public class ArticleTextExtractor {
                     break;
             }
         }
-
         if (bestMatchElement != null) {
             List<ImageResult> images = new ArrayList<ImageResult>();
             Element imgEl = determineImageSource(bestMatchElement, images);
@@ -157,16 +157,23 @@ public class ArticleTextExtractor {
                 res.setImageUrl(SHelper.replaceSpaces(imgEl.attr("src")));
                 // TODO remove parent container of image if it is contained in bestMatchElement
                 // to avoid image subtitles flooding in
-
                 res.setImages(images);
             }
 
+            // concatTextIfMultipleNodesExist method returns text/content only if message/story body is beleived to be in multiple sections on the page
+            // and not all segments are concatenated and returned by default.
+            String bestMatchElementParentNodeName = bestMatchElement.parent().className().toLowerCase();
+            if (bestMatchElementParentNodeName != null && !bestMatchElementParentNodeName.isEmpty()) {
+                finalText = concatTextIfMultipleNodesExist(formatter, nodes, bestMatchElementParentNodeName);
+            }
             // clean before grabbing text
-            String text = formatter.getFormattedText(bestMatchElement);
-            text = removeTitleFromText(text, res.getTitle());
+            if(finalText == null || finalText.isEmpty() || finalText.equals("")) {
+                finalText = formatter.getFormattedText(bestMatchElement);
+            }
+            finalText = removeTitleFromText(finalText, res.getTitle());
             // this fails for short facebook post and probably tweets: text.length() > res.getDescription().length()
-            if (text.length() > res.getTitle().length()) {
-                res.setText(text);
+            if (finalText.length() > res.getTitle().length()) {
+                res.setText(finalText);
 //                print("best element:", bestMatchElement);
             }
             res.setTextList(formatter.getTextList(bestMatchElement));
@@ -181,6 +188,57 @@ public class ArticleTextExtractor {
         res.setFaviconUrl(extractFaviconUrl(doc));
         res.setKeywords(extractKeywords(doc));
         return res;
+    }
+
+    private String concatTextIfMultipleNodesExist(OutputFormatter formatter,  Collection<Element> nodes, String bestMatchElementParentNodeName) {
+        StringBuilder finalContent = new StringBuilder();
+        List<Element> parentNodes = new ArrayList<Element>();
+        List<Element> nodesWithSignificantWeight = new ArrayList<Element>();
+        int minWeightToConcat =100;
+
+        // Find if there are other nodes with the same name as parent node to see if that content needs to be included
+        for (Element node: nodes) {
+            if (node.className().toLowerCase().equals(bestMatchElementParentNodeName)) {
+                parentNodes.add(node);
+            }
+        }
+
+        // In some scenarios the above call results in duplication of nodes. Following code selects distinct ones.
+        // To Do: may be the best way is to select distinct nodes in the above code itself.
+
+        if (parentNodes.size() >1) {
+            for (int i = 0; i < parentNodes.size(); i++) {
+                boolean isRepeated = false;
+                for (int j = 0; j < i; j++) {
+                    List<String> childNamesI = new ArrayList<String>();
+                    List<String> childNamesJ = new ArrayList<String>();
+                    for (int ci = 0; ci < parentNodes.get(i).children().size(); ci++) {
+                        childNamesI.add(parentNodes.get(i).child(ci).className().toLowerCase());
+                    }
+                    for (int cj = 0; cj < parentNodes.get(j).children().size(); cj++) {
+                        childNamesJ.add(parentNodes.get(j).child(cj).className().toLowerCase());
+                    }
+                    if (parentNodes.get(i).className().toLowerCase().equals(parentNodes.get(j).className().toLowerCase()) && childNamesI.equals(childNamesJ)) {
+                        isRepeated = true;
+                        break;
+                    }
+                }
+                if (!isRepeated) {
+                    for (Element entry : parentNodes.get(i).children()) {
+                        int currentWeight = getWeight(entry);
+                        if (currentWeight > minWeightToConcat) {
+                            nodesWithSignificantWeight.add(entry);
+                            finalContent.append(formatter.getFormattedText(entry));
+                        }
+                    }
+                }
+            }
+        }
+
+        if (nodesWithSignificantWeight.size() < 2){
+            finalContent = new StringBuilder();
+        }
+        return finalContent.toString();
     }
 
     protected String extractTitle(Document doc) {
