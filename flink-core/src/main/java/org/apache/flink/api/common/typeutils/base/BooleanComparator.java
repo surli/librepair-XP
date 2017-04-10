@@ -30,19 +30,30 @@ public final class BooleanComparator extends BasicTypeComparator<Boolean> {
 
 	private static final long serialVersionUID = 1L;
 
-	
 	public BooleanComparator(boolean ascending) {
 		super(ascending);
 	}
 
 	@Override
+	public BooleanComparator duplicate() {
+		return new BooleanComparator(ascendingComparison);
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// comparison
+	// --------------------------------------------------------------------------------------------
+
+	@Override
 	public int compareSerialized(DataInputView firstSource, DataInputView secondSource) throws IOException {
 		final int fs = firstSource.readBoolean() ? 1 : 0;
 		final int ss = secondSource.readBoolean() ? 1 : 0;
-		int comp = fs - ss; 
-		return ascendingComparison ? comp : -comp; 
+		int comp = fs - ss;
+		return ascendingComparison ? comp : -comp;
 	}
 
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsNormalizedKey() {
@@ -64,19 +75,14 @@ public final class BooleanComparator extends BasicTypeComparator<Boolean> {
 		if (numBytes > 0) {
 			target.putBoolean(offset, value);
 
-			for (offset = offset + 1; numBytes > 1; numBytes--) {
-				target.put(offset++, (byte) 0);
+			for (int i = 1; i < numBytes; i++) {
+				target.put(offset + i, (byte) 0);
 			}
 		}
 	}
 
-	@Override
-	public BooleanComparator duplicate() {
-		return new BooleanComparator(ascendingComparison);
-	}
-
 	// --------------------------------------------------------------------------------------------
-	// key normalization
+	// serialization with key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
