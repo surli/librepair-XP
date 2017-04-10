@@ -1,0 +1,36 @@
+//
+// Licensed to the Apache Software Foundation (ASF) under one
+// or more contributor license agreements.  See the NOTICE file
+// distributed with this work for additional information
+// regarding copyright ownership.  The ASF licenses this file
+// to you under the Apache License, Version 2.0 (the
+// "License"); you may not use this file except in compliance
+// with the License.  You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing,
+// software distributed under the License is distributed on an
+// "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+// KIND, either express or implied.  See the License for the
+// specific language governing permissions and limitations
+// under the License.
+//
+=== Domains
+
+Domains are built to facilitate https://en.wikipedia.org/wiki/Multitenancy[multitenancy^].
+
+Domains allow the physical separation of all data managed by Apache Syncope, by storing the data for different domains
+into different database instances. Therefore, Apache Syncope can facilitate Users, Groups, Any Objects,
+External Resources, Policies, Tasks, etc. from different domains (e.g. tenants) in a single <<core,core>> instance. 
+
+By default, a single `Master` domain is defined, which also bears the configuration for additional domains.
+
+[.text-center]
+image::domains.png[title="Domains",alt="Domains"]
+
+[TIP]
+====
+Each domain's persistence unit can be configured to work with one of the <<persistence,supported DBMSes>>: `Master` can be
+on MySQL, `Domain1` on PostgreSQL, `DomainN` on Oracle and so on.
+====
