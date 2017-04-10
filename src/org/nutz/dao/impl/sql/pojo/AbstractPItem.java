@@ -13,6 +13,8 @@ public abstract class AbstractPItem implements PItem {
 
     protected Pojo pojo;
 
+    protected boolean top = true;
+
     public Pojo getPojo() {
         return pojo;
     }
@@ -50,4 +52,12 @@ public abstract class AbstractPItem implements PItem {
         return name;
     }
 
+    public AbstractPItem setTop(boolean top) {
+        this.top = top;
+        return this;
+    }
+
+    public boolean isTop() {
+        return top;
+    }
 }
