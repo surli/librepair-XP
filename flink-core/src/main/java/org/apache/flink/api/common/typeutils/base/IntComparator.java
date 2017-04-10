@@ -30,9 +30,13 @@ public final class IntComparator extends BasicTypeComparator<Integer> {
 
 	private static final long serialVersionUID = 1L;
 
-	
 	public IntComparator(boolean ascending) {
 		super(ascending);
+	}
+
+	@Override
+	public IntComparator duplicate() {
+		return new IntComparator(ascendingComparison);
 	}
 
 	@Override
@@ -43,6 +47,9 @@ public final class IntComparator extends BasicTypeComparator<Integer> {
 		return ascendingComparison ? comp : -comp; 
 	}
 
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsNormalizedKey() {
@@ -60,36 +67,25 @@ public final class IntComparator extends BasicTypeComparator<Integer> {
 	}
 
 	@Override
-	public void putNormalizedKey(Integer iValue, MemorySegment target, int offset, int numBytes) {
-		int value = iValue - Integer.MIN_VALUE;
-		
+	public void putNormalizedKey(Integer value, MemorySegment target, int offset, int numBytes) {
+		int normalizedValue = value - Integer.MIN_VALUE;
+
 		// see IntValue for an explanation of the logic
-		if (numBytes == 4) {
-			// default case, full normalized key
-			target.putIntBigEndian(offset, value);
-		}
-		else if (numBytes <= 0) {
-		}
-		else if (numBytes < 4) {
-			for (int i = 0; numBytes > 0; numBytes--, i++) {
-				target.put(offset + i, (byte) (value >>> ((3-i)<<3)));
-			}
-		}
-		else {
-			target.putLongBigEndian(offset, value);
+		if (numBytes > 3) {
+			target.putIntBigEndian(offset, normalizedValue);
+
 			for (int i = 4; i < numBytes; i++) {
 				target.put(offset + i, (byte) 0);
 			}
+		} else if (numBytes > 0) {
+			for (int i = 0; numBytes > 0; numBytes--, i++) {
+				target.put(offset + i, (byte) (normalizedValue >>> ((3-i)<<3)));
+			}
 		}
 	}
 
-	@Override
-	public IntComparator duplicate() {
-		return new IntComparator(ascendingComparison);
-	}
-
 	// --------------------------------------------------------------------------------------------
-	// key normalization
+	// serialization with key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
