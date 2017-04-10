@@ -30,9 +30,13 @@ public final class ShortComparator extends BasicTypeComparator<Short> {
 
 	private static final long serialVersionUID = 1L;
 
-	
 	public ShortComparator(boolean ascending) {
 		super(ascending);
+	}
+
+	@Override
+	public ShortComparator duplicate() {
+		return new ShortComparator(ascendingComparison);
 	}
 
 	@Override
@@ -42,6 +46,10 @@ public final class ShortComparator extends BasicTypeComparator<Short> {
 		int comp = (s1 < s2 ? -1 : (s1 == s2 ? 0 : 1)); 
 		return ascendingComparison ? comp : -comp;
 	}
+
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
 
 	@Override
 	public boolean supportsNormalizedKey() {
@@ -60,38 +68,22 @@ public final class ShortComparator extends BasicTypeComparator<Short> {
 
 	@Override
 	public void putNormalizedKey(Short value, MemorySegment target, int offset, int numBytes) {
-		if (numBytes == 2) {
-			// default case, full normalized key
-			int highByte = ((value >>> 8) & 0xff);
-			highByte -= Byte.MIN_VALUE;
-			target.put(offset, (byte) highByte);
-			target.put(offset + 1, (byte) ((value) & 0xff));
-		}
-		else if (numBytes <= 0) {
-		}
-		else if (numBytes == 1) {
-			int highByte = ((value >>> 8) & 0xff);
-			highByte -= Byte.MIN_VALUE;
-			target.put(offset, (byte) highByte);
-		}
-		else {
-			int highByte = ((value >>> 8) & 0xff);
-			highByte -= Byte.MIN_VALUE;
-			target.put(offset, (byte) highByte);
-			target.put(offset + 1, (byte) ((value) & 0xff));
+		short normalizedValue = (short) (value - Short.MIN_VALUE);
+
+		// see IntValue for an explanation of the logic
+		if (numBytes > 1) {
+			target.putShortBigEndian(offset, normalizedValue);
+
 			for (int i = 2; i < numBytes; i++) {
 				target.put(offset + i, (byte) 0);
 			}
+		} else if (numBytes > 0) {
+			target.put(offset, (byte) ((normalizedValue >>> 8) & 0xff));
 		}
 	}
 
-	@Override
-	public ShortComparator duplicate() {
-		return new ShortComparator(ascendingComparison);
-	}
-
 	// --------------------------------------------------------------------------------------------
-	// key normalization
+	// serialization with key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override

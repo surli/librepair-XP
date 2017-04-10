@@ -49,6 +49,31 @@ public class BooleanValueComparator extends TypeComparator<BooleanValue> {
 	}
 
 	@Override
+	public boolean invertNormalizedKey() {
+		return !ascendingComparison;
+	}
+
+	@Override
+	public TypeComparator<BooleanValue> duplicate() {
+		return new BooleanValueComparator(ascendingComparison);
+	}
+
+	@Override
+	public int extractKeys(Object record, Object[] target, int index) {
+		target[index] = record;
+		return 1;
+	}
+
+	@Override
+	public TypeComparator<?>[] getFlatComparators() {
+		return comparators;
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// comparison
+	// --------------------------------------------------------------------------------------------
+
+	@Override
 	public int hash(BooleanValue record) {
 		return record.hashCode();
 	}
@@ -84,6 +109,11 @@ public class BooleanValueComparator extends TypeComparator<BooleanValue> {
 		return ascendingComparison ? comp : -comp;
 	}
 
+
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
 	@Override
 	public boolean supportsNormalizedKey() {
 		return NormalizableKey.class.isAssignableFrom(BooleanValue.class);
@@ -104,29 +134,8 @@ public class BooleanValueComparator extends TypeComparator<BooleanValue> {
 		record.copyNormalizedKey(target, offset, numBytes);
 	}
 
-	@Override
-	public boolean invertNormalizedKey() {
-		return !ascendingComparison;
-	}
-
-	@Override
-	public TypeComparator<BooleanValue> duplicate() {
-		return new BooleanValueComparator(ascendingComparison);
-	}
-
-	@Override
-	public int extractKeys(Object record, Object[] target, int index) {
-		target[index] = record;
-		return 1;
-	}
-
-	@Override
-	public TypeComparator<?>[] getFlatComparators() {
-		return comparators;
-	}
-
 	// --------------------------------------------------------------------------------------------
-	// key normalization
+	// serialization with key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
