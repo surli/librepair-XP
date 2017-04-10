@@ -47,6 +47,31 @@ public class NullValueComparator extends TypeComparator<NullValue> {
 	private NullValueComparator() {}
 
 	@Override
+	public TypeComparator<NullValue> duplicate() {
+		return NullValueComparator.getInstance();
+	}
+
+	@Override
+	public boolean invertNormalizedKey() {
+		return false;
+	}
+
+	@Override
+	public int extractKeys(Object record, Object[] target, int index) {
+		target[index] = record;
+		return 1;
+	}
+
+	@Override
+	public TypeComparator<?>[] getFlatComparators() {
+		return comparators;
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// comparison
+	// --------------------------------------------------------------------------------------------
+
+	@Override
 	public int hash(NullValue record) {
 		return record.hashCode();
 	}
@@ -74,6 +99,10 @@ public class NullValueComparator extends TypeComparator<NullValue> {
 		return 0;
 	}
 
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
 	@Override
 	public boolean supportsNormalizedKey() {
 		return NormalizableKey.class.isAssignableFrom(NullValue.class);
@@ -94,27 +123,6 @@ public class NullValueComparator extends TypeComparator<NullValue> {
 		record.copyNormalizedKey(target, offset, numBytes);
 	}
 
-	@Override
-	public boolean invertNormalizedKey() {
-		return false;
-	}
-
-	@Override
-	public TypeComparator<NullValue> duplicate() {
-		return NullValueComparator.getInstance();
-	}
-
-	@Override
-	public int extractKeys(Object record, Object[] target, int index) {
-		target[index] = record;
-		return 1;
-	}
-
-	@Override
-	public TypeComparator<?>[] getFlatComparators() {
-		return comparators;
-	}
-
 	// --------------------------------------------------------------------------------------------
 	// key normalization
 	// --------------------------------------------------------------------------------------------
@@ -130,6 +138,6 @@ public class NullValueComparator extends TypeComparator<NullValue> {
 
 	@Override
 	public NullValue readWithKeyDenormalization(NullValue reuse, DataInputView source) throws IOException {
-		return NullValue.getInstance();
+		return reuse;
 	}
 }

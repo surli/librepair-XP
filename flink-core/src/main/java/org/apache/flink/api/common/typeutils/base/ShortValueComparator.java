@@ -49,6 +49,31 @@ public class ShortValueComparator extends TypeComparator<ShortValue> {
 	}
 
 	@Override
+	public TypeComparator<ShortValue> duplicate() {
+		return new ShortValueComparator(ascendingComparison);
+	}
+
+	@Override
+	public boolean invertNormalizedKey() {
+		return !ascendingComparison;
+	}
+
+	@Override
+	public int extractKeys(Object record, Object[] target, int index) {
+		target[index] = record;
+		return 1;
+	}
+
+	@Override
+	public TypeComparator<?>[] getFlatComparators() {
+		return comparators;
+	}
+
+	// --------------------------------------------------------------------------------------------
+	// comparison
+	// --------------------------------------------------------------------------------------------
+
+	@Override
 	public int hash(ShortValue record) {
 		return record.hashCode();
 	}
@@ -84,6 +109,10 @@ public class ShortValueComparator extends TypeComparator<ShortValue> {
 		return ascendingComparison ? comp : -comp;
 	}
 
+	// --------------------------------------------------------------------------------------------
+	// key normalization
+	// --------------------------------------------------------------------------------------------
+
 	@Override
 	public boolean supportsNormalizedKey() {
 		return NormalizableKey.class.isAssignableFrom(ShortValue.class);
@@ -104,29 +133,8 @@ public class ShortValueComparator extends TypeComparator<ShortValue> {
 		record.copyNormalizedKey(target, offset, numBytes);
 	}
 
-	@Override
-	public boolean invertNormalizedKey() {
-		return !ascendingComparison;
-	}
-
-	@Override
-	public TypeComparator<ShortValue> duplicate() {
-		return new ShortValueComparator(ascendingComparison);
-	}
-
-	@Override
-	public int extractKeys(Object record, Object[] target, int index) {
-		target[index] = record;
-		return 1;
-	}
-
-	@Override
-	public TypeComparator<?>[] getFlatComparators() {
-		return comparators;
-	}
-
 	// --------------------------------------------------------------------------------------------
-	// key normalization
+	// serialization with key normalization
 	// --------------------------------------------------------------------------------------------
 
 	@Override
@@ -141,7 +149,7 @@ public class ShortValueComparator extends TypeComparator<ShortValue> {
 
 	@Override
 	public ShortValue readWithKeyDenormalization(ShortValue reuse, DataInputView source) throws IOException {
-		reuse.setValue((short)(source.readShort() + Short.MIN_VALUE));
+		reuse.setValue((short) (source.readShort() + Short.MIN_VALUE));
 		return reuse;
 	}
 }
