@@ -1,4 +1,4 @@
-package com.puppycrawl.tools.checkstyle.checks.naming;
+package com.puppycrawl.tools.checkstyle.checks.naming.parametername;
 
 public class InputAccessModifier {
 
@@ -70,5 +70,3 @@ class PrivateScope {
         FuncIfc l2 = (limp)->{};
     }
 }
-
-
