@@ -1,0 +1,768 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.javaee7:jaspic-async-authentication:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.javaee7:jaspic-async-authentication:[unknown-version], /root/workspace/javaee-samples/javaee7-samples/187678498/jaspic/async-authentication/pom.xml, line 25, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.javaee7:jaspic-dispatching-jsf-cdi:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.javaee7:jaspic-dispatching-jsf-cdi:[unknown-version], /root/workspace/javaee-samples/javaee7-samples/187678498/jaspic/dispatching-jsf-cdi/pom.xml, line 25, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.javaee7:jaspic-ejb-propagation:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.javaee7:jaspic-ejb-propagation:[unknown-version], /root/workspace/javaee-samples/javaee7-samples/187678498/jaspic/ejb-propagation/pom.xml, line 25, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.javaee7:jaspic-ejb-register-session:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.javaee7:jaspic-ejb-register-session:[unknown-version], /root/workspace/javaee-samples/javaee7-samples/187678498/jaspic/ejb-register-session/pom.xml, line 26, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.javaee7:jaspic-jacc-propagation:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.javaee7:jaspic-jacc-propagation:[unknown-version], /root/workspace/javaee-samples/javaee7-samples/187678498/jaspic/jacc-propagation/pom.xml, line 25, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.javaee7:jaspic-invoke-ejb-cdi:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.javaee7:jaspic-invoke-ejb-cdi:[unknown-version], /root/workspace/javaee-samples/javaee7-samples/187678498/jaspic/invoke-ejb-cdi/pom.xml, line 27, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Java EE 7 Sample: javaee7-samples
+[INFO] Java EE 7 Sample: javaee7-samples - test-utils
+[INFO] Java EE 7 Sample: javaee7-samples - util
+[INFO] Java EE 7 Sample: batch
+[INFO] Java EE 7 Sample: batch - batchlet-simple
+[INFO] Java EE 7 Sample: batch - chunk-checkpoint
+[INFO] Java EE 7 Sample: batch - chunk-csv-database
+[INFO] Java EE 7 Sample: batch - chunk-exception
+[INFO] Java EE 7 Sample: batch - chunk-mapper
+[INFO] Java EE 7 Sample: batch - chunk-optional-processor
+[INFO] Java EE 7 Sample: batch - chunk-partition
+[INFO] Java EE 7 Sample: batch - chunk-simple
+[INFO] Java EE 7 Sample: batch - decision
+[INFO] Java EE 7 Sample: batch - flow
+[INFO] Java EE 7 Sample: batch - batch-listeners
+[INFO] Java EE 7 Sample: batch - multiple-steps
+[INFO] Java EE 7 Sample: batch - split
+[INFO] Java EE 7 Sample: batch - chunk-simple-nobeans
+[INFO] Java EE 7 Sample: batch - scheduling
+[INFO] Java EE 7 Sample: cdi
+[INFO] Java EE 7 Sample: cdi - vetoed
+[INFO] Java EE 7 Sample: cdi - pkg-level
+[INFO] Java EE 7 Sample: cdi - decorators
+[INFO] Java EE 7 Sample: cdi - bean-discovery-all
+[INFO] Java EE 7 Sample: cdi - bean-discovery-annotated
+[INFO] Java EE 7 Sample: cdi - bean-discovery-none
+[INFO] Java EE 7 Sample: cdi - exclude-filter
+[INFO] Java EE 7 Sample: cdi - built-in
+[INFO] Java EE 7 Sample: cdi - interceptors
+[INFO] Java EE 7 Sample: cdi - interceptors-priority
+[INFO] Java EE 7 Sample: cdi - nobeans-xml
+[INFO] Java EE 7 Sample: cdi - beansxml-noversion
+[INFO] Java EE 7 Sample: cdi - beanmanager
+[INFO] Java EE 7 Sample: cdi - extension
+[INFO] Java EE 7 Sample: cdi - scopes
+[INFO] Java EE 7 Sample: cdi - alternatives
+[INFO] Java EE 7 Sample: cdi - alternatives-priority
+[INFO] Java EE 7 Sample: cdi - alternatives-qualifiers
+[INFO] Java EE 7 Sample: cdi - nobeans-el-injection
+[INFO] Java EE 7 Sample: cdi - nobeans-el-injection-flowscoped
+[INFO] Java EE 7 Sample: cdi - events
+[INFO] Java EE 7 Sample: cdi - events-conditional-reception
+[INFO] Java EE 7 Sample: cdi - instance
+[INFO] Java EE 7 Sample: cdi - instance-qualifiers
+[INFO] Java EE 7 Sample: concurrency
+[INFO] Java EE 7 Sample: concurrency - managedexecutor
+[INFO] Java EE 7 Sample: concurrency - managedscheduledexecutor
+[INFO] Java EE 7 Sample: concurrency - managedthreadfactory
+[INFO] Java EE 7 Sample: concurrency - dynamicproxy
+[INFO] Java EE 7 Sample: ejb
+[INFO] Java EE 7 Sample: ejb - embeddable
+[INFO] Java EE 7 Sample: ejb - lifecycle
+[INFO] Java EE 7 Sample: ejb - singleton
+[INFO] Java EE 7 Sample: ejb - stateful
+[INFO] Java EE 7 Sample: ejb - stateless
+[INFO] Java EE 7 Sample: ejb - timer
+[INFO] Java EE 7 Sample: ejb - async-ejb
+[INFO] Java EE 7 Sample: el
+[INFO] Java EE 7 Sample: el - standalone
+[INFO] Java EE 7 Sample: interceptor
+[INFO] Java EE 7 Sample: interceptor - around-construct
+[INFO] Java EE 7 Sample: javamail
+[INFO] Java EE 7 Sample: javamail - definition
+[INFO] Java EE 7 Sample: jaspic
+[INFO] Java EE 7 Sample: jaspic - common
+[INFO] Java EE 7 Sample: jaspic - basic-authentication
+[INFO] Java EE 7 Sample: jaspic - custom principal
+[INFO] Java EE 7 Sample: jaspic - programmatic-authentication
+[INFO] Java EE 7 Sample: jaspic - lifecycle
+[INFO] Java EE 7 Sample: jaspic - wrapping
+[INFO] Java EE 7 Sample: jaspic - register-session
+[INFO] Java EE 7 Sample: jaspic - async-authentication
+[INFO] Java EE 7 Sample: jaspic - Status codes
+[INFO] Java EE 7 Sample: jaspic - dispatching
+[INFO] Java EE 7 Sample: jaspic - dispatching JSF CDI
+[INFO] Java EE 7 Sample: jaspic - ejb-propagation
+[INFO] Java EE 7 Sample: jaspic - ejb-register-session
+[INFO] Java EE 7 Sample: jaspic - jacc-propagation
+[INFO] Java EE 7 Sample: jaspic - invoke EJB and CDI
+[INFO] Java EE 7 Sample: jacc
+[INFO] Java EE 7 Sample: jacc - contexts
+[INFO] Java EE 7 Sample: jaxrs
+[INFO] Java EE 7 Sample: jaxrs - angularjs
+[INFO] Java EE 7 Sample: jaxrs - async-client
+[INFO] Java EE 7 Sample: jaxrs - async-server
+[INFO] Java EE 7 Sample: jaxrs - beanvalidation
+[INFO] Java EE 7 Sample: jaxrs - beanparam
+[INFO] Java EE 7 Sample: jaxrs - client-negotiation
+[INFO] Java EE 7 Sample: jaxrs - dynamicfilter
+[INFO] Java EE 7 Sample: jaxrs - fileupload
+[INFO] Java EE 7 Sample: jaxrs - filter
+[INFO] Java EE 7 Sample: jaxrs - filter-interceptor
+[INFO] Java EE 7 Sample: jaxrs - interceptor
+[INFO] Java EE 7 Sample: jaxrs - invocation
+[INFO] Java EE 7 Sample: jaxrs - invocation-async
+[INFO] Java EE 7 Sample: jaxrs - jaxrs-client
+[INFO] Java EE 7 Sample: jaxrs - jaxrs-endpoint
+[INFO] Java EE 7 Sample: jaxrs - jsonp
+[INFO] Java EE 7 Sample: jaxrs - link
+[INFO] Java EE 7 Sample: jaxrs - mapping-exceptions
+[INFO] Java EE 7 Sample: jaxrs - paramconverter
+[INFO] Java EE 7 Sample: jaxrs - readerwriter
+[INFO] Java EE 7 Sample: jaxrs - readerwriter-json
+[INFO] Java EE 7 Sample: jaxrs - request-binding
+[INFO] Java EE 7 Sample: jaxrs - resource-validation
+[INFO] Java EE 7 Sample: jaxrs - server-negotiation
+[INFO] Java EE 7 Sample: jaxrs - singleton
+[INFO] Java EE 7 Sample: jaxrs - readerwriter-injection
+[INFO] Java EE 7 Sample: jaxrs - jaxrs-security-declarative
+[INFO] Java EE 7 Sample: jaxrs - db-access
+[INFO] Java EE 7 Sample: jaxws
+[INFO] Java EE 7 Sample: jaxws - jaxws-endpoint
+[INFO] Java EE 7 Sample: jaxws - jaxws-client
+[INFO] Java EE 7 Sample: jca
+[INFO] Java EE 7 Sample: jca - connector-simple
+[INFO] Java EE 7 Sample: connector
+[INFO] Java EE 7 Sample: mdb-filewatcher
+[INFO] Java EE 7 Sample: jms
+[INFO] Java EE 7 Sample: jms - jms-xa
+[INFO] Java EE 7 Sample: jms - send-receive
+[INFO] Java EE 7 Sample: jms - temp-destination
+[INFO] Java EE 7 Sample: jms - jms-batch
+[INFO] Java EE 7 Sample: jpa
+[INFO] Java EE 7 Sample: jpa - aggregate-function-in-select
+[INFO] Java EE 7 Sample: jpa - criteria
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition-webxml-pu
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition-annotation-pu
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition-applicationxml-pu
+[INFO] Java EE 7 Sample: jpa - dynamic-named-query
+[INFO] Java EE 7 Sample: jpa - entitygraph
+[INFO] Java EE 7 Sample: jpa - listeners
+[INFO] Java EE 7 Sample: jpa - listeners-injection
+[INFO] Java EE 7 Sample: jpa - multiple-pu
+[INFO] Java EE 7 Sample: jpa - storedprocedure
+[INFO] Java EE 7 Sample: jpa - jndi-context
+[INFO] Java EE 7 Sample: jpa - locking-optimistic
+[INFO] Java EE 7 Sample: jpa - locking-pessimistic
+[INFO] Java EE 7 Sample: jpa - ordercolumn
+[INFO] Java EE 7 Sample: jpa - pu-typesafe
+[INFO] Java EE 7 Sample: jpa - schema-gen-metadata
+[INFO] Java EE 7 Sample: jpa - schema-gen-scripts
+[INFO] Java EE 7 Sample: jpa - schema-gen-scripts-external
+[INFO] Java EE 7 Sample: jpa - schema-gen-scripts-generate
+[INFO] Java EE 7 Sample: jpa - schema-gen-index
+[INFO] Java EE 7 Sample: jpa - native-sql
+[INFO] Java EE 7 Sample: jpa - native-sql-resultset-mapping
+[INFO] Java EE 7 Sample: jpa - unsynchronized-pc
+[INFO] Java EE 7 Sample: jpa - extended-pc
+[INFO] Java EE 7 Sample: jpa-converter
+[INFO] Java EE 7 Sample: jpa - default-datasource
+[INFO] Java EE 7 Sample: jta
+[INFO] Java EE 7 Sample: jta - transactional
+[INFO] Java EE 7 Sample: jta - tx-exception
+[INFO] Java EE 7 Sample: jta - user-transaction
+[INFO] Java EE 7 Sample: jsf
+[INFO] Java EE 7 Sample: jsf - ajax
+[INFO] Java EE 7 Sample: jsf - bean-validation
+[INFO] Java EE 7 Sample: jsf - components
+[INFO] Java EE 7 Sample: jsf - composite-component
+[INFO] Java EE 7 Sample: jsf - contracts
+[INFO] Java EE 7 Sample: jsf - contracts-library
+[INFO] Java EE 7 Sample: jsf - contracts-library-impl
+[INFO] Java EE 7 Sample: jsf - file-upload
+[INFO] Java EE 7 Sample: jsf - flows-simple
+[INFO] Java EE 7 Sample: jsf - flows-mixed
+[INFO] Java EE 7 Sample: jsf - flows-programmatic
+[INFO] Java EE 7 Sample: jsf - flows-declarative
+[INFO] Java EE 7 Sample: jsf - http-get
+[INFO] Java EE 7 Sample: jsf - passthrough
+[INFO] Java EE 7 Sample: jsf - radio-buttons
+[INFO] Java EE 7 Sample: jsf - resource-handling
+[INFO] Java EE 7 Sample: jsf - simple-facelet
+[INFO] Java EE 7 Sample: jsf - server-extension
+[INFO] Java EE 7 Sample: jsf - viewscoped
+[INFO] Java EE 7 Sample: json
+[INFO] Java EE 7 Sample: json - object-builder
+[INFO] Java EE 7 Sample: json - object-reader
+[INFO] Java EE 7 Sample: json - streaming-generate
+[INFO] Java EE 7 Sample: json - streaming-parser
+[INFO] Java EE 7 Sample: servlet
+[INFO] Java EE 7 Sample: servlet - cookies
+[INFO] Java EE 7 Sample: servlet - async-servlet
+[INFO] Java EE 7 Sample: servlet - error-mapping
+[INFO] Java EE 7 Sample: servlet - event-listeners
+[INFO] Java EE 7 Sample: servlet - metadata-complete
+[INFO] Java EE 7 Sample: servlet - nonblocking
+[INFO] Java EE 7 Sample: servlet - protocol-handler
+[INFO] Java EE 7 Sample: servlet - resource-packaging
+[INFO] Java EE 7 Sample: servlet - servlet-filters
+[INFO] Java EE 7 Sample: servlet - file-upload
+[INFO] Java EE 7 Sample: servlet - web-fragment
+[INFO] Java EE 7 Sample: servlet - security-basicauth
+[INFO] Java EE 7 Sample: servlet - security-form-based
+[INFO] Java EE 7 Sample: servlet - security-programmatic
+[INFO] Java EE 7 Sample: servlet - security-deny-uncovered
+[INFO] Java EE 7 Sample: servlet - security-basicauth-omission
+[INFO] Java EE 7 Sample: servlet - programmatic-registration
+[INFO] Java EE 7 Sample: servlet - simple-servlet
+[INFO] Java EE 7 Sample: validation
+[INFO] Java EE 7 Sample: validation - methods
+[INFO] Java EE 7 Sample: validation - custom-constraint
+[INFO] Java EE 7 Sample: websocket
+[INFO] Java EE 7 Sample: websocket - chat
+[INFO] Java EE 7 Sample: websocket - encoder
+[INFO] Java EE 7 Sample: websocket - encoder-client
+[INFO] Java EE 7 Sample: websocket - encoder-programmatic
+[INFO] Java EE 7 Sample: websocket - endpoint
+[INFO] Java EE 7 Sample: websocket - endpoint-async
+[INFO] Java EE 7 Sample: websocket - endpoint-javatypes
+[INFO] Java EE 7 Sample: websocket - endpoint-config
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic-async
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic-config
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic-injection
+[INFO] Java EE 7 Sample: websocket - endpoint-security
+[INFO] Java EE 7 Sample: websocket - httpsession
+[INFO] Java EE 7 Sample: websocket - injection
+[INFO] Java EE 7 Sample: websocket - javase-client
+[INFO] Java EE 7 Sample: websocket - messagesize
+[INFO] Java EE 7 Sample: websocket - parameters
+[INFO] Java EE 7 Sample: websocket - properties
+[INFO] Java EE 7 Sample: websocket - websocket-vs-rest
+[INFO] Java EE 7 Sample: websocket - subprotocol
+[INFO] Java EE 7 Sample: websocket - websocket-client
+[INFO] Java EE 7 Sample: websocket - websocket-client-config
+[INFO] Java EE 7 Sample: websocket - websocket-client-programmatic
+[INFO] Java EE 7 Sample: websocket - websocket-client-programmatic-config
+[INFO] Java EE 7 Sample: websocket - websocket-client-programmatic-encoders
+[INFO] Java EE 7 Sample: websocket - whiteboard
+[INFO] Java EE 7 Sample: websocket - endpoint-singleton
+[INFO] Java EE 7 Sample: websocket - websocket-vs-rest-payload
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 7 Sample: javaee7-samples 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ samples-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 7 Sample: javaee7-samples - test-utils 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ test-utils ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ test-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/test-utils/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/test-utils/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/test-utils/src/test/resources-wildfly-remote
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ test-utils ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ test-utils ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 7 Sample: javaee7-samples - util 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ util ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/util/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ util ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/util/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/util/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/util/src/test/resources-wildfly-remote
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ util ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ util ---
+[INFO] No tests to run.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 7 Sample: batch 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ batch ---
+[INFO] Skipping Rule Enforcement.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Java EE 7 Sample: batch - batchlet-simple 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ batch-batchlet-simple ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ batch-batchlet-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ batch-batchlet-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ batch-batchlet-simple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/batch/batchlet-simple/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/batch/batchlet-simple/src/test/resources
+[INFO] skip non existing resourceDirectory /root/workspace/javaee-samples/javaee7-samples/187678498/batch/batchlet-simple/src/test/resources-wildfly-remote
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ batch-batchlet-simple ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ batch-batchlet-simple ---
+[INFO] Surefire report directory: /root/workspace/javaee-samples/javaee7-samples/187678498/batch/batchlet-simple/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 1.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 62.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 419.3 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.javaee7.batch.batchlet.simple.MyBatchletTest
+8c5a33d0-81d1-4f9f-a3b3-210117e2382b.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/javaee7/
+/WEB-INF/classes/org/javaee7/util/
+/WEB-INF/classes/org/javaee7/util/BatchTestHelper.class
+/WEB-INF/classes/org/javaee7/batch/
+/WEB-INF/classes/org/javaee7/batch/batchlet/
+/WEB-INF/classes/org/javaee7/batch/batchlet/simple/
+/WEB-INF/classes/org/javaee7/batch/batchlet/simple/MyBatchlet.class
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/batch-jobs/
+/WEB-INF/classes/META-INF/batch-jobs/myJob.xml
+/WEB-INF/beans.xml
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.162 sec <<< FAILURE!
+org.javaee7.batch.batchlet.simple.MyBatchletTest  Time elapsed: 1.161 sec  <<< ERROR!
+org.jboss.arquillian.container.spi.client.container.DeploymentException: Cannot deploy: 8c5a33d0-81d1-4f9f-a3b3-210117e2382b.war
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:141)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:121)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deploy(ArchiveDeployer.java:83)
+	at org.jboss.as.arquillian.container.CommonDeployableContainer.deploy(CommonDeployableContainer.java:236)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:161)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$3.call(ContainerDeployController.java:128)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:271)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deploy(ContainerDeployController.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.container.DeploymentExceptionHandler.verifyExpectedExceptionDuringDeploy(DeploymentExceptionHandler.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:95)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$1.perform(ContainerDeployController.java:80)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:263)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachManagedDeployment(ContainerDeployController.java:239)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.deployManaged(ContainerDeployController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.beforeClass(EventTestRunnerAdaptor.java:87)
+	at org.jboss.arquillian.junit.Arquillian$2.evaluate(Arquillian.java:201)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:426)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:54)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:218)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:166)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.xnio.nio.WorkerThread$ConnectHandle.handleReady(WorkerThread.java:319)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeAsync(AbstractModelControllerClient.java:111)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ModelControllerClientServerDeploymentManager.executeOperation(ModelControllerClientServerDeploymentManager.java:50)
+	at org.jboss.as.controller.client.helpers.standalone.impl.AbstractServerDeploymentManager.execute(AbstractServerDeploymentManager.java:79)
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.deploy(ServerDeploymentHelper.java:54)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.deployInternal(ArchiveDeployer.java:135)
+	... 96 more
+
+
+Results :
+
+Tests in error: 
+  org.javaee7.batch.batchlet.simple.MyBatchletTest: Cannot deploy: 8c5a33d0-81d1-4f9f-a3b3-210117e2382b.war
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Java EE 7 Sample: javaee7-samples .................. SUCCESS [  0.777 s]
+[INFO] Java EE 7 Sample: javaee7-samples - test-utils ..... SUCCESS [  1.228 s]
+[INFO] Java EE 7 Sample: javaee7-samples - util ........... SUCCESS [  0.093 s]
+[INFO] Java EE 7 Sample: batch ............................ SUCCESS [  0.002 s]
+[INFO] Java EE 7 Sample: batch - batchlet-simple .......... FAILURE [  4.060 s]
+[INFO] Java EE 7 Sample: batch - chunk-checkpoint ......... SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-csv-database ....... SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-exception .......... SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-mapper ............. SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-optional-processor . SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-partition .......... SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-simple ............. SKIPPED
+[INFO] Java EE 7 Sample: batch - decision ................. SKIPPED
+[INFO] Java EE 7 Sample: batch - flow ..................... SKIPPED
+[INFO] Java EE 7 Sample: batch - batch-listeners .......... SKIPPED
+[INFO] Java EE 7 Sample: batch - multiple-steps ........... SKIPPED
+[INFO] Java EE 7 Sample: batch - split .................... SKIPPED
+[INFO] Java EE 7 Sample: batch - chunk-simple-nobeans ..... SKIPPED
+[INFO] Java EE 7 Sample: batch - scheduling ............... SKIPPED
+[INFO] Java EE 7 Sample: cdi .............................. SKIPPED
+[INFO] Java EE 7 Sample: cdi - vetoed ..................... SKIPPED
+[INFO] Java EE 7 Sample: cdi - pkg-level .................. SKIPPED
+[INFO] Java EE 7 Sample: cdi - decorators ................. SKIPPED
+[INFO] Java EE 7 Sample: cdi - bean-discovery-all ......... SKIPPED
+[INFO] Java EE 7 Sample: cdi - bean-discovery-annotated ... SKIPPED
+[INFO] Java EE 7 Sample: cdi - bean-discovery-none ........ SKIPPED
+[INFO] Java EE 7 Sample: cdi - exclude-filter ............. SKIPPED
+[INFO] Java EE 7 Sample: cdi - built-in ................... SKIPPED
+[INFO] Java EE 7 Sample: cdi - interceptors ............... SKIPPED
+[INFO] Java EE 7 Sample: cdi - interceptors-priority ...... SKIPPED
+[INFO] Java EE 7 Sample: cdi - nobeans-xml ................ SKIPPED
+[INFO] Java EE 7 Sample: cdi - beansxml-noversion ......... SKIPPED
+[INFO] Java EE 7 Sample: cdi - beanmanager ................ SKIPPED
+[INFO] Java EE 7 Sample: cdi - extension .................. SKIPPED
+[INFO] Java EE 7 Sample: cdi - scopes ..................... SKIPPED
+[INFO] Java EE 7 Sample: cdi - alternatives ............... SKIPPED
+[INFO] Java EE 7 Sample: cdi - alternatives-priority ...... SKIPPED
+[INFO] Java EE 7 Sample: cdi - alternatives-qualifiers .... SKIPPED
+[INFO] Java EE 7 Sample: cdi - nobeans-el-injection ....... SKIPPED
+[INFO] Java EE 7 Sample: cdi - nobeans-el-injection-flowscoped SKIPPED
+[INFO] Java EE 7 Sample: cdi - events ..................... SKIPPED
+[INFO] Java EE 7 Sample: cdi - events-conditional-reception SKIPPED
+[INFO] Java EE 7 Sample: cdi - instance ................... SKIPPED
+[INFO] Java EE 7 Sample: cdi - instance-qualifiers ........ SKIPPED
+[INFO] Java EE 7 Sample: concurrency ...................... SKIPPED
+[INFO] Java EE 7 Sample: concurrency - managedexecutor .... SKIPPED
+[INFO] Java EE 7 Sample: concurrency - managedscheduledexecutor SKIPPED
+[INFO] Java EE 7 Sample: concurrency - managedthreadfactory SKIPPED
+[INFO] Java EE 7 Sample: concurrency - dynamicproxy ....... SKIPPED
+[INFO] Java EE 7 Sample: ejb .............................. SKIPPED
+[INFO] Java EE 7 Sample: ejb - embeddable ................. SKIPPED
+[INFO] Java EE 7 Sample: ejb - lifecycle .................. SKIPPED
+[INFO] Java EE 7 Sample: ejb - singleton .................. SKIPPED
+[INFO] Java EE 7 Sample: ejb - stateful ................... SKIPPED
+[INFO] Java EE 7 Sample: ejb - stateless .................. SKIPPED
+[INFO] Java EE 7 Sample: ejb - timer ...................... SKIPPED
+[INFO] Java EE 7 Sample: ejb - async-ejb .................. SKIPPED
+[INFO] Java EE 7 Sample: el ............................... SKIPPED
+[INFO] Java EE 7 Sample: el - standalone .................. SKIPPED
+[INFO] Java EE 7 Sample: interceptor ...................... SKIPPED
+[INFO] Java EE 7 Sample: interceptor - around-construct ... SKIPPED
+[INFO] Java EE 7 Sample: javamail ......................... SKIPPED
+[INFO] Java EE 7 Sample: javamail - definition ............ SKIPPED
+[INFO] Java EE 7 Sample: jaspic ........................... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - common .................. SKIPPED
+[INFO] Java EE 7 Sample: jaspic - basic-authentication .... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - custom principal ........ SKIPPED
+[INFO] Java EE 7 Sample: jaspic - programmatic-authentication SKIPPED
+[INFO] Java EE 7 Sample: jaspic - lifecycle ............... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - wrapping ................ SKIPPED
+[INFO] Java EE 7 Sample: jaspic - register-session ........ SKIPPED
+[INFO] Java EE 7 Sample: jaspic - async-authentication .... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - Status codes ............ SKIPPED
+[INFO] Java EE 7 Sample: jaspic - dispatching ............. SKIPPED
+[INFO] Java EE 7 Sample: jaspic - dispatching JSF CDI ..... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - ejb-propagation ......... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - ejb-register-session .... SKIPPED
+[INFO] Java EE 7 Sample: jaspic - jacc-propagation ........ SKIPPED
+[INFO] Java EE 7 Sample: jaspic - invoke EJB and CDI ...... SKIPPED
+[INFO] Java EE 7 Sample: jacc ............................. SKIPPED
+[INFO] Java EE 7 Sample: jacc - contexts .................. SKIPPED
+[INFO] Java EE 7 Sample: jaxrs ............................ SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - angularjs ................ SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - async-client ............. SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - async-server ............. SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - beanvalidation ........... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - beanparam ................ SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - client-negotiation ....... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - dynamicfilter ............ SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - fileupload ............... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - filter ................... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - filter-interceptor ....... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - interceptor .............. SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - invocation ............... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - invocation-async ......... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - jaxrs-client ............. SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - jaxrs-endpoint ........... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - jsonp .................... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - link ..................... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - mapping-exceptions ....... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - paramconverter ........... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - readerwriter ............. SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - readerwriter-json ........ SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - request-binding .......... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - resource-validation ...... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - server-negotiation ....... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - singleton ................ SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - readerwriter-injection ... SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - jaxrs-security-declarative SKIPPED
+[INFO] Java EE 7 Sample: jaxrs - db-access ................ SKIPPED
+[INFO] Java EE 7 Sample: jaxws ............................ SKIPPED
+[INFO] Java EE 7 Sample: jaxws - jaxws-endpoint ........... SKIPPED
+[INFO] Java EE 7 Sample: jaxws - jaxws-client ............. SKIPPED
+[INFO] Java EE 7 Sample: jca .............................. SKIPPED
+[INFO] Java EE 7 Sample: jca - connector-simple ........... SKIPPED
+[INFO] Java EE 7 Sample: connector ........................ SKIPPED
+[INFO] Java EE 7 Sample: mdb-filewatcher .................. SKIPPED
+[INFO] Java EE 7 Sample: jms .............................. SKIPPED
+[INFO] Java EE 7 Sample: jms - jms-xa ..................... SKIPPED
+[INFO] Java EE 7 Sample: jms - send-receive ............... SKIPPED
+[INFO] Java EE 7 Sample: jms - temp-destination ........... SKIPPED
+[INFO] Java EE 7 Sample: jms - jms-batch .................. SKIPPED
+[INFO] Java EE 7 Sample: jpa .............................. SKIPPED
+[INFO] Java EE 7 Sample: jpa - aggregate-function-in-select SKIPPED
+[INFO] Java EE 7 Sample: jpa - criteria ................... SKIPPED
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition ....... SKIPPED
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition-webxml-pu SKIPPED
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition-annotation-pu SKIPPED
+[INFO] Java EE 7 Sample: jpa - datasourcedefinition-applicationxml-pu SKIPPED
+[INFO] Java EE 7 Sample: jpa - dynamic-named-query ........ SKIPPED
+[INFO] Java EE 7 Sample: jpa - entitygraph ................ SKIPPED
+[INFO] Java EE 7 Sample: jpa - listeners .................. SKIPPED
+[INFO] Java EE 7 Sample: jpa - listeners-injection ........ SKIPPED
+[INFO] Java EE 7 Sample: jpa - multiple-pu ................ SKIPPED
+[INFO] Java EE 7 Sample: jpa - storedprocedure ............ SKIPPED
+[INFO] Java EE 7 Sample: jpa - jndi-context ............... SKIPPED
+[INFO] Java EE 7 Sample: jpa - locking-optimistic ......... SKIPPED
+[INFO] Java EE 7 Sample: jpa - locking-pessimistic ........ SKIPPED
+[INFO] Java EE 7 Sample: jpa - ordercolumn ................ SKIPPED
+[INFO] Java EE 7 Sample: jpa - pu-typesafe ................ SKIPPED
+[INFO] Java EE 7 Sample: jpa - schema-gen-metadata ........ SKIPPED
+[INFO] Java EE 7 Sample: jpa - schema-gen-scripts ......... SKIPPED
+[INFO] Java EE 7 Sample: jpa - schema-gen-scripts-external  SKIPPED
+[INFO] Java EE 7 Sample: jpa - schema-gen-scripts-generate  SKIPPED
+[INFO] Java EE 7 Sample: jpa - schema-gen-index ........... SKIPPED
+[INFO] Java EE 7 Sample: jpa - native-sql ................. SKIPPED
+[INFO] Java EE 7 Sample: jpa - native-sql-resultset-mapping SKIPPED
+[INFO] Java EE 7 Sample: jpa - unsynchronized-pc .......... SKIPPED
+[INFO] Java EE 7 Sample: jpa - extended-pc ................ SKIPPED
+[INFO] Java EE 7 Sample: jpa-converter .................... SKIPPED
+[INFO] Java EE 7 Sample: jpa - default-datasource ......... SKIPPED
+[INFO] Java EE 7 Sample: jta .............................. SKIPPED
+[INFO] Java EE 7 Sample: jta - transactional .............. SKIPPED
+[INFO] Java EE 7 Sample: jta - tx-exception ............... SKIPPED
+[INFO] Java EE 7 Sample: jta - user-transaction ........... SKIPPED
+[INFO] Java EE 7 Sample: jsf .............................. SKIPPED
+[INFO] Java EE 7 Sample: jsf - ajax ....................... SKIPPED
+[INFO] Java EE 7 Sample: jsf - bean-validation ............ SKIPPED
+[INFO] Java EE 7 Sample: jsf - components ................. SKIPPED
+[INFO] Java EE 7 Sample: jsf - composite-component ........ SKIPPED
+[INFO] Java EE 7 Sample: jsf - contracts .................. SKIPPED
+[INFO] Java EE 7 Sample: jsf - contracts-library .......... SKIPPED
+[INFO] Java EE 7 Sample: jsf - contracts-library-impl ..... SKIPPED
+[INFO] Java EE 7 Sample: jsf - file-upload ................ SKIPPED
+[INFO] Java EE 7 Sample: jsf - flows-simple ............... SKIPPED
+[INFO] Java EE 7 Sample: jsf - flows-mixed ................ SKIPPED
+[INFO] Java EE 7 Sample: jsf - flows-programmatic ......... SKIPPED
+[INFO] Java EE 7 Sample: jsf - flows-declarative .......... SKIPPED
+[INFO] Java EE 7 Sample: jsf - http-get ................... SKIPPED
+[INFO] Java EE 7 Sample: jsf - passthrough ................ SKIPPED
+[INFO] Java EE 7 Sample: jsf - radio-buttons .............. SKIPPED
+[INFO] Java EE 7 Sample: jsf - resource-handling .......... SKIPPED
+[INFO] Java EE 7 Sample: jsf - simple-facelet ............. SKIPPED
+[INFO] Java EE 7 Sample: jsf - server-extension ........... SKIPPED
+[INFO] Java EE 7 Sample: jsf - viewscoped ................. SKIPPED
+[INFO] Java EE 7 Sample: json ............................. SKIPPED
+[INFO] Java EE 7 Sample: json - object-builder ............ SKIPPED
+[INFO] Java EE 7 Sample: json - object-reader ............. SKIPPED
+[INFO] Java EE 7 Sample: json - streaming-generate ........ SKIPPED
+[INFO] Java EE 7 Sample: json - streaming-parser .......... SKIPPED
+[INFO] Java EE 7 Sample: servlet .......................... SKIPPED
+[INFO] Java EE 7 Sample: servlet - cookies ................ SKIPPED
+[INFO] Java EE 7 Sample: servlet - async-servlet .......... SKIPPED
+[INFO] Java EE 7 Sample: servlet - error-mapping .......... SKIPPED
+[INFO] Java EE 7 Sample: servlet - event-listeners ........ SKIPPED
+[INFO] Java EE 7 Sample: servlet - metadata-complete ...... SKIPPED
+[INFO] Java EE 7 Sample: servlet - nonblocking ............ SKIPPED
+[INFO] Java EE 7 Sample: servlet - protocol-handler ....... SKIPPED
+[INFO] Java EE 7 Sample: servlet - resource-packaging ..... SKIPPED
+[INFO] Java EE 7 Sample: servlet - servlet-filters ........ SKIPPED
+[INFO] Java EE 7 Sample: servlet - file-upload ............ SKIPPED
+[INFO] Java EE 7 Sample: servlet - web-fragment ........... SKIPPED
+[INFO] Java EE 7 Sample: servlet - security-basicauth ..... SKIPPED
+[INFO] Java EE 7 Sample: servlet - security-form-based .... SKIPPED
+[INFO] Java EE 7 Sample: servlet - security-programmatic .. SKIPPED
+[INFO] Java EE 7 Sample: servlet - security-deny-uncovered  SKIPPED
+[INFO] Java EE 7 Sample: servlet - security-basicauth-omission SKIPPED
+[INFO] Java EE 7 Sample: servlet - programmatic-registration SKIPPED
+[INFO] Java EE 7 Sample: servlet - simple-servlet ......... SKIPPED
+[INFO] Java EE 7 Sample: validation ....................... SKIPPED
+[INFO] Java EE 7 Sample: validation - methods ............. SKIPPED
+[INFO] Java EE 7 Sample: validation - custom-constraint ... SKIPPED
+[INFO] Java EE 7 Sample: websocket ........................ SKIPPED
+[INFO] Java EE 7 Sample: websocket - chat ................. SKIPPED
+[INFO] Java EE 7 Sample: websocket - encoder .............. SKIPPED
+[INFO] Java EE 7 Sample: websocket - encoder-client ....... SKIPPED
+[INFO] Java EE 7 Sample: websocket - encoder-programmatic . SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint ............. SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-async ....... SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-javatypes ... SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-config ...... SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic  SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic-async SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic-config SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-programmatic-injection SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-security .... SKIPPED
+[INFO] Java EE 7 Sample: websocket - httpsession .......... SKIPPED
+[INFO] Java EE 7 Sample: websocket - injection ............ SKIPPED
+[INFO] Java EE 7 Sample: websocket - javase-client ........ SKIPPED
+[INFO] Java EE 7 Sample: websocket - messagesize .......... SKIPPED
+[INFO] Java EE 7 Sample: websocket - parameters ........... SKIPPED
+[INFO] Java EE 7 Sample: websocket - properties ........... SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-vs-rest .... SKIPPED
+[INFO] Java EE 7 Sample: websocket - subprotocol .......... SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-client ..... SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-client-config SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-client-programmatic SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-client-programmatic-config SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-client-programmatic-encoders SKIPPED
+[INFO] Java EE 7 Sample: websocket - whiteboard ........... SKIPPED
+[INFO] Java EE 7 Sample: websocket - endpoint-singleton ... SKIPPED
+[INFO] Java EE 7 Sample: websocket - websocket-vs-rest-payload SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.851 s
+[INFO] Finished at: 2017-04-11T16:19:22+02:00
+[INFO] Final Memory: 94M/2448M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project batch-batchlet-simple: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/javaee-samples/javaee7-samples/187678498/batch/batchlet-simple/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :batch-batchlet-simple
