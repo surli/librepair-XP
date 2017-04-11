@@ -1,0 +1,29 @@
+nopolinfo #0
+location: FailureLocation{className='org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest', failingMethods=[org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextLongPositiveRange, org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextUniformNegativeBounds], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Chisquare test failed p-value = 0.0018733429675311664 chisquare statistic = 17.069999999999997. 
+value expected observed
+1 0.2  183
+2 0.2  252
+3 0.2  191
+4 0.2  186
+5 0.2  188
+This test can fail randomly due to sampling error with probability 0.01.', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Chisquare test failed p-value = 0.006983194453265562 chisquare statistic = 12.120000000000001. 
+value expected observed
+1 0.25  258
+2 0.25  261
+3 0.25  204
+4 0.25  277
+This test can fail randomly due to sampling error with probability 0.01.', isError=false}], nbFailures=2, nbErrors=0}
+status: TIMEOUT
+dateEnd: Tue Apr 11 19:19:20 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 120minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/apache/commons-math/199953586/src/main/java], projectClasspath='[Ljava.net.URL;@5cc69cfe', projectTests=[org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 488
+nbAngelicValues: 51
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
