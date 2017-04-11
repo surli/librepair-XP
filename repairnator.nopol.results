@@ -1,0 +1,16 @@
+nopolinfo #0
+location: FailureLocation{className='org.javaee7.batch.batchlet.simple.MyBatchletTest', failingMethods=[], erroringMethods=[org.javaee7.batch.batchlet.simple.MyBatchletTest#org.javaee7.batch.batchlet.simple.MyBatchletTest], failures=[FailureType{failureName='org.jboss.arquillian.container.spi.client.container.DeploymentException', failureDetail='Cannot deploy: 8c5a33d0-81d1-4f9f-a3b3-210117e2382b.war', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Tue Apr 11 16:20:11 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/javaee-samples/javaee7-samples/187678498/batch/batchlet-simple/src/main/java], projectClasspath='[Ljava.net.URL;@361c294e', projectTests=[org.javaee7.batch.batchlet.simple.MyBatchletTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
