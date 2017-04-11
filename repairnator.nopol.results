@@ -1,0 +1,22 @@
+nopolinfo #0
+location: FailureLocation{className='com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest', failingMethods=[com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest#assertElectedLeader], erroringMethods=[], failures=[FailureType{failureName='org.mockito.exceptions.verification.TooLittleActualInvocations', failureDetail='
+electionCandidate.startLeadership();
+Wanted 3 times:
+-> at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest.assertElectedLeader(ZookeeperElectionServiceTest.java:70)
+But was 2 times:
+-> at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionService$1.takeLeadership(ZookeeperElectionService.java:61)
+', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Tue Apr 11 17:06:30 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 3minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/dangdangdotcom/elastic-job/193672591/elastic-job-common/elastic-job-common-core/src/main/java], projectClasspath='[Ljava.net.URL;@4fd4cae3', projectTests=[com.dangdang.ddframe.job.reg.zookeeper.ZookeeperElectionServiceTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 38
+nbAngelicValues: 30
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
