@@ -14,6 +14,7 @@ import static org.junit.Assert.*;
 public class BlobTest extends BaseTest {
     /**
      * Initialisation.
+     *
      * @throws SQLException exception
      */
     @BeforeClass()
