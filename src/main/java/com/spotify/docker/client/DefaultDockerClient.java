@@ -106,6 +106,7 @@ import com.spotify.docker.client.messages.TopResults;
 import com.spotify.docker.client.messages.Version;
 import com.spotify.docker.client.messages.Volume;
 import com.spotify.docker.client.messages.VolumeList;
+import com.spotify.docker.client.messages.swarm.Node;
 import com.spotify.docker.client.messages.swarm.Secret;
 import com.spotify.docker.client.messages.swarm.SecretCreateResponse;
 import com.spotify.docker.client.messages.swarm.SecretSpec;
@@ -316,8 +317,9 @@ public class DefaultDockerClient implements DockerClient, Closeable {
       new GenericType<List<Service>>() {
       };
 
-  private static final GenericType<List<Task>> TASK_LIST = new GenericType<List<Task>>() {
-  };
+  private static final GenericType<List<Task>> TASK_LIST = new GenericType<List<Task>>() { };
+
+  private static final GenericType<List<Node>> NODE_LIST = new GenericType<List<Node>>() { };
 
   private static final GenericType<List<Secret>> SECRET_LIST = new GenericType<List<Secret>>() { };
 
@@ -1802,6 +1804,14 @@ public class DefaultDockerClient implements DockerClient, Closeable {
     WebTarget resource = resource().path("tasks");
     resource = resource.queryParam("filters", urlEncodeFilters(filters));
     return request(GET, TASK_LIST, resource, resource.request(APPLICATION_JSON_TYPE));
+  }
+
+  @Override
+  public List<Node> listNodes() throws DockerException, InterruptedException {
+    assertApiVersionIsAbove("1.24");
+
+    WebTarget resource = resource().path("nodes");
+    return request(GET, NODE_LIST, resource, resource.request(APPLICATION_JSON_TYPE));
   }
 
   @Override
