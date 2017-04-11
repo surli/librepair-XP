@@ -1,1 +1,1 @@
-{"step-durations":{"CheckoutBuild":9,"CloneRepository":42,"BuildProject":275},"buildid":193672591,"workspace":"./workspace","repo":"dangdangdotcom/elastic-job"}
+{"step-durations":{"CheckoutBuild":9,"":30,"CloneRepository":42,"BuildProject":275},"buildid":193672591,"workspace":"./workspace","repo":"dangdangdotcom/elastic-job"}
