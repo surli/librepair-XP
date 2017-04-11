@@ -1,4 +1,4 @@
-package com.puppycrawl.tools.checkstyle.checks.coding;
+package com.puppycrawl.tools.checkstyle.checks.coding.defaultcomeslast;
 
 
 public class InputDefaultComesLast
@@ -8,10 +8,10 @@ public class InputDefaultComesLast
         switch (i) {
         case 1: break;
         case 2: break;
-        default: 
+        default:
             // do something :)
         }
-        
+
         // switch w/o default (not a problem)
         switch (i) {
         case 1: break;
@@ -27,9 +27,9 @@ public class InputDefaultComesLast
         case 2:
             break;
         }
-        
+
         switch (i) {
-        case 1: break; default: break; case 2: break;  
+        case 1: break; default: break; case 2: break;
         }
     }
 }
