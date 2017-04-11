@@ -5,6 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 package com.puppycrawl.tools.checkstyle.checks.naming.localfinalvariablename;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 /**
  * Contains simple mistakes:
  * - Long lines
@@ -20,7 +21,6 @@ final class InputLocalFinalVariableName
     // Contains trailing whitespace ->
 
     // Name format tests
-    //
     /** Invalid format **/
     public static final int badConstant = 2;
     /** Valid format **/
@@ -144,7 +144,7 @@ final class InputLocalFinalVariableName
     // A very, very long line that is OK because it matches the regexp "^.*is OK.*regexp.*$"
     // long line that has a tab ->	<- and would be OK if tab counted as 1 char
     // tabs that count as one char because of their position ->	<-   ->	<-, OK
- 
+
     /** some lines to test the error column after tabs */
     void errorColumnAfterTabs()
     {
@@ -186,6 +186,27 @@ final class InputLocalFinalVariableName
           blah blah blah blah
           blah blah blah blah
           enough talk */
+    }
+
+    // check for try-with-resources
+    void method() throws Exception {
+        final String fileName = "Test";
+        try (BufferedReader BR = new BufferedReader(new InputStreamReader(
+                new FileInputStream(fileName), StandardCharsets.UTF_8))) {
+        }
+        finally {
+
+        }
+    }
+
+    void method2() throws Exception {
+        final String fileName = "Test";
+        try (final BufferedReader BR = new BufferedReader(new InputStreamReader(
+                new FileInputStream(fileName), StandardCharsets.UTF_8))) {
+        }
+        finally {
+
+        }
     }
 
     /**

@@ -67,6 +67,7 @@ public class LocalFinalVariableNameCheck
         return new int[] {
             TokenTypes.VARIABLE_DEF,
             TokenTypes.PARAMETER_DEF,
+            TokenTypes.RESOURCE,
         };
     }
 
@@ -79,7 +80,8 @@ public class LocalFinalVariableNameCheck
     protected final boolean mustCheckName(DetailAST ast) {
         final DetailAST modifiersAST =
             ast.findFirstToken(TokenTypes.MODIFIERS);
-        final boolean isFinal = modifiersAST.branchContains(TokenTypes.FINAL);
+        final boolean isFinal = ast.getType() == TokenTypes.RESOURCE
+                || modifiersAST.branchContains(TokenTypes.FINAL);
         return isFinal && ScopeUtils.isLocalVariableDef(ast);
     }
 }

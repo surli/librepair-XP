@@ -59,6 +59,8 @@ public class LocalFinalVariableNameCheckTest
 
         final String[] expected = {
             "123:19: " + getCheckMessage(MSG_INVALID_PATTERN, "CDE", pattern),
+            "194:29: " + getCheckMessage(MSG_INVALID_PATTERN, "BR", pattern),
+            "204:35: " + getCheckMessage(MSG_INVALID_PATTERN, "BR", pattern),
         };
         verify(checkConfig, getPath("InputLocalFinalVariableName.java"), expected);
     }
@@ -95,6 +97,7 @@ public class LocalFinalVariableNameCheckTest
         final int[] expected = {
             TokenTypes.VARIABLE_DEF,
             TokenTypes.PARAMETER_DEF,
+            TokenTypes.RESOURCE,
         };
         assertArrayEquals(expected, actual);
     }
