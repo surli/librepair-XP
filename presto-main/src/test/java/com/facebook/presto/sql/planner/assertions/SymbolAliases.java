@@ -89,7 +89,7 @@ public final class SymbolAliases
 
     private Map<String, SymbolReference> getUpdatedAssignments(Assignments assignments)
     {
-        ImmutableMap.Builder<String, SymbolReference> mapUpdate = ImmutableMap.builder();
+        HashMap<String, SymbolReference> mapUpdate = new HashMap<>();
         for (Map.Entry<Symbol, Expression> assignment : assignments.getMap().entrySet()) {
             for (Map.Entry<String, SymbolReference> existingAlias : map.entrySet()) {
                 if (assignment.getValue().equals(existingAlias.getValue())) {
@@ -111,7 +111,7 @@ public final class SymbolAliases
                 }
             }
         }
-        return mapUpdate.build();
+        return ImmutableMap.copyOf(mapUpdate);
     }
 
     /*

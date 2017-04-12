@@ -70,6 +70,7 @@ public final class SystemSessionProperties
     public static final String ITERATIVE_OPTIMIZER = "iterative_optimizer_enabled";
     public static final String ITERATIVE_OPTIMIZER_TIMEOUT = "iterative_optimizer_timeout";
     public static final String EXCHANGE_COMPRESSION = "exchange_compression";
+    public static final String REMOVE_DISTINCT_FROM_SEMIJOIN = "remove_distinct_from_semijoin";
 
     private final List<PropertyMetadata<?>> sessionProperties;
 
@@ -300,7 +301,13 @@ public final class SystemSessionProperties
                         EXCHANGE_COMPRESSION,
                         "Enable compression in exchanges",
                         featuresConfig.isExchangeCompressionEnabled(),
-                        false));
+                        false),
+                booleanSessionProperty(
+                        REMOVE_DISTINCT_FROM_SEMIJOIN,
+                        "Remove distinct from semi join",
+                        featuresConfig.isDistinctRemovedFromSemiJoin(),
+                        false
+                        ));
     }
 
     public List<PropertyMetadata<?>> getSessionProperties()
@@ -465,5 +472,10 @@ public final class SystemSessionProperties
     public static boolean isExchangeCompressionEnabled(Session session)
     {
         return session.getSystemProperty(EXCHANGE_COMPRESSION, Boolean.class);
+    }
+
+    public static boolean isDistinctRemovedFromSemiJoin(Session session)
+    {
+        return session.getSystemProperty(REMOVE_DISTINCT_FROM_SEMIJOIN, Boolean.class);
     }
 }
