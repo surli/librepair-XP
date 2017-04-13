@@ -1,4 +1,4 @@
-package com.puppycrawl.tools.checkstyle.checks.coding;
+package com.puppycrawl.tools.checkstyle.checks.coding.finallocalvariable;
 
 public class InputFinalLocalVariableFalsePositive
 {
@@ -10,7 +10,7 @@ public class InputFinalLocalVariableFalsePositive
         {
         }
     }
-    
+
     public void method1()
     {
         final java.util.List<Object> list = new java.util.ArrayList<>();
