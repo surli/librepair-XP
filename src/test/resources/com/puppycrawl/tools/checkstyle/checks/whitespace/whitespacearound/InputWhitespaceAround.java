@@ -1,4 +1,4 @@
-package com.puppycrawl.tools.checkstyle.checks.whitespace;
+package com.puppycrawl.tools.checkstyle.checks.whitespace.whitespacearound;
 
 @SuppressWarnings({"this", "that"})
 public class InputWhitespaceAround
@@ -12,7 +12,7 @@ public class InputWhitespaceAround
     {
         super ();
     }
-    
+
     public void enhancedFor ()
     {
         int[] i = new int[2];
@@ -23,7 +23,7 @@ public class InputWhitespaceAround
 }
 
 @interface CronExpression {
-	Class<?>[] groups() default {}; 
+	Class<?>[] groups() default {};
 }
 
 @interface CronExpression1 {
