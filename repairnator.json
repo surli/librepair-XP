@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 2,
-    "CloneRepository": 12
+    "CloneRepository": 12,
+    "ResolveDependency": 24
   },
   "workspace": "./workspace",
   "pr-remote-repo": "krichter722/commons-math",
