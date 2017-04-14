@@ -6216,6 +6216,7 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "": 2,
+    "ComputeClasspath": 11,
     "CloneRepository": 36,
     "ResolveDependency": 51,
     "TestProject": 323,
@@ -6223,6 +6224,7 @@
     "PushIncriminatedBuild": 15,
     "SquashRepository": 4
   },
+  "nbLibraries": 55,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/antlr/antlr4/commit/ce09abb480e82c1701f3df91a3f824fbe01cf454",
   "failingModule": "/root/workspace/antlr/antlr4/198185035/runtime-testsuite"
