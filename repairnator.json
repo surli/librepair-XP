@@ -6219,7 +6219,8 @@
     "CloneRepository": 18,
     "ResolveDependency": 51,
     "TestProject": 353,
-    "BuildProject": 77
+    "BuildProject": 77,
+    "SquashRepository": 2
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/antlr/antlr4/commit/ce09abb480e82c1701f3df91a3f824fbe01cf454",
