@@ -1,19 +1,46 @@
 {
+  "pr-base-commit-id": "0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3",
+  "pr-head-commit-id": "2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "haozhun/presto",
+  "error-types": [
+    "org.testng.internal.thread.ThreadTimeoutException"
+  ],
+  "totalNumberFailingTests": 1,
+  "buildid": 211577386,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 4479,
+  "pr-head-commit-id-url": "https://github.com/haozhun/presto/commit/2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
+  "pr-id": 7590,
+  "repo": "prestodb/presto",
+  "failing-test-cases": [
+    {
+      "className": "com.facebook.presto.memory.TestMemoryManager",
+      "failingMethods": [
+        "com.facebook.presto.memory.TestMemoryManager#testClusterPools"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.testng.internal.thread.ThreadTimeoutException",
+          "failureDetail": "Method com.facebook.presto.memory.TestMemoryManager.testClusterPools() didn\u0027t finish within the time-out 240000",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 8,
+    "": 0,
     "CloneRepository": 26,
     "ResolveDependency": 188,
     "TestProject": 1220,
     "BuildProject": 515
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "haozhun/presto",
-  "pr-head-commit-id": "2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
-  "pr-id": 7590,
-  "repo": "prestodb/presto",
-  "pr-head-commit-id-url": "https://github.com/haozhun/presto/commit/2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
-  "is-pr": "true",
-  "buildid": 211577386,
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3",
-  "pr-base-commit-id": "0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3"
+  "failingModule": "/root/workspace/prestodb/presto/211577386/presto-tests"
 }
