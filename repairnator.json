@@ -1,14 +1,73 @@
 {
-  "bugRepo": "apache/logging-log4j2",
+  "totalNumberSkippingTests": 33,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 23,
     "ResolveDependency": 249,
     "TestProject": 869,
     "BuildProject": 343
   },
-  "buildid": 194118581,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 1,
   "repo": "apache/logging-log4j2",
-  "bugCommit": "https://github.com/apache/logging-log4j2/compare/c2576af70cd8...c57a6f67eab3"
+  "bugCommit": "https://github.com/apache/logging-log4j2/compare/c2576af70cd8...c57a6f67eab3",
+  "failingModule": "/root/workspace/apache/logging-log4j2/194118581/log4j-core",
+  "buildid": 194118581,
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.io.EOFException"
+  ],
+  "totalNumberRunningTests": 2390,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderSizeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.apache.logging.log4j.core.appender.rolling.RollingAppenderSizeTest#testAppender[log4j-rolling-xz.xml → .xz (createOnDemand \u003d false)]"
+      ],
+      "failures": [
+        {
+          "failureName": "java.io.EOFException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "org.apache.logging.log4j.core.appender.SocketAppenderSocketOptionsTest",
+      "failingMethods": [
+        "org.apache.logging.log4j.core.appender.SocketAppenderSocketOptionsTest#testSocketOptions"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.apache.logging.log4j.core.appender.SecureSocketAppenderSocketOptionsTest",
+      "failingMethods": [
+        "org.apache.logging.log4j.core.appender.SecureSocketAppenderSocketOptionsTest#testSocketOptions"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c2\u003e but was:\u003c0\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "apache/logging-log4j2"
 }
