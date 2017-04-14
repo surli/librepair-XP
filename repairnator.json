@@ -1,19 +1,113 @@
 {
+  "pr-base-commit-id": "0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3",
+  "pr-head-commit-id": "2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
+  "totalNumberSkippingTests": 7,
+  "pr-remote-repo": "haozhun/presto",
+  "error-types": [
+    "com.facebook.presto.client.FailureInfo$FailureException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberFailingTests": 12,
+  "buildid": 211577154,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 5985,
+  "pr-head-commit-id-url": "https://github.com/haozhun/presto/commit/2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
+  "pr-id": 7590,
+  "repo": "prestodb/presto",
+  "failing-test-cases": [
+    {
+      "className": "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest",
+      "failingMethods": [
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testInListPredicate",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testMultiplePartitionClusteringPredicates",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testRangePredicate",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testClusteringKeyOnlyPushdown",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testMultipleRangesPredicate",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testClusteringPredicates",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testSelectAll",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testColumnsInReverseOrder",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testAggregateSingleColumn",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testCountAll",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testExactPredicate",
+        "com.facebook.presto.cassandra.TestCassandraIntegrationSmokeTest#testIsNullPredicate"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT SUM(orderkey) FROM ORDERS",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT shippriority, clerk, totalprice FROM ORDERS",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT COUNT(*) FROM ORDERS",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT * FROM ORDERS WHERE orderkey \u003d 10",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT * FROM ORDERS WHERE orderkey IN (10, 11, 20, 21)",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT * FROM ORDERS WHERE orderkey \u003d 10 OR orderkey IS NULL",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT * FROM ORDERS WHERE orderkey BETWEEN 10 AND 50 or orderkey BETWEEN 100 AND 150",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT * FROM ORDERS WHERE orderkey BETWEEN 10 AND 50",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Execution of \u0027actual\u0027 query failed: SELECT * FROM ORDERS",
+          "isError": false
+        },
+        {
+          "failureName": "com.facebook.presto.client.FailureInfo$FailureException",
+          "failureDetail": "Can\u0027t use this cluster instance because it was previously closed",
+          "isError": false
+        },
+        {
+          "failureName": "com.facebook.presto.client.FailureInfo$FailureException",
+          "failureDetail": "Can\u0027t use this cluster instance because it was previously closed",
+          "isError": false
+        },
+        {
+          "failureName": "com.facebook.presto.client.FailureInfo$FailureException",
+          "failureDetail": "Can\u0027t use this cluster instance because it was previously closed",
+          "isError": false
+        }
+      ],
+      "nbFailures": 12,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 6,
+    "": 0,
     "CloneRepository": 33,
     "ResolveDependency": 192,
     "TestProject": 2721,
     "BuildProject": 558
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "haozhun/presto",
-  "pr-head-commit-id": "2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
-  "pr-id": 7590,
-  "repo": "prestodb/presto",
-  "pr-head-commit-id-url": "https://github.com/haozhun/presto/commit/2e0aafc40d6a0a0742e5d3ab95b3407c5887501a",
-  "is-pr": "true",
-  "buildid": 211577154,
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3",
-  "pr-base-commit-id": "0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3"
+  "failingModule": "/root/workspace/prestodb/presto/211577154/presto-cassandra"
 }
