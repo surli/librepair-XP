@@ -115,5 +115,6 @@
   "nbLibraries": 172,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/0f7982bb2af2e2e4b87a73486ba108b4fe9f49b3",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/prestodb/presto/211577154/presto-cassandra"
 }
