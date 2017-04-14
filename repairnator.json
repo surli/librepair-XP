@@ -47,6 +47,7 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 12,
     "ResolveDependency": 24,
     "TestProject": 162,
@@ -54,6 +55,7 @@
     "PushIncriminatedBuild": 5,
     "SquashRepository": 3
   },
+  "nbLibraries": 10,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/apache/commons-math/commit/843267df5a0b44145d5b9ee9153d17aa5e15cce1",
   "failingModule": "/root/workspace/apache/commons-math/205752074"
