@@ -1,0 +1,11 @@
+{
+  "bugRepo": "apache/commons-math",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 10
+  },
+  "buildid": 212742768,
+  "workspace": "./workspace",
+  "repo": "apache/commons-math",
+  "bugCommit": "https://github.com/apache/commons-math/compare/a776a236589d...43a007402210"
+}
