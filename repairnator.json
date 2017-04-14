@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 6,
+    "CloneRepository": 22
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "bhamiltoncx/antlr4",
+  "pr-head-commit-id": "4589ff56eac0b4a78fcea657c8f6b9c697df1bb1",
+  "pr-id": 1633,
+  "repo": "antlr/antlr4",
+  "pr-head-commit-id-url": "https://github.com/bhamiltoncx/antlr4/commit/4589ff56eac0b4a78fcea657c8f6b9c697df1bb1",
+  "is-pr": "true",
+  "buildid": 197828175,
+  "pr-base-commit-id-url": "https://github.com/antlr/antlr4/commit/ce09abb480e82c1701f3df91a3f824fbe01cf454",
+  "pr-base-commit-id": "ce09abb480e82c1701f3df91a3f824fbe01cf454"
+}
