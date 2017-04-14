@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building ANTLR 4 Runtime Tests (2nd generation) 4.6.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ antlr4-runtime-testsuite ---
+[INFO] Wrote classpath file '/root/workspace/antlr/antlr4/200177873/runtime-testsuite/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.593 s
+[INFO] Finished at: 2017-04-14T18:50:16+02:00
+[INFO] Final Memory: 23M/1214M
+[INFO] ------------------------------------------------------------------------
