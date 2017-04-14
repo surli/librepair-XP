@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 2,
-    "CloneRepository": 15
+    "CloneRepository": 15,
+    "ResolveDependency": 51
   },
   "workspace": "./workspace",
   "pr-remote-repo": "bhamiltoncx/antlr4",
