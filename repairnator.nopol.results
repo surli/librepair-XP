@@ -1,0 +1,16 @@
+nopolinfo #0
+location: FailureLocation{className='loci.formats.utests.MemoizerTest', failingMethods=[loci.formats.utests.MemoizerTest#testGetMemoFilePermissionsInPlaceDirectory, loci.formats.utests.MemoizerTest#testGetMemoFilePermissionsInPlace, loci.formats.utests.MemoizerTest#testGetMemoFilePermissionsDirectory], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='expected [null] but found [/tmp/loci.formats.utests.MemoizerTest.3613000880605629824/tmp/loci.formats.utests.MemoizerTest.4895044084366997732/.test&pixelType=int8&sizeX=20&sizeY=20&sizeC=1&sizeZ=1&sizeT=1.fake.bfmemo]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='expected [null] but found [/tmp/loci.formats.utests.MemoizerTest.4644391003738384121/.test&pixelType=int8&sizeX=20&sizeY=20&sizeC=1&sizeZ=1&sizeT=1.fake.bfmemo]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='expected [null] but found [/tmp/loci.formats.utests.MemoizerTest.6617175413334647419/tmp/loci.formats.utests.MemoizerTest.6617175413334647419/.test&pixelType=int8&sizeX=20&sizeY=20&sizeC=1&sizeZ=1&sizeT=1.fake.bfmemo]', isError=false}], nbFailures=3, nbErrors=0}
+status: NOPATCH
+dateEnd: Fri Apr 14 22:31:46 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/openmicroscopy/bioformats/211716253/components/formats-bsd/src], projectClasspath='[Ljava.net.URL;@75b21c3b', projectTests=[loci.formats.utests.MemoizerTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
