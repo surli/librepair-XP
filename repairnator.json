@@ -1,19 +1,46 @@
 {
+  "pr-base-commit-id": "31ab4b2474cf4ac0e5add9ddf7d012731ed7232b",
+  "pr-head-commit-id": "32877c7417174a05ab511110afdf0679d83807ff",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "huawei-flink/flink",
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberFailingTests": 1,
+  "buildid": 211796961,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 2143,
+  "pr-head-commit-id-url": "https://github.com/huawei-flink/flink/commit/32877c7417174a05ab511110afdf0679d83807ff",
+  "pr-id": 3547,
+  "repo": "apache/flink",
+  "failing-test-cases": [
+    {
+      "className": "org.apache.flink.util.FileUtilsTest",
+      "failingMethods": [
+        "org.apache.flink.util.FileUtilsTest#testDeleteDirectory"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "this should fail with an exception",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 13,
+    "": 0,
     "CloneRepository": 40,
     "ResolveDependency": 159,
     "TestProject": 23,
     "BuildProject": 709
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "huawei-flink/flink",
-  "pr-head-commit-id": "32877c7417174a05ab511110afdf0679d83807ff",
-  "pr-id": 3547,
-  "repo": "apache/flink",
-  "pr-head-commit-id-url": "https://github.com/huawei-flink/flink/commit/32877c7417174a05ab511110afdf0679d83807ff",
-  "is-pr": "true",
-  "buildid": 211796961,
   "pr-base-commit-id-url": "https://github.com/apache/flink/commit/31ab4b2474cf4ac0e5add9ddf7d012731ed7232b",
-  "pr-base-commit-id": "31ab4b2474cf4ac0e5add9ddf7d012731ed7232b"
+  "failingModule": "/root/workspace/apache/flink/211796961/flink-core"
 }
