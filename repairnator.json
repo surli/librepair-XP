@@ -2,7 +2,8 @@
   "bugRepo": "apache/commons-math",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 10
+    "CloneRepository": 10,
+    "ResolveDependency": 24
   },
   "buildid": 212742768,
   "workspace": "./workspace",
