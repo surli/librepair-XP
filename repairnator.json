@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 12
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "krichter722/commons-math",
+  "pr-head-commit-id": "9a1fccfc94b0e0f8b7074ac52611c78441f308e0",
+  "pr-id": 39,
+  "repo": "apache/commons-math",
+  "pr-head-commit-id-url": "https://github.com/krichter722/commons-math/commit/9a1fccfc94b0e0f8b7074ac52611c78441f308e0",
+  "is-pr": "true",
+  "buildid": 205752074,
+  "pr-base-commit-id-url": "https://github.com/apache/commons-math/commit/843267df5a0b44145d5b9ee9153d17aa5e15cce1",
+  "pr-base-commit-id": "843267df5a0b44145d5b9ee9153d17aa5e15cce1"
+}
