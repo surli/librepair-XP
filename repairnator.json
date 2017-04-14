@@ -47,6 +47,7 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "": 0,
+    "ComputeClasspath": 2,
     "CloneRepository": 43,
     "ResolveDependency": 43,
     "TestProject": 204,
@@ -54,6 +55,7 @@
     "PushIncriminatedBuild": 26,
     "SquashRepository": 4
   },
+  "nbLibraries": 32,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/openmicroscopy/bioformats/commit/cabf550a21c86d0cd646fd370efec369dd28ed12",
   "failingModule": "/root/workspace/openmicroscopy/bioformats/211518095/components/formats-bsd"
