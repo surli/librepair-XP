@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "CloneRepository": 43,
-    "ResolveDependency": 43
+    "ResolveDependency": 43,
+    "BuildProject": 49
   },
   "workspace": "./workspace",
   "pr-remote-repo": "dgault/bioformats",
