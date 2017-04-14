@@ -1,0 +1,22 @@
+nopolinfo #0
+location: FailureLocation{className='org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest', failingMethods=[org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextLongPositiveRange], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Chisquare test failed p-value = 6.331858676306146E-4 chisquare statistic = 17.232. 
+value expected observed
+1 0.25  209
+2 0.25  287
+3 0.25  227
+4 0.25  277
+This test can fail randomly due to sampling error with probability 0.01.', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 01:06:49 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 12minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/apache/commons-math/212742768/src/main/java], projectClasspath='[Ljava.net.URL;@132ddbab', projectTests=[org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 488
+nbAngelicValues: 294
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
