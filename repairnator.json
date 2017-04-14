@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 13,
-    "CloneRepository": 40
+    "CloneRepository": 40,
+    "ResolveDependency": 159
   },
   "workspace": "./workspace",
   "pr-remote-repo": "huawei-flink/flink",
