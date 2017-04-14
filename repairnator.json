@@ -48,5 +48,6 @@
   "nbLibraries": 36,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/apache/flink/commit/31ab4b2474cf4ac0e5add9ddf7d012731ed7232b",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/apache/flink/211796961/flink-core"
 }
