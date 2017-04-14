@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 8,
     "CloneRepository": 26,
-    "ResolveDependency": 188
+    "ResolveDependency": 188,
+    "BuildProject": 515
   },
   "workspace": "./workspace",
   "pr-remote-repo": "haozhun/presto",
