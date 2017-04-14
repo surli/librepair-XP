@@ -5,7 +5,7 @@
 
     <groupId>de.jetwick</groupId>
     <artifactId>snacktory</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Snacktory</name>
@@ -76,12 +76,18 @@
     </build>
     <distributionManagement>
         <snapshotRepository>
-            <id>karussell_snapshots</id>
-            <url>https://github.com/karussell/mvnrepo/raw/master/snapshots</url>
+            <id>edu.gcu.repo</id>
+            <url>s3://gcu.repo/snapshot</url>
         </snapshotRepository>
         <repository>
-            <id>karussell_releases</id>
-            <url>https://github.com/karussell/mvnrepo/raw/master/releases/</url>
+            <id>edu.gcu.repo</id>
+            <url>s3://gcu.repo/release</url>
         </repository>
     </distributionManagement>
+    <repositories>
+        <repository>
+            <id>edu.gcu.repo</id>
+            <url>s3://gcu.repo/snapshot</url>
+        </repository>
+    </repositories>
 </project>
