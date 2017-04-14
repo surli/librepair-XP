@@ -1,0 +1,16 @@
+[INFO] BuildTimeEventSpy is registered.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-cassandra 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ presto-cassandra ---
+[INFO] Wrote classpath file '/root/workspace/prestodb/presto/211577154/presto-cassandra/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.229 s
+[INFO] Finished at: 2017-04-14T22:17:34+02:00
+[INFO] Final Memory: 30M/1214M
+[INFO] ------------------------------------------------------------------------
