@@ -1,4 +1,5 @@
 {
+  "lastStep": "NopolRepair",
   "totalNumberSkippingTests": 33,
   "step-durations": {
     "CheckoutBuild": 0,
