@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Log4j Core 2.7.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ log4j-core ---
+[INFO] Wrote classpath file '/root/workspace/apache/logging-log4j2/194118581/log4j-core/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.163 s
+[INFO] Finished at: 2017-04-14T18:43:31+02:00
+[INFO] Final Memory: 27M/1214M
+[INFO] ------------------------------------------------------------------------
