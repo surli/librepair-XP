@@ -1,0 +1,42 @@
+nopolinfo #0
+location: FailureLocation{className='org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest', failingMethods=[org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextUniformMaximalInterval, org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextUniformPositiveBounds, org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextLongNegativeToPositiveRange], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Chisquare test failed p-value = 0.006230442948793935 chisquare statistic = 14.36. 
+value expected observed
+1 0.2  156
+2 0.2  216
+3 0.2  226
+4 0.2  202
+5 0.2  200
+This test can fail randomly due to sampling error with probability 0.01.', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Chisquare test failed p-value = 0.00680741044818578 chisquare statistic = 22.74. 
+value expected observed
+1 0.1  117
+2 0.1  126
+3 0.1  96
+4 0.1  99
+5 0.1  79
+6 0.1  89
+7 0.1  117
+8 0.1  104
+9 0.1  81
+10 0.1  92
+This test can fail randomly due to sampling error with probability 0.01.', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Chisquare test failed p-value = 0.009686407096357375 chisquare statistic = 13.349999999999998. 
+value expected observed
+1 0.2  218
+2 0.2  157
+3 0.2  220
+4 0.2  196
+5 0.2  209
+This test can fail randomly due to sampling error with probability 0.01.', isError=false}], nbFailures=3, nbErrors=0}
+status: NOPATCH
+dateEnd: Fri Apr 14 19:41:24 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 11minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/apache/commons-math/205752074/src/main/java], projectClasspath='[Ljava.net.URL;@50cf5a23', projectTests=[org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 488
+nbAngelicValues: 294
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
