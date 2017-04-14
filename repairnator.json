@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 43
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "dgault/bioformats",
+  "pr-head-commit-id": "9f06a5869c6424972e98948df5a80d089d72ffba",
+  "pr-id": 2788,
+  "repo": "openmicroscopy/bioformats",
+  "pr-head-commit-id-url": "https://github.com/dgault/bioformats/commit/9f06a5869c6424972e98948df5a80d089d72ffba",
+  "is-pr": "true",
+  "buildid": 211518095,
+  "pr-base-commit-id-url": "https://github.com/openmicroscopy/bioformats/commit/cabf550a21c86d0cd646fd370efec369dd28ed12",
+  "pr-base-commit-id": "cabf550a21c86d0cd646fd370efec369dd28ed12"
+}
