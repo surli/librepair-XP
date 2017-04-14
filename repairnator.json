@@ -1,14 +1,41 @@
 {
-  "bugRepo": "apache/commons-math",
+  "totalNumberSkippingTests": 33,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 10,
     "ResolveDependency": 24,
     "TestProject": 163,
     "BuildProject": 49
   },
-  "buildid": 212742768,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "apache/commons-math",
-  "bugCommit": "https://github.com/apache/commons-math/compare/a776a236589d...43a007402210"
+  "bugCommit": "https://github.com/apache/commons-math/compare/a776a236589d...43a007402210",
+  "failingModule": "/root/workspace/apache/commons-math/212742768",
+  "buildid": 212742768,
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 5497,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest",
+      "failingMethods": [
+        "org.apache.commons.math4.random.RandomUtilsDataGeneratorJDKSecureRandomTest#testNextLongPositiveRange"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Chisquare test failed p-value \u003d 6.331858676306146E-4 chisquare statistic \u003d 17.232. \nvalue expected observed\n1 0.25  209\n2 0.25  287\n3 0.25  227\n4 0.25  277\nThis test can fail randomly due to sampling error with probability 0.01.",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "apache/commons-math"
 }
