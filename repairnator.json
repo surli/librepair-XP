@@ -2,7 +2,8 @@
   "bugRepo": "apache/logging-log4j2",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 23
+    "CloneRepository": 23,
+    "ResolveDependency": 249
   },
   "buildid": 194118581,
   "workspace": "./workspace",
