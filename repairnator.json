@@ -44,7 +44,8 @@
     "CloneRepository": 38,
     "ResolveDependency": 27,
     "TestProject": 58,
-    "BuildProject": 48
+    "BuildProject": 48,
+    "SquashRepository": 4
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/mybatis/mybatis-3/commit/823cf2a503506f7d4a2fcfc736e66baab9d05995",
