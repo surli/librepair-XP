@@ -1,0 +1,16 @@
+[INFO] BuildTimeEventSpy is registered.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-main 0.172-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ presto-main ---
+[INFO] Wrote classpath file '/root/workspace/prestodb/presto/219484346/presto-main/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.987 s
+[INFO] Finished at: 2017-04-15T14:45:36+02:00
+[INFO] Final Memory: 29M/1214M
+[INFO] ------------------------------------------------------------------------
