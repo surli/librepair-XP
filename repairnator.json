@@ -1,19 +1,685 @@
 {
+  "pr-base-commit-id": "f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d",
+  "pr-head-commit-id": "5887b1b2c43cfcba7c0e48b3c16a9d39969c2e3c",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "fredriko/twitter4j",
+  "error-types": [
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberFailingTests": 0,
+  "buildid": 219634671,
+  "totalNumberErroringTests": 93,
+  "is-pr": "true",
+  "totalNumberRunningTests": 154,
+  "pr-head-commit-id-url": "https://github.com/fredriko/twitter4j/commit/5887b1b2c43cfcba7c0e48b3c16a9d39969c2e3c",
+  "pr-id": 259,
+  "repo": "yusuke/twitter4j",
+  "failing-test-cases": [
+    {
+      "className": "twitter4j.TwitterTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.TwitterTest#testDummy",
+        "twitter4j.TwitterTest#testGetScreenName",
+        "twitter4j.TwitterTest#testRateLimitStatus",
+        "twitter4j.TwitterTest#testGetAccessLevel"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "twitter4j.HelpResoursesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.HelpResoursesTest#testHelpMethods",
+        "twitter4j.HelpResoursesTest#testDummy",
+        "twitter4j.HelpResoursesTest#testLegalResources"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "twitter4j.DirectMessagesResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.DirectMessagesResourcesTest#testDummy",
+        "twitter4j.DirectMessagesResourcesTest#testDirectMessages"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "twitter4j.UsersResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.UsersResourcesTest#testLookupUsers",
+        "twitter4j.UsersResourcesTest#testDummy",
+        "twitter4j.UsersResourcesTest#testMuteMethods",
+        "twitter4j.UsersResourcesTest#testBanner",
+        "twitter4j.UsersResourcesTest#testBlockMethods",
+        "twitter4j.UsersResourcesTest#testShowUser",
+        "twitter4j.UsersResourcesTest#testAccountMethods",
+        "twitter4j.UsersResourcesTest#testSearchUser",
+        "twitter4j.UsersResourcesTest#testAccountProfileImageUpdates"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 9
+    },
+    {
+      "className": "twitter4j.TimelineResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.TimelineResourcesTest#testGetMentions",
+        "twitter4j.TimelineResourcesTest#testUserTimeline",
+        "twitter4j.TimelineResourcesTest#testDummy",
+        "twitter4j.TimelineResourcesTest#testGetHomeTimeline",
+        "twitter4j.TimelineResourcesTest#testRetweetsOfMe"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    },
+    {
+      "className": "twitter4j.SearchAPITest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.SearchAPITest#testDummy",
+        "twitter4j.SearchAPITest#testSearch",
+        "twitter4j.SearchAPITest#testEasyPaging",
+        "twitter4j.SearchAPITest#testEasyPaging2",
+        "twitter4j.SearchAPITest#testQuery"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 5
+    },
+    {
+      "className": "twitter4j.SavedSearchesResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.SavedSearchesResourcesTest#testDummy",
+        "twitter4j.SavedSearchesResourcesTest#testSavedSearches"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "twitter4j.FriendsFollowersResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.FriendsFollowersResourcesTest#testSocialGraphMethods",
+        "twitter4j.FriendsFollowersResourcesTest#testDummy",
+        "twitter4j.FriendsFollowersResourcesTest#testFriendsFollowersList",
+        "twitter4j.FriendsFollowersResourcesTest#testFriendsFollowersListWithSkipStatusIncludeUserEntities",
+        "twitter4j.FriendsFollowersResourcesTest#testCreateDestroyFriend",
+        "twitter4j.FriendsFollowersResourcesTest#testRelationship",
+        "twitter4j.FriendsFollowersResourcesTest#testLookupFriendships",
+        "twitter4j.FriendsFollowersResourcesTest#testIncomingOutgoingFriendships"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "twitter4j.SpamReportingResourceTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.SpamReportingResourceTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "twitter4j.AuthorizationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.AuthorizationTest#testAnonymousInstance",
+        "twitter4j.AuthorizationTest#testOAuthInstance",
+        "twitter4j.AuthorizationTest#testOAuth2Instance",
+        "twitter4j.AuthorizationTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 4
+    },
+    {
+      "className": "twitter4j.auth.ApplicationOnlyAuthTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.auth.ApplicationOnlyAuthTest#testInvalidation",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testSettingAccessToken2",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testSettingAccessToken1",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testDummy",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testSettingAccessTokenFromPropertyFile",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testAuthWithBuildingConf2",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testAuthWithBuildingConf1",
+        "twitter4j.auth.ApplicationOnlyAuthTest#testAuthWithPropertyFile"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "twitter4j.SuggestedUsersResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.SuggestedUsersResourcesTest#testSuggestion",
+        "twitter4j.SuggestedUsersResourcesTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "twitter4j.FavoritesResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.FavoritesResourcesTest#testFavoriteMethods",
+        "twitter4j.FavoritesResourcesTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "twitter4j.TrendsResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.TrendsResourcesTest#testDummy",
+        "twitter4j.TrendsResourcesTest#testLocalTrendsMethods"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "twitter4j.auth.OAuthTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.auth.OAuthTest#testAccessToken",
+        "twitter4j.auth.OAuthTest#testConstructRequestURL",
+        "twitter4j.auth.OAuthTest#testDummy",
+        "twitter4j.auth.OAuthTest#testBrowserClient",
+        "twitter4j.auth.OAuthTest#testEncodeParameter",
+        "twitter4j.auth.OAuthTest#testNormalizeRequestParameters",
+        "twitter4j.auth.OAuthTest#testXAuth",
+        "twitter4j.auth.OAuthTest#testHeader",
+        "twitter4j.auth.OAuthTest#testDeterministic",
+        "twitter4j.auth.OAuthTest#testIllegalStatus",
+        "twitter4j.auth.OAuthTest#testOAuth",
+        "twitter4j.auth.OAuthTest#testSign",
+        "twitter4j.auth.OAuthTest#testDesktopClient",
+        "twitter4j.auth.OAuthTest#testSigninWithTwitter"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 14
+    },
+    {
+      "className": "twitter4j.PlaceGeoResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.PlaceGeoResourcesTest#testGeoLocation",
+        "twitter4j.PlaceGeoResourcesTest#testGeoMethods",
+        "twitter4j.PlaceGeoResourcesTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "twitter4j.ListResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.ListResourcesTest#testPagingCountDosentWork2",
+        "twitter4j.ListResourcesTest#testUserListsOwnerships",
+        "twitter4j.ListResourcesTest#testListSubscribersMethods",
+        "twitter4j.ListResourcesTest#testPagingCountDosentWork1",
+        "twitter4j.ListResourcesTest#testRemoveListMembers",
+        "twitter4j.ListResourcesTest#testListMethods",
+        "twitter4j.ListResourcesTest#testListMemberMethods",
+        "twitter4j.ListResourcesTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "twitter4j.MBeansIntegrationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.MBeansIntegrationTest#testMonitoringIntegration",
+        "twitter4j.MBeansIntegrationTest#testDummy"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "twitter4j.TweetsResourcesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "twitter4j.TweetsResourcesTest#testLookup",
+        "twitter4j.TweetsResourcesTest#testDummy",
+        "twitter4j.TweetsResourcesTest#testOEmbed",
+        "twitter4j.TweetsResourcesTest#testUploadMediaByStream",
+        "twitter4j.TweetsResourcesTest#testEntities",
+        "twitter4j.TweetsResourcesTest#testStatusMethods",
+        "twitter4j.TweetsResourcesTest#testShowStatus",
+        "twitter4j.TweetsResourcesTest#testRetweetMethods",
+        "twitter4j.TweetsResourcesTest#testUploadMediaByFile"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 9
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 2,
+    "": 0,
     "CloneRepository": 5,
     "ResolveDependency": 23,
     "TestProject": 6,
     "BuildProject": 75
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "fredriko/twitter4j",
-  "pr-head-commit-id": "5887b1b2c43cfcba7c0e48b3c16a9d39969c2e3c",
-  "pr-id": 259,
-  "repo": "yusuke/twitter4j",
-  "pr-head-commit-id-url": "https://github.com/fredriko/twitter4j/commit/5887b1b2c43cfcba7c0e48b3c16a9d39969c2e3c",
-  "is-pr": "true",
-  "buildid": 219634671,
   "pr-base-commit-id-url": "https://github.com/yusuke/twitter4j/commit/f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d",
-  "pr-base-commit-id": "f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d"
+  "failingModule": "/root/workspace/yusuke/twitter4j/219634671/twitter4j-core"
 }
