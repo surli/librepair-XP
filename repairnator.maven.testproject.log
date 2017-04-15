@@ -1,0 +1,645 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building checkstyle 7.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-versions) @ checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- antlr-maven-plugin:2.2:generate (default) @ checkstyle ---
+[INFO] grammar [java.g] was up-to-date; skipping
+[INFO]
+[INFO] --- antlr4-maven-plugin:4.7:antlr4 (default) @ checkstyle ---
+[INFO] No grammars to process
+[INFO] ANTLR 4: Processing source directory /root/workspace/checkstyle/checkstyle/218876837/src/main/resources
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (add-source) @ checkstyle ---
+[INFO] Source directory: /root/workspace/checkstyle/checkstyle/218876837/target/generated-sources/antlr added.
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 162 resources
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-test-source) @ checkstyle ---
+[INFO] Test Source directory: /root/workspace/checkstyle/checkstyle/218876837/src/test/resources added.
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-it-test-source) @ checkstyle ---
+[INFO] Test Source directory: /root/workspace/checkstyle/checkstyle/218876837/src/it/java added.
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-test-source (add-it-test-resource) @ checkstyle ---
+[INFO] Test Source directory: /root/workspace/checkstyle/checkstyle/218876837/src/it/resources added.
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ checkstyle ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 353 source files to /root/workspace/checkstyle/checkstyle/218876837/target/classes
+[INFO] /root/workspace/checkstyle/checkstyle/218876837/src/main/java/com/puppycrawl/tools/checkstyle/JavadocDetailNodeParser.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/checkstyle/checkstyle/218876837/src/main/java/com/puppycrawl/tools/checkstyle/JavadocDetailNodeParser.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/checkstyle/checkstyle/218876837/src/main/java/com/puppycrawl/tools/checkstyle/api/AutomaticBean.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/checkstyle/checkstyle/218876837/src/main/java/com/puppycrawl/tools/checkstyle/api/AutomaticBean.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (ant-phase-compile) @ checkstyle ---
+[INFO] Executing tasks
+
+main:
+
+execute:
+[propertyfile] Updating property file: /root/workspace/checkstyle/checkstyle/218876837/target/classes/checkstylecompilation.properties
+  [javadoc] Generating Javadoc
+  [javadoc] Javadoc execution
+  [javadoc] Loading source file /root/workspace/checkstyle/checkstyle/218876837/src/main/java/com/puppycrawl/tools/checkstyle/api/TokenTypes.java...
+  [javadoc] Constructing Javadoc information...
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 806 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ checkstyle ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1105 source files to /root/workspace/checkstyle/checkstyle/218876837/target/test-classes
+[INFO] /root/workspace/checkstyle/checkstyle/218876837/src/test/java/com/puppycrawl/tools/checkstyle/grammars/javadoc/JavadocParseTreeTest.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/checkstyle/checkstyle/218876837/src/test/java/com/puppycrawl/tools/checkstyle/grammars/javadoc/JavadocParseTreeTest.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ checkstyle ---
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/codehaus-snapshots/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloading: http://sevntu-checkstyle.github.io/sevntu.checkstyle/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 16.4 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/codehaus-snapshots/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloading: http://sevntu-checkstyle.github.io/sevntu.checkstyle/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 45.5 KB/sec)
+[INFO] Downloading: https://oss.sonatype.org/content/repositories/codehaus-snapshots/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloading: http://sevntu-checkstyle.github.io/sevntu.checkstyle/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 657.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.puppycrawl.tools.checkstyle.AstTreeStringPrinterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.425 sec - in com.puppycrawl.tools.checkstyle.AstTreeStringPrinterTest
+Running com.puppycrawl.tools.checkstyle.ConfigurationLoaderTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.931 sec - in com.puppycrawl.tools.checkstyle.ConfigurationLoaderTest
+Running com.puppycrawl.tools.checkstyle.filefilters.ExclusionBeforeExecutionFileFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec - in com.puppycrawl.tools.checkstyle.filefilters.ExclusionBeforeExecutionFileFilterTest
+Running com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheckTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 sec - in com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 sec - in com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec - in com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.metrics.JavaNCSSCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.puppycrawl.tools.checkstyle.checks.metrics.JavaNCSSCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.metrics.BooleanExpressionComplexityCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.puppycrawl.tools.checkstyle.checks.metrics.BooleanExpressionComplexityCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ImportControlTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ImportControlTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ImportControlCheckTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ImportControlCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.AccessResultTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.imports.AccessResultTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ImportControlRegExpTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ImportControlRegExpTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheckTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec - in com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ImportControlLoaderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.887 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ImportControlLoaderTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheckTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.5 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.PkgImportRuleTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.imports.PkgImportRuleTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ImportControlRegExpInPkgTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ImportControlRegExpInPkgTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.imports.ClassImportRuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.imports.ClassImportRuleTest
+Running com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.FileContentsHolderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.FileContentsHolderTest
+Running com.puppycrawl.tools.checkstyle.checks.FileSetCheckLifecycleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.puppycrawl.tools.checkstyle.checks.FileSetCheckLifecycleTest
+Running com.puppycrawl.tools.checkstyle.checks.ClassResolverTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 sec - in com.puppycrawl.tools.checkstyle.checks.ClassResolverTest
+Running com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheckTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 sec - in com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.regexp.RegexpOnFilenameCheckTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in com.puppycrawl.tools.checkstyle.checks.regexp.RegexpOnFilenameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheckTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheckTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 sec - in com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec - in com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec - in com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheckTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 sec - in com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheckTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForIteratorPadCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForIteratorPadCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.SingleSpaceSeparatorCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.SingleSpaceSeparatorCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.NoLineWrapCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.NoLineWrapCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.TypecastParenPadCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.TypecastParenPadCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheckTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.147 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForInitializerPadCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyForInitializerPadCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheckTest
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheckTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec - in com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.header.HeaderCheckTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.222 sec - in com.puppycrawl.tools.checkstyle.checks.header.HeaderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheckTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec - in com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.DescendantTokenCheckTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in com.puppycrawl.tools.checkstyle.checks.DescendantTokenCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.FinalParametersCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in com.puppycrawl.tools.checkstyle.checks.FinalParametersCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.LocalFinalVariableNameCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.puppycrawl.tools.checkstyle.checks.naming.LocalFinalVariableNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.ClassTypeParameterNameCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.checks.naming.ClassTypeParameterNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.InterfaceTypeParameterNameCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.naming.InterfaceTypeParameterNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheckTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.AbstractClassNameCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.puppycrawl.tools.checkstyle.checks.naming.AbstractClassNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheckTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.CatchParameterNameCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.puppycrawl.tools.checkstyle.checks.naming.CatchParameterNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheckTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.naming.MethodTypeParameterNameCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.puppycrawl.tools.checkstyle.checks.naming.MethodTypeParameterNameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.UpperEllCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.checks.UpperEllCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.TodoCommentCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.checks.TodoCommentCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.IllegalThrowsCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.puppycrawl.tools.checkstyle.checks.coding.IllegalThrowsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.SuperCloneCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.puppycrawl.tools.checkstyle.checks.coding.SuperCloneCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheckTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.SuperFinalizeCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.checks.coding.SuperFinalizeCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.PackageDeclarationCheckTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.puppycrawl.tools.checkstyle.checks.coding.PackageDeclarationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.puppycrawl.tools.checkstyle.checks.coding.ParameterAssignmentCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.IllegalTokenCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.puppycrawl.tools.checkstyle.checks.coding.IllegalTokenCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.NestedForDepthCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.puppycrawl.tools.checkstyle.checks.coding.NestedForDepthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanReturnCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanReturnCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.NoFinalizerCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.puppycrawl.tools.checkstyle.checks.coding.NoFinalizerCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.EqualsHashCodeCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in com.puppycrawl.tools.checkstyle.checks.coding.EqualsHashCodeCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.IllegalInstantiationCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.puppycrawl.tools.checkstyle.checks.coding.IllegalInstantiationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.MultipleVariableDeclarationsCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.coding.MultipleVariableDeclarationsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.FallThroughCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in com.puppycrawl.tools.checkstyle.checks.coding.FallThroughCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.OverloadMethodsDeclarationOrderCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.coding.OverloadMethodsDeclarationOrderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.CovariantEqualsCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.coding.CovariantEqualsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.IllegalTokenTextCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.puppycrawl.tools.checkstyle.checks.coding.IllegalTokenTextCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.StringLiteralEqualityCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.checks.coding.StringLiteralEqualityCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanExpressionCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.ArrayTrailingCommaCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.checks.coding.ArrayTrailingCommaCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheckTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 sec - in com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheckTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 sec - in com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 sec - in com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.NoCloneCheckTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.checks.coding.NoCloneCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec - in com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheckTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.NestedTryDepthCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.checks.coding.NestedTryDepthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.DefaultComesLastCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.checks.coding.DefaultComesLastCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 sec - in com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.MethodCountCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.MethodCountCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.AnonInnerLengthCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.AnonInnerLengthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.OuterTypeNumberCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.OuterTypeNumberCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.sizes.InputLineLengthCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.puppycrawl.tools.checkstyle.checks.sizes.InputLineLengthCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.099 sec - in com.puppycrawl.tools.checkstyle.checks.AvoidEscapedUnicodeCharactersCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheckTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheckTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.annotation.SuppressWarningsCheckTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec - in com.puppycrawl.tools.checkstyle.checks.annotation.SuppressWarningsCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.annotation.MissingOverrideCheckTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in com.puppycrawl.tools.checkstyle.checks.annotation.MissingOverrideCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.annotation.PackageAnnotationCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.checks.annotation.PackageAnnotationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationLocationCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationLocationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheckTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheckTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheckTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfoTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfoTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheckTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.859 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.AbstractTypeAwareCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.AbstractTypeAwareCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheckTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheckTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocNodeImplTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocNodeImplTest
+Running com.puppycrawl.tools.checkstyle.checks.javadoc.AbstractJavadocCheckTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 sec - in com.puppycrawl.tools.checkstyle.checks.javadoc.AbstractJavadocCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.UniquePropertiesCheckTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.puppycrawl.tools.checkstyle.checks.UniquePropertiesCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheckTest
+Tests run: 75, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.496 sec - in com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheckTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec - in com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.indentation.LineSetTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.checks.indentation.LineSetTest
+Running com.puppycrawl.tools.checkstyle.checks.indentation.NewHandlerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.puppycrawl.tools.checkstyle.checks.indentation.NewHandlerTest
+Running com.puppycrawl.tools.checkstyle.checks.design.MutableExceptionCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.puppycrawl.tools.checkstyle.checks.design.MutableExceptionCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheckTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.ThrowsCountCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.puppycrawl.tools.checkstyle.checks.design.ThrowsCountCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheckTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheckTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheckTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheckTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 sec - in com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheckTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.checks.design.InterfaceIsTypeCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.OuterTypeFilenameCheckTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in com.puppycrawl.tools.checkstyle.checks.OuterTypeFilenameCheckTest
+Running com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolderTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 sec - in com.puppycrawl.tools.checkstyle.checks.SuppressWarningsHolderTest
+Running com.puppycrawl.tools.checkstyle.AuditEventDefaultFormatterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 sec - in com.puppycrawl.tools.checkstyle.AuditEventDefaultFormatterTest
+Running com.puppycrawl.tools.checkstyle.ant.CheckstyleAntTaskTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in com.puppycrawl.tools.checkstyle.ant.CheckstyleAntTaskTest
+Running com.puppycrawl.tools.checkstyle.doclets.TokenTypesDocletTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.779 sec - in com.puppycrawl.tools.checkstyle.doclets.TokenTypesDocletTest
+Running com.puppycrawl.tools.checkstyle.grammars.MultiDimensionalArraysInGenericsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.grammars.MultiDimensionalArraysInGenericsTest
+Running com.puppycrawl.tools.checkstyle.grammars.AstRegressionTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in com.puppycrawl.tools.checkstyle.grammars.AstRegressionTest
+Running com.puppycrawl.tools.checkstyle.grammars.UnicodeEscapeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.grammars.UnicodeEscapeTest
+Running com.puppycrawl.tools.checkstyle.grammars.HexFloatsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.grammars.HexFloatsTest
+Running com.puppycrawl.tools.checkstyle.grammars.VarargTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.grammars.VarargTest
+Running com.puppycrawl.tools.checkstyle.grammars.Java7TryWithResourcesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in com.puppycrawl.tools.checkstyle.grammars.Java7TryWithResourcesTest
+Running com.puppycrawl.tools.checkstyle.grammars.Java7StringSwitchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.puppycrawl.tools.checkstyle.grammars.Java7StringSwitchTest
+Running com.puppycrawl.tools.checkstyle.grammars.EmbeddedNullCharTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in com.puppycrawl.tools.checkstyle.grammars.EmbeddedNullCharTest
+Running com.puppycrawl.tools.checkstyle.grammars.Java9TryWithResourcesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in com.puppycrawl.tools.checkstyle.grammars.Java9TryWithResourcesTest
+Running com.puppycrawl.tools.checkstyle.grammars.Java7DiamondTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.grammars.Java7DiamondTest
+Running com.puppycrawl.tools.checkstyle.grammars.Java7NumericalLiteralsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec - in com.puppycrawl.tools.checkstyle.grammars.Java7NumericalLiteralsTest
+Running com.puppycrawl.tools.checkstyle.grammars.LineCommentAtTheEndOfFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.grammars.LineCommentAtTheEndOfFileTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.AnnotationTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.AnnotationTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.ReceiverParameterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.ReceiverParameterTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.MethodReferencesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.MethodReferencesTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.TypeUseAnnotationsOnQualifiedTypesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.TypeUseAnnotationsOnQualifiedTypesTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.AnnotationsOnArrayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.AnnotationsOnArrayTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.LambdaTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.LambdaTest
+Running com.puppycrawl.tools.checkstyle.grammars.java8.DefaultMethodsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in com.puppycrawl.tools.checkstyle.grammars.java8.DefaultMethodsTest
+Running com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaTokenTypesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaTokenTypesTest
+Running com.puppycrawl.tools.checkstyle.grammars.comments.CommentsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.grammars.comments.CommentsTest
+Running com.puppycrawl.tools.checkstyle.grammars.comments.AllBlockCommentsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.grammars.comments.AllBlockCommentsTest
+Running com.puppycrawl.tools.checkstyle.grammars.comments.AllSinglelineCommentsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.grammars.comments.AllSinglelineCommentsTest
+Running com.puppycrawl.tools.checkstyle.grammars.javadoc.JavadocParseTreeTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec - in com.puppycrawl.tools.checkstyle.grammars.javadoc.JavadocParseTreeTest
+Running com.puppycrawl.tools.checkstyle.grammars.GeneratedJava14LexerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.puppycrawl.tools.checkstyle.grammars.GeneratedJava14LexerTest
+Running com.puppycrawl.tools.checkstyle.grammars.Java7MultiCatchTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.grammars.Java7MultiCatchTest
+Running com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec - in com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest
+Running com.puppycrawl.tools.checkstyle.DefinitionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.DefinitionsTest
+Running com.puppycrawl.tools.checkstyle.internal.AllChecksTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.804 sec - in com.puppycrawl.tools.checkstyle.internal.AllChecksTest
+Running com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.68 sec - in com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest
+Running com.puppycrawl.tools.checkstyle.internal.CommitValidationTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.174 sec <<< FAILURE! - in com.puppycrawl.tools.checkstyle.internal.CommitValidationTest
+testCommitMessageHasProperStructure(com.puppycrawl.tools.checkstyle.internal.CommitValidationTest)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError:
+Commit 8ab1c1a25c4e3238b2da05f1784e8a6183268d44 message: "repairnator: add log and properties \nCommit done at the end of step BuildProject" is invalid
+Proper commit message should adhere to the following rules:
+    1) Must match one of the following patterns:
+        ^Issue #\d+: .*$
+        ^Pull #\d+: .*$
+        ^(minor|config|infra|doc|spelling): .*$
+    2) It contains only one line of text
+    3) Must not end with a period, space, or tab
+    4) Commit message should be less than or equal to 200 characters
+
+The rule broken was: 1
+	at com.puppycrawl.tools.checkstyle.internal.CommitValidationTest.testCommitMessageHasProperStructure(CommitValidationTest.java:147)
+
+Running com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest
+Running com.puppycrawl.tools.checkstyle.utils.JavadocUtilsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.utils.JavadocUtilsTest
+Running com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.497 sec - in com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest
+Running com.puppycrawl.tools.checkstyle.utils.CheckUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.utils.CheckUtilsTest
+Running com.puppycrawl.tools.checkstyle.utils.ScopeUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.utils.ScopeUtilsTest
+Running com.puppycrawl.tools.checkstyle.utils.AnnotationUtilityTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.utils.AnnotationUtilityTest
+Running com.puppycrawl.tools.checkstyle.MainTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.962 sec - in com.puppycrawl.tools.checkstyle.MainTest
+Running com.puppycrawl.tools.checkstyle.DefaultConfigurationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.DefaultConfigurationTest
+Running com.puppycrawl.tools.checkstyle.PackageNamesLoaderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec - in com.puppycrawl.tools.checkstyle.PackageNamesLoaderTest
+Running com.puppycrawl.tools.checkstyle.XMLLoggerTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.XMLLoggerTest
+Running com.puppycrawl.tools.checkstyle.PropertyCacheFileTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec - in com.puppycrawl.tools.checkstyle.PropertyCacheFileTest
+Running com.puppycrawl.tools.checkstyle.DefaultLoggerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.DefaultLoggerTest
+Running com.puppycrawl.tools.checkstyle.gui.MainFrameModelTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.704 sec - in com.puppycrawl.tools.checkstyle.gui.MainFrameModelTest
+Running com.puppycrawl.tools.checkstyle.gui.ParseTreeTablePresentationTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in com.puppycrawl.tools.checkstyle.gui.ParseTreeTablePresentationTest
+Running com.puppycrawl.tools.checkstyle.gui.CodeSelectorPresentationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.puppycrawl.tools.checkstyle.gui.CodeSelectorPresentationTest
+Running com.puppycrawl.tools.checkstyle.filters.SuppressWarningsFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in com.puppycrawl.tools.checkstyle.filters.SuppressWarningsFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.CsvFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec - in com.puppycrawl.tools.checkstyle.filters.CsvFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.SuppressionsLoaderTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.815 sec - in com.puppycrawl.tools.checkstyle.filters.SuppressionsLoaderTest
+Running com.puppycrawl.tools.checkstyle.filters.SuppressionCommentFilterTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in com.puppycrawl.tools.checkstyle.filters.SuppressionCommentFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.SeverityMatchFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.filters.SeverityMatchFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 sec - in com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.BeforeExecutionFileFilterSetTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.filters.BeforeExecutionFileFilterSetTest
+Running com.puppycrawl.tools.checkstyle.filters.SuppressElementTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in com.puppycrawl.tools.checkstyle.filters.SuppressElementTest
+Running com.puppycrawl.tools.checkstyle.filters.IntMatchFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in com.puppycrawl.tools.checkstyle.filters.IntMatchFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.SuppressionFilterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.542 sec - in com.puppycrawl.tools.checkstyle.filters.SuppressionFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.IntRangeFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec - in com.puppycrawl.tools.checkstyle.filters.IntRangeFilterTest
+Running com.puppycrawl.tools.checkstyle.filters.FilterSetTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.puppycrawl.tools.checkstyle.filters.FilterSetTest
+Running com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest
+Running com.puppycrawl.tools.checkstyle.CheckerTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in com.puppycrawl.tools.checkstyle.CheckerTest
+Running com.puppycrawl.tools.checkstyle.PropertiesExpanderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.PropertiesExpanderTest
+Running com.puppycrawl.tools.checkstyle.TreeWalkerTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in com.puppycrawl.tools.checkstyle.TreeWalkerTest
+Running com.puppycrawl.tools.checkstyle.api.AbstractCheckTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.AbstractCheckTest
+Running com.puppycrawl.tools.checkstyle.api.JavadocTokenTypesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.JavadocTokenTypesTest
+Running com.puppycrawl.tools.checkstyle.api.FileTextTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.FileTextTest
+Running com.puppycrawl.tools.checkstyle.api.SeverityLevelCounterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.SeverityLevelCounterTest
+Running com.puppycrawl.tools.checkstyle.api.AutomaticBeanTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in com.puppycrawl.tools.checkstyle.api.AutomaticBeanTest
+Running com.puppycrawl.tools.checkstyle.api.CheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.CheckTest
+Running com.puppycrawl.tools.checkstyle.api.AbstractViolationReporterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.api.AbstractViolationReporterTest
+Running com.puppycrawl.tools.checkstyle.api.ScopeTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.ScopeTest
+Running com.puppycrawl.tools.checkstyle.api.FullIdentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.FullIdentTest
+Running com.puppycrawl.tools.checkstyle.api.LocalizedMessageTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 sec - in com.puppycrawl.tools.checkstyle.api.LocalizedMessageTest
+Running com.puppycrawl.tools.checkstyle.api.FileContentsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.FileContentsTest
+Running com.puppycrawl.tools.checkstyle.api.TokenTypesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.puppycrawl.tools.checkstyle.api.TokenTypesTest
+Running com.puppycrawl.tools.checkstyle.api.LocalizedMessagesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.LocalizedMessagesTest
+Running com.puppycrawl.tools.checkstyle.api.DetailASTTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.708 sec - in com.puppycrawl.tools.checkstyle.api.DetailASTTest
+Running com.puppycrawl.tools.checkstyle.api.SeverityLevelTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.puppycrawl.tools.checkstyle.api.SeverityLevelTest
+Running com.puppycrawl.tools.checkstyle.api.LineColumnTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in com.puppycrawl.tools.checkstyle.api.LineColumnTest
+
+Results :
+
+Failed tests:
+  CommitValidationTest.testCommitMessageHasProperStructure:147 Commit 8ab1c1a25c4e3238b2da05f1784e8a6183268d44 message: "repairnator: add log and properties \nCommit done at the end of step BuildProject" is invalid
+Proper commit message should adhere to the following rules:
+    1) Must match one of the following patterns:
+        ^Issue #\d+: .*$
+        ^Pull #\d+: .*$
+        ^(minor|config|infra|doc|spelling): .*$
+    2) It contains only one line of text
+    3) Must not end with a period, space, or tab
+    4) Commit message should be less than or equal to 200 characters
+
+The rule broken was: 1
+
+Tests run: 2011, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 53.397 s
+[INFO] Finished at: 2017-04-15T07:15:32+02:00
+[INFO] Final Memory: 58M/1850M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project checkstyle: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/checkstyle/checkstyle/218876837/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
