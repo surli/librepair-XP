@@ -1,0 +1,48 @@
+nopolinfo #0
+location: FailureLocation{className='com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest', failingMethods=[com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testGifyoAlbum, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testVineRip, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testXhamsterAlbums, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testDeviantartNSFWAlbum, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testShesFreakyRip, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testDeviantartAlbum, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testFuraffinityAlbum, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testEightmusesAlbum, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testImgboxRip, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testPornhubRip], erroringMethods=[], failures=[FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip http://airgee.deviantart.com/gallery/ : No images found at http://airgee.deviantart.com/gallery/', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip http://faterkcx.deviantart.com/gallery/ : No images found at http://faterkcx.deviantart.com/gallery/', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip https://www.8muses.com/album/jab-comics/a-model-life : null', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip https://www.furaffinity.net/gallery/mustardgas/ : No images found at https://www.furaffinity.net/gallery/mustardgas/', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip http://gifyo.com/PieSecrets/ : Failed to load http://gifyo.com/PieSecrets/ after 1 attempts', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip http://imgbox.com/g/sEMHfsqx4w : No images found at http://imgbox.com/g/sEMHfsqx4w', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to download a single file from http://www.pornhub.com/album/428351', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip http://www.shesfreaky.com/gallery/nicee-snow-bunny-579NbPjUcYa.html : no protocol: //cdn.shesfreaky.com/galleries/579NbPjUcYa/21addefeff62ae877f7535fa625b3f0f.jpg', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to rip http://vine.co/u/954440445776334848 : Failed to load https://vine.co/api/timelines/users/954440445776334848 after 1 attempts', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Failed to download a single file from http://xhamster.com/photos/gallery/1462237/alyssa_gadson.html', isError=false}], nbFailures=10, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 10:57:25 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/4pr0n/ripme/219133450/src/main/java], projectClasspath='[Ljava.net.URL;@1c9f0a20', projectTests=[com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest', failingMethods=[com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest#testVineRipper, com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest#testPornhubRipper], erroringMethods=[], failures=[FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Error while ripping http://www.pornhub.com/view_video.php?viewkey=993166542 : java.io.IOException: java.io.IOException: Unable to find encrypted video URL at http://www.pornhub.com/view_video.php?viewkey=993166542', isError=false}, FailureType{failureName='junit.framework.AssertionFailedError', failureDetail='Error while ripping https://vine.co/v/hiqQrP0eUZx : java.io.IOException: Could not find meta property 'twitter:player:stream' at https://vine.co/v/hiqQrP0eUZx', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 10:57:29 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/4pr0n/ripme/219133450/src/main/java], projectClasspath='[Ljava.net.URL;@13275d8', projectTests=[com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.rarchives.ripme.tst.ripper.rippers.InstagramRipperTest', failingMethods=[], erroringMethods=[com.rarchives.ripme.tst.ripper.rippers.InstagramRipperTest#testInstagramGID], failures=[FailureType{failureName='java.net.MalformedURLException', failureDetail='Unable to rip url: http://statigr.am/username', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sat Apr 15 10:57:32 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/4pr0n/ripme/219133450/src/main/java], projectClasspath='[Ljava.net.URL;@77c1e611', projectTests=[com.rarchives.ripme.tst.ripper.rippers.InstagramRipperTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
