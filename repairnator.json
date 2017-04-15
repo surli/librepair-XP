@@ -3,6 +3,7 @@
     "CheckoutBuild": 2,
     "CloneRepository": 3,
     "ResolveDependency": 36,
+    "TestProject": 17,
     "BuildProject": 63
   },
   "workspace": "./workspace",
