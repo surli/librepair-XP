@@ -1,19 +1,45 @@
 {
+  "pr-base-commit-id": "b02bacf003d9e949223432d30c16e46d5c894055",
+  "pr-head-commit-id": "adcae5899d476593b203b2c98b05e866518f401b",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "Teradata/presto",
+  "error-types": [
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberFailingTests": 1,
+  "buildid": 219043169,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 4473,
+  "pr-head-commit-id-url": "https://github.com/Teradata/presto/commit/adcae5899d476593b203b2c98b05e866518f401b",
+  "pr-id": 7354,
+  "repo": "prestodb/presto",
+  "failing-test-cases": [
+    {
+      "className": "com.facebook.presto.memory.TestMemoryManager",
+      "failingMethods": [
+        "com.facebook.presto.memory.TestMemoryManager#testOutOfMemoryKiller"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 37,
+    "": 0,
     "CloneRepository": 23,
     "ResolveDependency": 202,
     "TestProject": 1140,
     "BuildProject": 547
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "Teradata/presto",
-  "pr-head-commit-id": "adcae5899d476593b203b2c98b05e866518f401b",
-  "pr-id": 7354,
-  "repo": "prestodb/presto",
-  "pr-head-commit-id-url": "https://github.com/Teradata/presto/commit/adcae5899d476593b203b2c98b05e866518f401b",
-  "is-pr": "true",
-  "buildid": 219043169,
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/b02bacf003d9e949223432d30c16e46d5c894055",
-  "pr-base-commit-id": "b02bacf003d9e949223432d30c16e46d5c894055"
+  "failingModule": "/root/workspace/prestodb/presto/219043169/presto-tests"
 }
