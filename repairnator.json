@@ -4,6 +4,7 @@
     "CheckoutBuild": 0,
     "CloneRepository": 38,
     "ResolveDependency": 252,
+    "TestProject": 267,
     "BuildProject": 187
   },
   "buildid": 219906541,
