@@ -1,0 +1,11 @@
+{
+  "bugRepo": "OWASP/java-html-sanitizer",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 5
+  },
+  "buildid": 220085794,
+  "workspace": "./workspace",
+  "repo": "OWASP/java-html-sanitizer",
+  "bugCommit": "https://github.com/OWASP/java-html-sanitizer/compare/82be198dd2b6...c2d3ba988768"
+}
