@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 27
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "highker/presto",
+  "pr-head-commit-id": "dbefb0c1cc9c941a2faa07d2c0341a9b873b42ca",
+  "pr-id": 7357,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/highker/presto/commit/dbefb0c1cc9c941a2faa07d2c0341a9b873b42ca",
+  "is-pr": "true",
+  "buildid": 219177921,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/19c58f9af00cf699b1c424484c55d54d92d657c3",
+  "pr-base-commit-id": "19c58f9af00cf699b1c424484c55d54d92d657c3"
+}
