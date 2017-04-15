@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 1
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "atoback/aws-dynamodb-session-tomcat",
+  "pr-head-commit-id": "9d9c63e5f0c3e3d7955d54d2cef8f814e5040c03",
+  "pr-id": 55,
+  "repo": "aws/aws-dynamodb-session-tomcat",
+  "pr-head-commit-id-url": "https://github.com/atoback/aws-dynamodb-session-tomcat/commit/9d9c63e5f0c3e3d7955d54d2cef8f814e5040c03",
+  "is-pr": "true",
+  "buildid": 219512331,
+  "pr-base-commit-id-url": "https://github.com/aws/aws-dynamodb-session-tomcat/commit/4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6",
+  "pr-base-commit-id": "4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6"
+}
