@@ -687,5 +687,6 @@
   "nbLibraries": 9,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/yusuke/twitter4j/commit/f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/yusuke/twitter4j/219634671/twitter4j-core"
 }
