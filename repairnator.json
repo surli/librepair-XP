@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 3,
     "CloneRepository": 12,
-    "ResolveDependency": 41
+    "ResolveDependency": 41,
+    "BuildProject": 35
   },
   "workspace": "./workspace",
   "pr-remote-repo": "Trackvia/mariadb-connector-j",
