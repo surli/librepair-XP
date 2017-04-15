@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 1,
-    "CloneRepository": 12
+    "CloneRepository": 12,
+    "ResolveDependency": 170
   },
   "workspace": "./workspace",
   "pr-remote-repo": "trajano/checkstyle",
