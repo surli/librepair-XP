@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 2,
     "CloneRepository": 5,
     "ResolveDependency": 21,
     "TestProject": 12,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 4,
     "SquashRepository": 1
   },
+  "nbLibraries": 8,
   "workspace": "./workspace",
   "totalNumberErroringTests": 0,
   "repo": "OWASP/java-html-sanitizer",

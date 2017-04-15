@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building OWASP Java HTML Sanitizer 20170329.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ owasp-java-html-sanitizer ---
+[INFO] Wrote classpath file '/root/workspace/OWASP/java-html-sanitizer/220085794/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.113 s
+[INFO] Finished at: 2017-04-15T23:42:46+02:00
+[INFO] Final Memory: 25M/962M
+[INFO] ------------------------------------------------------------------------
