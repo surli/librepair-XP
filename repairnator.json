@@ -1,0 +1,11 @@
+{
+  "bugRepo": "square/wire",
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 3
+  },
+  "buildid": 220406712,
+  "workspace": "./workspace",
+  "repo": "square/wire",
+  "bugCommit": "https://github.com/square/wire/compare/6e455b589901...643bb3f0d81c"
+}
