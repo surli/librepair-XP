@@ -48,5 +48,6 @@
   "nbLibraries": 34,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/d876c652c5fcb43522f49747a63844b49c92c89a",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/checkstyle/checkstyle/218876837"
 }
