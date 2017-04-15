@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 16
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "trajano/checkstyle",
+  "pr-head-commit-id": "8d60f863ca9840e40d8ec44ed09ac558fc9ef2b3",
+  "pr-id": 4114,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/trajano/checkstyle/commit/8d60f863ca9840e40d8ec44ed09ac558fc9ef2b3",
+  "is-pr": "true",
+  "buildid": 218876837,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/d876c652c5fcb43522f49747a63844b49c92c89a",
+  "pr-base-commit-id": "d876c652c5fcb43522f49747a63844b49c92c89a"
+}
