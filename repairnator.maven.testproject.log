@@ -1,0 +1,584 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] wire
+[INFO] wire-runtime
+[INFO] wire-schema
+[INFO] wire-java-generator
+[INFO] wire-maven-plugin
+[INFO] wire-sample
+[INFO] wire-compiler
+[INFO] wire-codegen-sample
+[INFO] wire-gson-support
+[INFO] wire-testing
+[INFO] wire-tests
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-runtime 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-runtime ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-runtime/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-runtime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /root/workspace/square/wire/220406712/wire-runtime/target/classes
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.9.1:add-test-source (add-test-source) @ wire-runtime ---
+[INFO] Test Source directory: /root/workspace/square/wire/220406712/wire-runtime/src/test/proto-java added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-runtime/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-runtime ---
+[INFO] Surefire report directory: /root/workspace/square/wire/220406712/wire-runtime/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (3 KB at 7.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (3 KB at 41.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 KB at 439.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.wire.ParseTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.127 sec
+Running com.squareup.wire.WireTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running com.squareup.wire.ProtoReaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.squareup.wire.TestAllTypes
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.059 sec
+Running com.squareup.wire.SerializableTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
+Running com.squareup.wire.ProtoAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.squareup.wire.internal.InternalTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.squareup.wire.UnknownFieldsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.squareup.wire.RuntimeMessageAdapterRedactTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running com.squareup.wire.MapTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running com.squareup.wire.OneOfTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.squareup.wire.ProtoWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.squareup.wire.CustomOptionsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+
+Results :
+
+Tests run: 79, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO]
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ wire-runtime ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-schema 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-schema ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-schema ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-schema ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-schema ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-schema/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-schema ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-schema ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-java-generator 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-java-generator ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-java-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-java-generator/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-java-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-java-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-java-generator/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-java-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-java-generator ---
+[INFO] Surefire report directory: /root/workspace/square/wire/220406712/wire-java-generator/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.wire.java.internal.ProfileParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-maven-plugin 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-maven-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-plugin-plugin:3.2:helpmojo (help-goal) @ wire-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 2 mojo descriptors.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-maven-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/square/wire/220406712/wire-maven-plugin/target/classes
+[INFO]
+[INFO] --- maven-plugin-plugin:3.2:descriptor (default-descriptor) @ wire-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 2 mojo descriptors.
+[INFO]
+[INFO] --- maven-plugin-plugin:3.2:descriptor (mojo-descriptor) @ wire-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[INFO] Mojo extractor for language: java found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 2 mojo descriptors.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-maven-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-maven-plugin ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-maven-plugin ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-sample 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-sample ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- wire-maven-plugin:2.2.1-SNAPSHOT:generate-sources (default) @ wire-sample ---
+[INFO] Loaded 3 proto files in 150.5 ms
+[INFO] Pruned schema from 20 types to 2 types in 9.034 ms
+[INFO] Generated com.squareup.dinosaurs.Dinosaur in 40.96 ms
+[INFO] Generated com.squareup.geology.Period in 3.868 ms
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/sample/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-sample ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/square/wire/220406712/sample/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/sample/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-sample ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-sample ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-compiler 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-compiler ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-compiler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-compiler/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-compiler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-compiler/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-compiler ---
+[INFO] Surefire report directory: /root/workspace/square/wire/220406712/wire-compiler/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.wire.CommandLineOptionsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Running com.squareup.wire.WireCompilerErrorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.386 sec
+Running com.squareup.wire.WireCompilerTest
+Comparing against expected output AllTypes.java
+Comparing against expected output A.java.pruned
+Comparing against expected output D.java.pruned
+Comparing against expected output OneOfMessage.java
+Comparing against expected output VersionOne.java
+Comparing against expected output VersionTwo.java
+Comparing against expected output Bar.java
+Comparing against expected output Foo.java
+Comparing against expected output Person.java.android
+Comparing against expected output NotRedacted.java
+Comparing against expected output Redacted.java
+Comparing against expected output RedactedChild.java
+Comparing against expected output RedactedCycleA.java
+Comparing against expected output RedactedCycleB.java
+Comparing against expected output RedactedExtension.java
+Comparing against expected output RedactedRepeated.java
+Comparing against expected output RedactedRequired.java
+Comparing against expected output FooBar.java.noOptions
+Comparing against expected output MessageWithOptions.java.noOptions
+Comparing against expected output NoFields.java
+Comparing against expected output OneField.java
+Comparing against expected output OneBytesField.java
+Comparing against expected output Recursive.java
+Comparing against expected output ChildPackage.java
+Comparing against expected output Foo.java
+Comparing against expected output Foos.java
+Comparing against expected output Bar.java
+Comparing against expected output Bars.java
+Comparing against expected output Bar.java
+Comparing against expected output Foo.java
+Comparing against expected output Person.java
+Comparing against expected output FooBar.java
+Comparing against expected output MessageWithOptions.java
+Comparing against expected output A.java
+Comparing against expected output B.java
+Comparing against expected output C.java
+Comparing against expected output D.java
+Comparing against expected output B.java
+Comparing against expected output C.java
+Comparing against expected output E.java
+Comparing against expected output G.java
+Comparing against expected output E.java.pruned
+Comparing against expected output H.java.pruned
+Comparing against expected output I.java
+Comparing against expected output J.java
+Comparing against expected output K.java
+Comparing against expected output A.java
+Comparing against expected output B.java
+Comparing against expected output C.java
+Comparing against expected output D.java
+Comparing against expected output E.java
+Comparing against expected output G.java
+Comparing against expected output H.java
+Comparing against expected output I.java
+Comparing against expected output J.java
+Comparing against expected output K.java
+Comparing against expected output SimpleMessage.java
+Comparing against expected output ExternalMessage.java
+Comparing against expected output ForeignEnum.java
+Comparing against expected output ForeignMessage.java
+Comparing against expected output AllTypes.java.compact
+Comparing against expected output Foo.java
+Comparing against expected output Foos.java
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.886 sec
+
+Results :
+
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-codegen-sample 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-codegen-sample ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-plugin-plugin:3.2:helpmojo (help-goal) @ wire-codegen-sample ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-codegen-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-codegen-sample/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-codegen-sample ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-plugin-plugin:3.2:descriptor (mojo-descriptor) @ wire-codegen-sample ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-codegen-sample ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-codegen-sample/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-codegen-sample ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-codegen-sample ---
+[INFO] Surefire report directory: /root/workspace/square/wire/220406712/wire-codegen-sample/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.wire.sample.ServiceGeneratorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.279 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-gson-support 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-gson-support ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-gson-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-gson-support/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-gson-support ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-gson-support ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-gson-support/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-gson-support ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-gson-support ---
+[INFO] Surefire report directory: /root/workspace/square/wire/220406712/wire-gson-support/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.wire.GsonTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 sec
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ wire-gson-support ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-testing 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-testing ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-testing/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-testing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-testing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-testing/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-testing ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-testing ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building wire-tests 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ wire-tests ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ wire-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-tests/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ wire-tests ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ wire-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/square/wire/220406712/wire-tests/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ wire-tests ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ wire-tests ---
+[INFO] Surefire report directory: /root/workspace/square/wire/220406712/wire-tests/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.squareup.wire.schema.IdentifierSetTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 sec
+Running com.squareup.wire.schema.ProtoTypeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.squareup.wire.schema.PrunerTest
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.477 sec
+Running com.squareup.wire.schema.SchemaLoaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running com.squareup.wire.schema.internal.parser.ProtoFileElementTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running com.squareup.wire.schema.internal.parser.OptionElementTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.squareup.wire.schema.internal.parser.ExtendElementTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.squareup.wire.schema.internal.parser.EnumElementTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running com.squareup.wire.schema.internal.parser.ExtensionsElementTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.squareup.wire.schema.internal.parser.ServiceElementTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running com.squareup.wire.schema.internal.parser.ProtoParserTest
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running com.squareup.wire.schema.internal.parser.FieldElementTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.squareup.wire.schema.internal.parser.MessageElementTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running com.squareup.wire.schema.internal.UtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.squareup.wire.schema.OptionsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.squareup.wire.schema.ProtoFileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running com.squareup.wire.schema.SchemaTest
+Tests run: 57, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.236 sec
+Running com.squareup.wire.schema.SchemaProtoAdapterTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec
+Running com.squareup.wire.java.JavaGeneratorTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.156 sec <<< FAILURE!
+generateAbstractAdapter(com.squareup.wire.java.JavaGeneratorTest)  Time elapsed: 0.086 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<... CoinFlip coin_flip,[] Map<String, Bar> ba...> but was:<... CoinFlip coin_flip,[
+     ] Map<String, Bar> ba...>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.squareup.wire.java.JavaGeneratorTest.generateAbstractAdapter(JavaGeneratorTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running com.squareup.wire.java.ProfileLoaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+
+Results :
+
+Failed tests:   generateAbstractAdapter(com.squareup.wire.java.JavaGeneratorTest): expected:<... CoinFlip coin_flip,[] Map<String, Bar> ba...> but was:<... CoinFlip coin_flip,[(..)
+
+Tests run: 298, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] wire ............................................... SUCCESS [  0.344 s]
+[INFO] wire-runtime ....................................... SUCCESS [  5.861 s]
+[INFO] wire-schema ........................................ SUCCESS [  0.037 s]
+[INFO] wire-java-generator ................................ SUCCESS [  0.384 s]
+[INFO] wire-maven-plugin .................................. SUCCESS [  2.195 s]
+[INFO] wire-sample ........................................ SUCCESS [  0.598 s]
+[INFO] wire-compiler ...................................... SUCCESS [  1.767 s]
+[INFO] wire-codegen-sample ................................ SUCCESS [  0.496 s]
+[INFO] wire-gson-support .................................. SUCCESS [  0.804 s]
+[INFO] wire-testing ....................................... SUCCESS [  0.022 s]
+[INFO] wire-tests ......................................... FAILURE [  1.712 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.441 s
+[INFO] Finished at: 2017-04-16T01:30:16+02:00
+[INFO] Final Memory: 37M/1282M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project wire-tests: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/square/wire/220406712/wire-tests/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :wire-tests
