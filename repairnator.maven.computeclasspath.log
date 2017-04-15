@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gwt Material 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ gwt-material ---
+[INFO] Wrote classpath file '/root/workspace/GwtMaterialDesign/gwt-material/219731440/gwt-material/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.726 s
+[INFO] Finished at: 2017-04-15T17:30:26+02:00
+[INFO] Final Memory: 25M/1214M
+[INFO] ------------------------------------------------------------------------
