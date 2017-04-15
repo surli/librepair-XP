@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 40
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "mylog00/flink",
+  "pr-head-commit-id": "95f23c6191f21e1f46004ad5e1aad221ada19052",
+  "pr-id": 3325,
+  "repo": "apache/flink",
+  "pr-head-commit-id-url": "https://github.com/mylog00/flink/commit/95f23c6191f21e1f46004ad5e1aad221ada19052",
+  "is-pr": "true",
+  "buildid": 219991751,
+  "pr-base-commit-id-url": "https://github.com/apache/flink/commit/e651df99f47a0e738c4aa7fb7b8957acca901197",
+  "pr-base-commit-id": "e651df99f47a0e738c4aa7fb7b8957acca901197"
+}
