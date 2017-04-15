@@ -1523,7 +1523,8 @@
     "CloneRepository": 3,
     "ResolveDependency": 36,
     "TestProject": 17,
-    "BuildProject": 63
+    "BuildProject": 63,
+    "SquashRepository": 2
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/spotify/docker-client/commit/dc0945a24fc56c8397ece73d63f3194527104662",
