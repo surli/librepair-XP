@@ -5,6 +5,7 @@
     "": 0,
     "ComputeClasspath": 3,
     "CloneRepository": 41,
+    "NopolRepair": 10,
     "ResolveDependency": 155,
     "TestProject": 32,
     "BuildProject": 731,
