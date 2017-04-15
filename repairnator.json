@@ -1,14 +1,134 @@
 {
-  "bugRepo": "4pr0n/ripme",
+  "totalNumberSkippingTests": 0,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 2,
     "ResolveDependency": 22,
     "TestProject": 59,
     "BuildProject": 13
   },
-  "buildid": 219135270,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 1,
   "repo": "4pr0n/ripme",
-  "bugCommit": "https://github.com/4pr0n/ripme/compare/ef206fb7a6ab...c4fe08d54f9e"
+  "bugCommit": "https://github.com/4pr0n/ripme/compare/ef206fb7a6ab...c4fe08d54f9e",
+  "failingModule": "/root/workspace/4pr0n/ripme/219135270",
+  "buildid": 219135270,
+  "totalNumberFailingTests": 12,
+  "error-types": [
+    "java.net.MalformedURLException",
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 54,
+  "failing-test-cases": [
+    {
+      "className": "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest",
+      "failingMethods": [
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testGifyoAlbum",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testVineRip",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testXhamsterAlbums",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testDeviantartNSFWAlbum",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testShesFreakyRip",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testDeviantartAlbum",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testFuraffinityAlbum",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testEightmusesAlbum",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testImgboxRip",
+        "com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#testPornhubRip"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip http://airgee.deviantart.com/gallery/ : No images found at http://airgee.deviantart.com/gallery/",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip http://faterkcx.deviantart.com/gallery/ : No images found at http://faterkcx.deviantart.com/gallery/",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip https://www.8muses.com/album/jab-comics/a-model-life : null",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip https://www.furaffinity.net/gallery/mustardgas/ : No images found at https://www.furaffinity.net/gallery/mustardgas/",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip http://gifyo.com/PieSecrets/ : Failed to load http://gifyo.com/PieSecrets/ after 1 attempts",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip http://imgbox.com/g/sEMHfsqx4w : No images found at http://imgbox.com/g/sEMHfsqx4w",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to download a single file from http://www.pornhub.com/album/428351",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip http://www.shesfreaky.com/gallery/nicee-snow-bunny-579NbPjUcYa.html : no protocol: //cdn.shesfreaky.com/galleries/579NbPjUcYa/21addefeff62ae877f7535fa625b3f0f.jpg",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to rip http://vine.co/u/954440445776334848 : Failed to load https://vine.co/api/timelines/users/954440445776334848 after 1 attempts",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Failed to download a single file from http://xhamster.com/photos/gallery/1462237/alyssa_gadson.html",
+          "isError": false
+        }
+      ],
+      "nbFailures": 10,
+      "nbErrors": 0
+    },
+    {
+      "className": "com.rarchives.ripme.tst.ripper.rippers.InstagramRipperTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.rarchives.ripme.tst.ripper.rippers.InstagramRipperTest#testInstagramGID"
+      ],
+      "failures": [
+        {
+          "failureName": "java.net.MalformedURLException",
+          "failureDetail": "Unable to rip url: http://statigr.am/username",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    },
+    {
+      "className": "com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest",
+      "failingMethods": [
+        "com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest#testVineRipper",
+        "com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest#testPornhubRipper"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Error while ripping http://www.pornhub.com/view_video.php?viewkey\u003d993166542 : java.io.IOException: java.io.IOException: Unable to find encrypted video URL at http://www.pornhub.com/view_video.php?viewkey\u003d993166542",
+          "isError": false
+        },
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "Error while ripping https://vine.co/v/hiqQrP0eUZx : java.io.IOException: Could not find meta property \u0027twitter:player:stream\u0027 at https://vine.co/v/hiqQrP0eUZx",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "4pr0n/ripme"
 }
