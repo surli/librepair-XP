@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 59,
     "ResolveDependency": 265,
     "TestProject": 276,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 11,
     "SquashRepository": 10
   },
+  "nbLibraries": 149,
   "workspace": "./workspace",
   "totalNumberErroringTests": 0,
   "repo": "geoserver/geoserver",
