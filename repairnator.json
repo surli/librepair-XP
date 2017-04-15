@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 3,
     "CloneRepository": 27,
-    "ResolveDependency": 209
+    "ResolveDependency": 209,
+    "BuildProject": 563
   },
   "workspace": "./workspace",
   "pr-remote-repo": "highker/presto",
