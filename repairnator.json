@@ -3,7 +3,8 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "CloneRepository": 35,
-    "ResolveDependency": 172
+    "ResolveDependency": 172,
+    "BuildProject": 770
   },
   "buildid": 219449950,
   "workspace": "./workspace",
