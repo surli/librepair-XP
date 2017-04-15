@@ -1,19 +1,1077 @@
 {
+  "pr-base-commit-id": "908e4284493afed88b18190db530688454cd30f4",
+  "pr-head-commit-id": "840d9f87fc986d6b628131ff2652d0afdd062949",
+  "totalNumberSkippingTests": 9,
+  "pr-remote-repo": "Trackvia/mariadb-connector-j",
+  "error-types": [
+    "java.sql.SQLNonTransientConnectionException",
+    "java.lang.NullPointerException",
+    "java.lang.NullPointerException:"
+  ],
+  "totalNumberFailingTests": 0,
+  "buildid": 219712525,
+  "totalNumberErroringTests": 105,
+  "is-pr": "true",
+  "totalNumberRunningTests": 152,
+  "pr-head-commit-id-url": "https://github.com/Trackvia/mariadb-connector-j/commit/840d9f87fc986d6b628131ff2652d0afdd062949",
+  "pr-id": 103,
+  "repo": "MariaDB/mariadb-connector-j",
+  "failing-test-cases": [
+    {
+      "className": "org.mariadb.jdbc.ConnectionPoolTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ConnectionPoolTest#org.mariadb.jdbc.ConnectionPoolTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ErrorMessageTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ErrorMessageTest#org.mariadb.jdbc.ErrorMessageTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ParserTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ParserTest#org.mariadb.jdbc.ParserTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.CancelTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.CancelTest#org.mariadb.jdbc.CancelTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.BigQueryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.BigQueryTest#org.mariadb.jdbc.BigQueryTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.FetchSizeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.FetchSizeTest#org.mariadb.jdbc.FetchSizeTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ExecuteBatchTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ExecuteBatchTest#org.mariadb.jdbc.ExecuteBatchTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.MariaDbDatabaseMetaDataTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.MariaDbDatabaseMetaDataTest#org.mariadb.jdbc.MariaDbDatabaseMetaDataTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.BasicBatchTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.BasicBatchTest#org.mariadb.jdbc.BasicBatchTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.CatalogTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.CatalogTest#org.mariadb.jdbc.CatalogTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.PasswordEncodingTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.PasswordEncodingTest#org.mariadb.jdbc.PasswordEncodingTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ServerPrepareStatementTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ServerPrepareStatementTest#org.mariadb.jdbc.ServerPrepareStatementTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.PooledConnectionTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.PooledConnectionTest#org.mariadb.jdbc.PooledConnectionTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DataTypeUnsignedTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DataTypeUnsignedTest#org.mariadb.jdbc.DataTypeUnsignedTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ClientPreparedStatementParsingTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ClientPreparedStatementParsingTest#org.mariadb.jdbc.ClientPreparedStatementParsingTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.CallStatementTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.CallStatementTest#org.mariadb.jdbc.CallStatementTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ScrollTypeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ScrollTypeTest#org.mariadb.jdbc.ScrollTypeTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.GeneratedTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.GeneratedTest#org.mariadb.jdbc.GeneratedTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.BooleanTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.BooleanTest#org.mariadb.jdbc.BooleanTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.MariaDbCompatibilityTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.MariaDbCompatibilityTest#org.mariadb.jdbc.MariaDbCompatibilityTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.CollationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.CollationTest#org.mariadb.jdbc.CollationTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.MultiTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.MultiTest#org.mariadb.jdbc.MultiTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ConnectionTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ConnectionTest#org.mariadb.jdbc.ConnectionTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DataNTypeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DataNTypeTest#org.mariadb.jdbc.DataNTypeTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.BufferTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.BufferTest#org.mariadb.jdbc.BufferTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.TruncateExceptionTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.TruncateExceptionTest#org.mariadb.jdbc.TruncateExceptionTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.LocalInfileDisableTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.LocalInfileDisableTest#org.mariadb.jdbc.LocalInfileDisableTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.TimezoneDaylightSavingTimeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.TimezoneDaylightSavingTimeTest#org.mariadb.jdbc.TimezoneDaylightSavingTimeTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "failureDetail": "Can\u0027t set default locale to NULL",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 3
+    },
+    {
+      "className": "org.mariadb.jdbc.DateTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DateTest#org.mariadb.jdbc.DateTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.SslTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.SslTest#org.mariadb.jdbc.SslTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DataSourceTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DataSourceTest#org.mariadb.jdbc.DataSourceTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ResultSetTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ResultSetTest#org.mariadb.jdbc.ResultSetTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.StatementTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.StatementTest#org.mariadb.jdbc.StatementTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.CheckDataTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.CheckDataTest#org.mariadb.jdbc.CheckDataTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DatabaseMetadataTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DatabaseMetadataTest#org.mariadb.jdbc.DatabaseMetadataTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.StoredProcedureTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.StoredProcedureTest#org.mariadb.jdbc.StoredProcedureTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DatatypeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DatatypeTest#org.mariadb.jdbc.DatatypeTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.AllowMultiQueriesTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.AllowMultiQueriesTest#org.mariadb.jdbc.AllowMultiQueriesTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DriverTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DriverTest#org.mariadb.jdbc.DriverTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.UnicodeTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.UnicodeTest#org.mariadb.jdbc.UnicodeTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DatatypeCompatibilityTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DatatypeCompatibilityTest#org.mariadb.jdbc.DatatypeCompatibilityTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.GeneratedKeysTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.GeneratedKeysTest#org.mariadb.jdbc.GeneratedKeysTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ResultSetMetaDataTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ResultSetMetaDataTest#org.mariadb.jdbc.ResultSetMetaDataTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ResultSetUnsupportedMethodsTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ResultSetUnsupportedMethodsTest#org.mariadb.jdbc.ResultSetUnsupportedMethodsTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.GeometryTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.GeometryTest#org.mariadb.jdbc.GeometryTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.ComMultiPrepareStatementTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.ComMultiPrepareStatementTest#org.mariadb.jdbc.ComMultiPrepareStatementTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.BlobTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.BlobTest#org.mariadb.jdbc.BlobTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.TimeoutTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.TimeoutTest#org.mariadb.jdbc.TimeoutTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.DataTypeSignedTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.DataTypeSignedTest#org.mariadb.jdbc.DataTypeSignedTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.PreparedStatementTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.PreparedStatementTest#org.mariadb.jdbc.PreparedStatementTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.failover.OldFailoverTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.failover.OldFailoverTest#org.mariadb.jdbc.failover.OldFailoverTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "org.mariadb.jdbc.LocalInfileInputStreamTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.mariadb.jdbc.LocalInfileInputStreamTest#org.mariadb.jdbc.LocalInfileInputStreamTest"
+      ],
+      "failures": [
+        {
+          "failureName": "java.sql.SQLNonTransientConnectionException",
+          "failureDetail": "Could not connect to address\u003d(host\u003dlocalhost)(port\u003d3306)(type\u003dmaster) : Connection refused (Connection refused)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException:",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 3,
+    "": 0,
     "CloneRepository": 12,
     "ResolveDependency": 41,
     "TestProject": 10,
     "BuildProject": 35
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "Trackvia/mariadb-connector-j",
-  "pr-head-commit-id": "840d9f87fc986d6b628131ff2652d0afdd062949",
-  "pr-id": 103,
-  "repo": "MariaDB/mariadb-connector-j",
-  "pr-head-commit-id-url": "https://github.com/Trackvia/mariadb-connector-j/commit/840d9f87fc986d6b628131ff2652d0afdd062949",
-  "is-pr": "true",
-  "buildid": 219712525,
   "pr-base-commit-id-url": "https://github.com/MariaDB/mariadb-connector-j/commit/908e4284493afed88b18190db530688454cd30f4",
-  "pr-base-commit-id": "908e4284493afed88b18190db530688454cd30f4"
+  "failingModule": "/root/workspace/MariaDB/mariadb-connector-j/219712525"
 }
