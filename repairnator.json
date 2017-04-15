@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "CloneRepository": 44,
-    "ResolveDependency": 264
+    "ResolveDependency": 264,
+    "BuildProject": 186
   },
   "workspace": "./workspace",
   "pr-remote-repo": "geoserver/geoserver",
