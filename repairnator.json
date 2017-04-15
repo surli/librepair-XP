@@ -127,5 +127,6 @@
   "nbLibraries": 33,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/aws/aws-dynamodb-session-tomcat/commit/4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/aws/aws-dynamodb-session-tomcat/219512331"
 }
