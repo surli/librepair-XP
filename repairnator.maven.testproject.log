@@ -1,0 +1,1602 @@
+[INFO] BuildTimeEventSpy is registered.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] presto-root
+[INFO] presto-spi
+[INFO] presto-plugin-toolkit
+[INFO] presto-client
+[INFO] presto-parser
+[INFO] presto-array
+[INFO] presto-bytecode
+[INFO] presto-tpch
+[INFO] presto-main
+[INFO] presto-resource-group-managers
+[INFO] presto-tests
+[INFO] presto-atop
+[INFO] presto-jmx
+[INFO] presto-record-decoder
+[INFO] presto-kafka
+[INFO] presto-redis
+[INFO] presto-accumulo
+[INFO] presto-cassandra
+[INFO] presto-blackhole
+[INFO] presto-memory
+[INFO] presto-orc
+[INFO] presto-rcfile
+[INFO] presto-benchmark
+[INFO] presto-hive
+[INFO] presto-hive-hadoop1
+[INFO] presto-hive-hadoop2
+[INFO] presto-hive-cdh4
+[INFO] presto-hive-cdh5
+[INFO] presto-teradata-functions
+[INFO] presto-example-http
+[INFO] presto-local-file
+[INFO] presto-raptor
+[INFO] presto-base-jdbc
+[INFO] presto-mysql
+[INFO] presto-postgresql
+[INFO] presto-mongodb
+[INFO] presto-ml
+[INFO] presto-jdbc
+[INFO] presto-cli
+[INFO] presto-product-tests
+[INFO] presto-benchmark-driver
+[INFO] presto-server
+[INFO] presto-server-rpm
+[INFO] presto-docs
+[INFO] presto-verifier
+[INFO] presto-testing-server-launcher
+[INFO] presto-benchto-benchmarks
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-root 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-root ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-root ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-root ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-root ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-root ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-root ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-root ---
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-root ---
+[INFO] Skipping pom project
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-root ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-root ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-root ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-root ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-spi 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-spi ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-spi ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-spi ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-spi ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-spi ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-spi ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 272 source files to /root/workspace/prestodb/presto/219043169/presto-spi/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[19,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/block/SliceArrayBlock.java:[28,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[88,26] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[93,27] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[95,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/connector/ConnectorContext.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/connector/ConnectorContext.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/block/LazyBlockEncoding.java: /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/block/LazyBlockEncoding.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/main/java/com/facebook/presto/spi/block/LazyBlockEncoding.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-spi/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 36 source files to /root/workspace/prestodb/presto/219043169/presto-spi/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/test/java/com/facebook/presto/spi/block/TestingBlockEncodingSerde.java: /root/workspace/prestodb/presto/219043169/presto-spi/src/test/java/com/facebook/presto/spi/block/TestingBlockEncodingSerde.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-spi/src/test/java/com/facebook/presto/spi/block/TestingBlockEncodingSerde.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-spi ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-spi ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-spi ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-spi ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-spi ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-spi ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 5.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 43.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 43.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 48.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 43.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 376.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 196.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 269.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 267.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 172, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.716 sec - in TestSuite
+
+Results :
+
+Tests run: 172, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-parser 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-parser ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-parser ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-parser ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-parser ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-parser ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-parser ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-parser ---
+[INFO]
+[INFO] --- antlr4-maven-plugin:4.6:antlr4 (default) @ presto-parser ---
+[INFO] No grammars to process
+[INFO] ANTLR 4: Processing source directory /root/workspace/prestodb/presto/219043169/presto-parser/src/main/antlr4
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-parser/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-parser ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 171 source files to /root/workspace/prestodb/presto/219043169/presto-parser/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 22 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-parser ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /root/workspace/prestodb/presto/219043169/presto-parser/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-parser ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-parser ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-parser ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-parser ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-parser ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-parser ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 130, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.581 sec - in TestSuite
+
+Results :
+
+Tests run: 130, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-bytecode 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-bytecode ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-bytecode ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-bytecode ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-bytecode ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-bytecode ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-bytecode ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-bytecode ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-bytecode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-bytecode/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-bytecode ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 66 source files to /root/workspace/prestodb/presto/219043169/presto-bytecode/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-bytecode/src/main/java/com/facebook/presto/bytecode/instruction/InvokeInstruction.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-bytecode/src/main/java/com/facebook/presto/bytecode/instruction/InvokeInstruction.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-bytecode/src/main/java/com/facebook/presto/bytecode/AnnotationDefinition.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-bytecode/src/main/java/com/facebook/presto/bytecode/AnnotationDefinition.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-bytecode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-bytecode/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-bytecode ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /root/workspace/prestodb/presto/219043169/presto-bytecode/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-bytecode/src/test/java/com/facebook/presto/bytecode/expression/TestInvokeDynamicBytecodeExpression.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-bytecode/src/test/java/com/facebook/presto/bytecode/expression/TestInvokeDynamicBytecodeExpression.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-bytecode ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-bytecode ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-bytecode ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-bytecode ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-bytecode ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-bytecode ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.688 sec - in TestSuite
+
+Results :
+
+Tests run: 41, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-docs 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-docs ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-docs ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-docs ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-docs ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-docs ---
+[INFO] Checking licenses...
+[WARNING] Unknown file extension: /root/workspace/prestodb/presto/219043169/presto-docs/src/main/sphinx/security/kerberos-services.fragment
+[WARNING] Unknown file extension: /root/workspace/prestodb/presto/219043169/presto-docs/src/main/sphinx/security/kerberos-configuration.fragment
+[WARNING] Unknown file extension: /root/workspace/prestodb/presto/219043169/presto-docs/src/main/sphinx/security/jce-policy.fragment
+[WARNING] Unknown file extension: /root/workspace/prestodb/presto/219043169/presto-docs/src/main/sphinx/security/ktadd-note.fragment
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-docs ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-docs ---
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-docs ---
+[INFO] Skipping pom project
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-docs ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-docs ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-docs ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-docs ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-plugin-toolkit 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-plugin-toolkit ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-plugin-toolkit ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-plugin-toolkit ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-plugin-toolkit ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-plugin-toolkit ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-plugin-toolkit ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-plugin-toolkit ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-plugin-toolkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-plugin-toolkit/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-plugin-toolkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /root/workspace/prestodb/presto/219043169/presto-plugin-toolkit/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-plugin-toolkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-plugin-toolkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/prestodb/presto/219043169/presto-plugin-toolkit/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-plugin-toolkit ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-plugin-toolkit ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-plugin-toolkit ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-plugin-toolkit ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-plugin-toolkit ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-plugin-toolkit ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.041 sec - in TestSuite
+
+Results :
+
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-client 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-client ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-client ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-client ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-client ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-client ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-client ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-client ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-client/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /root/workspace/prestodb/presto/219043169/presto-client/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-client/src/main/java/com/facebook/presto/client/StatementClient.java: /root/workspace/prestodb/presto/219043169/presto-client/src/main/java/com/facebook/presto/client/StatementClient.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-client/src/main/java/com/facebook/presto/client/StatementClient.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-client/src/main/java/com/facebook/presto/client/QueryResults.java: /root/workspace/prestodb/presto/219043169/presto-client/src/main/java/com/facebook/presto/client/QueryResults.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-client/src/main/java/com/facebook/presto/client/QueryResults.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-client/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /root/workspace/prestodb/presto/219043169/presto-client/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-client ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-client ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-client ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-client ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-client ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-client ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.803 sec - in TestSuite
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-array 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-array ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-array ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-array ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-array ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-array ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-array ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-array ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-array ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-array/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-array ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /root/workspace/prestodb/presto/219043169/presto-array/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-array ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-array/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-array ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-array ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-array ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-array ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-array ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-array ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-array ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-tpch 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:check-spi-dependencies (default-check-spi-dependencies) @ presto-tpch ---
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-tpch ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-tpch ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-tpch ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-tpch ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-tpch ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-tpch ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-tpch ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-tpch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-tpch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /root/workspace/prestodb/presto/219043169/presto-tpch/target/classes
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:generate-service-descriptor (default-generate-service-descriptor) @ presto-tpch ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-tpch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-tpch/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-tpch ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-tpch ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-tpch ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-tpch ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-tpch ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-tpch ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-tpch ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-record-decoder 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-record-decoder ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-record-decoder ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-record-decoder ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-record-decoder ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-record-decoder ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-record-decoder ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-record-decoder ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-record-decoder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-record-decoder/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-record-decoder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /root/workspace/prestodb/presto/219043169/presto-record-decoder/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-record-decoder ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-record-decoder ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /root/workspace/prestodb/presto/219043169/presto-record-decoder/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-record-decoder ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-record-decoder ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-record-decoder ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-record-decoder ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-record-decoder ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-record-decoder ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.964 sec - in TestSuite
+
+Results :
+
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-cli 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-cli ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-cli ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-cli ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-cli ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-cli ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-cli ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-cli ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-cli/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /root/workspace/prestodb/presto/219043169/presto-cli/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[29,16] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[30,16] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] unknown enum constant org.fusesource.hawtjni.runtime.FieldFlag.CONSTANT
+  reason: class file for org.fusesource.hawtjni.runtime.FieldFlag not found
+[WARNING] unknown enum constant org.fusesource.hawtjni.runtime.FieldFlag.CONSTANT
+[WARNING] unknown enum constant org.fusesource.hawtjni.runtime.FieldFlag.CONSTANT
+[WARNING] unknown enum constant org.fusesource.hawtjni.runtime.FieldFlag.CONSTANT
+[WARNING] unknown enum constant org.fusesource.hawtjni.runtime.MethodFlag.CONSTANT_INITIALIZER
+  reason: class file for org.fusesource.hawtjni.runtime.MethodFlag not found
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[54,26] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[54,46] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[98,9] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[98,36] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[98,58] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/Query.java:[110,13] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/ClientOptions.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-cli/src/main/java/com/facebook/presto/cli/ClientOptions.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-cli/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/prestodb/presto/219043169/presto-cli/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-cli ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-cli ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-cli ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-cli ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-cli ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.516 sec - in TestSuite
+
+Results :
+
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-benchmark-driver 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-benchmark-driver ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-benchmark-driver ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-benchmark-driver ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-benchmark-driver ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-benchmark-driver ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-benchmark-driver ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-benchmark-driver ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-benchmark-driver ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-benchmark-driver ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/src/main/java/com/facebook/presto/benchmark/driver/RegexTemplate.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/src/main/java/com/facebook/presto/benchmark/driver/RegexTemplate.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/src/main/java/com/facebook/presto/benchmark/driver/RegexTemplate.java: /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/src/main/java/com/facebook/presto/benchmark/driver/RegexTemplate.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/src/main/java/com/facebook/presto/benchmark/driver/RegexTemplate.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-benchmark-driver ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-benchmark-driver ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/prestodb/presto/219043169/presto-benchmark-driver/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-benchmark-driver ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-benchmark-driver ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-benchmark-driver ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-benchmark-driver ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-benchmark-driver ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-benchmark-driver ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.facebook.presto.benchmark.driver.TestRegexTemplate
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.438 sec - in com.facebook.presto.benchmark.driver.TestRegexTemplate
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-main 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-main ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-main ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-main ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-main ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-main ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-main ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-main ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 80 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-main ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1260 source files to /root/workspace/prestodb/presto/219043169/presto-main/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/main/java/com/facebook/presto/connector/ConnectorManager.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/main/java/com/facebook/presto/connector/ConnectorManager.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/main/java/com/facebook/presto/metadata/SessionPropertyManager.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/main/java/com/facebook/presto/metadata/SessionPropertyManager.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-main ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 493 source files to /root/workspace/prestodb/presto/219043169/presto-main/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/test/java/com/facebook/presto/BenchmarkPagesIndexPageSorter.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/test/java/com/facebook/presto/BenchmarkPagesIndexPageSorter.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/test/java/com/facebook/presto/tests/QueryTemplate.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-main/src/test/java/com/facebook/presto/tests/QueryTemplate.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-main ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-main ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-main ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-main ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-main ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-main ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+
+Tests run: 2597, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 271.115 sec - in TestSuite
+
+Results :
+
+Tests run: 2597, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-resource-group-managers 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:check-spi-dependencies (default-check-spi-dependencies) @ presto-resource-group-managers ---
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-resource-group-managers ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-resource-group-managers ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-resource-group-managers ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-resource-group-managers ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-resource-group-managers ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-resource-group-managers ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-resource-group-managers ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-resource-group-managers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-resource-group-managers/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-resource-group-managers ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /root/workspace/prestodb/presto/219043169/presto-resource-group-managers/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-resource-group-managers/src/main/java/com/facebook/presto/resourceGroups/FileResourceGroupConfigurationManagerFactory.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-resource-group-managers/src/main/java/com/facebook/presto/resourceGroups/FileResourceGroupConfigurationManagerFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:generate-service-descriptor (default-generate-service-descriptor) @ presto-resource-group-managers ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-resource-group-managers ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-resource-group-managers ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /root/workspace/prestodb/presto/219043169/presto-resource-group-managers/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-resource-group-managers ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-resource-group-managers ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-resource-group-managers ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-resource-group-managers ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-resource-group-managers ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-resource-group-managers ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.036 sec - in TestSuite
+
+Results :
+
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-orc 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-orc ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-orc ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-orc ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-orc ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-orc ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-orc ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-orc ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-orc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-orc/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-orc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 109 source files to /root/workspace/prestodb/presto/219043169/presto-orc/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/stream/OrcInputStream.java:[36,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/UnsafeUtil.java:[30,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/ZstdDecompressor.java:[36,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/ZstdFrameDecompressor.java:[28,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/FiniteStateEntropy.java:[20,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/UnsafeUtil.java:[37,25] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/UnsafeUtil.java:[44,31] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/zstd/UnsafeUtil.java:[46,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/stream/InputStreamSources.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/main/java/com/facebook/presto/orc/stream/InputStreamSources.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-orc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-orc/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-orc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /root/workspace/prestodb/presto/219043169/presto-orc/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/test/java/com/facebook/presto/orc/OrcTester.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/test/java/com/facebook/presto/orc/OrcTester.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/test/java/com/facebook/presto/orc/AbstractTestOrcReader.java: /root/workspace/prestodb/presto/219043169/presto-orc/src/test/java/com/facebook/presto/orc/AbstractTestOrcReader.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-orc/src/test/java/com/facebook/presto/orc/AbstractTestOrcReader.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-orc ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-orc ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-orc ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-orc ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-orc ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-orc ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.44 sec - in TestSuite
+
+Results :
+
+Tests run: 59, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-rcfile 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-rcfile ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-rcfile ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-rcfile ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-rcfile ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-rcfile ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-rcfile ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-rcfile ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-rcfile ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-rcfile/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-rcfile ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 55 source files to /root/workspace/prestodb/presto/219043169/presto-rcfile/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-rcfile/src/main/java/com/facebook/presto/rcfile/RcFileDecoderUtils.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-rcfile/src/main/java/com/facebook/presto/rcfile/RcFileDecoderUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-rcfile ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-rcfile/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-rcfile ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /root/workspace/prestodb/presto/219043169/presto-rcfile/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-rcfile/src/test/java/com/facebook/presto/rcfile/RcFileTester.java: /root/workspace/prestodb/presto/219043169/presto-rcfile/src/test/java/com/facebook/presto/rcfile/RcFileTester.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-rcfile/src/test/java/com/facebook/presto/rcfile/RcFileTester.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-rcfile ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-rcfile ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-rcfile ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-rcfile ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-rcfile ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-rcfile ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.919 sec - in TestSuite
+
+Results :
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-example-http 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:check-spi-dependencies (default-check-spi-dependencies) @ presto-example-http ---
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-example-http ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-example-http ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-example-http ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-example-http ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-example-http ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-example-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-example-http ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-example-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-example-http/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-example-http ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to /root/workspace/prestodb/presto/219043169/presto-example-http/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-example-http/src/main/java/com/facebook/presto/example/ExampleRecordCursor.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-example-http/src/main/java/com/facebook/presto/example/ExampleRecordCursor.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:generate-service-descriptor (default-generate-service-descriptor) @ presto-example-http ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-example-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-example-http ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /root/workspace/prestodb/presto/219043169/presto-example-http/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-example-http ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-example-http ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-example-http ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-example-http ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-example-http ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-example-http ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.972 sec - in TestSuite
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-local-file 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:check-spi-dependencies (default-check-spi-dependencies) @ presto-local-file ---
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-local-file ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-local-file ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-local-file ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-local-file ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-local-file ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-local-file ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-local-file ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-local-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-local-file/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-local-file ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /root/workspace/prestodb/presto/219043169/presto-local-file/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-local-file/src/main/java/com/facebook/presto/localfile/LocalFileConnectorFactory.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-local-file/src/main/java/com/facebook/presto/localfile/LocalFileConnectorFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- presto-maven-plugin:0.1.12:generate-service-descriptor (default-generate-service-descriptor) @ presto-local-file ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-local-file ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-local-file ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /root/workspace/prestodb/presto/219043169/presto-local-file/target/test-classes
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-local-file ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-local-file ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-local-file ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-local-file ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-local-file ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-local-file ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.065 sec - in TestSuite
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-testing-server-launcher 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-testing-server-launcher ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-testing-server-launcher ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-testing-server-launcher ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-testing-server-launcher ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-testing-server-launcher ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-testing-server-launcher ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-testing-server-launcher ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-testing-server-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-testing-server-launcher/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-testing-server-launcher ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /root/workspace/prestodb/presto/219043169/presto-testing-server-launcher/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-testing-server-launcher ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-testing-server-launcher/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-testing-server-launcher ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-testing-server-launcher ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-testing-server-launcher ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-testing-server-launcher ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-testing-server-launcher ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-testing-server-launcher ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-testing-server-launcher ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-tests 0.174-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-tests ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-tests ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-tests ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-tests ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-tests ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-tests ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-tests ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219043169/presto-tests/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-tests ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /root/workspace/prestodb/presto/219043169/presto-tests/target/classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-tests/src/main/java/com/facebook/presto/tests/DistributedQueryRunner.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-tests/src/main/java/com/facebook/presto/tests/DistributedQueryRunner.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-tests/src/main/java/com/facebook/presto/tests/TestingPrestoClient.java: Some input files use unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-tests/src/main/java/com/facebook/presto/tests/TestingPrestoClient.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-tests ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /root/workspace/prestodb/presto/219043169/presto-tests/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-tests/src/test/java/com/facebook/presto/execution/resourceGroups/db/H2ResourceGroupConfigurationManagerFactory.java: /root/workspace/prestodb/presto/219043169/presto-tests/src/test/java/com/facebook/presto/execution/resourceGroups/db/H2ResourceGroupConfigurationManagerFactory.java uses or overrides a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219043169/presto-tests/src/test/java/com/facebook/presto/execution/resourceGroups/db/H2ResourceGroupConfigurationManagerFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-tests ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-tests ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-tests ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-tests ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-tests ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-tests ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 1341, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 639.549 sec <<< FAILURE! - in TestSuite
+testOutOfMemoryKiller(com.facebook.presto.memory.TestMemoryManager)  Time elapsed: 7.119 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.facebook.presto.memory.TestMemoryManager.testOutOfMemoryKiller(TestMemoryManager.java:126)
+
+
+Results :
+
+Failed tests:
+  TestMemoryManager.testOutOfMemoryKiller:126 NullPointer
+
+Tests run: 1341, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] presto-root ........................................ SUCCESS [  3.133 s]
+[INFO] presto-spi ......................................... SUCCESS [ 18.511 s]
+[INFO] presto-plugin-toolkit .............................. SUCCESS [  5.657 s]
+[INFO] presto-client ...................................... SUCCESS [  6.170 s]
+[INFO] presto-parser ...................................... SUCCESS [ 11.473 s]
+[INFO] presto-array ....................................... SUCCESS [  3.492 s]
+[INFO] presto-bytecode .................................... SUCCESS [  6.274 s]
+[INFO] presto-tpch ........................................ SUCCESS [  3.708 s]
+[INFO] presto-main ........................................ SUCCESS [05:09 min]
+[INFO] presto-resource-group-managers ..................... SUCCESS [ 11.234 s]
+[INFO] presto-tests ....................................... FAILURE [10:48 min]
+[INFO] presto-atop ........................................ SKIPPED
+[INFO] presto-jmx ......................................... SKIPPED
+[INFO] presto-record-decoder .............................. SUCCESS [  5.711 s]
+[INFO] presto-kafka ....................................... SKIPPED
+[INFO] presto-redis ....................................... SKIPPED
+[INFO] presto-accumulo .................................... SKIPPED
+[INFO] presto-cassandra ................................... SKIPPED
+[INFO] presto-blackhole ................................... SKIPPED
+[INFO] presto-memory ...................................... SKIPPED
+[INFO] presto-orc ......................................... SUCCESS [ 51.962 s]
+[INFO] presto-rcfile ...................................... SUCCESS [ 15.637 s]
+[INFO] presto-benchmark ................................... SKIPPED
+[INFO] presto-hive ........................................ SKIPPED
+[INFO] presto-hive-hadoop1 ................................ SKIPPED
+[INFO] presto-hive-hadoop2 ................................ SKIPPED
+[INFO] presto-hive-cdh4 ................................... SKIPPED
+[INFO] presto-hive-cdh5 ................................... SKIPPED
+[INFO] presto-teradata-functions .......................... SKIPPED
+[INFO] presto-example-http ................................ SUCCESS [  8.469 s]
+[INFO] presto-local-file .................................. SUCCESS [  7.031 s]
+[INFO] presto-raptor ...................................... SKIPPED
+[INFO] presto-base-jdbc ................................... SKIPPED
+[INFO] presto-mysql ....................................... SKIPPED
+[INFO] presto-postgresql .................................. SKIPPED
+[INFO] presto-mongodb ..................................... SKIPPED
+[INFO] presto-ml .......................................... SKIPPED
+[INFO] presto-jdbc ........................................ SKIPPED
+[INFO] presto-cli ......................................... SUCCESS [  7.268 s]
+[INFO] presto-product-tests ............................... SKIPPED
+[INFO] presto-benchmark-driver ............................ SUCCESS [  5.672 s]
+[INFO] presto-server ...................................... SKIPPED
+[INFO] presto-server-rpm .................................. SKIPPED
+[INFO] presto-docs ........................................ SUCCESS [  0.412 s]
+[INFO] presto-verifier .................................... SKIPPED
+[INFO] presto-testing-server-launcher ..................... SUCCESS [  5.116 s]
+[INFO] presto-benchto-benchmarks .......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18:57 min
+[INFO] Finished at: 2017-04-15T10:23:14+02:00
+[INFO] Final Memory: 235M/3013M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project presto-tests: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/prestodb/presto/219043169/presto-tests/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :presto-tests
