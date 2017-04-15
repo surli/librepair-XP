@@ -1,0 +1,11 @@
+{
+  "bugRepo": "GwtMaterialDesign/gwt-material",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 3
+  },
+  "buildid": 219525509,
+  "workspace": "./workspace",
+  "repo": "GwtMaterialDesign/gwt-material",
+  "bugCommit": "https://github.com/GwtMaterialDesign/gwt-material/commit/6d71504cd770"
+}
