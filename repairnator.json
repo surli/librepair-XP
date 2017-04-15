@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 7,
     "": 1,
+    "ComputeClasspath": 2,
     "CloneRepository": 36,
     "ResolveDependency": 171,
     "TestProject": 26,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 8,
     "SquashRepository": 10
   },
+  "nbLibraries": 36,
   "workspace": "./workspace",
   "totalNumberErroringTests": 0,
   "repo": "apache/flink",
