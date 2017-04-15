@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "CloneRepository": 34,
-    "ResolveDependency": 411
+    "ResolveDependency": 411,
+    "BuildProject": 190
   },
   "workspace": "./workspace",
   "pr-remote-repo": "nmco/geoserver",
