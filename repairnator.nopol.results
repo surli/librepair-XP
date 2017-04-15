@@ -1,0 +1,304 @@
+nopolinfo #0
+location: FailureLocation{className='twitter4j.auth.OAuthTest', failingMethods=[], erroringMethods=[twitter4j.auth.OAuthTest#testAccessToken, twitter4j.auth.OAuthTest#testConstructRequestURL, twitter4j.auth.OAuthTest#testDummy, twitter4j.auth.OAuthTest#testBrowserClient, twitter4j.auth.OAuthTest#testEncodeParameter, twitter4j.auth.OAuthTest#testNormalizeRequestParameters, twitter4j.auth.OAuthTest#testXAuth, twitter4j.auth.OAuthTest#testHeader, twitter4j.auth.OAuthTest#testDeterministic, twitter4j.auth.OAuthTest#testIllegalStatus, twitter4j.auth.OAuthTest#testOAuth, twitter4j.auth.OAuthTest#testSign, twitter4j.auth.OAuthTest#testDesktopClient, twitter4j.auth.OAuthTest#testSigninWithTwitter], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=14}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:33 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@5dda14d0', projectTests=[twitter4j.auth.OAuthTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='twitter4j.UsersResourcesTest', failingMethods=[], erroringMethods=[twitter4j.UsersResourcesTest#testLookupUsers, twitter4j.UsersResourcesTest#testDummy, twitter4j.UsersResourcesTest#testMuteMethods, twitter4j.UsersResourcesTest#testBanner, twitter4j.UsersResourcesTest#testBlockMethods, twitter4j.UsersResourcesTest#testShowUser, twitter4j.UsersResourcesTest#testAccountMethods, twitter4j.UsersResourcesTest#testSearchUser, twitter4j.UsersResourcesTest#testAccountProfileImageUpdates], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=9}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:37 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@154bd49b', projectTests=[twitter4j.UsersResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='twitter4j.TweetsResourcesTest', failingMethods=[], erroringMethods=[twitter4j.TweetsResourcesTest#testLookup, twitter4j.TweetsResourcesTest#testDummy, twitter4j.TweetsResourcesTest#testOEmbed, twitter4j.TweetsResourcesTest#testUploadMediaByStream, twitter4j.TweetsResourcesTest#testEntities, twitter4j.TweetsResourcesTest#testStatusMethods, twitter4j.TweetsResourcesTest#testShowStatus, twitter4j.TweetsResourcesTest#testRetweetMethods, twitter4j.TweetsResourcesTest#testUploadMediaByFile], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=9}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:39 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@63884e4', projectTests=[twitter4j.TweetsResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='twitter4j.FriendsFollowersResourcesTest', failingMethods=[], erroringMethods=[twitter4j.FriendsFollowersResourcesTest#testSocialGraphMethods, twitter4j.FriendsFollowersResourcesTest#testDummy, twitter4j.FriendsFollowersResourcesTest#testFriendsFollowersList, twitter4j.FriendsFollowersResourcesTest#testFriendsFollowersListWithSkipStatusIncludeUserEntities, twitter4j.FriendsFollowersResourcesTest#testCreateDestroyFriend, twitter4j.FriendsFollowersResourcesTest#testRelationship, twitter4j.FriendsFollowersResourcesTest#testLookupFriendships, twitter4j.FriendsFollowersResourcesTest#testIncomingOutgoingFriendships], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=8}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:41 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@58d6e55a', projectTests=[twitter4j.FriendsFollowersResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #4
+location: FailureLocation{className='twitter4j.auth.ApplicationOnlyAuthTest', failingMethods=[], erroringMethods=[twitter4j.auth.ApplicationOnlyAuthTest#testInvalidation, twitter4j.auth.ApplicationOnlyAuthTest#testSettingAccessToken2, twitter4j.auth.ApplicationOnlyAuthTest#testSettingAccessToken1, twitter4j.auth.ApplicationOnlyAuthTest#testDummy, twitter4j.auth.ApplicationOnlyAuthTest#testSettingAccessTokenFromPropertyFile, twitter4j.auth.ApplicationOnlyAuthTest#testAuthWithBuildingConf2, twitter4j.auth.ApplicationOnlyAuthTest#testAuthWithBuildingConf1, twitter4j.auth.ApplicationOnlyAuthTest#testAuthWithPropertyFile], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=8}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:43 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@1ba467c2', projectTests=[twitter4j.auth.ApplicationOnlyAuthTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #5
+location: FailureLocation{className='twitter4j.ListResourcesTest', failingMethods=[], erroringMethods=[twitter4j.ListResourcesTest#testPagingCountDosentWork2, twitter4j.ListResourcesTest#testUserListsOwnerships, twitter4j.ListResourcesTest#testListSubscribersMethods, twitter4j.ListResourcesTest#testPagingCountDosentWork1, twitter4j.ListResourcesTest#testRemoveListMembers, twitter4j.ListResourcesTest#testListMethods, twitter4j.ListResourcesTest#testListMemberMethods, twitter4j.ListResourcesTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=8}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:46 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@46c10083', projectTests=[twitter4j.ListResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #6
+location: FailureLocation{className='twitter4j.TimelineResourcesTest', failingMethods=[], erroringMethods=[twitter4j.TimelineResourcesTest#testGetMentions, twitter4j.TimelineResourcesTest#testUserTimeline, twitter4j.TimelineResourcesTest#testDummy, twitter4j.TimelineResourcesTest#testGetHomeTimeline, twitter4j.TimelineResourcesTest#testRetweetsOfMe], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=5}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:48 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@2cccf134', projectTests=[twitter4j.TimelineResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #7
+location: FailureLocation{className='twitter4j.SearchAPITest', failingMethods=[], erroringMethods=[twitter4j.SearchAPITest#testDummy, twitter4j.SearchAPITest#testSearch, twitter4j.SearchAPITest#testEasyPaging, twitter4j.SearchAPITest#testEasyPaging2, twitter4j.SearchAPITest#testQuery], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=5}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:50 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@4c5406b', projectTests=[twitter4j.SearchAPITest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #8
+location: FailureLocation{className='twitter4j.TwitterTest', failingMethods=[], erroringMethods=[twitter4j.TwitterTest#testDummy, twitter4j.TwitterTest#testGetScreenName, twitter4j.TwitterTest#testRateLimitStatus, twitter4j.TwitterTest#testGetAccessLevel], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=4}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:52 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@5408d4b3', projectTests=[twitter4j.TwitterTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #9
+location: FailureLocation{className='twitter4j.AuthorizationTest', failingMethods=[], erroringMethods=[twitter4j.AuthorizationTest#testAnonymousInstance, twitter4j.AuthorizationTest#testOAuthInstance, twitter4j.AuthorizationTest#testOAuth2Instance, twitter4j.AuthorizationTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=4}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:53 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@6d3ad37a', projectTests=[twitter4j.AuthorizationTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #10
+location: FailureLocation{className='twitter4j.HelpResoursesTest', failingMethods=[], erroringMethods=[twitter4j.HelpResoursesTest#testHelpMethods, twitter4j.HelpResoursesTest#testDummy, twitter4j.HelpResoursesTest#testLegalResources], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=3}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:55 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@71734463', projectTests=[twitter4j.HelpResoursesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #11
+location: FailureLocation{className='twitter4j.PlaceGeoResourcesTest', failingMethods=[], erroringMethods=[twitter4j.PlaceGeoResourcesTest#testGeoLocation, twitter4j.PlaceGeoResourcesTest#testGeoMethods, twitter4j.PlaceGeoResourcesTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=3}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:57 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@4b22214d', projectTests=[twitter4j.PlaceGeoResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #12
+location: FailureLocation{className='twitter4j.DirectMessagesResourcesTest', failingMethods=[], erroringMethods=[twitter4j.DirectMessagesResourcesTest#testDummy, twitter4j.DirectMessagesResourcesTest#testDirectMessages], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:19:58 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@19213a74', projectTests=[twitter4j.DirectMessagesResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #13
+location: FailureLocation{className='twitter4j.SavedSearchesResourcesTest', failingMethods=[], erroringMethods=[twitter4j.SavedSearchesResourcesTest#testDummy, twitter4j.SavedSearchesResourcesTest#testSavedSearches], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:20:00 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@3aa1c45', projectTests=[twitter4j.SavedSearchesResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #14
+location: FailureLocation{className='twitter4j.SuggestedUsersResourcesTest', failingMethods=[], erroringMethods=[twitter4j.SuggestedUsersResourcesTest#testSuggestion, twitter4j.SuggestedUsersResourcesTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:20:02 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@62dfe152', projectTests=[twitter4j.SuggestedUsersResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #15
+location: FailureLocation{className='twitter4j.FavoritesResourcesTest', failingMethods=[], erroringMethods=[twitter4j.FavoritesResourcesTest#testFavoriteMethods, twitter4j.FavoritesResourcesTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:20:04 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@69fe8c75', projectTests=[twitter4j.FavoritesResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #16
+location: FailureLocation{className='twitter4j.TrendsResourcesTest', failingMethods=[], erroringMethods=[twitter4j.TrendsResourcesTest#testDummy, twitter4j.TrendsResourcesTest#testLocalTrendsMethods], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:20:06 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@4626f584', projectTests=[twitter4j.TrendsResourcesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #17
+location: FailureLocation{className='twitter4j.MBeansIntegrationTest', failingMethods=[], erroringMethods=[twitter4j.MBeansIntegrationTest#testMonitoringIntegration, twitter4j.MBeansIntegrationTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:20:08 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@66c32e15', projectTests=[twitter4j.MBeansIntegrationTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #18
+location: FailureLocation{className='twitter4j.SpamReportingResourceTest', failingMethods=[], erroringMethods=[twitter4j.SpamReportingResourceTest#testDummy], failures=[FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sat Apr 15 15:20:09 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/src/main/java], projectClasspath='[Ljava.net.URL;@7f97e963', projectTests=[twitter4j.SpamReportingResourceTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
