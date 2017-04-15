@@ -1,14 +1,41 @@
 {
-  "bugRepo": "GwtMaterialDesign/gwt-material",
+  "totalNumberSkippingTests": 0,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 3,
     "ResolveDependency": 34,
     "TestProject": 73,
     "BuildProject": 87
   },
-  "buildid": 219731440,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "GwtMaterialDesign/gwt-material",
-  "bugCommit": "https://github.com/GwtMaterialDesign/gwt-material/compare/775a42360b99...448612ae70a8"
+  "bugCommit": "https://github.com/GwtMaterialDesign/gwt-material/compare/775a42360b99...448612ae70a8",
+  "failingModule": "/root/workspace/GwtMaterialDesign/gwt-material/219731440/gwt-material",
+  "buildid": 219731440,
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "junit.framework.AssertionFailedError"
+  ],
+  "totalNumberRunningTests": 35,
+  "failing-test-cases": [
+    {
+      "className": "gwt.material.design.client.GwtMaterialTestComponent",
+      "failingMethods": [
+        "gwt.material.design.client.GwtMaterialTestComponent#testSideNav"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "junit.framework.AssertionFailedError",
+          "failureDetail": "expected: \u003c400\u003e, actual: \u003c200\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "GwtMaterialDesign/gwt-material"
 }
