@@ -1,0 +1,11 @@
+{
+  "bugRepo": "nutzam/nutz",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 10
+  },
+  "buildid": 220434024,
+  "workspace": "./workspace",
+  "repo": "nutzam/nutz",
+  "bugCommit": "https://github.com/nutzam/nutz/compare/5e71f54ed4e1...aaca3881da79"
+}
