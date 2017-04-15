@@ -2,7 +2,8 @@
   "bugRepo": "chocoteam/choco-solver",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 22
+    "CloneRepository": 22,
+    "ResolveDependency": 29
   },
   "buildid": 218910499,
   "workspace": "./workspace",
