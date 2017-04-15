@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 8,
-    "CloneRepository": 44
+    "CloneRepository": 44,
+    "ResolveDependency": 167
   },
   "workspace": "./workspace",
   "pr-remote-repo": "greghogan/flink",
