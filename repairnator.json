@@ -79,5 +79,6 @@
   "nbLibraries": 149,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/383198559893c9b2aeddbd528f15d1fab45b3f6c",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/geoserver/geoserver/219064697/src/wfs"
 }
