@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 1,
     "": 0,
+    "ComputeClasspath": 2,
     "CloneRepository": 2,
     "ResolveDependency": 19,
     "TestProject": 72,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 3,
     "SquashRepository": 1
   },
+  "nbLibraries": 16,
   "workspace": "./workspace",
   "totalNumberErroringTests": 1,
   "repo": "4pr0n/ripme",
