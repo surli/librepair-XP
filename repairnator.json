@@ -2,7 +2,8 @@
   "bugRepo": "4pr0n/ripme",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 2
+    "CloneRepository": 2,
+    "ResolveDependency": 22
   },
   "buildid": 219135270,
   "workspace": "./workspace",
