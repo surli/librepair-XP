@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "CloneRepository": 34,
-    "ResolveDependency": 163
+    "ResolveDependency": 163,
+    "BuildProject": 811
   },
   "workspace": "./workspace",
   "pr-remote-repo": "sunjincheng121/flink",
