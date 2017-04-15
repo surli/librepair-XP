@@ -38,7 +38,8 @@
     "CloneRepository": 34,
     "ResolveDependency": 163,
     "TestProject": 28,
-    "BuildProject": 811
+    "BuildProject": 811,
+    "SquashRepository": 12
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/apache/flink/commit/5ff9c99ff193725c125f2b4c450411db97b6f3b4",
