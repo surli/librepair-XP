@@ -2,7 +2,8 @@
   "bugRepo": "apache/flink",
   "step-durations": {
     "CheckoutBuild": 1,
-    "CloneRepository": 34
+    "CloneRepository": 34,
+    "ResolveDependency": 165
   },
   "buildid": 219154203,
   "workspace": "./workspace",
