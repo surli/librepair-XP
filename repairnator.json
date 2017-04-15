@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 29
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "kuri-leo/checkstyle",
+  "pr-head-commit-id": "691e5d1228197b8212bff27528c747fc38b08cfd",
+  "pr-id": 4156,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/kuri-leo/checkstyle/commit/691e5d1228197b8212bff27528c747fc38b08cfd",
+  "is-pr": "true",
+  "buildid": 218932172,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/350801597ccce93d019ab03f5f171d5acc27e3d9",
+  "pr-base-commit-id": "350801597ccce93d019ab03f5f171d5acc27e3d9"
+}
