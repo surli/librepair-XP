@@ -1,0 +1,11 @@
+{
+  "bugRepo": "4pr0n/ripme",
+  "step-durations": {
+    "CheckoutBuild": 1,
+    "CloneRepository": 2
+  },
+  "buildid": 219133198,
+  "workspace": "./workspace",
+  "repo": "4pr0n/ripme",
+  "bugCommit": "https://github.com/4pr0n/ripme/compare/bacc69dff51d...4766d658e9f2"
+}
