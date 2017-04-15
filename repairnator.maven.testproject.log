@@ -1,0 +1,302 @@
+[INFO] BuildTimeEventSpy is registered.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] presto-root
+[INFO] presto-spi
+[INFO] presto-plugin-toolkit
+[INFO] presto-client
+[INFO] presto-parser
+[INFO] presto-array
+[INFO] presto-bytecode
+[INFO] presto-tpch
+[INFO] presto-main
+[INFO] presto-resource-group-managers
+[INFO] presto-tests
+[INFO] presto-atop
+[INFO] presto-jmx
+[INFO] presto-record-decoder
+[INFO] presto-kafka
+[INFO] presto-redis
+[INFO] presto-accumulo
+[INFO] presto-cassandra
+[INFO] presto-blackhole
+[INFO] presto-memory
+[INFO] presto-orc
+[INFO] presto-rcfile
+[INFO] presto-benchmark
+[INFO] presto-hive
+[INFO] presto-hive-hadoop1
+[INFO] presto-hive-hadoop2
+[INFO] presto-hive-cdh4
+[INFO] presto-hive-cdh5
+[INFO] presto-teradata-functions
+[INFO] presto-example-http
+[INFO] presto-local-file
+[INFO] presto-raptor
+[INFO] presto-base-jdbc
+[INFO] presto-mysql
+[INFO] presto-postgresql
+[INFO] presto-mongodb
+[INFO] presto-ml
+[INFO] presto-jdbc
+[INFO] presto-cli
+[INFO] presto-product-tests
+[INFO] presto-benchmark-driver
+[INFO] presto-server
+[INFO] presto-server-rpm
+[INFO] presto-docs
+[INFO] presto-verifier
+[INFO] presto-testing-server-launcher
+[INFO] presto-benchto-benchmarks
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-root 0.172-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-root ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-root ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-root ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-root ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-root ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-root ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-root ---
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-root ---
+[INFO] Skipping pom project
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-root ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-root ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO]    None
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-root ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-root ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-spi 0.172-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-checkstyle-plugin:2.17:check (default) @ presto-spi ---
+[INFO] Starting audit...
+Audit done.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (default) @ presto-spi ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ presto-spi ---
+[INFO]
+[INFO] --- maven-dependency-versions-check-plugin:2.0.4:check (default) @ presto-spi ---
+[INFO] Checking dependency versions
+[INFO]
+[INFO] --- license-maven-plugin:2.3:check (default) @ presto-spi ---
+[INFO] Checking licenses...
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.5.201505241946:prepare-agent (default) @ presto-spi ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.13:revision (default) @ presto-spi ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ presto-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ presto-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 272 source files to /root/workspace/prestodb/presto/219784241/presto-spi/target/classes
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[19,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/block/SliceArrayBlock.java:[28,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[88,26] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[93,27] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/type/UnscaledDecimal128Arithmetic.java:[95,23] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/connector/ConnectorContext.java: Some input files use or override a deprecated API.
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/connector/ConnectorContext.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/block/LazyBlockEncoding.java: /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/block/LazyBlockEncoding.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/main/java/com/facebook/presto/spi/block/LazyBlockEncoding.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ presto-spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/prestodb/presto/219784241/presto-spi/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ presto-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 36 source files to /root/workspace/prestodb/presto/219784241/presto-spi/target/test-classes
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/test/java/com/facebook/presto/spi/block/TestingBlockEncodingSerde.java: /root/workspace/prestodb/presto/219784241/presto-spi/src/test/java/com/facebook/presto/spi/block/TestingBlockEncodingSerde.java uses unchecked or unsafe operations.
+[WARNING] /root/workspace/prestodb/presto/219784241/presto-spi/src/test/java/com/facebook/presto/spi/block/TestingBlockEncodingSerde.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (default) @ presto-spi ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-duplicate (default) @ presto-spi ---
+[INFO] No duplicate dependencies found in <dependencies/> or in <dependencyManagement/>
+[INFO]
+[INFO] --- maven-dependency-plugin:2.10:analyze-dep-mgt (default) @ presto-spi ---
+[INFO] Found Resolved Dependency / DependencyManagement mismatches:
+[INFO] 	Ignoring Direct Dependencies.
+[INFO] org.apache.commons:commons-lang3:jar was excluded in DepMgt, but version 3.4 has been found in the dependency tree.
+[INFO] com.google.inject:guice:jar was excluded in DepMgt, but version 4.0 has been found in the dependency tree.
+[WARNING] Potential problems found in Dependency Management
+[INFO]
+[INFO] --- maven-duplicate-finder-plugin:1.0.6:check (default) @ presto-spi ---
+[INFO] Checking compile classpath
+[INFO] Checking runtime classpath
+[INFO] Checking test classpath
+[INFO]
+[INFO] --- modernizer-maven-plugin:1.5.0:modernizer (modernizer) @ presto-spi ---
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ presto-spi ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.pom (3 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 44.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.pom (3 KB at 37.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.pom (3 KB at 50.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.pom (3 KB at 45.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng/2.19.1/surefire-testng-2.19.1.jar (42 KB at 398.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-testng-utils/2.19.1/surefire-testng-utils-2.19.1.jar (27 KB at 193.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.19.1/common-java5-2.19.1.jar (44 KB at 271.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.19.1/surefire-grouper-2.19.1.jar (38 KB at 241.7 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Tests run: 173, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1.803 sec <<< FAILURE! - in TestSuite
+parseRowSignature(com.facebook.presto.spi.type.TestTypeSignature)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Bad type signature: 'array(row(col0 bigint,col1 double))'
+	at com.facebook.presto.spi.type.TestTypeSignature.assertRowSignature(TestTypeSignature.java:253)
+	at com.facebook.presto.spi.type.TestTypeSignature.assertRowSignature(TestTypeSignature.java:262)
+	at com.facebook.presto.spi.type.TestTypeSignature.parseRowSignature(TestTypeSignature.java:84)
+
+parseSignature(com.facebook.presto.spi.type.TestTypeSignature)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Bad type signature: 'array(timestamp with time zone)'
+	at com.facebook.presto.spi.type.TestTypeSignature.assertSignature(TestTypeSignature.java:305)
+	at com.facebook.presto.spi.type.TestTypeSignature.assertSignature(TestTypeSignature.java:267)
+	at com.facebook.presto.spi.type.TestTypeSignature.parseSignature(TestTypeSignature.java:175)
+
+testIsCalculated(com.facebook.presto.spi.type.TestTypeSignature)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.facebook.presto.spi.type.TestTypeSignature.testIsCalculated(TestTypeSignature.java:227)
+
+
+Results :
+
+Failed tests:
+  TestTypeSignature.parseRowSignature:84->assertRowSignature:262->assertRowSignature:253 » IllegalArgument
+  TestTypeSignature.parseSignature:175->assertSignature:267->assertSignature:305 » IllegalArgument
+  TestTypeSignature.testIsCalculated:227 expected [true] but found [false]
+
+Tests run: 173, Failures: 3, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Skipping presto-parser
+[INFO] This project has been banned from the build due to previous failures.
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Skipping presto-bytecode
+[INFO] This project has been banned from the build due to previous failures.
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Skipping presto-docs
+[INFO] This project has been banned from the build due to previous failures.
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] presto-root ........................................ SUCCESS [  2.771 s]
+[INFO] presto-spi ......................................... FAILURE [ 17.700 s]
+[INFO] presto-plugin-toolkit .............................. SKIPPED
+[INFO] presto-client ...................................... SKIPPED
+[INFO] presto-parser ...................................... SKIPPED
+[INFO] presto-array ....................................... SKIPPED
+[INFO] presto-bytecode .................................... SKIPPED
+[INFO] presto-tpch ........................................ SKIPPED
+[INFO] presto-main ........................................ SKIPPED
+[INFO] presto-resource-group-managers ..................... SKIPPED
+[INFO] presto-tests ....................................... SKIPPED
+[INFO] presto-atop ........................................ SKIPPED
+[INFO] presto-jmx ......................................... SKIPPED
+[INFO] presto-record-decoder .............................. SKIPPED
+[INFO] presto-kafka ....................................... SKIPPED
+[INFO] presto-redis ....................................... SKIPPED
+[INFO] presto-accumulo .................................... SKIPPED
+[INFO] presto-cassandra ................................... SKIPPED
+[INFO] presto-blackhole ................................... SKIPPED
+[INFO] presto-memory ...................................... SKIPPED
+[INFO] presto-orc ......................................... SKIPPED
+[INFO] presto-rcfile ...................................... SKIPPED
+[INFO] presto-benchmark ................................... SKIPPED
+[INFO] presto-hive ........................................ SKIPPED
+[INFO] presto-hive-hadoop1 ................................ SKIPPED
+[INFO] presto-hive-hadoop2 ................................ SKIPPED
+[INFO] presto-hive-cdh4 ................................... SKIPPED
+[INFO] presto-hive-cdh5 ................................... SKIPPED
+[INFO] presto-teradata-functions .......................... SKIPPED
+[INFO] presto-example-http ................................ SKIPPED
+[INFO] presto-local-file .................................. SKIPPED
+[INFO] presto-raptor ...................................... SKIPPED
+[INFO] presto-base-jdbc ................................... SKIPPED
+[INFO] presto-mysql ....................................... SKIPPED
+[INFO] presto-postgresql .................................. SKIPPED
+[INFO] presto-mongodb ..................................... SKIPPED
+[INFO] presto-ml .......................................... SKIPPED
+[INFO] presto-jdbc ........................................ SKIPPED
+[INFO] presto-cli ......................................... SKIPPED
+[INFO] presto-product-tests ............................... SKIPPED
+[INFO] presto-benchmark-driver ............................ SKIPPED
+[INFO] presto-server ...................................... SKIPPED
+[INFO] presto-server-rpm .................................. SKIPPED
+[INFO] presto-docs ........................................ SKIPPED
+[INFO] presto-verifier .................................... SKIPPED
+[INFO] presto-testing-server-launcher ..................... SKIPPED
+[INFO] presto-benchto-benchmarks .......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.424 s
+[INFO] Finished at: 2017-04-15T20:41:46+02:00
+[INFO] Final Memory: 94M/2037M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project presto-spi: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/prestodb/presto/219784241/presto-spi/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :presto-spi
