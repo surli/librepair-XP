@@ -1,0 +1,782 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Gwt Material Parent
+[INFO] Gwt Material
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gwt Material Parent 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- license-maven-plugin:1.5:update-file-header (license) @ gwt-material-parent ---
+[WARNING] No file to scan.
+[INFO]
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Gwt Material 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- license-maven-plugin:1.5:update-file-header (license) @ gwt-material ---
+[INFO] Will search files to update from root /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src
+[INFO] Will search files to update from root /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/generated-sources
+[INFO]  - adding license header on file /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/main/java/gwt/material/design/client/base/HasWithHeader.java
+[INFO]  - adding license header on file /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/main/java/gwt/material/design/client/ui/MaterialNavMenu.java
+[INFO]  - adding license header on file /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/main/java/gwt/material/design/client/ui/MaterialPushSideNav.java
+[INFO]  - adding license header on file /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/main/java/gwt/material/design/client/ui/MaterialMiniSideNav.java
+[INFO]  - adding license header on file /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/main/java/gwt/material/design/client/ui/MaterialCardSideNav.java
+[INFO]  - adding license header on file /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/main/java/gwt/material/design/client/ui/MaterialDrawerSideNav.java
+[INFO] Scan 395 files header done in 697.988ms.
+[INFO]
+ * uptodate header on 389 files.
+ * add header on 6 files.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gwt-material ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 90 resources
+[INFO]
+[INFO] --- gwt-maven-plugin:2.8.0:resources (gwt-resources) @ gwt-material ---
+[INFO] auto discovered modules [gwt.material.design.GwtMaterialDesignBasic, gwt.material.design.GwtMaterialDesignBase, gwt.material.design.GwtMaterialDesignBasicDebug, gwt.material.design.GwtMaterialDesign, gwt.material.design.GwtMaterialDesignDebug, gwt.material.design.ResourcesBasic, gwt.material.design.Resources, gwt.material.design.GwtMaterialBasicWithJQuery, gwt.material.design.GwtMaterialBasicWithJQueryDebug, gwt.material.design.GwtMaterialWithJQueryDebug, gwt.material.design.GwtMaterialWithJQuery]
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialDesignBasic
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialDesignBase
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialDesignBasicDebug
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialDesign
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialDesignDebug
+[INFO] 339 source files from GWT module gwt.material.design.ResourcesBasic
+[INFO] 339 source files from GWT module gwt.material.design.Resources
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialBasicWithJQuery
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialBasicWithJQueryDebug
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialWithJQueryDebug
+[INFO] 339 source files from GWT module gwt.material.design.GwtMaterialWithJQuery
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ gwt-material ---
+[INFO] Compiling 6 source files to /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/classes
+[INFO]
+[INFO] --- gwt-maven-plugin:2.8.0:compile (gwt-compile) @ gwt-material ---
+[INFO] auto discovered modules [gwt.material.design.GwtMaterialDesignBasic, gwt.material.design.GwtMaterialDesignBase, gwt.material.design.GwtMaterialDesignBasicDebug, gwt.material.design.GwtMaterialDesign, gwt.material.design.GwtMaterialDesignDebug, gwt.material.design.ResourcesBasic, gwt.material.design.Resources, gwt.material.design.GwtMaterialBasicWithJQuery, gwt.material.design.GwtMaterialBasicWithJQueryDebug, gwt.material.design.GwtMaterialWithJQueryDebug, gwt.material.design.GwtMaterialWithJQuery]
+[INFO] gwt.material.design.ResourcesBasic has no EntryPoint - compilation skipped
+[INFO] gwt.material.design.Resources has no EntryPoint - compilation skipped
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialDesignBasic'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]    [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]    Loading inherited module 'com.google.gwt.user.User'
+[INFO]       Loading inherited module 'com.google.gwt.media.Media'
+[INFO]          Loading inherited module 'com.google.gwt.user.UI'
+[INFO]             Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialDesignBasicDebug'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialDesign'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialDesignDebug'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialBasicWithJQuery'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialBasicWithJQueryDebug'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialWithJQueryDebug'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Loading inherited module 'gwt.material.design.GwtMaterialWithJQuery'
+[INFO]    Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+[INFO]       [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+[INFO]       Loading inherited module 'com.google.gwt.user.User'
+[INFO]          Loading inherited module 'com.google.gwt.media.Media'
+[INFO]             Loading inherited module 'com.google.gwt.user.UI'
+[INFO]                Loading inherited module 'com.google.gwt.resources.Resources'
+[INFO]                   [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+[INFO] Compiling module gwt.material.design.GwtMaterialDesignBasic
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 4.833s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialDesignBasic
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.140s
+[INFO] Compiling module gwt.material.design.GwtMaterialDesignBase
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 2.297s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialDesignBase
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.051s
+[INFO] Compiling module gwt.material.design.GwtMaterialDesignBasicDebug
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.436s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialDesignBasicDebug
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.190s
+[INFO] Compiling module gwt.material.design.GwtMaterialDesign
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.295s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialDesign
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.048s
+[INFO] Compiling module gwt.material.design.GwtMaterialDesignDebug
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.516s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialDesignDebug
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.047s
+[INFO] Compiling module gwt.material.design.GwtMaterialBasicWithJQuery
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.060s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialBasicWithJQuery
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.048s
+[INFO] Compiling module gwt.material.design.GwtMaterialBasicWithJQueryDebug
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.353s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialBasicWithJQueryDebug
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.052s
+[INFO] Compiling module gwt.material.design.GwtMaterialWithJQueryDebug
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.409s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialWithJQueryDebug
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.060s
+[INFO] Compiling module gwt.material.design.GwtMaterialWithJQuery
+[INFO]    Compiling 1 permutation
+[INFO]       Compiling permutation 0...
+[INFO]    Compile of permutations succeeded
+[INFO]    Compilation succeeded -- 1.070s
+[INFO] Linking into /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/gwt-material-2.0-SNAPSHOT/gwt.material.design.GwtMaterialWithJQuery
+[INFO]    Link succeeded
+[INFO]    Linking succeeded -- 0.050s
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gwt-material ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ gwt-material ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.6:test (default-test) @ gwt-material ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.pom (2 KB at 4.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.6/surefire-providers-2.6.pom (2 KB at 13.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.6/surefire-junit4-2.6.jar (12 KB at 78.1 KB/sec)
+[INFO] Surefire report directory: /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running gwt.material.design.client.GwtMaterialTestComponent
+Starting Jetty on port 0
+   [WARN] ServletContainerInitializers: detected. Class hierarchy: empty
+Loading inherited module 'gwt.material.design.GwtMaterialDesign'
+   Loading inherited module 'gwt.material.design.GwtMaterialDesignBase'
+      [WARN] Line 29: Setting configuration property named 'CssResource.conversionMode' in module 'gwt.material.design.GwtMaterialDesignBase' that has not been previously defined
+      Loading inherited module 'com.google.gwt.user.User'
+         Loading inherited module 'com.google.gwt.media.Media'
+            Loading inherited module 'com.google.gwt.user.UI'
+               Loading inherited module 'com.google.gwt.resources.Resources'
+                  [WARN] Definition of already set configuration property named CssResource.conversionMode in com.google.gwt.resources.Resources (set in gwt.material.design.GwtMaterialDesignBase).  This may be disallowed in the future.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/overridecss.css' [504:19] Error in pseudo class or element. (Invalid token "not". Was expecting one of: <IDENT>, ":", <FUNCTION_NOT>, <FUNCTION_LANG>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/overridecss.css' [504:19] Ignoring the whole rule.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/overridecss.css' [789:22] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/overridecss.css' [797:22] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/overridecss.css' [868:21] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [6:44681] Error in expression; ':' found after identifier "progid".
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [6:44817] Error in expression; ':' found after identifier "progid".
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [6:44955] Error in expression; ':' found after identifier "progid".
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [6:45098] Error in expression; ':' found after identifier "progid".
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [6:45245] Error in expression; ':' found after identifier "progid".
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [6:100245] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [13:2814] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [13:13658] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [13:13859] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [13:13965] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [13:14074] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [13:25842] Error in expression. (Invalid token " ". Was expecting one of: <NUMBER>, "inherit", <IDENT>, <STRING>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [16:2522] Duplicate pseudo class ":hover" or pseudo class ":hover" not at end.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: 'http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/css/materialize.min.css' [16:2522] Ignoring the whole rule.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:34 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:36 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:36 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:37 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:37 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:37 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:37 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:38 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:38 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:38 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:38 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:38 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:39 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:40 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:41 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:41 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:41 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:first' error: Invalid selector: [id="sizzle-1492259862526"] option:first).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:42 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:first' error: Invalid selector: [id="sizzle-1492259862526"] option:first).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected' error: Invalid selector: [id="sizzle-1492259862526"] option:selected).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:first' error: Invalid selector: [id="sizzle-1492259862526"] option:first).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle-1492259862526'] option:selected:not(:disabled)' error: Invalid selector: [id="sizzle-1492259862526"] option:selected:not(:disabled)).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:43 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '0' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '28.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:44 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '35.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:45 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '38.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:45 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '33.875em' has to be a 'px' value.
+Apr 15, 2017 2:37:45 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '46.75em' has to be a 'px' value.
+Apr 15, 2017 2:37:45 PM com.gargoylesoftware.htmlunit.javascript.host.css.CSSStyleSheet pixelValue
+WARNING: CSSValue '40.125em' has to be a 'px' value.
+Apr 15, 2017 2:37:45 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:45 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:46 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:46 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:47 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Apr 15, 2017 2:37:47 PM com.gargoylesoftware.htmlunit.javascript.StrictErrorReporter runtimeError
+SEVERE: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: :x).] sourceName=[script in http://localhost:34169/gwt.material.design.GwtMaterialDesign.JUnit/junit.html from (-1, -1) to (-1, -1)] line=[1] lineSource=[null] lineOffset=[0]
+Tests run: 35, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 47.639 sec <<< FAILURE!
+
+Results :
+
+Failed tests:
+  testSideNav(gwt.material.design.client.GwtMaterialTestComponent)
+
+Tests run: 35, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] Gwt Material Parent ................................ SUCCESS [  0.859 s]
+[INFO] Gwt Material ....................................... FAILURE [01:15 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:16 min
+[INFO] Finished at: 2017-04-15T14:37:47+02:00
+[INFO] Final Memory: 51M/1206M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.6:test (default-test) on project gwt-material: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/GwtMaterialDesign/gwt-material/219525509/gwt-material/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :gwt-material
