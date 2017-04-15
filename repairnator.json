@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "CloneRepository": 41,
-    "ResolveDependency": 163
+    "ResolveDependency": 163,
+    "BuildProject": 777
   },
   "workspace": "./workspace",
   "pr-remote-repo": "barcahead/flink",
