@@ -291,5 +291,6 @@
   "nbLibraries": 10,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/chocoteam/choco-solver/commit/bacaa1094775cfe6d87041bded8cb2cbec6810bc",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/chocoteam/choco-solver/218884446"
 }
