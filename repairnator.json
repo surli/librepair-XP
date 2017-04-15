@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 7,
     "CloneRepository": 28,
-    "ResolveDependency": 169
+    "ResolveDependency": 169,
+    "BuildProject": 741
   },
   "workspace": "./workspace",
   "pr-remote-repo": "zentol/flink",
