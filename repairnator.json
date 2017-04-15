@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 3,
-    "CloneRepository": 5
+    "CloneRepository": 5,
+    "ResolveDependency": 38
   },
   "workspace": "./workspace",
   "pr-remote-repo": "MarcoLotz/docker-client",
