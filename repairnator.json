@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 3,
-    "ResolveDependency": 36
+    "ResolveDependency": 36,
+    "BuildProject": 63
   },
   "workspace": "./workspace",
   "pr-remote-repo": "coenvl/docker-client",
