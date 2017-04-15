@@ -1,19 +1,125 @@
 {
+  "pr-base-commit-id": "4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6",
+  "pr-head-commit-id": "9d9c63e5f0c3e3d7955d54d2cef8f814e5040c03",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "atoback/aws-dynamodb-session-tomcat",
+  "error-types": [
+    "com.amazonaws.AmazonServiceException",
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberFailingTests": 0,
+  "buildid": 219512331,
+  "totalNumberErroringTests": 12,
+  "is-pr": "true",
+  "totalNumberRunningTests": 27,
+  "pr-head-commit-id-url": "https://github.com/atoback/aws-dynamodb-session-tomcat/commit/9d9c63e5f0c3e3d7955d54d2cef8f814e5040c03",
+  "pr-id": 55,
+  "repo": "aws/aws-dynamodb-session-tomcat",
+  "failing-test-cases": [
+    {
+      "className": "com.amazonaws.services.dynamodb.sessionmanager.SessionStorageIntegrationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.amazonaws.services.dynamodb.sessionmanager.SessionStorageIntegrationTest#com.amazonaws.services.dynamodb.sessionmanager.SessionStorageIntegrationTest"
+      ],
+      "failures": [
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: RMK87JVB8VU57RU0J88DMR2EVFVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: RI8KRUE1RD6PLU5OBSRQ2636U3VV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    },
+    {
+      "className": "com.amazonaws.services.dynamodb.sessionmanager.DynamoDBSessionManagerIntegrationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.amazonaws.services.dynamodb.sessionmanager.DynamoDBSessionManagerIntegrationTest#swappedOutSessionsDoNotReplaceActiveSessionDuringProcessExpires",
+        "com.amazonaws.services.dynamodb.sessionmanager.DynamoDBSessionManagerIntegrationTest#testCredentialsFile",
+        "com.amazonaws.services.dynamodb.sessionmanager.DynamoDBSessionManagerIntegrationTest#sessionSwappedOutToDynamo_IsUnchangedWhenSwappedBackIn",
+        "com.amazonaws.services.dynamodb.sessionmanager.DynamoDBSessionManagerIntegrationTest#testExplicitCredentials"
+      ],
+      "failures": [
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: D68O81QI465F154QC0TTQNQAT7VV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: G06UE37C8LJIKOSS3T2R1NEJGFVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: M9L9SBRLJHQ1THBA9SQSDBR21JVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: NE26GLTU1TB2F93H6KLNU63Q4VVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: IMG1VQVU9KVBN7OQM5QJ7A92BVVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: G0EM58MO49C7B3GSPPF2VVJI5NVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 8
+    },
+    {
+      "className": "com.amazonaws.services.dynamodb.sessionmanager.ExpiredSessionReaperIntegrationTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "com.amazonaws.services.dynamodb.sessionmanager.ExpiredSessionReaperIntegrationTest#com.amazonaws.services.dynamodb.sessionmanager.ExpiredSessionReaperIntegrationTest"
+      ],
+      "failures": [
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: SDVUIMPURIE0F1GGDHQ7TIMT6NVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        },
+        {
+          "failureName": "com.amazonaws.AmazonServiceException",
+          "failureDetail": "Request is missing Authentication Token (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: MissingAuthenticationTokenException; Request ID: VM59H80FVBVNT83IG6FULKUPEFVV4KQNSO5AEMVJF66Q9ASUAAJG)",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 2,
+    "": 0,
     "CloneRepository": 1,
     "ResolveDependency": 22,
     "TestProject": 9,
     "BuildProject": 19
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "atoback/aws-dynamodb-session-tomcat",
-  "pr-head-commit-id": "9d9c63e5f0c3e3d7955d54d2cef8f814e5040c03",
-  "pr-id": 55,
-  "repo": "aws/aws-dynamodb-session-tomcat",
-  "pr-head-commit-id-url": "https://github.com/atoback/aws-dynamodb-session-tomcat/commit/9d9c63e5f0c3e3d7955d54d2cef8f814e5040c03",
-  "is-pr": "true",
-  "buildid": 219512331,
   "pr-base-commit-id-url": "https://github.com/aws/aws-dynamodb-session-tomcat/commit/4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6",
-  "pr-base-commit-id": "4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6"
+  "failingModule": "/root/workspace/aws/aws-dynamodb-session-tomcat/219512331"
 }
