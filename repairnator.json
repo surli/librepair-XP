@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 12
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "Trackvia/mariadb-connector-j",
+  "pr-head-commit-id": "840d9f87fc986d6b628131ff2652d0afdd062949",
+  "pr-id": 103,
+  "repo": "MariaDB/mariadb-connector-j",
+  "pr-head-commit-id-url": "https://github.com/Trackvia/mariadb-connector-j/commit/840d9f87fc986d6b628131ff2652d0afdd062949",
+  "is-pr": "true",
+  "buildid": 219712525,
+  "pr-base-commit-id-url": "https://github.com/MariaDB/mariadb-connector-j/commit/908e4284493afed88b18190db530688454cd30f4",
+  "pr-base-commit-id": "908e4284493afed88b18190db530688454cd30f4"
+}
