@@ -1,14 +1,440 @@
 {
-  "bugRepo": "chocoteam/choco-solver",
+  "totalNumberSkippingTests": 0,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 13,
     "ResolveDependency": 33,
     "TestProject": 2147,
     "BuildProject": 29
   },
-  "buildid": 218822836,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "chocoteam/choco-solver",
-  "bugCommit": "https://github.com/chocoteam/choco-solver/compare/31233d1d52bd...e6032ffd4f7a"
+  "bugCommit": "https://github.com/chocoteam/choco-solver/compare/31233d1d52bd...e6032ffd4f7a",
+  "failingModule": "/root/workspace/chocoteam/choco-solver/218822836",
+  "buildid": 218822836,
+  "totalNumberFailingTests": 54,
+  "error-types": [
+    "org.chocosolver.solver.exception.SolverException",
+    "java.lang.AssertionError",
+    "java.lang.NoClassDefFoundError",
+    "java.lang.ExceptionInInitializerError",
+    "java.lang.OutOfMemoryError"
+  ],
+  "totalNumberRunningTests": 2581,
+  "failing-test-cases": [
+    {
+      "className": "org.chocosolver.solver.expression.continuous.ExpressionTest",
+      "failingMethods": [
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test31",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test10",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test32",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test12",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test30",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test17",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test18",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test19",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test1",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test13",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test14",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test3",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test15",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test4",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test16",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test5",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test20",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test21",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test22",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test23",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test28",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test29",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test24",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test25",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test26",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test27",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test6",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test7",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test8",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test9"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        }
+      ],
+      "nbFailures": 30,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.set.MemberSetTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.set.MemberSetTest#testJL253_bound",
+        "org.chocosolver.solver.constraints.set.MemberSetTest#testJL253_enum"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "[-4, 2, 3, 5] - [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5] expected [32] but found [7]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "[-4, 2, 3, 5] - [-4, -3, -2, 2, 5] expected [24] but found [5]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.nary.CountTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.nary.CountTest#testRandomProblems",
+        "org.chocosolver.solver.constraints.nary.CountTest#test2"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Count ([PropFastCount_(o[0], o[1], limit\u003doc, value\u003d1)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@3cffbce3\nSAT\nModel[Model-354329], 1 Solutions, Resolution time 0.003s, 6 Nodes (2,348.1 n/s), 2 Backtracks, 1 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Count ([PropFastCount_(e[6], e[7], e[4], e[8], limit\u003de[0], value\u003d1)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@36afa316\nSAT\nModel[Model-354336], 4097 Solutions, Resolution time 0.012s, 8200 Nodes (686,826.3 n/s), 8192 Backtracks, 0 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.nary.sum.IntLinCombTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.nary.sum.IntLinCombTest#testDec1"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.OutOfMemoryError",
+          "failureDetail": "GC overhead limit exceeded",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.OutOfMemoryError",
+          "failureDetail": "GC overhead limit exceeded",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.nary.CumulativeTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.nary.CumulativeTest#test6",
+        "org.chocosolver.solver.constraints.nary.CumulativeTest#test1",
+        "org.chocosolver.solver.constraints.nary.CumulativeTest#test2",
+        "org.chocosolver.solver.constraints.nary.CumulativeTest#testMed"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Cumulative ([PropCumulative([s[0] \u003d 6,d[0] \u003d 4,e[0] \u003d 10,h[0] \u003d 1],[s[1] \u003d 6,d[1] \u003d 4,e[1] \u003d 10,h[1] \u003d 0],[s[2] \u003d 0,d[2] \u003d 6,e[2] \u003d 6,h[2] \u003d 2],[s[3] \u003d 2,d[3] \u003d 7,e[3] \u003d 9,h[3] \u003d 1],capa \u003d 2), PropCumulative([s[0] \u003d 6,d[0] \u003d 4,e[0] \u003d 10,h[0] \u003d 1],[s[1] \u003d 6,d[1] \u003d 4,e[1] \u003d 10,h[1] \u003d 0],[s[2] \u003d 0,d[2] \u003d 6,e[2] \u003d 6,h[2] \u003d 2],[s[3] \u003d 2,d[3] \u003d 7,e[3] \u003d 9,h[3] \u003d 1],capa \u003d 2)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@51456946\nMINIMIZE last \u003d 11\nModel[Model-576625], 7 Solutions, MINIMIZE last \u003d 11, Resolution time 0.002s, 69 Nodes (28,655.0 n/s), 92 Backtracks, 41 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Cumulative ([PropCumulative([s[0] \u003d 7,d[0] \u003d 7,e[0] \u003d 14,h[0] \u003d 3],[s[1] \u003d 24,d[1] \u003d 3,e[1] \u003d 27,h[1] \u003d 2],[s[2] \u003d 27,d[2] \u003d 5,e[2] \u003d 32,h[2] \u003d 2],[s[3] \u003d 29,d[3] \u003d 2,e[3] \u003d 31,h[3] \u003d 3],capa \u003d 3), PropCumulative([s[0] \u003d 7,d[0] \u003d 7,e[0] \u003d 14,h[0] \u003d 3],[s[1] \u003d 24,d[1] \u003d 3,e[1] \u003d 27,h[1] \u003d 2],[s[2] \u003d 27,d[2] \u003d 5,e[2] \u003d 32,h[2] \u003d 2],[s[3] \u003d 29,d[3] \u003d 2,e[3] \u003d 31,h[3] \u003d 3],capa \u003d 3)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@5f920cb0\nMINIMIZE last \u003d 33\nModel[Model-576635], 4 Solutions, MINIMIZE last \u003d 33, Resolution time 0.001s, 37 Nodes (28,045.6 n/s), 37 Backtracks, 15 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Cumulative ([PropCumulative([s[0] \u003d 42,d[0] \u003d 8,e[0] \u003d 50,h[0] \u003d 3],[s[1] \u003d 15,d[1] \u003d 6,e[1] \u003d 21,h[1] \u003d 0],[s[2] \u003d 45,d[2] \u003d 8,e[2] \u003d 53,h[2] \u003d 3],[s[3] \u003d 89,d[3] \u003d 3,e[3] \u003d 92,h[3] \u003d 0],[s[4] \u003d 79,d[4] \u003d 4,e[4] \u003d 83,h[4] \u003d 2],[s[5] \u003d 64,d[5] \u003d 7,e[5] \u003d 71,h[5] \u003d 2],[s[6] \u003d 93,d[6] \u003d 5,e[6] \u003d 98,h[6] \u003d 2],[s[7] \u003d 118,d[7] \u003d 3,e[7] \u003d 121,h[7] \u003d 2],[s[8] \u003d 136,d[8] \u003d 4,e[8] \u003d 140,h[8] \u003d 1],[s[9] \u003d 91,d[9] \u003d 8,e[9] \u003d 99,h[9] \u003d 3],[s[10] \u003d 50,d[10] \u003d 4,e[10] \u003d 54,h[10] \u003d 2],[s[11] \u003d 103,d[11] \u003d 3,e[11] \u003d 106,h[11] \u003d 3],[s[12] \u003d 95,d[12] \u003d 6,e[12] \u003d 101,h[12] \u003d 2],[s[13] \u003d 48,d[13] \u003d 9,e[13] \u003d 57,h[13] \u003d 0],[s[14] \u003d 77,d[14] \u003d 6,e[14] \u003d 83,h[14] \u003d 2],[s[15] \u003d 78,d[15] \u003d 5,e[15] \u003d 83,h[15] \u003d 1],capa \u003d 3), PropCumulative([s[0] \u003d 42,d[0] \u003d 8,e[0] \u003d 50,h[0] \u003d 3],[s[1] \u003d 15,d[1] \u003d 6,e[1] \u003d 21,h[1] \u003d 0],[s[2] \u003d 45,d[2] \u003d 8,e[2] \u003d 53,h[2] \u003d 3],[s[3] \u003d 89,d[3] \u003d 3,e[3] \u003d 92,h[3] \u003d 0],[s[4] \u003d 79,d[4] \u003d 4,e[4] \u003d 83,h[4] \u003d 2],[s[5] \u003d 64,d[5] \u003d 7,e[5] \u003d 71,h[5] \u003d 2],[s[6] \u003d 93,d[6] \u003d 5,e[6] \u003d 98,h[6] \u003d 2],[s[7] \u003d 118,d[7] \u003d 3,e[7] \u003d 121,h[7] \u003d 2],[s[8] \u003d 136,d[8] \u003d 4,e[8] \u003d 140,h[8] \u003d 1],[s[9] \u003d 91,d[9] \u003d 8,e[9] \u003d 99,h[9] \u003d 3],[s[10] \u003d 50,d[10] \u003d 4,e[10] \u003d 54,h[10] \u003d 2],[s[11] \u003d 103,d[11] \u003d 3,e[11] \u003d 106,h[11] \u003d 3],[s[12] \u003d 95,d[12] \u003d 6,e[12] \u003d 101,h[12] \u003d 2],[s[13] \u003d 48,d[13] \u003d 9,e[13] \u003d 57,h[13] \u003d 0],[s[14] \u003d 77,d[14] \u003d 6,e[14] \u003d 83,h[14] \u003d 2],[s[15] \u003d 78,d[15] \u003d 5,e[15] \u003d 83,h[15] \u003d 1],capa \u003d 3)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@610f7e3c\nMINIMIZE last \u003d 141\nModel[Model-576696], 3 Solutions, MINIMIZE last \u003d 141, Resolution time 0.003s, 99 Nodes (35,675.4 n/s), 94 Backtracks, 45 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Cumulative ([PropCumulative([s[0] \u003d 5,d[0] \u003d 3,e[0] \u003d 8,h[0] \u003d 0],[s[1] \u003d 1,d[1] \u003d 3,e[1] \u003d 4,h[1] \u003d 1],capa \u003d 0), PropCumulative([s[0] \u003d 5,d[0] \u003d 3,e[0] \u003d 8,h[0] \u003d 0],[s[1] \u003d 1,d[1] \u003d 3,e[1] \u003d 4,h[1] \u003d 1],capa \u003d 0)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@758d1077\nMINIMIZE last \u003d 10\nModel[Model-579834], 1 Solutions, MINIMIZE last \u003d 10, Resolution time 0.000s, 14 Nodes (59,213.1 n/s), 9 Backtracks, 4 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 4,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.real.RealTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.real.RealTest#test2",
+        "org.chocosolver.solver.constraints.real.RealTest#test1",
+        "org.chocosolver.solver.constraints.real.RealTest#test4",
+        "org.chocosolver.solver.constraints.real.RealTest#test3",
+        "org.chocosolver.solver.constraints.real.RealTest#testFreemajb3",
+        "org.chocosolver.solver.constraints.real.RealTest#testFreemajb2",
+        "org.chocosolver.solver.constraints.real.RealTest#testFreemajb1",
+        "org.chocosolver.solver.constraints.real.RealTest#testHM1",
+        "org.chocosolver.solver.constraints.real.RealTest#testHM2"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.ExceptionInInitializerError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        }
+      ],
+      "nbFailures": 10,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.set.SetCstrsTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.set.SetCstrsTest#testEq"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [0] but found [4]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.nary.AmongTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.nary.AmongTest#testRandomProblems2"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.chocosolver.solver.exception.SolverException",
+          "failureDetail": "The current solution does not satisfy the checker.\n\n##################################################\n\n##################################################\nFAILURE \u003e\u003e Among ([AMONG([e[1] \u003d 0,e[8] \u003d 4],{[0]},e[5] \u003d 0)])\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\norg.chocosolver.solver.search.strategy.decision.DecisionPath@2e933aec\nSAT\nModel[Model-355526], 17500 Solutions, Resolution time 0.037s, 35007 Nodes (940,423.3 n/s), 34996 Backtracks, 0 Fails, 0 Restarts##################################################\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.nary.TableTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.nary.TableTest#testAllEquals",
+        "org.chocosolver.solver.constraints.nary.TableTest#testRandom"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [6] but found [5]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected [12] but found [8]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "chocoteam/choco-solver"
 }
