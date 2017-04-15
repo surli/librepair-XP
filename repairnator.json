@@ -1533,5 +1533,6 @@
   "nbLibraries": 64,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/spotify/docker-client/commit/dc0945a24fc56c8397ece73d63f3194527104662",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/spotify/docker-client/219023049"
 }
