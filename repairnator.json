@@ -9,6 +9,7 @@
     "TestProject": 60,
     "BuildProject": 12,
     "PushIncriminatedBuild": 3,
+    "ComputeSourceDir": 0,
     "SquashRepository": 1
   },
   "nbLibraries": 16,
