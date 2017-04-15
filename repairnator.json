@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 7,
+    "CloneRepository": 28
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "zentol/flink",
+  "pr-head-commit-id": "47fa477b97ecf31008165fce9624ef5aaccdfbbd",
+  "pr-id": 3687,
+  "repo": "apache/flink",
+  "pr-head-commit-id-url": "https://github.com/zentol/flink/commit/47fa477b97ecf31008165fce9624ef5aaccdfbbd",
+  "is-pr": "true",
+  "buildid": 219300924,
+  "pr-base-commit-id-url": "https://github.com/apache/flink/commit/e2a4f47ed8c95c7045f79bf9fe59cab39518710b",
+  "pr-base-commit-id": "e2a4f47ed8c95c7045f79bf9fe59cab39518710b"
+}
