@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "CloneRepository": 38,
-    "ResolveDependency": 27
+    "ResolveDependency": 27,
+    "BuildProject": 48
   },
   "workspace": "./workspace",
   "pr-remote-repo": "nyer/mybatis-3",
