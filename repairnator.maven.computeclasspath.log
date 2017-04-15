@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Amazon DynamoDB Session Manager for Tomcat 2.0.5
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ aws-dynamodb-session-tomcat ---
+[INFO] Wrote classpath file '/root/workspace/aws/aws-dynamodb-session-tomcat/219512331/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.293 s
+[INFO] Finished at: 2017-04-15T14:33:25+02:00
+[INFO] Final Memory: 24M/962M
+[INFO] ------------------------------------------------------------------------

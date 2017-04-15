@@ -114,6 +114,7 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "": 0,
+    "ComputeClasspath": 2,
     "CloneRepository": 1,
     "ResolveDependency": 22,
     "TestProject": 9,
@@ -121,6 +122,7 @@
     "PushIncriminatedBuild": 3,
     "SquashRepository": 1
   },
+  "nbLibraries": 33,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/aws/aws-dynamodb-session-tomcat/commit/4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6",
   "failingModule": "/root/workspace/aws/aws-dynamodb-session-tomcat/219512331"
