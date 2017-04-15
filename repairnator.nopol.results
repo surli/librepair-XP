@@ -1,0 +1,221 @@
+nopolinfo #0
+location: FailureLocation{className='org.chocosolver.solver.expression.continuous.ExpressionTest', failingMethods=[org.chocosolver.solver.expression.continuous.ExpressionTest#test31, org.chocosolver.solver.expression.continuous.ExpressionTest#test10, org.chocosolver.solver.expression.continuous.ExpressionTest#test32, org.chocosolver.solver.expression.continuous.ExpressionTest#test12, org.chocosolver.solver.expression.continuous.ExpressionTest#test30, org.chocosolver.solver.expression.continuous.ExpressionTest#test17, org.chocosolver.solver.expression.continuous.ExpressionTest#test18, org.chocosolver.solver.expression.continuous.ExpressionTest#test19, org.chocosolver.solver.expression.continuous.ExpressionTest#test1, org.chocosolver.solver.expression.continuous.ExpressionTest#test13, org.chocosolver.solver.expression.continuous.ExpressionTest#test14, org.chocosolver.solver.expression.continuous.ExpressionTest#test3, org.chocosolver.solver.expression.continuous.ExpressionTest#test15, org.chocosolver.solver.expression.continuous.ExpressionTest#test4, org.chocosolver.solver.expression.continuous.ExpressionTest#test16, org.chocosolver.solver.expression.continuous.ExpressionTest#test5, org.chocosolver.solver.expression.continuous.ExpressionTest#test20, org.chocosolver.solver.expression.continuous.ExpressionTest#test21, org.chocosolver.solver.expression.continuous.ExpressionTest#test22, org.chocosolver.solver.expression.continuous.ExpressionTest#test23, org.chocosolver.solver.expression.continuous.ExpressionTest#test28, org.chocosolver.solver.expression.continuous.ExpressionTest#test29, org.chocosolver.solver.expression.continuous.ExpressionTest#test24, org.chocosolver.solver.expression.continuous.ExpressionTest#test25, org.chocosolver.solver.expression.continuous.ExpressionTest#test26, org.chocosolver.solver.expression.continuous.ExpressionTest#test27, org.chocosolver.solver.expression.continuous.ExpressionTest#test6, org.chocosolver.solver.expression.continuous.ExpressionTest#test7, org.chocosolver.solver.expression.continuous.ExpressionTest#test8, org.chocosolver.solver.expression.continuous.ExpressionTest#test9], erroringMethods=[], failures=[FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}], nbFailures=30, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:01:40 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@7c7d3c46', projectTests=[org.chocosolver.solver.expression.continuous.ExpressionTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='org.chocosolver.solver.constraints.real.RealTest', failingMethods=[org.chocosolver.solver.constraints.real.RealTest#test2, org.chocosolver.solver.constraints.real.RealTest#test1, org.chocosolver.solver.constraints.real.RealTest#test4, org.chocosolver.solver.constraints.real.RealTest#test3, org.chocosolver.solver.constraints.real.RealTest#testFreemajb3, org.chocosolver.solver.constraints.real.RealTest#testFreemajb2, org.chocosolver.solver.constraints.real.RealTest#testFreemajb1, org.chocosolver.solver.constraints.real.RealTest#testHM1, org.chocosolver.solver.constraints.real.RealTest#testHM2], erroringMethods=[], failures=[FailureType{failureName='java.lang.ExceptionInInitializerError', failureDetail='null', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}, FailureType{failureName='java.lang.NoClassDefFoundError', failureDetail='Could not initialize class org.chocosolver.solver.constraints.real.Ibex', isError=false}], nbFailures=10, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:01:50 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@2262d6d5', projectTests=[org.chocosolver.solver.constraints.real.RealTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='org.chocosolver.solver.constraints.nary.CumulativeTest', failingMethods=[org.chocosolver.solver.constraints.nary.CumulativeTest#test6, org.chocosolver.solver.constraints.nary.CumulativeTest#test1, org.chocosolver.solver.constraints.nary.CumulativeTest#test2, org.chocosolver.solver.constraints.nary.CumulativeTest#testMed], erroringMethods=[], failures=[FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Cumulative ([PropCumulative([s[0] = 6,d[0] = 4,e[0] = 10,h[0] = 1],[s[1] = 6,d[1] = 4,e[1] = 10,h[1] = 0],[s[2] = 0,d[2] = 6,e[2] = 6,h[2] = 2],[s[3] = 2,d[3] = 7,e[3] = 9,h[3] = 1],capa = 2), PropCumulative([s[0] = 6,d[0] = 4,e[0] = 10,h[0] = 1],[s[1] = 6,d[1] = 4,e[1] = 10,h[1] = 0],[s[2] = 0,d[2] = 6,e[2] = 6,h[2] = 2],[s[3] = 2,d[3] = 7,e[3] = 9,h[3] = 1],capa = 2)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@51456946
+MINIMIZE last = 11
+Model[Model-576625], 7 Solutions, MINIMIZE last = 11, Resolution time 0.002s, 69 Nodes (28,655.0 n/s), 92 Backtracks, 41 Fails, 0 Restarts##################################################
+', isError=false}, FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Cumulative ([PropCumulative([s[0] = 7,d[0] = 7,e[0] = 14,h[0] = 3],[s[1] = 24,d[1] = 3,e[1] = 27,h[1] = 2],[s[2] = 27,d[2] = 5,e[2] = 32,h[2] = 2],[s[3] = 29,d[3] = 2,e[3] = 31,h[3] = 3],capa = 3), PropCumulative([s[0] = 7,d[0] = 7,e[0] = 14,h[0] = 3],[s[1] = 24,d[1] = 3,e[1] = 27,h[1] = 2],[s[2] = 27,d[2] = 5,e[2] = 32,h[2] = 2],[s[3] = 29,d[3] = 2,e[3] = 31,h[3] = 3],capa = 3)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@5f920cb0
+MINIMIZE last = 33
+Model[Model-576635], 4 Solutions, MINIMIZE last = 33, Resolution time 0.001s, 37 Nodes (28,045.6 n/s), 37 Backtracks, 15 Fails, 0 Restarts##################################################
+', isError=false}, FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Cumulative ([PropCumulative([s[0] = 42,d[0] = 8,e[0] = 50,h[0] = 3],[s[1] = 15,d[1] = 6,e[1] = 21,h[1] = 0],[s[2] = 45,d[2] = 8,e[2] = 53,h[2] = 3],[s[3] = 89,d[3] = 3,e[3] = 92,h[3] = 0],[s[4] = 79,d[4] = 4,e[4] = 83,h[4] = 2],[s[5] = 64,d[5] = 7,e[5] = 71,h[5] = 2],[s[6] = 93,d[6] = 5,e[6] = 98,h[6] = 2],[s[7] = 118,d[7] = 3,e[7] = 121,h[7] = 2],[s[8] = 136,d[8] = 4,e[8] = 140,h[8] = 1],[s[9] = 91,d[9] = 8,e[9] = 99,h[9] = 3],[s[10] = 50,d[10] = 4,e[10] = 54,h[10] = 2],[s[11] = 103,d[11] = 3,e[11] = 106,h[11] = 3],[s[12] = 95,d[12] = 6,e[12] = 101,h[12] = 2],[s[13] = 48,d[13] = 9,e[13] = 57,h[13] = 0],[s[14] = 77,d[14] = 6,e[14] = 83,h[14] = 2],[s[15] = 78,d[15] = 5,e[15] = 83,h[15] = 1],capa = 3), PropCumulative([s[0] = 42,d[0] = 8,e[0] = 50,h[0] = 3],[s[1] = 15,d[1] = 6,e[1] = 21,h[1] = 0],[s[2] = 45,d[2] = 8,e[2] = 53,h[2] = 3],[s[3] = 89,d[3] = 3,e[3] = 92,h[3] = 0],[s[4] = 79,d[4] = 4,e[4] = 83,h[4] = 2],[s[5] = 64,d[5] = 7,e[5] = 71,h[5] = 2],[s[6] = 93,d[6] = 5,e[6] = 98,h[6] = 2],[s[7] = 118,d[7] = 3,e[7] = 121,h[7] = 2],[s[8] = 136,d[8] = 4,e[8] = 140,h[8] = 1],[s[9] = 91,d[9] = 8,e[9] = 99,h[9] = 3],[s[10] = 50,d[10] = 4,e[10] = 54,h[10] = 2],[s[11] = 103,d[11] = 3,e[11] = 106,h[11] = 3],[s[12] = 95,d[12] = 6,e[12] = 101,h[12] = 2],[s[13] = 48,d[13] = 9,e[13] = 57,h[13] = 0],[s[14] = 77,d[14] = 6,e[14] = 83,h[14] = 2],[s[15] = 78,d[15] = 5,e[15] = 83,h[15] = 1],capa = 3)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@610f7e3c
+MINIMIZE last = 141
+Model[Model-576696], 3 Solutions, MINIMIZE last = 141, Resolution time 0.003s, 99 Nodes (35,675.4 n/s), 94 Backtracks, 45 Fails, 0 Restarts##################################################
+', isError=false}, FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Cumulative ([PropCumulative([s[0] = 5,d[0] = 3,e[0] = 8,h[0] = 0],[s[1] = 1,d[1] = 3,e[1] = 4,h[1] = 1],capa = 0), PropCumulative([s[0] = 5,d[0] = 3,e[0] = 8,h[0] = 0],[s[1] = 1,d[1] = 3,e[1] = 4,h[1] = 1],capa = 0)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@758d1077
+MINIMIZE last = 10
+Model[Model-579834], 1 Solutions, MINIMIZE last = 10, Resolution time 0.000s, 14 Nodes (59,213.1 n/s), 9 Backtracks, 4 Fails, 0 Restarts##################################################
+', isError=false}], nbFailures=4, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:00 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@2a7ebe07', projectTests=[org.chocosolver.solver.constraints.nary.CumulativeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='org.chocosolver.solver.constraints.set.MemberSetTest', failingMethods=[org.chocosolver.solver.constraints.set.MemberSetTest#testJL253_bound, org.chocosolver.solver.constraints.set.MemberSetTest#testJL253_enum], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='[-4, 2, 3, 5] - [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5] expected [32] but found [7]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='[-4, 2, 3, 5] - [-4, -3, -2, 2, 5] expected [24] but found [5]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:10 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@4037cdb0', projectTests=[org.chocosolver.solver.constraints.set.MemberSetTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #4
+location: FailureLocation{className='org.chocosolver.solver.constraints.nary.CountTest', failingMethods=[org.chocosolver.solver.constraints.nary.CountTest#testRandomProblems, org.chocosolver.solver.constraints.nary.CountTest#test2], erroringMethods=[], failures=[FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Count ([PropFastCount_(o[0], o[1], limit=oc, value=1)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@3cffbce3
+SAT
+Model[Model-354329], 1 Solutions, Resolution time 0.003s, 6 Nodes (2,348.1 n/s), 2 Backtracks, 1 Fails, 0 Restarts##################################################
+', isError=false}, FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Count ([PropFastCount_(e[6], e[7], e[4], e[8], limit=e[0], value=1)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@36afa316
+SAT
+Model[Model-354336], 4097 Solutions, Resolution time 0.012s, 8200 Nodes (686,826.3 n/s), 8192 Backtracks, 0 Fails, 0 Restarts##################################################
+', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:20 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@1f5f4d48', projectTests=[org.chocosolver.solver.constraints.nary.CountTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #5
+location: FailureLocation{className='org.chocosolver.solver.constraints.nary.sum.IntLinCombTest', failingMethods=[org.chocosolver.solver.constraints.nary.sum.IntLinCombTest#testDec1], erroringMethods=[], failures=[FailureType{failureName='java.lang.OutOfMemoryError', failureDetail='GC overhead limit exceeded', isError=false}, FailureType{failureName='java.lang.OutOfMemoryError', failureDetail='GC overhead limit exceeded', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:30 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@6cb2d5ea', projectTests=[org.chocosolver.solver.constraints.nary.sum.IntLinCombTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #6
+location: FailureLocation{className='org.chocosolver.solver.constraints.nary.TableTest', failingMethods=[org.chocosolver.solver.constraints.nary.TableTest#testAllEquals, org.chocosolver.solver.constraints.nary.TableTest#testRandom], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='expected [6] but found [5]', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='expected [12] but found [8]', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:38 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@6efa2e06', projectTests=[org.chocosolver.solver.constraints.nary.TableTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #7
+location: FailureLocation{className='org.chocosolver.solver.constraints.set.SetCstrsTest', failingMethods=[org.chocosolver.solver.constraints.set.SetCstrsTest#testEq], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='expected [0] but found [4]', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:48 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@48adb967', projectTests=[org.chocosolver.solver.constraints.set.SetCstrsTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #8
+location: FailureLocation{className='org.chocosolver.solver.constraints.nary.AmongTest', failingMethods=[org.chocosolver.solver.constraints.nary.AmongTest#testRandomProblems2], erroringMethods=[], failures=[FailureType{failureName='org.chocosolver.solver.exception.SolverException', failureDetail='The current solution does not satisfy the checker.
+
+##################################################
+
+##################################################
+FAILURE >> Among ([AMONG([e[1] = 0,e[8] = 4],{[0]},e[5] = 0)])
+
+==================================================
+org.chocosolver.solver.search.strategy.decision.DecisionPath@2e933aec
+SAT
+Model[Model-355526], 17500 Solutions, Resolution time 0.037s, 35007 Nodes (940,423.3 n/s), 34996 Backtracks, 0 Fails, 0 Restarts##################################################
+', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 07:02:57 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/chocoteam/choco-solver/218822836/src/main/java], projectClasspath='[Ljava.net.URL;@279afa1c', projectTests=[org.chocosolver.solver.constraints.nary.AmongTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
