@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 14
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "btrplace/choco-solver",
+  "pr-head-commit-id": "a8c4c0fd99a12230800f8115b4a5122474bef34e",
+  "pr-id": 522,
+  "repo": "chocoteam/choco-solver",
+  "pr-head-commit-id-url": "https://github.com/btrplace/choco-solver/commit/a8c4c0fd99a12230800f8115b4a5122474bef34e",
+  "is-pr": "true",
+  "buildid": 218884446,
+  "pr-base-commit-id-url": "https://github.com/chocoteam/choco-solver/commit/bacaa1094775cfe6d87041bded8cb2cbec6810bc",
+  "pr-base-commit-id": "bacaa1094775cfe6d87041bded8cb2cbec6810bc"
+}
