@@ -1,19 +1,63 @@
 {
+  "pr-base-commit-id": "5ff9c99ff193725c125f2b4c450411db97b6f3b4",
+  "pr-head-commit-id": "f5f4f5823bb5f3de9484987a849a0a73906732a6",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "barcahead/flink",
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberFailingTests": 2,
+  "buildid": 219266238,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 2144,
+  "pr-head-commit-id-url": "https://github.com/barcahead/flink/commit/f5f4f5823bb5f3de9484987a849a0a73906732a6",
+  "pr-id": 3688,
+  "repo": "apache/flink",
+  "failing-test-cases": [
+    {
+      "className": "org.apache.flink.util.FileUtilsTest",
+      "failingMethods": [
+        "org.apache.flink.util.FileUtilsTest#testDeleteDirectory"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "this should fail with an exception",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.apache.flink.util.NetUtilsTest",
+      "failingMethods": [
+        "org.apache.flink.util.NetUtilsTest#testFormatAddress"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[camelcasehostn]ame:99\u003e but was:\u003c[CamelCaseHostN]ame:99\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 4,
+    "": 0,
     "CloneRepository": 41,
     "ResolveDependency": 163,
     "TestProject": 31,
     "BuildProject": 777
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "barcahead/flink",
-  "pr-head-commit-id": "f5f4f5823bb5f3de9484987a849a0a73906732a6",
-  "pr-id": 3688,
-  "repo": "apache/flink",
-  "pr-head-commit-id-url": "https://github.com/barcahead/flink/commit/f5f4f5823bb5f3de9484987a849a0a73906732a6",
-  "is-pr": "true",
-  "buildid": 219266238,
   "pr-base-commit-id-url": "https://github.com/apache/flink/commit/5ff9c99ff193725c125f2b4c450411db97b6f3b4",
-  "pr-base-commit-id": "5ff9c99ff193725c125f2b4c450411db97b6f3b4"
+  "failingModule": "/root/workspace/apache/flink/219266238/flink-core"
 }
