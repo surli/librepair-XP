@@ -66,6 +66,7 @@
   "step-durations": {
     "CheckoutBuild": 4,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 42,
     "ResolveDependency": 397,
     "TestProject": 281,
@@ -73,6 +74,7 @@
     "PushIncriminatedBuild": 17,
     "SquashRepository": 6
   },
+  "nbLibraries": 149,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/dced227cc9da1cceaed65c583088c7b2d8b267c1",
   "failingModule": "/root/workspace/geoserver/geoserver/219906812/src/wfs"
