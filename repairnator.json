@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 5
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "MarcoLotz/docker-client",
+  "pr-head-commit-id": "30d04cb7c111cc418084aa53b13e1abfb0a50466",
+  "pr-id": 713,
+  "repo": "spotify/docker-client",
+  "pr-head-commit-id-url": "https://github.com/MarcoLotz/docker-client/commit/30d04cb7c111cc418084aa53b13e1abfb0a50466",
+  "is-pr": "true",
+  "buildid": 219372446,
+  "pr-base-commit-id-url": "https://github.com/spotify/docker-client/commit/dc0945a24fc56c8397ece73d63f3194527104662",
+  "pr-base-commit-id": "dc0945a24fc56c8397ece73d63f3194527104662"
+}
