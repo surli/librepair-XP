@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 41
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "barcahead/flink",
+  "pr-head-commit-id": "f5f4f5823bb5f3de9484987a849a0a73906732a6",
+  "pr-id": 3688,
+  "repo": "apache/flink",
+  "pr-head-commit-id-url": "https://github.com/barcahead/flink/commit/f5f4f5823bb5f3de9484987a849a0a73906732a6",
+  "is-pr": "true",
+  "buildid": 219266238,
+  "pr-base-commit-id-url": "https://github.com/apache/flink/commit/5ff9c99ff193725c125f2b4c450411db97b6f3b4",
+  "pr-base-commit-id": "5ff9c99ff193725c125f2b4c450411db97b6f3b4"
+}
