@@ -1,0 +1,18 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building checkstyle 7.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ checkstyle ---
+[INFO] Wrote classpath file '/root/workspace/checkstyle/checkstyle/218876837/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.733 s
+[INFO] Finished at: 2017-04-15T07:15:50+02:00
+[INFO] Final Memory: 27M/1214M
+[INFO] ------------------------------------------------------------------------
