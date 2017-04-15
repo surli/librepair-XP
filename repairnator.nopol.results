@@ -1,0 +1,36 @@
+nopolinfo #0
+location: FailureLocation{className='org.apache.ibatis.submitted.dynsql.DynSqlTest', failingMethods=[], erroringMethods=[org.apache.ibatis.submitted.dynsql.DynSqlTest#testSelect, org.apache.ibatis.submitted.dynsql.DynSqlTest#testSelectSimple], failures=[FailureType{failureName='org.apache.ibatis.exceptions.PersistenceException', failureDetail='
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: unexpected token: WHERE in statement [select * from .names where id = ?
+     union 
+      select * from .names where id = ?
+     union 
+      select * from .names where id = ?]
+### The error may exist in org/apache/ibatis/submitted/dynsql/DynSql.xml
+### The error may involve org.apache.ibatis.submitted.dynsql.select_simple
+### The error occurred while executing a query
+### SQL: select * from .names where id = ?      union        select * from .names where id = ?      union        select * from .names where id = ?
+### Cause: java.sql.SQLSyntaxErrorException: unexpected token: WHERE in statement [select * from .names where id = ?
+     union 
+      select * from .names where id = ?
+     union 
+      select * from .names where id = ?]', isError=true}, FailureType{failureName='org.apache.ibatis.exceptions.PersistenceException', failureDetail='
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: unexpected end of statement in statement []
+### The error may exist in org/apache/ibatis/submitted/dynsql/DynSql.xml
+### The error may involve org.apache.ibatis.submitted.dynsql.select
+### The error occurred while executing a query
+### SQL: 
+### Cause: java.sql.SQLSyntaxErrorException: unexpected end of statement in statement []', isError=true}], nbFailures=0, nbErrors=2}
+status: TIMEOUT
+dateEnd: Sat Apr 15 08:40:29 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 120minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/mybatis/mybatis-3/218854351/src/main/java], projectClasspath='[Ljava.net.URL;@33a053d', projectTests=[org.apache.ibatis.submitted.dynsql.DynSqlTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 2695
+nbAngelicValues: 1126
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
