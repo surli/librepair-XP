@@ -2,7 +2,8 @@
   "bugRepo": "geoserver/geoserver",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 41
+    "CloneRepository": 41,
+    "ResolveDependency": 274
   },
   "buildid": 219885935,
   "workspace": "./workspace",
