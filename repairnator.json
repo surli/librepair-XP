@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 2,
-    "CloneRepository": 14
+    "CloneRepository": 14,
+    "ResolveDependency": 30
   },
   "workspace": "./workspace",
   "pr-remote-repo": "btrplace/choco-solver",
