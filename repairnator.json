@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 38
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "geoserver/geoserver",
+  "pr-head-commit-id": "d85d5093ef08a6ff3ac69ff83997069c2248d999",
+  "pr-id": 2216,
+  "repo": "geoserver/geoserver",
+  "pr-head-commit-id-url": "https://github.com/geoserver/geoserver/commit/d85d5093ef08a6ff3ac69ff83997069c2248d999",
+  "is-pr": "true",
+  "buildid": 219908699,
+  "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/dced227cc9da1cceaed65c583088c7b2d8b267c1",
+  "pr-base-commit-id": "dced227cc9da1cceaed65c583088c7b2d8b267c1"
+}
