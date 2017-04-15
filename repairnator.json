@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 5,
+    "CloneRepository": 12
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "wate123/checkstyle",
+  "pr-head-commit-id": "a896667c50b0f28555b32a79a805e6414d005634",
+  "pr-id": 4087,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/wate123/checkstyle/commit/a896667c50b0f28555b32a79a805e6414d005634",
+  "is-pr": "true",
+  "buildid": 218241538,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/9afc7f6a6caede02da07aa78a1643f6a2db3e6a2",
+  "pr-base-commit-id": "9afc7f6a6caede02da07aa78a1643f6a2db3e6a2"
+}
