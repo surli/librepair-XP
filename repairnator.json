@@ -61,5 +61,6 @@
   "nbLibraries": 32,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/8d012e33a49b8caa317db2b2aed4c41f8cfecdbb",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/prestodb/presto/219784241/presto-spi"
 }
