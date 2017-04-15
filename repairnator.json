@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 5
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "fredriko/twitter4j",
+  "pr-head-commit-id": "5887b1b2c43cfcba7c0e48b3c16a9d39969c2e3c",
+  "pr-id": 259,
+  "repo": "yusuke/twitter4j",
+  "pr-head-commit-id-url": "https://github.com/fredriko/twitter4j/commit/5887b1b2c43cfcba7c0e48b3c16a9d39969c2e3c",
+  "is-pr": "true",
+  "buildid": 219634671,
+  "pr-base-commit-id-url": "https://github.com/yusuke/twitter4j/commit/f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d",
+  "pr-base-commit-id": "f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d"
+}
