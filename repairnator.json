@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 24
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "aleph-zero/presto",
+  "pr-head-commit-id": "1e4d2a2d8d0cda7e4b5e082434403669f0c6f758",
+  "pr-id": 7761,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/aleph-zero/presto/commit/1e4d2a2d8d0cda7e4b5e082434403669f0c6f758",
+  "is-pr": "true",
+  "buildid": 219139280,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/8d012e33a49b8caa317db2b2aed4c41f8cfecdbb",
+  "pr-base-commit-id": "8d012e33a49b8caa317db2b2aed4c41f8cfecdbb"
+}
