@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building twitter4j-core 4.0.6
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ twitter4j-core ---
+[INFO] Wrote classpath file '/root/workspace/yusuke/twitter4j/219634671/twitter4j-core/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.276 s
+[INFO] Finished at: 2017-04-15T15:19:21+02:00
+[INFO] Final Memory: 27M/962M
+[INFO] ------------------------------------------------------------------------
