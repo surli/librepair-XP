@@ -1,14 +1,301 @@
 {
-  "bugRepo": "chocoteam/choco-solver",
+  "totalNumberSkippingTests": 0,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 11,
     "ResolveDependency": 29,
     "TestProject": 1088,
     "BuildProject": 28
   },
-  "buildid": 219999685,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "chocoteam/choco-solver",
-  "bugCommit": "https://github.com/chocoteam/choco-solver/compare/3cf5953321e7...f51a44de7d38"
+  "bugCommit": "https://github.com/chocoteam/choco-solver/compare/3cf5953321e7...f51a44de7d38",
+  "failingModule": "/root/workspace/chocoteam/choco-solver/219999685",
+  "buildid": 219999685,
+  "totalNumberFailingTests": 41,
+  "error-types": [
+    "java.lang.AssertionError",
+    "java.lang.NoClassDefFoundError",
+    "java.lang.ExceptionInInitializerError"
+  ],
+  "totalNumberRunningTests": 2606,
+  "failing-test-cases": [
+    {
+      "className": "org.chocosolver.solver.expression.continuous.ExpressionTest",
+      "failingMethods": [
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test31",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test10",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test32",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test12",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test30",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test17",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test18",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test19",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test1",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test13",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test14",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test3",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test15",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test4",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test16",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test5",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test20",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test21",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test22",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test23",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test28",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test29",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test24",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test25",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test26",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test27",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test6",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test7",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test8",
+        "org.chocosolver.solver.expression.continuous.ExpressionTest#test9"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        }
+      ],
+      "nbFailures": 30,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.variables.ViewsTest",
+      "failingMethods": [
+        "org.chocosolver.solver.variables.ViewsTest#testa"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "0 expected [true] but found [false]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    },
+    {
+      "className": "org.chocosolver.solver.constraints.real.RealTest",
+      "failingMethods": [
+        "org.chocosolver.solver.constraints.real.RealTest#test2",
+        "org.chocosolver.solver.constraints.real.RealTest#test1",
+        "org.chocosolver.solver.constraints.real.RealTest#test4",
+        "org.chocosolver.solver.constraints.real.RealTest#test3",
+        "org.chocosolver.solver.constraints.real.RealTest#testFreemajb3",
+        "org.chocosolver.solver.constraints.real.RealTest#testFreemajb2",
+        "org.chocosolver.solver.constraints.real.RealTest#testFreemajb1",
+        "org.chocosolver.solver.constraints.real.RealTest#testHM1",
+        "org.chocosolver.solver.constraints.real.RealTest#testHM2"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.ExceptionInInitializerError",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.NoClassDefFoundError",
+          "failureDetail": "Could not initialize class org.chocosolver.solver.constraints.real.Ibex",
+          "isError": false
+        }
+      ],
+      "nbFailures": 10,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "chocoteam/choco-solver"
 }
