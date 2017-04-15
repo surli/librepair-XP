@@ -1,0 +1,11 @@
+{
+  "bugRepo": "apache/flink",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 41
+  },
+  "buildid": 219153528,
+  "workspace": "./workspace",
+  "repo": "apache/flink",
+  "bugCommit": "https://github.com/apache/flink/compare/cf28a562159a...80800d8cecee"
+}
