@@ -1,0 +1,11 @@
+{
+  "bugRepo": "geoserver/geoserver",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 38
+  },
+  "buildid": 219906541,
+  "workspace": "./workspace",
+  "repo": "geoserver/geoserver",
+  "bugCommit": "https://github.com/geoserver/geoserver/compare/bb61c8d19398...590fff0c79c6"
+}
