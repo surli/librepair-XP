@@ -1,0 +1,16 @@
+[INFO] BuildTimeEventSpy is registered.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-spi 0.172-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ presto-spi ---
+[INFO] Wrote classpath file '/root/workspace/prestodb/presto/219784241/presto-spi/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.687 s
+[INFO] Finished at: 2017-04-15T20:42:11+02:00
+[INFO] Final Memory: 23M/962M
+[INFO] ------------------------------------------------------------------------
