@@ -1,0 +1,2012 @@
+Warning: Output directory "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset" does not exist. Creating the directory.
+Warning: Duplicate option setting for "VISITOR" will be ignored.
+dule
+[INFO] GeoServer Security Modules
+[INFO] GeoServer JDBC Security Module
+[INFO] GeoServer LDAP Security Module
+[INFO] Web Coverage Service Module
+[INFO] Web Coverage Service 1.0 Module
+[INFO] Web Coverage Service 1.1 Module
+[INFO] Web Coverage Service 2.0 Module
+[INFO] Web Feature Service Module
+[INFO] Web Map Service Module
+[INFO] KML support for GeoServer
+[INFO] GeoWebCache (GWC) Module
+[INFO] REST Support Module
+[INFO] REST Configuration Service Module
+[INFO] GeoServer Web Modules
+[INFO] Core UI Module
+[INFO] WMS UI Module
+[INFO] GWC UI Module
+[INFO] WFS UI Module
+[INFO] Demos Module
+[INFO] WCS UI Module
+[INFO] Security UI Modules
+[INFO] Security UI Core Module
+[INFO] Security UI JDBC Module
+[INFO] Security UI LDAP Module
+[INFO] REST UI Module
+[INFO] GeoServer Web Application
+[INFO] Community Space
+[INFO] GeoServer Extensions
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ geoserver ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.pom (4 KB at 5.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.1.1/maven-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.1.1/maven-3.1.1.pom (22 KB at 239.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.pom (5 KB at 66.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (4 KB at 45.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 KB at 289.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.pom (2 KB at 31.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.pom (5 KB at 77.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.0.0.M5/sisu-plexus-0.0.0.M5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.0.0.M5/sisu-plexus-0.0.0.M5.pom (13 KB at 198.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom (2 KB at 24.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom (3 KB at 37.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom (8 KB at 113.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/6/weld-parent-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/6/weld-parent-6.pom (21 KB at 320.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom (1023 B at 17.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (612 B at 9.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.pom (6 KB at 90.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/10.0.1/guava-parent-10.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/10.0.1/guava-parent-10.0.1.pom (2 KB at 27.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom (965 B at 15.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0.pom (10 KB at 173.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-parent/3.1.0/guice-parent-3.1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/inject/guice-parent/3.1.0/guice-parent-3.1.0.pom (11 KB at 174.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.pom (3 KB at 44.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.0.0.M5/sisu-inject-0.0.0.M5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.0.0.M5/sisu-inject-0.0.0.M5.pom (14 KB at 224.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom (4 KB at 63.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.pom (8 KB at 126.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.pom (3 KB at 39.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.pom (3 KB at 46.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom (2 KB at 18.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3 KB at 53.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3 KB at 50.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (7 KB at 125.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (9 KB at 136.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (6 KB at 83.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (3 KB at 30.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.pom (3 KB at 39.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.pom (3 KB at 49.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.pom (4 KB at 74.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom (2 KB at 31.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.pom (2 KB at 32.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.pom (4 KB at 46.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.pom (5 KB at 90.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1.pom (6 KB at 93.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.5/jackson-parent-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.5/jackson-parent-2.5.pom (8 KB at 121.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/18/oss-parent-18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/18/oss-parent-18.pom (19 KB at 300.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.pom (2 KB at 19.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.1/jackson-core-2.5.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.1/jackson-core-2.5.1.pom (5 KB at 81.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom (28 KB at 423.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (6 KB at 98.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (8 KB at 136.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.pom (2 KB at 28.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.pom (7 KB at 112.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/3.7.0.201502260915-r/org.eclipse.jgit-parent-3.7.0.201502260915-r.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/3.7.0.201502260915-r/org.eclipse.jgit-parent-3.7.0.201502260915-r.pom (24 KB at 392.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.pom (4 KB at 56.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.pom (5 KB at 70.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom (6 KB at 108.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom (12 KB at 194.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/5/project-5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/5/project-5.pom (23 KB at 384.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.pom (8 KB at 122.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.1.4/httpcomponents-core-4.1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.1.4/httpcomponents-core-4.1.4.pom (10 KB at 146.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom (11 KB at 189.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom (3 KB at 48.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom (12 KB at 205.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom (3 KB at 48.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.12/slf4j-parent-1.7.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.12/slf4j-parent-1.7.12.pom (12 KB at 214.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.pom (2 KB at 27.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.1.1/maven-plugin-api-3.1.1.jar (44 KB at 625.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar (6 KB at 45.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.1.1/maven-artifact-3.1.1.jar (52 KB at 319.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar (44 KB at 252.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar (3 KB at 13.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.1.1/maven-model-3.1.1.jar (151 KB at 756.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M5/org.eclipse.sisu.plexus-0.0.0.M5.jar (192 KB at 945.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.1.1/maven-settings-3.1.1.jar (41 KB at 159.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar (350 KB at 1347.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M5/org.eclipse.sisu.inject-0.0.0.M5.jar (285 KB at 1057.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.1.1/maven-settings-builder-3.1.1.jar (41 KB at 150.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.1.1/maven-core-3.1.1.jar (545 KB at 1700.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar (18 KB at 52.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.1.1/maven-aether-provider-3.1.1.jar (59 KB at 174.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.1.1/maven-model-builder-3.1.1.jar (156 KB at 461.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.1.1/maven-repository-metadata-3.1.1.jar (25 KB at 72.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.jar (61 KB at 154.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar (142 KB at 362.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.1/plexus-classworlds-2.5.1.jar (49 KB at 122.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (234 KB at 571.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar (131 KB at 319.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.1/jackson-core-2.5.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (14 KB at 29.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (28 KB at 62.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.5.0/jackson-annotations-2.5.0.jar (39 KB at 84.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.5.1/jackson-core-2.5.1.jar (225 KB at 461.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1.jar (1113 KB at 2130.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.jar (20 KB at 37.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.jar (123 KB at 208.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.jar (249 KB at 418.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.jar (576 KB at 967.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar (57 KB at 85.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.jar (178 KB at 264.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.jar (345 KB at 508.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.7.0.201502260915-r/org.eclipse.jgit-3.7.0.201502260915-r.jar (1936 KB at 2706.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar (32 KB at 42.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.jar (11 KB at 13.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2204 KB at 2880.2 KB/sec)
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ geoserver ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom (5 KB at 79.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom (7 KB at 119.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom (2 KB at 34.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom (2 KB at 28.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom (2 KB at 37.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom (2 KB at 22.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom (3 KB at 51.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4 KB at 72.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom (2 KB at 32.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.19/plexus-components-1.1.19.pom (3 KB at 50.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom (19 KB at 336.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.pom (1018 B at 17.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 KB at 220.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 KB at 593.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (48 KB at 749.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (114 KB at 1745.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (56 KB at 836.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 KB at 215.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 KB at 243.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar (37 KB at 310.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (85 KB at 680.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (86 KB at 671.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar (22 KB at 130.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar (21 KB at 116.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar (10 KB at 54.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar (149 KB at 822.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar (6 KB at 31.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar (14 KB at 59.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar (37 KB at 157.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar (11 KB at 42.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.15/plexus-interpolation-1.15.jar (60 KB at 249.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar (181 KB at 714.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar (57 KB at 202.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar (203 KB at 678.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (221 KB at 733.5 KB/sec)
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/target/geoserver-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ geoserver ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.pom (4 KB at 51.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom (3 KB at 46.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom (19 KB at 330.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.7/plexus-utils-3.0.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.7/plexus-utils-3.0.7.pom (3 KB at 45.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.pom (2 KB at 31.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.4/plexus-io-2.0.4.jar (57 KB at 889.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.2/plexus-archiver-2.2.jar (181 KB at 2286.6 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.jar (227 KB at 2383.0 KB/sec)
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ geoserver ---
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ geoserver ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom (3 KB at 33.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (2 KB at 18.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5 KB at 90.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (8 KB at 110.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 KB at 210.5 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar (226 KB at 3082.8 KB/sec)
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/geoserver/2.12-SNAPSHOT/geoserver-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/target/geoserver-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/geoserver/2.12-SNAPSHOT/geoserver-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core Platform Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-platform ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-platform ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (4 KB at 50.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 KB at 287.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom (6 KB at 104.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom (889 B at 16.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom (3 KB at 52.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom (3 KB at 54.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom (5 KB at 91.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom (890 B at 16.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom (3 KB at 52.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar (7 KB at 118.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.jar (43 KB at 725.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar (60 KB at 961.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar (218 KB at 2905.9 KB/sec)
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/platform/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-platform ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom (4 KB at 62.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.pom (805 B at 14.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.8.1/plexus-compiler-1.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.8.1/plexus-compiler-1.8.1.pom (4 KB at 61.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (6 KB at 95.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.pom (713 B at 12.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.pom (710 B at 12.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/1.8.1/plexus-compilers-1.8.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/1.8.1/plexus-compilers-1.8.1.pom (2 KB at 24.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8.1/plexus-compiler-api-1.8.1.jar (20 KB at 348.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar (33 KB at 563.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8.1/plexus-compiler-javac-1.8.1.jar (13 KB at 218.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8.1/plexus-compiler-manager-1.8.1.jar (6 KB at 92.9 KB/sec)
+[INFO] Compiling 51 source files to /root/workspace/geoserver/geoserver/219064697/src/platform/target/classes
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/main/java/org/geoserver/platform/RenderingEngineStatus.java:[8,22] RenderingEngine is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/main/java/org/geoserver/platform/RenderingEngineStatus.java:[23,14] RenderingEngine is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/main/java/org/geoserver/platform/RenderingEngineStatus.java:[25,30] RenderingEngine is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/main/java/org/geoserver/platform/RenderingEngineStatus.java:[25,63] RenderingEngine is internal proprietary API and may be removed in a future release
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-platform ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/platform/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-platform ---
+[INFO] Compiling 31 source files to /root/workspace/geoserver/geoserver/219064697/src/platform/target/test-classes
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/test/java/org/geoserver/platform/RenderingEngineStatusTest.java:[13,22] RenderingEngine is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/test/java/org/geoserver/platform/RenderingEngineStatusTest.java:[28,14] RenderingEngine is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/test/java/org/geoserver/platform/RenderingEngineStatusTest.java:[30,30] RenderingEngine is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/platform/src/test/java/org/geoserver/platform/RenderingEngineStatusTest.java:[30,63] RenderingEngine is internal proprietary API and may be removed in a future release
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-platform ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.3/surefire-booter-2.12.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.3/surefire-booter-2.12.3.pom (3 KB at 14.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.3/surefire-api-2.12.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.3/surefire-api-2.12.3.pom (3 KB at 10.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.3/maven-surefire-common-2.12.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.3/maven-surefire-common-2.12.3.pom (6 KB at 16.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom (2 KB at 28.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom (16 KB at 282.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (4 KB at 61.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 KB at 296.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom (4 KB at 63.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.3/surefire-booter-2.12.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.3/surefire-api-2.12.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.3/maven-surefire-common-2.12.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar (31 KB at 514.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.3/surefire-api-2.12.3.jar (114 KB at 1666.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 3715.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.3/maven-surefire-common-2.12.3.jar (256 KB at 2525.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar (10 KB at 81.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar (38 KB at 304.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.3/surefire-booter-2.12.3.jar (34 KB at 252.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar (14 KB at 100.7 KB/sec)
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-platform ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-platform ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-platform ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-platform ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-platform ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-platform/2.12-SNAPSHOT/gs-platform-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/platform/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-platform/2.12-SNAPSHOT/gs-platform-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-platform/2.12-SNAPSHOT/gs-platform-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-platform/2.12-SNAPSHOT/gs-platform-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/platform/target/gs-platform-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-platform/2.12-SNAPSHOT/gs-platform-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Open Web Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-ows ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-ows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/ows/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-ows ---
+[INFO] Compiling 92 source files to /root/workspace/geoserver/geoserver/219064697/src/ows/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-ows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/ows/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-ows ---
+[INFO] Compiling 26 source files to /root/workspace/geoserver/geoserver/219064697/src/ows/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-ows ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-ows ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-ows ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-ows ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-ows ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-ows ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-ows/2.12-SNAPSHOT/gs-ows-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/ows/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-ows/2.12-SNAPSHOT/gs-ows-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-ows/2.12-SNAPSHOT/gs-ows-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-ows/2.12-SNAPSHOT/gs-ows-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/ows/target/gs-ows-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-ows/2.12-SNAPSHOT/gs-ows-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Main Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-main ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] Copying 169 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-main ---
+[INFO] Compiling 629 source files to /root/workspace/geoserver/geoserver/219064697/src/main/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 133 resources
+[INFO] Copying 47 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-main ---
+[INFO] Compiling 219 source files to /root/workspace/geoserver/geoserver/219064697/src/main/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-main ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-main ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-main ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-main ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-main ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-main ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-main/2.12-SNAPSHOT/gs-main-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/main/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-main/2.12-SNAPSHOT/gs-main-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-main/2.12-SNAPSHOT/gs-main-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-main/2.12-SNAPSHOT/gs-main-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/main/target/gs-main-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-main/2.12-SNAPSHOT/gs-main-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer Security Modules 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-security ---
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-security ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/target/gs-security-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-security ---
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-security ---
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-security ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-security/2.12-SNAPSHOT/gs-security-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/target/gs-security-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-security/2.12-SNAPSHOT/gs-security-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer JDBC Security Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-sec-jdbc ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-sec-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 20 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-sec-jdbc ---
+[INFO] Compiling 13 source files to /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-sec-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 8 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-sec-jdbc ---
+[INFO] Compiling 29 source files to /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-sec-jdbc ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-sec-jdbc ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-jdbc/2.12-SNAPSHOT/gs-sec-jdbc-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-jdbc/2.12-SNAPSHOT/gs-sec-jdbc-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-jdbc/2.12-SNAPSHOT/gs-sec-jdbc-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-jdbc/2.12-SNAPSHOT/gs-sec-jdbc-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/jdbc/target/gs-sec-jdbc-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-jdbc/2.12-SNAPSHOT/gs-sec-jdbc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer LDAP Security Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-sec-ldap ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-sec-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 13 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-sec-ldap ---
+[INFO] Compiling 13 source files to /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-sec-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-sec-ldap ---
+[INFO] Compiling 6 source files to /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-sec-ldap ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-sec-ldap ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-ldap/2.12-SNAPSHOT/gs-sec-ldap-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/ldap/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-ldap/2.12-SNAPSHOT/gs-sec-ldap-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-ldap/2.12-SNAPSHOT/gs-sec-ldap-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-ldap/2.12-SNAPSHOT/gs-sec-ldap-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/security/ldap/target/gs-sec-ldap-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/security/gs-sec-ldap/2.12-SNAPSHOT/gs-sec-ldap-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/wcs/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs ---
+[INFO] Compiling 18 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/wcs/src/test/java
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/wcs/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-wcs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs/target/gs-wcs-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-wcs ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs/target/gs-wcs-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-wcs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs/target/gs-wcs-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-wcs ---
+[INFO] No sources in project. Archive not created.
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-wcs ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs/target/gs-wcs-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs/2.12-SNAPSHOT/gs-wcs-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs/2.12-SNAPSHOT/gs-wcs-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs/target/gs-wcs-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs/2.12-SNAPSHOT/gs-wcs-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs/target/gs-wcs-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs/2.12-SNAPSHOT/gs-wcs-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service 1.0 Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs1_0 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs1_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 7 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs1_0 ---
+[INFO] Compiling 22 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs1_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs1_0 ---
+[INFO] Compiling 13 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs1_0 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-wcs1_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-wcs1_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-wcs1_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-wcs1_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-wcs1_0 ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_0/2.12-SNAPSHOT/gs-wcs1_0-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_0/2.12-SNAPSHOT/gs-wcs1_0-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_0/2.12-SNAPSHOT/gs-wcs1_0-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_0/2.12-SNAPSHOT/gs-wcs1_0-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_0/target/gs-wcs1_0-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_0/2.12-SNAPSHOT/gs-wcs1_0-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service 1.1 Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs1_1 ---
+[INFO]
+[INFO] --- javacc-maven-plugin:2.3:jjtree (jjtree) @ gs-wcs1_1 ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.pom (624 B at 11.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.5.3/plexus-compiler-1.5.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.5.3/plexus-compiler-1.5.3.pom (2 KB at 26.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.6/plexus-components-1.1.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.6/plexus-components-1.1.6.pom (2 KB at 32.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/java/dev/javacc/javacc/4.0/javacc-4.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/java/dev/javacc/javacc/4.0/javacc-4.0.pom (897 B at 14.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.pom (3 KB at 36.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/edu/ucla/cs/compilers/jtb/1.3.2/jtb-1.3.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/edu/ucla/cs/compilers/jtb/1.3.2/jtb-1.3.2.pom (2 KB at 20.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.8/maven-reporting-api-2.0.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.8/maven-reporting-api-2.0.8.pom (2 KB at 27.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.8/maven-reporting-2.0.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.8/maven-reporting-2.0.8.pom (2 KB at 26.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.pom (2 KB at 24.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-9/doxia-1.0-alpha-9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-9/doxia-1.0-alpha-9.pom (9 KB at 159.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.pom (2 KB at 34.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom (700 B at 12.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.4/maven-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.4/maven-2.0.4.pom (12 KB at 205.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.pom (2 KB at 30.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.pom (2 KB at 28.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.pom (3 KB at 47.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.pom (2 KB at 28.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom (2 KB at 24.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.pom (2 KB at 26.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.pom (765 B at 13.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-7/doxia-core-1.0-alpha-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-7/doxia-core-1.0-alpha-7.pom (2 KB at 23.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.pom (141 B at 2.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 10.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (9 KB at 161.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom (902 B at 16.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-7/doxia-site-renderer-1.0-alpha-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-7/doxia-site-renderer-1.0-alpha-7.pom (2 KB at 25.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.pom (771 B at 13.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.4/plexus-components-1.1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.4/plexus-components-1.1.4.pom (3 KB at 38.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.pom (8 KB at 139.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-7/plexus-container-default-1.0-alpha-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-7/plexus-container-default-1.0-alpha-7.pom (2 KB at 22.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom (471 B at 8.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom (6 KB at 110.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom (740 B at 13.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.pom (168 B at 3.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/velocity/velocity/1.4/velocity-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/velocity/velocity/1.4/velocity-1.4.pom (3 KB at 42.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/velocity/velocity-dep/1.4/velocity-dep-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/velocity/velocity-dep/1.4/velocity-dep-1.4.pom (2 KB at 33.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-7/doxia-decoration-model-1.0-alpha-7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-7/doxia-decoration-model-1.0-alpha-7.pom (2 KB at 25.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.8/maven-plugin-api-2.0.8.jar (13 KB at 220.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.5.3/plexus-compiler-api-1.5.3.jar (20 KB at 340.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.8/maven-settings-2.0.8.jar (48 KB at 773.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar (191 KB at 2766.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.8/maven-project-2.0.8.jar (114 KB at 1651.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.8/maven-profile-2.0.8.jar (35 KB at 314.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.8/maven-model-2.0.8.jar (85 KB at 748.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/java/dev/javacc/javacc/4.0/javacc-4.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.jar (56 KB at 469.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.8/maven-repository-metadata-2.0.8.jar (24 KB at 198.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/edu/ucla/cs/compilers/jtb/1.3.2/jtb-1.3.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.jar (29 KB at 232.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.8/maven-reporting-api-2.0.8.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.8/maven-artifact-2.0.8.jar (86 KB at 502.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.8/maven-reporting-api-2.0.8.jar (10 KB at 56.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.9/plexus-utils-1.4.9.jar (200 KB at 1059.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/java/dev/javacc/javacc/4.0/javacc-4.0.jar (268 KB at 1395.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-7/doxia-core-1.0-alpha-7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/edu/ucla/cs/compilers/jtb/1.3.2/jtb-1.3.2.jar (330 KB at 1598.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-9/doxia-sink-api-1.0-alpha-9.jar (10 KB at 43.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-7/doxia-site-renderer-1.0-alpha-7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-impl/2.0.4/maven-reporting-impl-2.0.4.jar (14 KB at 58.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.jar (162 KB at 627.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/oro/oro/2.0.7/oro-2.0.7.jar (64 KB at 241.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-core/1.0-alpha-7/doxia-core-1.0-alpha-7.jar (226 KB at 845.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-7/doxia-site-renderer-1.0-alpha-7.jar (13 KB at 43.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-i18n/1.0-beta-6/plexus-i18n-1.0-beta-6.jar (12 KB at 41.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/velocity/velocity/1.4/velocity-1.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/velocity/velocity-dep/1.4/velocity-dep-1.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-velocity/1.1.2/plexus-velocity-1.1.2.jar (8 KB at 24.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-7/doxia-decoration-model-1.0-alpha-7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-7/doxia-decoration-model-1.0-alpha-7.jar (38 KB at 99.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.jar (157 KB at 407.9 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/velocity/velocity/1.4/velocity-1.4.jar (353 KB at 873.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/velocity/velocity-dep/1.4/velocity-dep-1.4.jar (506 KB at 1233.2 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.0.4/commons-logging-api-1.0.4.jar (26 KB at 39.7 KB/sec)
+Java Compiler Compiler Version 4.0 (Tree Builder)
+(type "jjtree" with no arguments for help)
+Reading from file /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/src/main/java/org/geoserver/wcs/kvp/rangesubset/rangeset.jjt . . .
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/Node.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/SimpleNode.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTRangeSubset.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTFieldSubset.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTAxisSubset.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTFieldId.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTAxisId.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTInterpolation.java" does not exist.  Will create one.
+File "/root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/ASTKey.java" does not exist.  Will create one.
+Annotated grammar generated successfully in /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/rangeset.jj
+[INFO]
+[INFO] --- javacc-maven-plugin:2.3:javacc (javacc) @ gs-wcs1_1 ---
+Java Compiler Compiler Version 4.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/jjtree/org/geoserver/wcs/kvp/rangesubset/rangeset.jj . . .
+File "TokenMgrError.java" does not exist.  Will create one.
+File "ParseException.java" does not exist.  Will create one.
+File "Token.java" does not exist.  Will create one.
+File "SimpleCharStream.java" does not exist.  Will create one.
+Parser generated successfully.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs1_1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 11 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs1_1 ---
+[INFO] Compiling 51 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs1_1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs1_1 ---
+[INFO] Compiling 15 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs1_1 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-wcs1_1 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-wcs1_1 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-wcs1_1 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-wcs1_1 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-wcs1_1 ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_1/2.12-SNAPSHOT/gs-wcs1_1-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_1/2.12-SNAPSHOT/gs-wcs1_1-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_1/2.12-SNAPSHOT/gs-wcs1_1-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_1/2.12-SNAPSHOT/gs-wcs1_1-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs1_1/target/gs-wcs1_1-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs1_1/2.12-SNAPSHOT/gs-wcs1_1-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service 2.0 Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs2_0 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs2_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 110 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs2_0 ---
+[INFO] Compiling 55 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs2_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 63 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs2_0 ---
+[INFO] Compiling 28 source files to /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs2_0 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-wcs2_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-wcs2_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-wcs2_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-wcs2_0 ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-wcs2_0 ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs2_0/2.12-SNAPSHOT/gs-wcs2_0-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs2_0/2.12-SNAPSHOT/gs-wcs2_0-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs2_0/2.12-SNAPSHOT/gs-wcs2_0-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs2_0/2.12-SNAPSHOT/gs-wcs2_0-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wcs2_0/target/gs-wcs2_0-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wcs2_0/2.12-SNAPSHOT/gs-wcs2_0-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Feature Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wfs ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 10 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wfs ---
+[INFO] Compiling 251 source files to /root/workspace/geoserver/geoserver/219064697/src/wfs/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 42 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/wfs/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wfs ---
+[INFO] Compiling 92 source files to /root/workspace/geoserver/geoserver/219064697/src/wfs/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wfs ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-wfs ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wfs/2.12-SNAPSHOT/gs-wfs-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wfs/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wfs/2.12-SNAPSHOT/gs-wfs-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wfs/2.12-SNAPSHOT/gs-wfs-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wfs/2.12-SNAPSHOT/gs-wfs-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wfs/target/gs-wfs-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wfs/2.12-SNAPSHOT/gs-wfs-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Map Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wms ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wms ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 69 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wms ---
+[INFO] Compiling 204 source files to /root/workspace/geoserver/geoserver/219064697/src/wms/target/classes
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/wms/src/main/java/org/geoserver/wms/featureinfo/RasterLayerIdentifier.java:[62,44] XMLChar is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/wms/src/main/java/org/geoserver/wms/featureinfo/RasterLayerIdentifier.java:[285,32] XMLChar is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/wms/src/main/java/org/geoserver/wms/featureinfo/RasterLayerIdentifier.java:[286,38] XMLChar is internal proprietary API and may be removed in a future release
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wms ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 143 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wms ---
+[INFO] Compiling 128 source files to /root/workspace/geoserver/geoserver/219064697/src/wms/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wms ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-wms ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wms/2.12-SNAPSHOT/gs-wms-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wms/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wms/2.12-SNAPSHOT/gs-wms-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wms/2.12-SNAPSHOT/gs-wms-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wms/2.12-SNAPSHOT/gs-wms-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/wms/target/gs-wms-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-wms/2.12-SNAPSHOT/gs-wms-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KML support for GeoServer 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-kml ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-kml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-kml ---
+[INFO] Compiling 58 source files to /root/workspace/geoserver/geoserver/219064697/src/kml/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-kml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 27 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-kml ---
+[INFO] Compiling 11 source files to /root/workspace/geoserver/geoserver/219064697/src/kml/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-kml ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-kml ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-kml ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-kml ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-kml ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-kml ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-kml/2.12-SNAPSHOT/gs-kml-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/kml/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-kml/2.12-SNAPSHOT/gs-kml-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-kml/2.12-SNAPSHOT/gs-kml-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-kml/2.12-SNAPSHOT/gs-kml-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/kml/target/gs-kml-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-kml/2.12-SNAPSHOT/gs-kml-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoWebCache (GWC) Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-gwc ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-gwc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 15 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-gwc ---
+[INFO] Compiling 47 source files to /root/workspace/geoserver/geoserver/219064697/src/gwc/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-gwc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-gwc ---
+[INFO] Compiling 28 source files to /root/workspace/geoserver/geoserver/219064697/src/gwc/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-gwc ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-gwc ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-gwc/2.12-SNAPSHOT/gs-gwc-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/gwc/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-gwc/2.12-SNAPSHOT/gs-gwc-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-gwc/2.12-SNAPSHOT/gs-gwc-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-gwc/2.12-SNAPSHOT/gs-gwc-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/gwc/target/gs-gwc-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-gwc/2.12-SNAPSHOT/gs-gwc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building REST Support Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-rest ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/rest/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-rest ---
+[INFO] Compiling 28 source files to /root/workspace/geoserver/geoserver/219064697/src/rest/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/rest/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-rest ---
+[INFO] Compiling 15 source files to /root/workspace/geoserver/geoserver/219064697/src/rest/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-rest ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-rest ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-rest/2.12-SNAPSHOT/gs-rest-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/rest/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-rest/2.12-SNAPSHOT/gs-rest-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-rest/2.12-SNAPSHOT/gs-rest-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-rest/2.12-SNAPSHOT/gs-rest-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/rest/target/gs-rest-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-rest/2.12-SNAPSHOT/gs-rest-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building REST Configuration Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-restconfig ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-restconfig ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 41 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/restconfig/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-restconfig ---
+[INFO] Compiling 90 source files to /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-restconfig ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] Copying 5 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-restconfig ---
+[INFO] Compiling 40 source files to /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-restconfig ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-restconfig ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-restconfig ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-restconfig ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-restconfig ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-restconfig ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-restconfig/2.12-SNAPSHOT/gs-restconfig-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/restconfig/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-restconfig/2.12-SNAPSHOT/gs-restconfig-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-restconfig/2.12-SNAPSHOT/gs-restconfig-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-restconfig/2.12-SNAPSHOT/gs-restconfig-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/restconfig/target/gs-restconfig-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/gs-restconfig/2.12-SNAPSHOT/gs-restconfig-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer Web Modules 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ web ---
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ web ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/target/web-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ web ---
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ web ---
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ web ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/2.12-SNAPSHOT/web-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/target/web-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/2.12-SNAPSHOT/web-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core UI Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-core ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] Copying 324 resources
+[INFO]
+[INFO] --- maven-antrun-plugin:1.3:run (process-resources) @ gs-web-core ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4.pom (643 B at 11.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom (3 KB at 40.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.7.1/ant-parent-1.7.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.7.1/ant-parent-1.7.1.pom (5 KB at 76.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.1/ant-1.7.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.1/ant-1.7.1.pom (10 KB at 176.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.4/maven-profile-2.0.4.jar (30 KB at 509.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.4/maven-model-2.0.4.jar (79 KB at 1305.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.4/maven-plugin-api-2.0.4.jar (9 KB at 123.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.4/maven-project-2.0.4.jar (107 KB at 1565.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.4/maven-settings-2.0.4.jar (43 KB at 610.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.jar (48 KB at 419.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.4/maven-repository-metadata-2.0.4.jar (20 KB at 159.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.1/ant-1.7.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.4/maven-artifact-2.0.4.jar (79 KB at 627.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar (191 KB at 1382.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar (245 KB at 1747.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar (12 KB at 71.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.7.1/ant-1.7.1.jar (1292 KB at 4647.5 KB/sec)
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-core ---
+[INFO] Compiling 263 source files to /root/workspace/geoserver/geoserver/219064697/src/web/core/target/classes
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/web/core/src/main/java/org/geoserver/web/admin/StatusPanel.java:[230,45] RenderingEngine is internal proprietary API and may be removed in a future release
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-core ---
+[INFO] Compiling 72 source files to /root/workspace/geoserver/geoserver/219064697/src/web/core/target/test-classes
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/web/core/src/test/java/org/geoserver/web/data/resource/FeatureResourceConfigurationPanelTest.java:[12,45] NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/web/core/src/test/java/org/geoserver/web/data/resource/FeatureResourceConfigurationPanelTest.java:[25,26] NotImplementedException is internal proprietary API and may be removed in a future release
+[WARNING] /root/workspace/geoserver/geoserver/219064697/src/web/core/src/test/java/org/geoserver/web/data/resource/FeatureResourceConfigurationPanelTest.java:[30,26] NotImplementedException is internal proprietary API and may be removed in a future release
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-core ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-core ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-core/2.12-SNAPSHOT/gs-web-core-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/core/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-core/2.12-SNAPSHOT/gs-web-core-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-core/2.12-SNAPSHOT/gs-web-core-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-core/2.12-SNAPSHOT/gs-web-core-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/core/target/gs-web-core-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-core/2.12-SNAPSHOT/gs-web-core-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building WMS UI Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-wms ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-wms ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] Copying 24 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-wms ---
+[INFO] Compiling 35 source files to /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-wms ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 12 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-wms ---
+[INFO] Compiling 10 source files to /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-wms ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-wms ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-wms ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wms/2.12-SNAPSHOT/gs-web-wms-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wms/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wms/2.12-SNAPSHOT/gs-web-wms-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wms/2.12-SNAPSHOT/gs-web-wms-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wms/2.12-SNAPSHOT/gs-web-wms-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wms/target/gs-web-wms-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wms/2.12-SNAPSHOT/gs-web-wms-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GWC UI Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-gwc ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-gwc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] Copying 37 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-gwc ---
+[INFO] Compiling 51 source files to /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-gwc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/gwc/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-gwc ---
+[INFO] Compiling 17 source files to /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-gwc ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-gwc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-gwc ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-gwc/2.12-SNAPSHOT/gs-web-gwc-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/gwc/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-gwc/2.12-SNAPSHOT/gs-web-gwc-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-gwc/2.12-SNAPSHOT/gs-web-gwc-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-gwc/2.12-SNAPSHOT/gs-web-gwc-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/gwc/target/gs-web-gwc-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-gwc/2.12-SNAPSHOT/gs-web-gwc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building WFS UI Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-wfs ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-wfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 5 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-wfs ---
+[INFO] Compiling 2 source files to /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-wfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/wfs/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-wfs ---
+[INFO] Compiling 1 source file to /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-wfs ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-wfs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-wfs ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wfs/2.12-SNAPSHOT/gs-web-wfs-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wfs/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wfs/2.12-SNAPSHOT/gs-web-wfs-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wfs/2.12-SNAPSHOT/gs-web-wfs-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wfs/2.12-SNAPSHOT/gs-web-wfs-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wfs/target/gs-web-wfs-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wfs/2.12-SNAPSHOT/gs-web-wfs-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Demos Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-demo ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 29 resources
+[INFO] Copying 10 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-demo ---
+[INFO] Compiling 14 source files to /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-demo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-demo ---
+[INFO] Compiling 6 source files to /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-demo ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-demo ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-demo ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-demo ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-demo ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-demo ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-demo/2.12-SNAPSHOT/gs-web-demo-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/demo/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-demo/2.12-SNAPSHOT/gs-web-demo-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-demo/2.12-SNAPSHOT/gs-web-demo-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-demo/2.12-SNAPSHOT/gs-web-demo-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/demo/target/gs-web-demo-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-demo/2.12-SNAPSHOT/gs-web-demo-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building WCS UI Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-wcs ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-wcs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 8 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-wcs ---
+[INFO] Compiling 10 source files to /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-wcs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/wcs/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-wcs ---
+[INFO] Compiling 3 source files to /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-wcs ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-wcs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-wcs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-wcs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-wcs ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-wcs ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wcs/2.12-SNAPSHOT/gs-web-wcs-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wcs/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wcs/2.12-SNAPSHOT/gs-web-wcs-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wcs/2.12-SNAPSHOT/gs-web-wcs-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wcs/2.12-SNAPSHOT/gs-web-wcs-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/wcs/target/gs-web-wcs-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-wcs/2.12-SNAPSHOT/gs-web-wcs-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Security UI Modules 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-sec ---
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-sec ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/target/gs-web-sec-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-sec ---
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-sec ---
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-sec ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec/2.12-SNAPSHOT/gs-web-sec-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/target/gs-web-sec-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec/2.12-SNAPSHOT/gs-web-sec-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Security UI Core Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-sec-core ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-sec-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 87 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-sec-core ---
+[INFO] Compiling 142 source files to /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-sec-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/security/core/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-sec-core ---
+[INFO] Compiling 43 source files to /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-sec-core ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-sec-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-sec-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-sec-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-sec-core ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-sec-core ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-core/2.12-SNAPSHOT/gs-web-sec-core-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/core/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-core/2.12-SNAPSHOT/gs-web-sec-core-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-core/2.12-SNAPSHOT/gs-web-sec-core-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-core/2.12-SNAPSHOT/gs-web-sec-core-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/core/target/gs-web-sec-core-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-core/2.12-SNAPSHOT/gs-web-sec-core-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Security UI JDBC Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-sec-jdbc ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-sec-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/src/main/resources
+[INFO] Copying 7 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-sec-jdbc ---
+[INFO] Compiling 8 source files to /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-sec-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-sec-jdbc ---
+[INFO] Compiling 13 source files to /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-sec-jdbc ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-sec-jdbc ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-sec-jdbc ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-jdbc/2.12-SNAPSHOT/gs-web-sec-jdbc-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-jdbc/2.12-SNAPSHOT/gs-web-sec-jdbc-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-jdbc/2.12-SNAPSHOT/gs-web-sec-jdbc-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-jdbc/2.12-SNAPSHOT/gs-web-sec-jdbc-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/jdbc/target/gs-web-sec-jdbc-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-jdbc/2.12-SNAPSHOT/gs-web-sec-jdbc-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Security UI LDAP Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-sec-ldap ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-sec-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/src/main/resources
+[INFO] Copying 8 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-sec-ldap ---
+[INFO] Compiling 6 source files to /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-sec-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-sec-ldap ---
+[INFO] Compiling 3 source files to /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-sec-ldap ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-sec-ldap ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-sec-ldap ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-ldap/2.12-SNAPSHOT/gs-web-sec-ldap-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-ldap/2.12-SNAPSHOT/gs-web-sec-ldap-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-ldap/2.12-SNAPSHOT/gs-web-sec-ldap-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-ldap/2.12-SNAPSHOT/gs-web-sec-ldap-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/security/ldap/target/gs-web-sec-ldap-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-sec-ldap/2.12-SNAPSHOT/gs-web-sec-ldap-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building REST UI Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-rest ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-rest ---
+[INFO] Compiling 1 source file to /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/rest/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-rest ---
+[INFO] Compiling 1 source file to /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-rest ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-rest ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-rest ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-rest/2.12-SNAPSHOT/gs-web-rest-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/rest/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-rest/2.12-SNAPSHOT/gs-web-rest-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-rest/2.12-SNAPSHOT/gs-web-rest-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-rest/2.12-SNAPSHOT/gs-web-rest-2.12-SNAPSHOT-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/rest/target/gs-web-rest-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-rest/2.12-SNAPSHOT/gs-web-rest-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer Web Application 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-web-app ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-web-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/app/src/main/resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219064697/src/web/app/src/main/java
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-web-app ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-web-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-web-app ---
+[INFO] Compiling 6 source files to /root/workspace/geoserver/geoserver/219064697/src/web/app/target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-web-app ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gs-web-app ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/app/target/gs-web-app-2.12-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ gs-web-app ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/app/target/gs-web-app-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ gs-web-app ---
+[INFO] No sources in project. Archive not created.
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ gs-web-app ---
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/web/app/target/gs-web-app-2.12-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] --- maven-antrun-plugin:1.7:run (configPackage) @ gs-web-app ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.pom (2 KB at 26.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.11/maven-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.11/maven-2.0.11.pom (22 KB at 374.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/12/maven-parent-12.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/12/maven-parent-12.pom (22 KB at 379.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.pom (3 KB at 44.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.pom (3 KB at 40.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.pom (4 KB at 60.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.pom (2 KB at 26.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.pom (2 KB at 37.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.pom (3 KB at 46.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.pom (3 KB at 39.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.pom (2 KB at 28.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.pom (2 KB at 33.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.pom (10 KB at 169.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-parent/1.8.2/ant-parent-1.8.2.pom (5 KB at 83.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom (3 KB at 44.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.11/maven-plugin-api-2.0.11.jar (13 KB at 232.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0.11/maven-profile-2.0.11.jar (37 KB at 533.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0.11/maven-model-2.0.11.jar (95 KB at 1548.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/2.0.11/maven-settings-2.0.11.jar (51 KB at 738.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0.11/maven-project-2.0.11.jar (121 KB at 1722.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0.11/maven-artifact-manager-2.0.11.jar (58 KB at 560.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-registry/2.0.11/maven-plugin-registry-2.0.11.jar (30 KB at 260.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar (35 KB at 298.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0.11/maven-repository-metadata-2.0.11.jar (26 KB at 221.1 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0.11/maven-artifact-2.0.11.jar (88 KB at 716.7 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar (13 KB at 73.8 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ant/ant/1.8.2/ant-1.8.2.jar (1889 KB at 6792.9 KB/sec)
+[WARNING] Parameter tasks is deprecated, use target instead
+[INFO] Executing tasks
+
+main:
+     [echo] Copying data dir from /root/workspace/geoserver/geoserver/219064697/src/web/app/../../../data/minimal
+     [copy] Copying 29 files to /root/workspace/geoserver/geoserver/219064697/src/web/app/src/main/webapp/data
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-war-plugin:2.3:war (default) @ gs-web-app ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.pom (3 KB at 40.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.pom (9 KB at 158.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.3/xstream-parent-1.4.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.3/xstream-parent-1.4.3.pom (19 KB at 340.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.pom (4 KB at 72.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.6/plexus-interpolation-1.6.pom (3 KB at 53.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.0.5/plexus-io-2.0.5.jar (57 KB at 952.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-2/maven-filtering-1.0-beta-2.jar (33 KB at 390.4 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.3/xstream-1.4.3.jar (471 KB at 4438.5 KB/sec)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [gs-web-app] in [/root/workspace/geoserver/geoserver/219064697/src/web/app/target/geoserver]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/root/workspace/geoserver/geoserver/219064697/src/web/app/src/main/webapp]
+[INFO] Webapp assembled in [372 msecs]
+[INFO] Building war: /root/workspace/geoserver/geoserver/219064697/src/web/app/target/geoserver.war
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.8:attach-artifact (attach-war) @ gs-web-app ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom (3 KB at 38.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (481 B at 8.9 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (6 KB at 106.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.1/maven-plugin-api-2.0.1.pom (643 B at 10.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.1/maven-2.0.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.1/maven-2.0.1.pom (12 KB at 184.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom (2 KB at 20.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom (2 KB at 26.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar (262 KB at 3963.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar (276 KB at 3162.0 KB/sec)
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gs-web-app ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/app/target/geoserver.war to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-app/2.12-SNAPSHOT/gs-web-app-2.12-SNAPSHOT.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/app/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-app/2.12-SNAPSHOT/gs-web-app-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/app/target/gs-web-app-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-app/2.12-SNAPSHOT/gs-web-app-2.12-SNAPSHOT-tests.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/app/target/gs-web-app-2.12-SNAPSHOT-test-sources.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-app/2.12-SNAPSHOT/gs-web-app-2.12-SNAPSHOT-test-sources.jar
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/web/app/target/geoserver.war to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/web/gs-web-app/2.12-SNAPSHOT/gs-web-app-2.12-SNAPSHOT.war
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Community Space 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ community ---
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ community ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/community/target/community-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ community ---
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ community ---
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ community ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/community/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/community/2.12-SNAPSHOT/community-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/community/target/community-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/community/2.12-SNAPSHOT/community-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer Extensions 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ extension ---
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ extension ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /root/workspace/geoserver/geoserver/219064697/src/extension/target/extension-2.12-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:jar-no-fork (attach-sources) @ extension ---
+[INFO]
+[INFO] --- maven-source-plugin:2.2.1:test-jar-no-fork (attach-sources) @ extension ---
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ extension ---
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/extension/pom.xml to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/extension/2.12-SNAPSHOT/extension-2.12-SNAPSHOT.pom
+[INFO] Installing /root/workspace/geoserver/geoserver/219064697/src/extension/target/extension-2.12-SNAPSHOT-tests.jar to /root/./workspace/geoserver/geoserver/219064697/.m2/org/geoserver/extension/2.12-SNAPSHOT/extension-2.12-SNAPSHOT-tests.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] GeoServer .......................................... SUCCESS [ 12.699 s]
+[INFO] Core Platform Module ............................... SUCCESS [  9.508 s]
+[INFO] Open Web Service Module ............................ SUCCESS [  7.058 s]
+[INFO] Main Module ........................................ SUCCESS [ 23.271 s]
+[INFO] GeoServer Security Modules ......................... SUCCESS [  0.040 s]
+[INFO] GeoServer JDBC Security Module ..................... SUCCESS [  4.938 s]
+[INFO] GeoServer LDAP Security Module ..................... SUCCESS [  4.717 s]
+[INFO] Web Coverage Service Module ........................ SUCCESS [  2.514 s]
+[INFO] Web Coverage Service 1.0 Module .................... SUCCESS [  5.648 s]
+[INFO] Web Coverage Service 1.1 Module .................... SUCCESS [  9.299 s]
+[INFO] Web Coverage Service 2.0 Module .................... SUCCESS [  7.234 s]
+[INFO] Web Feature Service Module ......................... SUCCESS [ 13.669 s]
+[INFO] Web Map Service Module ............................. SUCCESS [ 13.662 s]
+[INFO] KML support for GeoServer .......................... SUCCESS [  6.716 s]
+[INFO] GeoWebCache (GWC) Module ........................... SUCCESS [  9.381 s]
+[INFO] REST Support Module ................................ SUCCESS [  4.880 s]
+[INFO] REST Configuration Service Module .................. SUCCESS [  8.465 s]
+[INFO] GeoServer Web Modules .............................. SUCCESS [  0.022 s]
+[INFO] Core UI Module ..................................... SUCCESS [ 12.431 s]
+[INFO] WMS UI Module ...................................... SUCCESS [  7.207 s]
+[INFO] GWC UI Module ...................................... SUCCESS [  7.554 s]
+[INFO] WFS UI Module ...................................... SUCCESS [  4.150 s]
+[INFO] Demos Module ....................................... SUCCESS [  5.294 s]
+[INFO] WCS UI Module ...................................... SUCCESS [  4.706 s]
+[INFO] Security UI Modules ................................ SUCCESS [  0.056 s]
+[INFO] Security UI Core Module ............................ SUCCESS [  8.733 s]
+[INFO] Security UI JDBC Module ............................ SUCCESS [  4.300 s]
+[INFO] Security UI LDAP Module ............................ SUCCESS [  4.455 s]
+[INFO] REST UI Module ..................................... SUCCESS [  3.587 s]
+[INFO] GeoServer Web Application .......................... SUCCESS [  6.120 s]
+[INFO] Community Space .................................... SUCCESS [  0.025 s]
+[INFO] GeoServer Extensions ............................... SUCCESS [  0.029 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 03:34 min
+[INFO] Finished at: 2017-04-15T10:26:02+02:00
+[INFO] Final Memory: 110M/1960M
+[INFO] ------------------------------------------------------------------------
