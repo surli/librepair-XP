@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "CloneRepository": 12,
-    "ResolveDependency": 216
+    "ResolveDependency": 216,
+    "BuildProject": 329
   },
   "workspace": "./workspace",
   "pr-remote-repo": "wate123/checkstyle",
