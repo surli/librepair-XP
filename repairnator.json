@@ -2,7 +2,8 @@
   "bugRepo": "GwtMaterialDesign/gwt-material",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 3
+    "CloneRepository": 3,
+    "ResolveDependency": 34
   },
   "buildid": 219731440,
   "workspace": "./workspace",
