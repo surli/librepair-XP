@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 38
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "nyer/mybatis-3",
+  "pr-head-commit-id": "02bb9964cadc00f2689be720bdd7524ffb6614fd",
+  "pr-id": 964,
+  "repo": "mybatis/mybatis-3",
+  "pr-head-commit-id-url": "https://github.com/nyer/mybatis-3/commit/02bb9964cadc00f2689be720bdd7524ffb6614fd",
+  "is-pr": "true",
+  "buildid": 218854351,
+  "pr-base-commit-id-url": "https://github.com/mybatis/mybatis-3/commit/823cf2a503506f7d4a2fcfc736e66baab9d05995",
+  "pr-base-commit-id": "823cf2a503506f7d4a2fcfc736e66baab9d05995"
+}
