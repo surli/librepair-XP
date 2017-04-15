@@ -1,19 +1,52 @@
 {
+  "pr-base-commit-id": "823cf2a503506f7d4a2fcfc736e66baab9d05995",
+  "pr-head-commit-id": "02bb9964cadc00f2689be720bdd7524ffb6614fd",
+  "totalNumberSkippingTests": 14,
+  "pr-remote-repo": "nyer/mybatis-3",
+  "error-types": [
+    "org.apache.ibatis.exceptions.PersistenceException"
+  ],
+  "totalNumberFailingTests": 0,
+  "buildid": 218854351,
+  "totalNumberErroringTests": 2,
+  "is-pr": "true",
+  "totalNumberRunningTests": 1292,
+  "pr-head-commit-id-url": "https://github.com/nyer/mybatis-3/commit/02bb9964cadc00f2689be720bdd7524ffb6614fd",
+  "pr-id": 964,
+  "repo": "mybatis/mybatis-3",
+  "failing-test-cases": [
+    {
+      "className": "org.apache.ibatis.submitted.dynsql.DynSqlTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.apache.ibatis.submitted.dynsql.DynSqlTest#testSelect",
+        "org.apache.ibatis.submitted.dynsql.DynSqlTest#testSelectSimple"
+      ],
+      "failures": [
+        {
+          "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+          "failureDetail": "\n### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: unexpected token: WHERE in statement [select * from .names where id \u003d ?\n     union \n      select * from .names where id \u003d ?\n     union \n      select * from .names where id \u003d ?]\n### The error may exist in org/apache/ibatis/submitted/dynsql/DynSql.xml\n### The error may involve org.apache.ibatis.submitted.dynsql.select_simple\n### The error occurred while executing a query\n### SQL: select * from .names where id \u003d ?      union        select * from .names where id \u003d ?      union        select * from .names where id \u003d ?\n### Cause: java.sql.SQLSyntaxErrorException: unexpected token: WHERE in statement [select * from .names where id \u003d ?\n     union \n      select * from .names where id \u003d ?\n     union \n      select * from .names where id \u003d ?]",
+          "isError": true
+        },
+        {
+          "failureName": "org.apache.ibatis.exceptions.PersistenceException",
+          "failureDetail": "\n### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: unexpected end of statement in statement []\n### The error may exist in org/apache/ibatis/submitted/dynsql/DynSql.xml\n### The error may involve org.apache.ibatis.submitted.dynsql.select\n### The error occurred while executing a query\n### SQL: \n### Cause: java.sql.SQLSyntaxErrorException: unexpected end of statement in statement []",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 2
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 4,
+    "": 0,
     "CloneRepository": 38,
     "ResolveDependency": 27,
     "TestProject": 58,
     "BuildProject": 48
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "nyer/mybatis-3",
-  "pr-head-commit-id": "02bb9964cadc00f2689be720bdd7524ffb6614fd",
-  "pr-id": 964,
-  "repo": "mybatis/mybatis-3",
-  "pr-head-commit-id-url": "https://github.com/nyer/mybatis-3/commit/02bb9964cadc00f2689be720bdd7524ffb6614fd",
-  "is-pr": "true",
-  "buildid": 218854351,
   "pr-base-commit-id-url": "https://github.com/mybatis/mybatis-3/commit/823cf2a503506f7d4a2fcfc736e66baab9d05995",
-  "pr-base-commit-id": "823cf2a503506f7d4a2fcfc736e66baab9d05995"
+  "failingModule": "/root/workspace/mybatis/mybatis-3/218854351"
 }
