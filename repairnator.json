@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 1,
-    "ResolveDependency": 25
+    "ResolveDependency": 25,
+    "BuildProject": 19
   },
   "workspace": "./workspace",
   "pr-remote-repo": "atoback/aws-dynamodb-session-tomcat",
