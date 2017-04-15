@@ -2,7 +2,8 @@
   "bugRepo": "nutzam/nutz",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 11
+    "CloneRepository": 11,
+    "ResolveDependency": 24
   },
   "buildid": 220207335,
   "workspace": "./workspace",
