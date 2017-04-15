@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 3,
     "CloneRepository": 29,
-    "ResolveDependency": 159
+    "ResolveDependency": 159,
+    "BuildProject": 280
   },
   "workspace": "./workspace",
   "pr-remote-repo": "kuri-leo/checkstyle",
