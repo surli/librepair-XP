@@ -35,6 +35,7 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "": 0,
+    "ComputeClasspath": 4,
     "CloneRepository": 33,
     "ResolveDependency": 162,
     "TestProject": 42,
@@ -42,6 +43,7 @@
     "PushIncriminatedBuild": 8,
     "SquashRepository": 12
   },
+  "nbLibraries": 36,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/apache/flink/commit/cf28a562159a7a73deb2c214c221bd935250387b",
   "failingModule": "/root/workspace/apache/flink/219250671/flink-core"
