@@ -1,0 +1,1848 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] GeoServer
+[INFO] Core Platform Module
+[INFO] Open Web Service Module
+[INFO] Main Module
+[INFO] GeoServer Security Modules
+[INFO] GeoServer JDBC Security Module
+[INFO] GeoServer LDAP Security Module
+[INFO] Web Coverage Service Module
+[INFO] Web Coverage Service 1.0 Module
+[INFO] Web Coverage Service 1.1 Module
+[INFO] Web Coverage Service 2.0 Module
+[INFO] Web Feature Service Module
+[INFO] Web Map Service Module
+[INFO] KML support for GeoServer
+[INFO] GeoWebCache (GWC) Module
+[INFO] gs-rest
+[INFO] gs-restconfig
+[INFO] GeoServer Web Modules
+[INFO] Core UI Module
+[INFO] WMS UI Module
+[INFO] GWC UI Module
+[INFO] WFS UI Module
+[INFO] Demos Module
+[INFO] WCS UI Module
+[INFO] Security UI Modules
+[INFO] Security UI Core Module
+[INFO] Security UI JDBC Module
+[INFO] Security UI LDAP Module
+[INFO] REST UI Module
+[INFO] GeoServer Web Application
+[INFO] Community Space
+[INFO] GeoServer Extensions
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ geoserver ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Core Platform Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-platform ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-platform ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/platform/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-platform ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-platform ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/platform/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-platform ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-platform ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/platform/target/surefire-reports
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.3/surefire-junit4-2.12.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.3/surefire-junit4-2.12.3.pom (3 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.3/surefire-providers-2.12.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.3/surefire-providers-2.12.3.pom (3 KB at 37.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.3/surefire-junit4-2.12.3.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.3/surefire-junit4-2.12.3.jar (36 KB at 366.6 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.platform.AdvancedDispatchFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
+Running org.geoserver.platform.GeoServerEnvironmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 sec
+Running org.geoserver.platform.GeoServerExtensionsTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.geoserver.platform.GeoServerResourceLoaderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running org.geoserver.platform.ModuleStatusTest
+test
+default
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.platform.RenderingEngineStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.platform.SystemEnvironmentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.platform.SystemPropertiesStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.platform.exception.ExceptionLocalizeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.geoserver.platform.exception.GeoServerExceptionsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.platform.resource.FileSystemResourceTheoryTest
+Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.554 sec
+Running org.geoserver.platform.resource.FileWrapperResourceTheoryTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 sec
+Running org.geoserver.platform.resource.PathsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.platform.resource.ResourcesTest
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Running org.geoserver.platform.resource.SimpleResourceNotificationDispatcherTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.util.IOUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.geoserver.util.LoggerRuleTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+Results :
+
+Tests run: 161, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Open Web Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-ows ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-ows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/ows/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-ows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-ows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/ows/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-ows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-ows ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/ows/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.ows.DefaultServiceExceptionHandlerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.386 sec
+Running org.geoserver.ows.DispatcherTest
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 sec
+Running org.geoserver.ows.FilePublisherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+Running org.geoserver.ows.XmlObjectEncodingResponseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.geoserver.ows.kvp.CharsetKvpParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.geoserver.ows.kvp.ElevationKvpParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.ows.kvp.FormatOptionsKvpParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.ows.kvp.KvpUtilsTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.ows.kvp.TimeKvpParserTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.geoserver.ows.util.CaseInsensitiveMapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.ows.util.OwsUtilsTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.ows.xml.v1_0.ExceptionReportBindingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+
+Results :
+
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Main Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-main ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] Copying 169 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-main ---
+[INFO] Compiling 2 source files to /root/workspace/geoserver/geoserver/219928152/src/main/target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-main ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 133 resources
+[INFO] Copying 47 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-main ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-main ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/main/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.GeoServerInitStartupListenerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.637 sec
+Running org.geoserver.GeoServerNodeDataTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.ManifestLoaderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.702 sec
+Running org.geoserver.ManifestLoaderTest$ManifestPropertiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.236 sec
+Running org.geoserver.ModuleStatusTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.453 sec
+Running org.geoserver.catalog.CatalogIntegrationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.942 sec
+Running org.geoserver.catalog.CoverageDimensionCustomizerReaderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec
+Running org.geoserver.catalog.CoverageViewTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.034 sec
+Running org.geoserver.catalog.LayerGroupHelperTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.242 sec
+Running org.geoserver.catalog.PredicatesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.catalog.ResourcePoolTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.863 sec
+Running org.geoserver.catalog.SchemaMappingTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 sec
+Running org.geoserver.catalog.StyleGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 sec
+Running org.geoserver.catalog.StylesTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.281 sec
+Running org.geoserver.catalog.impl.CascadeDeleteVisitorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.6 sec
+Running org.geoserver.catalog.impl.CascadeRemovalReporterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 sec
+Running org.geoserver.catalog.impl.CatalogBuilderIntTest
+/root/workspace/geoserver/geoserver/219928152/src/main/./target/smallMosaic
+/root/workspace/geoserver/geoserver/219928152/src/main/./target/largeMosaic
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.302 sec
+Running org.geoserver.catalog.impl.CatalogBuilderTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.989 sec
+Running org.geoserver.catalog.impl.CatalogImplTest
+Tests run: 96, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.086 sec
+Running org.geoserver.catalog.impl.CatalogProxiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec
+Running org.geoserver.catalog.impl.DataLinkInfoImplTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.catalog.impl.InfoObjectProxyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.catalog.impl.LocalWorkspaceCatalogTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+Running org.geoserver.catalog.impl.LocalWorkspaceLayersTest
+[]
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.384 sec
+Running org.geoserver.catalog.impl.MetadataLinkInfoImplTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.catalog.impl.ModificationProxyClonerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.catalog.impl.ReaderDimensionAccessorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.geoserver.catalog.impl.WorkspaceNamespaceConstencyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.catalog.impl.util.LegacyCatalogImporterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.048 sec
+Running org.geoserver.config.DefaultGeoServerLoaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.geoserver.config.GeoServerDataDirectoryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.geoserver.config.GeoServerImplTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.config.GeoServerPersisterTest
+Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.713 sec
+Running org.geoserver.config.GeoServerPropertyConfigurerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.geoserver.config.GeoServerPropertyOverrideConfigurerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+Running org.geoserver.config.LegacyConfigurationImporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.config.ServicePersisterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.381 sec
+Running org.geoserver.config.UpdateSequenceListenerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec
+Running org.geoserver.config.util.AuthorityURLInfoInfoListConverterTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 sec
+Running org.geoserver.config.util.LayerIdentifierInfoListConverterTest
+[{"authority":"auth1","identifier":"IDENTIFIER_1"},{"authority":"auth2","identifier":"IDENTIFIER_2"}]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.config.util.SecureXStreamTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.geoserver.config.util.XStreamPersisterIntegrationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.478 sec
+Running org.geoserver.config.util.XStreamPersisterTest
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.17 sec
+Running org.geoserver.data.jdbc.GenericUnWrapperTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running org.geoserver.data.test.PropertyDataStoreRelativeUrlTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec
+Running org.geoserver.data.util.CoverageUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.feature.ReprojectingFeatureCollectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+Running org.geoserver.feature.RetypingFeatureCollectionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.feature.retype.FullyRetypingDataStoreTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running org.geoserver.feature.retype.RetypingDataStoreTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.geoserver.feature.retype.RetypingFeatureSourceMockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.geoserver.feature.retype.RetypingFeatureSourceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.filters.BufferedRequestStreamTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.filters.BufferedRequestWrapperTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.filters.FlushSafeFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.geoserver.filters.GZipFilterTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.geoserver.function.InstanceOfTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.logging.LegacyLoggingImporterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.logging.LoggingStartupContextListenerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.geoserver.ows.CustomManglerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 sec
+Running org.geoserver.ows.LocalWorkspaceSecureCatalogTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running org.geoserver.ows.StylePublisherTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.374 sec
+Running org.geoserver.ows.URLManglersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
+Running org.geoserver.ows.kvp.NamespaceKvpParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.platform.GeoServerExtensionsHelperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.security.GeoServerCustomAuthTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 sec
+Running org.geoserver.security.GeoServerCustomFilterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.546 sec
+Running org.geoserver.security.GeoServerCustomSecurityProviderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 sec
+Running org.geoserver.security.GeoServerRoleFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec
+Running org.geoserver.security.GeoServerSecurityManagerTest
+This file was created at 2017/04/15 22:53:25
+
+The current master password is: geoserver
+
+Test the master password by logging in as user "root"
+
+This file should be removed after reading !!!.
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 sec
+Running org.geoserver.security.GeoserverRequestMatcherTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Running org.geoserver.security.GroupAdminServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.823 sec
+Running org.geoserver.security.KeyStoreProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 sec
+Running org.geoserver.security.MigrateFrom_2_2_Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.513 sec
+Running org.geoserver.security.auth.AuthenticationCacheFilterTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.631 sec
+Running org.geoserver.security.auth.AuthenticationFilterTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.959 sec
+Running org.geoserver.security.auth.GeoServerRootAuthenticationProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 sec
+Running org.geoserver.security.auth.GuavaAuthenticationCacheTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.008 sec
+Running org.geoserver.security.auth.LRUAuthenticationCacheTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.532 sec
+Running org.geoserver.security.decorators.DecoratingLayerGroupInfoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.security.decorators.DecoratingWMSLayerInfoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.security.decorators.ReadOnlyDataAccessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.geoserver.security.decorators.ReadOnlyDataStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.security.decorators.ReadSecuredCatalogDecoratorsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 sec
+Running org.geoserver.security.decorators.SecuredFeatureCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.geoserver.security.decorators.SecuredFeatureSourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.security.decorators.SecuredFeatureStoreTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.security.decorators.SecuredGetMapRequestTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.security.decorators.SecuredGridCoverage2DReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+Running org.geoserver.security.decorators.SecuredSimpleFeatureCollectionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.geoserver.security.file.FileTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 sec
+Running org.geoserver.security.filter.GeoServerBasicAuthenticationFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.geoserver.security.impl.AdvertisedCatalogTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.geoserver.security.impl.DataAccessRuleDAOTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.security.impl.DataAccessRuleTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.security.impl.DefaultDataAccessManagerTreeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec
+Running org.geoserver.security.impl.DefaultResourceAccessManagerAuthTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.geoserver.security.impl.GeoServerJ2eeRoleServiceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 sec
+Running org.geoserver.security.impl.GeoServerRoleConverterImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.security.impl.GeoServerUserDaoTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.geoserver.security.impl.LayerGroupContainmentCacheTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+Running org.geoserver.security.impl.MemoryRoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 sec
+Running org.geoserver.security.impl.MemoryUserDetailsServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.635 sec
+Running org.geoserver.security.impl.MemoryUserGroupServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 sec
+Running org.geoserver.security.impl.RoleHierarchyHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.security.impl.SecureCatalogImplFilterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.geoserver.security.impl.SecureCatalogImplGroupsTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.geoserver.security.impl.SecureCatalogImplTest
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 sec
+Running org.geoserver.security.impl.SecureCatalogIntegrationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 sec
+Running org.geoserver.security.impl.SecureTreeNodeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.security.impl.SecuredLayerGroupTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec
+Running org.geoserver.security.password.GeoServerMultiplexingPasswordEncoderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.security.password.GeoserverPasswordEncoderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.862 sec
+Running org.geoserver.security.password.MasterPasswordChangeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 sec
+Running org.geoserver.security.password.URLMasterPasswordProviderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec
+Running org.geoserver.security.rememberme.RememberMeTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 sec
+Running org.geoserver.security.validation.FilterConfigValidatorTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.geoserver.security.validation.MasterPasswordChangeValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running org.geoserver.security.validation.PasswordValidatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.security.validation.RoleStoreValidationWrapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+Running org.geoserver.security.validation.SecurityConfigValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.328 sec
+Running org.geoserver.security.validation.UserGroupStoreValidationWrapperTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 sec
+Running org.geoserver.security.xml.XMLRoleServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.451 sec
+Running org.geoserver.security.xml.XMLSecurityConfigValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec
+Running org.geoserver.security.xml.XMLUserDetailsServiceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.795 sec
+Running org.geoserver.security.xml.XMLUserGroupServiceTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.105 sec
+Running org.geoserver.template.DirectFeatureWrapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 sec
+Running org.geoserver.template.FeatureWrapperTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.geoserver.template.GeoServerTemplateLoader2Test
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.geoserver.threadlocals.AdminRequestThreadLocalTransferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.threadlocals.AuthenticationThreadLocalTransferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.threadlocals.LocalLayerThreadLocalTransferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.threadlocals.LocalWorkspaceThreadLocalTransferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.threadlocals.PublicThreadLocalTransferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.threadlocals.ThreadLocalsTransferTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec
+Running org.geoserver.util.DefaultCacheProviderTest
+15 Apr 22:54:16 WARN [geoserver.util] - Multiple Cache Providers in context: testCacheProvider1, testCacheProvider2
+	Using testCacheProvider1.  Override by setting system property GEOSERVER_DEFAULT_CACHE_PROVIDER
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 sec
+Running org.geoserver.util.PartialBufferOutputStream2Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.util.XCQLTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running org.geoserver.vfny.global.TolerantStartupTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.211 sec
+Running org.geoserver.wfsng.WfsCompatibilityTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.211 sec
+Running org.vfny.geoserver.ProjectionPolicyTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec
+Running org.vfny.geoserver.crs.OverrideCRSTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec
+Running org.vfny.geoserver.crs.OvverideTransformationsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 sec
+Running org.vfny.geoserver.global.GeoserverDataDirectoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec
+Running org.vfny.geoserver.global.xml.WriterHelperTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.vfny.geoserver.util.ResponseUtilsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.vfny.geoserver.util.SLDValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+
+Results :
+
+Tests run: 798, Failures: 0, Errors: 0, Skipped: 4
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer Security Modules 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-security ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer JDBC Security Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-sec-jdbc ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-sec-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 20 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-sec-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-sec-jdbc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 8 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-sec-jdbc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-sec-jdbc ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/security/jdbc/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.security.jdbc.DB2RoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.727 sec
+Running org.geoserver.security.jdbc.DB2UserDetailsServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.01 sec
+Running org.geoserver.security.jdbc.DB2UserGroupServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.013 sec
+Running org.geoserver.security.jdbc.H2RoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.421 sec
+Running org.geoserver.security.jdbc.H2UserDetailsServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.658 sec
+Running org.geoserver.security.jdbc.H2UserGroupServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.884 sec
+Running org.geoserver.security.jdbc.JDBCConnectAuthProviderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.235 sec
+Running org.geoserver.security.jdbc.JDBCGroupAdminServiceTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.239 sec
+Running org.geoserver.security.jdbc.JdbcSecurityConfigValidatorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.573 sec
+Running org.geoserver.security.jdbc.MySqlRoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.007 sec
+Running org.geoserver.security.jdbc.MySqlUserDetailsServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.006 sec
+Running org.geoserver.security.jdbc.MySqlUserGroupServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.006 sec
+Running org.geoserver.security.jdbc.OracleRoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.007 sec
+Running org.geoserver.security.jdbc.OracleUserDetailsServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.005 sec
+Running org.geoserver.security.jdbc.OracleUserGroupServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.007 sec
+Running org.geoserver.security.jdbc.PostGisRoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.006 sec
+Running org.geoserver.security.jdbc.PostGisUserDetailsServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.006 sec
+Running org.geoserver.security.jdbc.PostGisUserGroupServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.006 sec
+Running org.geoserver.security.jdbc.SqlServerRoleServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.005 sec
+Running org.geoserver.security.jdbc.SqlServerUserDetailsServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.006 sec
+Running org.geoserver.security.jdbc.SqlServerUserGroupServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 114, Failures: 0, Errors: 0, Skipped: 80
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building GeoServer LDAP Security Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-sec-ldap ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-sec-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 13 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-sec-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-sec-ldap ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 4 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-sec-ldap ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-sec-ldap ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/security/ldap/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.security.ldap.LDAPAuthenticationProviderTest
+15 Apr 22:54:34 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:34 WARN [normalization.NormalizationInterceptor] - The RDN 'dc=example' is not present in the entry
+15 Apr 22:54:35 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:35 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:35 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:35 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:35 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:35 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:35 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:35 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:35 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:35 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:35 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:35 ERROR [authn.AuthenticationInterceptor] - Attempted operation SEARCH_REQUEST by unauthenticated caller.
+15 Apr 22:54:36 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:36 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:36 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:36 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:36 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:36 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:36 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:36 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:36 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:37 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:37 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:37 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:37 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:37 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:37 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.18 sec
+Running org.geoserver.security.ldap.LDAPRoleServiceTest
+15 Apr 22:54:38 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Unexpected exception forcing session to close: sending disconnect notice to client.
+java.lang.NullPointerException
+	at org.apache.directory.server.ldap.handlers.LdapRequestHandler.handleMessage(LdapRequestHandler.java:129)
+	at org.apache.directory.server.ldap.handlers.LdapRequestHandler.handleMessage(LdapRequestHandler.java:56)
+	at org.apache.mina.handler.demux.DemuxingIoHandler.messageReceived(DemuxingIoHandler.java:232)
+	at org.apache.directory.server.ldap.LdapProtocolHandler.messageReceived(LdapProtocolHandler.java:194)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:721)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:433)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain.access$1200(DefaultIoFilterChain.java:47)
+	at org.apache.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:801)
+	at org.apache.mina.core.filterchain.IoFilterEvent.fire(IoFilterEvent.java:71)
+	at org.apache.mina.core.session.IoEvent.run(IoEvent.java:63)
+	at org.apache.mina.filter.executor.UnorderedThreadPoolExecutor$Worker.runTask(UnorderedThreadPoolExecutor.java:480)
+	at org.apache.mina.filter.executor.UnorderedThreadPoolExecutor$Worker.run(UnorderedThreadPoolExecutor.java:434)
+	at java.lang.Thread.run(Thread.java:745)
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:38 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:38 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:38 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:38 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:38 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:38 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:38 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:38 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:38 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:38 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:38 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:38 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:38 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:38 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:38 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:39 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:39 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:39 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:39 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:39 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:39 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:39 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:39 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:39 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:39 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:39 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:40 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:40 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:40 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:40 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:40 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:41 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:41 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:41 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:41 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:41 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:41 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:41 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:42 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:42 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:42 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:42 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:42 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.239 sec
+Running org.geoserver.security.ldap.LDAPUserGroupServiceTest
+15 Apr 22:54:42 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:42 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 WARN [registries.DefaultOidRegistry] - OID for name 'javaremotelocation' was not found within the OID registry
+15 Apr 22:54:43 WARN [context.SearchingOperationContext] - Requested attribute javaremotelocation does not exist in the schema, it will be ignored
+15 Apr 22:54:43 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:43 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:44 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:44 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:44 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:44 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 ERROR [registries.DefaultAttributeTypeRegistry] - attributeType w/ OID 2.5.4.16 not registered!
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+15 Apr 22:54:45 WARN [ldap.LdapProtocolHandler] - Null LdapSession given to cleanUpSession.
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.736 sec
+
+Results :
+
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/wcs/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/wcs/src/test/java
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/wcs/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs ---
+[INFO] No tests to run.
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service 1.0 Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs1_0 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs1_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 7 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs1_0 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs1_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/wcs1_0/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs1_0 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs1_0 ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/wcs1_0/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.wcs.CustomDimensionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.489 sec
+Running org.geoserver.wcs.DescribeCoverageTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.944 sec
+Running org.geoserver.wcs.DynamicDimensionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 sec
+Running org.geoserver.wcs.GetCapabilitiesTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.021 sec
+Running org.geoserver.wcs.GetCoverageTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.502 sec
+Running org.geoserver.wcs.WCSDisabledTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.59 sec
+Running org.geoserver.wcs.kvp.GetCoverageReaderTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec
+Running org.geoserver.wcs.kvp.InterpolationParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.445 sec
+Running org.geoserver.wcs.xml.DescribeCoverageXmlParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec
+Running org.geoserver.wcs.xml.GetCapabilitiesXmlParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+Running org.geoserver.wcs.xml.GetCoverageXmlParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 sec
+
+Results :
+
+Tests run: 76, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service 1.1 Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs1_1 ---
+[INFO]
+[INFO] --- javacc-maven-plugin:2.3:jjtree (jjtree) @ gs-wcs1_1 ---
+[INFO] Nothing to process - all grammars in /root/workspace/geoserver/geoserver/219928152/src/wcs1_1/src/main/java/org/geoserver/wcs/kvp/rangesubset are up to date.
+[INFO]
+[INFO] --- javacc-maven-plugin:2.3:javacc (javacc) @ gs-wcs1_1 ---
+[INFO] Nothing to process - all grammars in /root/workspace/geoserver/geoserver/219928152/src/wcs1_1/target/jjtree are up to date.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs1_1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 11 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs1_1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs1_1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs1_1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs1_1 ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/wcs1_1/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.wcs.DescribeCoverageTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.007 sec
+Running org.geoserver.wcs.GetCapabilitiesTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.639 sec
+Running org.geoserver.wcs.GetCoverageMultipartEncodingTest
+SchemaLocation: schemaLocation value = 'http://localhost:8080/geoserver/schemas/wcs/1.1.1/wcsCoverages.xsd' must have even number of URI's.
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.234 sec
+Running org.geoserver.wcs.GetCoverageTest
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.005 sec
+Running org.geoserver.wcs.ResourceAccessManagerWCSTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.819 sec
+Running org.geoserver.wcs.WCSDisabledTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.469 sec
+Running org.geoserver.wcs.kvp.BoundingBoxKvpParserTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.wcs.kvp.GetCoverageReaderTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 sec
+Running org.geoserver.wcs.kvp.RangeSubsetKvpParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.geoserver.wcs.xml.DescribeCoverageXmlParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 sec
+Running org.geoserver.wcs.xml.GetCapabilitiesXmlParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 sec
+Running org.geoserver.wcs.xml.GetCoverageXmlParserTest
+class [Ljava.lang.Double;: [Ljava.lang.Double;@bd99c67
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.356 sec
+
+Results :
+
+Tests run: 108, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Coverage Service 2.0 Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wcs2_0 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wcs2_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 110 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wcs2_0 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wcs2_0 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 62 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wcs2_0 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wcs2_0 ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/wcs2_0/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.wcs2_0.CoverageIdConverterTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.44 sec
+Running org.geoserver.wcs2_0.LayerCodecTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.199 sec
+Running org.geoserver.wcs2_0.WCSXStreamLoaderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.877 sec
+Running org.geoserver.wcs2_0.kvp.CRSExtentionKVPTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.812 sec
+Running org.geoserver.wcs2_0.kvp.DescribeCoverageTest
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wcs:CoverageDescriptions xmlns:wcs="http://www.opengis.net/wcs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:wcsgs="http://www.geoserver.org/wcsgs/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsDescribeCoverage.xsd">
+  <wcs:CoverageDescription gml:id="wcs__BlueMarble">
+    <gml:boundedBy>
+      <gml:Envelope axisLabels="Lat Long" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" uomLabels="Deg Deg">
+        <gml:lowerCorner>-44.49999999999785 146.49999999999477</gml:lowerCorner>
+        <gml:upperCorner>-42.99999999999787 147.99999999999474</gml:upperCorner>
+      </gml:Envelope>
+    </gml:boundedBy>
+    <wcs:CoverageId>wcs__BlueMarble</wcs:CoverageId>
+    <gml:coverageFunction>
+      <gml:GridFunction>
+        <gml:sequenceRule axisOrder="+2 +1">Linear</gml:sequenceRule>
+        <gml:startPoint>0 0</gml:startPoint>
+      </gml:GridFunction>
+    </gml:coverageFunction>
+    <gmlcov:metadata>
+      <gmlcov:Extension/>
+    </gmlcov:metadata>
+    <gml:domainSet>
+      <gml:RectifiedGrid dimension="2" gml:id="grid00__wcs__BlueMarble">
+        <gml:limits>
+          <gml:GridEnvelope>
+            <gml:low>0 0</gml:low>
+            <gml:high>359 359</gml:high>
+          </gml:GridEnvelope>
+        </gml:limits>
+        <gml:axisLabels>i j</gml:axisLabels>
+        <gml:origin>
+          <gml:Point gml:id="p00_wcs__BlueMarble" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:pos>-43.0020833333312 146.5020833333281</gml:pos>
+          </gml:Point>
+        </gml:origin>
+        <gml:offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/4326">0.0 0.0041666666666666</gml:offsetVector>
+        <gml:offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/4326">-0.0041666666666666 0.0</gml:offsetVector>
+      </gml:RectifiedGrid>
+    </gml:domainSet>
+    <gmlcov:rangeType>
+      <swe:DataRecord>
+        <swe:field name="RED_BAND">
+          <swe:Quantity>
+            <swe:description>RED_BAND</swe:description>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>0 255</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+        <swe:field name="GREEN_BAND">
+          <swe:Quantity>
+            <swe:description>GREEN_BAND</swe:description>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>0 255</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+        <swe:field name="BLUE_BAND">
+          <swe:Quantity>
+            <swe:description>BLUE_BAND</swe:description>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>0 255</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+      </swe:DataRecord>
+    </gmlcov:rangeType>
+    <wcs:ServiceParameters>
+      <wcs:CoverageSubtype>RectifiedGridCoverage</wcs:CoverageSubtype>
+      <wcs:nativeFormat>image/tiff</wcs:nativeFormat>
+    </wcs:ServiceParameters>
+  </wcs:CoverageDescription>
+</wcs:CoverageDescriptions>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wcs:CoverageDescriptions xmlns:wcs="http://www.opengis.net/wcs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:wcsgs="http://www.geoserver.org/wcsgs/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsDescribeCoverage.xsd">
+  <wcs:CoverageDescription gml:id="sf__rain">
+    <gml:boundedBy>
+      <gml:Envelope axisLabels="Lat Long" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/4326" uomLabels="Deg Deg">
+        <gml:lowerCorner>-90.0 -180.0</gml:lowerCorner>
+        <gml:upperCorner>90.0 180.0</gml:upperCorner>
+      </gml:Envelope>
+    </gml:boundedBy>
+    <wcs:CoverageId>sf__rain</wcs:CoverageId>
+    <gml:coverageFunction>
+      <gml:GridFunction>
+        <gml:sequenceRule axisOrder="+2 +1">Linear</gml:sequenceRule>
+        <gml:startPoint>0 0</gml:startPoint>
+      </gml:GridFunction>
+    </gml:coverageFunction>
+    <gmlcov:metadata>
+      <gmlcov:Extension/>
+    </gmlcov:metadata>
+    <gml:domainSet>
+      <gml:RectifiedGrid dimension="2" gml:id="grid00__sf__rain">
+        <gml:limits>
+          <gml:GridEnvelope>
+            <gml:low>0 0</gml:low>
+            <gml:high>71 35</gml:high>
+          </gml:GridEnvelope>
+        </gml:limits>
+        <gml:axisLabels>i j</gml:axisLabels>
+        <gml:origin>
+          <gml:Point gml:id="p00_sf__rain" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:pos>87.5 -177.5</gml:pos>
+          </gml:Point>
+        </gml:origin>
+        <gml:offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/4326">0.0 5.0</gml:offsetVector>
+        <gml:offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/4326">-5.0 0.0</gml:offsetVector>
+      </gml:RectifiedGrid>
+    </gml:domainSet>
+    <gmlcov:rangeType>
+      <swe:DataRecord>
+        <swe:field name="rain">
+          <swe:Quantity>
+            <swe:description>rain</swe:description>
+            <swe:nilValues>
+              <swe:NilValues>
+                <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/unknown">-999.9</swe:nilValue>
+              </swe:NilValues>
+            </swe:nilValues>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>-9999.0 -9999.0</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+      </swe:DataRecord>
+    </gmlcov:rangeType>
+    <wcs:ServiceParameters>
+      <wcs:CoverageSubtype>RectifiedGridCoverage</wcs:CoverageSubtype>
+      <wcs:nativeFormat>text/plain</wcs:nativeFormat>
+    </wcs:ServiceParameters>
+  </wcs:CoverageDescription>
+</wcs:CoverageDescriptions>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wcs:CoverageDescriptions xmlns:wcs="http://www.opengis.net/wcs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:wcsgs="http://www.geoserver.org/wcsgs/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.opengis.net/wcs/2.0 http://schemas.opengis.net/wcs/2.0/wcsDescribeCoverage.xsd">
+  <wcs:CoverageDescription gml:id="sf__pk50095">
+    <gml:boundedBy>
+      <gml:Envelope axisLabels="E N" srsDimension="2" srsName="http://www.opengis.net/def/crs/EPSG/0/32633" uomLabels="m m">
+        <gml:lowerCorner>347660.5162105911 5191763.949937257</gml:lowerCorner>
+        <gml:upperCorner>353440.1129425911 5196950.767517257</gml:upperCorner>
+      </gml:Envelope>
+    </gml:boundedBy>
+    <wcs:CoverageId>sf__pk50095</wcs:CoverageId>
+    <gml:coverageFunction>
+      <gml:GridFunction>
+        <gml:sequenceRule axisOrder="+1 +2">Linear</gml:sequenceRule>
+        <gml:startPoint>0 0</gml:startPoint>
+      </gml:GridFunction>
+    </gml:coverageFunction>
+    <gmlcov:metadata>
+      <gmlcov:Extension/>
+    </gmlcov:metadata>
+    <gml:domainSet>
+      <gml:RectifiedGrid dimension="2" gml:id="grid00__sf__pk50095">
+        <gml:limits>
+          <gml:GridEnvelope>
+            <gml:low>0 0</gml:low>
+            <gml:high>272 243</gml:high>
+          </gml:GridEnvelope>
+        </gml:limits>
+        <gml:axisLabels>i j</gml:axisLabels>
+        <gml:origin>
+          <gml:Point gml:id="p00_sf__pk50095" srsName="http://www.opengis.net/def/crs/EPSG/0/32633">
+            <gml:pos>347671.1015525911 5196940.182175256</gml:pos>
+          </gml:Point>
+        </gml:origin>
+        <gml:offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/32633">21.17068399999995 0.0</gml:offsetVector>
+        <gml:offsetVector srsName="http://www.opengis.net/def/crs/EPSG/0/32633">0.0 -21.17068399999995</gml:offsetVector>
+      </gml:RectifiedGrid>
+    </gml:domainSet>
+    <gmlcov:rangeType>
+      <swe:DataRecord>
+        <swe:field name="RED_BAND">
+          <swe:Quantity>
+            <swe:description>RED_BAND</swe:description>
+            <swe:nilValues>
+              <swe:NilValues>
+                <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/unknown">0.0</swe:nilValue>
+              </swe:NilValues>
+            </swe:nilValues>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>0.0 0.0</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+        <swe:field name="GREEN_BAND">
+          <swe:Quantity>
+            <swe:description>GREEN_BAND</swe:description>
+            <swe:nilValues>
+              <swe:NilValues>
+                <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/unknown">0.0</swe:nilValue>
+              </swe:NilValues>
+            </swe:nilValues>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>0.0 0.0</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+        <swe:field name="BLUE_BAND">
+          <swe:Quantity>
+            <swe:description>BLUE_BAND</swe:description>
+            <swe:nilValues>
+              <swe:NilValues>
+                <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/unknown">0.0</swe:nilValue>
+              </swe:NilValues>
+            </swe:nilValues>
+            <swe:uom code="W.m-2.Sr-1"/>
+            <swe:constraint>
+              <swe:AllowedValues>
+                <swe:interval>0.0 0.0</swe:interval>
+              </swe:AllowedValues>
+            </swe:constraint>
+          </swe:Quantity>
+        </swe:field>
+      </swe:DataRecord>
+    </gmlcov:rangeType>
+    <wcs:ServiceParameters>
+      <wcs:CoverageSubtype>RectifiedGridCoverage</wcs:CoverageSubtype>
+      <wcs:nativeFormat>image/tiff</wcs:nativeFormat>
+    </wcs:ServiceParameters>
+  </wcs:CoverageDescription>
+</wcs:CoverageDescriptions>
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.597 sec
+Running org.geoserver.wcs2_0.kvp.GMLGetCoverageKVPTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.817 sec
+Running org.geoserver.wcs2_0.kvp.GeoTiffKvpTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.023 sec
+Running org.geoserver.wcs2_0.kvp.GetCapabilitiesTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.876 sec
+Running org.geoserver.wcs2_0.kvp.GetCoverageKvpTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.707 sec
+Running org.geoserver.wcs2_0.kvp.InterpolationKvpParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 sec
+Running org.geoserver.wcs2_0.kvp.RangeSubsetKvpParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.wcs2_0.kvp.RangeSubsetKvpTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.745 sec
+Running org.geoserver.wcs2_0.kvp.ScaleExtentKvpParserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.wcs2_0.kvp.ScaleKvpTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.84 sec
+Running org.geoserver.wcs2_0.kvp.SubsetKvpParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running org.geoserver.wcs2_0.kvp.SubsetKvpTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.602 sec
+Running org.geoserver.wcs2_0.xml.CRSExtentionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.955 sec
+Running org.geoserver.wcs2_0.xml.DescribeCoverageTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.542 sec
+Running org.geoserver.wcs2_0.xml.GMLGetCoverageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec
+Running org.geoserver.wcs2_0.xml.GeoTiffGetCoverageTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 3.394 sec
+Running org.geoserver.wcs2_0.xml.GetCapabilitiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.845 sec
+Running org.geoserver.wcs2_0.xml.GetCoverageTest
+./target/default3547751924673790248data
+<ows:ExceptionReport xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/ows/2.0 http://schemas.opengis.net/ows/2.0/owsExceptionReport.xsd">
+  <ows:Exception exceptionCode="NoApplicableCode">
+    <ows:ExceptionText>This request is trying to read too much data, the limit is 1KB but the actual amount of bytes to be read is 2.97MB
+[]</ows:ExceptionText>
+  </ows:Exception>
+</ows:ExceptionReport>
+
+Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.368 sec
+Running org.geoserver.wcs2_0.xml.InterpolationExtentionsTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.147 sec
+Running org.geoserver.wcs2_0.xml.RangeSubsetExtentionTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.861 sec
+Running org.geoserver.wcs2_0.xml.ScalingExtentionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.057 sec
+
+Results :
+
+Tests run: 180, Failures: 0, Errors: 0, Skipped: 2
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Feature Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- git-commit-id-plugin:2.1.15:revision (default) @ gs-wfs ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gs-wfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 10 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ gs-wfs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gs-wfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 42 resources
+[INFO] skip non existing resourceDirectory /root/workspace/geoserver/geoserver/219928152/src/wfs/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ gs-wfs ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.3:test (default-test) @ gs-wfs ---
+[INFO] Surefire report directory: /root/workspace/geoserver/geoserver/219928152/src/wfs/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.geoserver.wfs.AliasTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.812 sec
+Running org.geoserver.wfs.CatalogNamespaceSupportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running org.geoserver.wfs.DescribeFeatureTest
+sf
+cdf
+cgf
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.995 sec
+Running org.geoserver.wfs.ExternalEntitiesTest
+<ows:ExceptionReport xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/ows/1.1 http://localhost:8080/geoserver/schemas/ows/1.1.0/owsAll.xsd">
+  <ows:Exception exceptionCode="OperationParsingFailed">
+    <ows:ExceptionText>Request parsing failed
+Entity resolution disallowed for FILE:///thisfiledoesnotexist?.XSD</ows:ExceptionText>
+  </ows:Exception>
+</ows:ExceptionReport>
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.556 sec
+Running org.geoserver.wfs.GeometrylessTest
+<wfs:GetFeature service="WFS" xmlns:wfs="http://www.opengis.net/wfs" version="1.0.0"  outputFormat="GML2" xmlns:topp="http://www.openplans.org/topp" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.0.0/WFS-basic.xsd"><wfs:Query typeName="cite:Geometryless" srsName="EPSG:900913"/></wfs:GetFeature>
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.695 sec
+Running org.geoserver.wfs.GeometrylessWriteTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.647 sec
+Running org.geoserver.wfs.GetCapabilitiesTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.08 sec
+Running org.geoserver.wfs.GetFeatureBboxTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec
+Running org.geoserver.wfs.GetFeatureBoundedTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.478 sec
+Running org.geoserver.wfs.GetFeatureCurvesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 sec
+Running org.geoserver.wfs.GetFeatureHitsIgnoreMaxFeaturesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 sec
+Running org.geoserver.wfs.GetFeatureMissingTypesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 sec
+Running org.geoserver.wfs.GetFeaturePagingTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.256 sec
+Running org.geoserver.wfs.GetFeatureTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.007 sec
+Running org.geoserver.wfs.GetFeatureWithLockTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.665 sec
+Running org.geoserver.wfs.JoinExtractingVisitorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.geoserver.wfs.LockFeatureTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.699 sec
+Running org.geoserver.wfs.MaxFeaturesTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 sec
+Running org.geoserver.wfs.NumDecimalsTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.302 sec
+Running org.geoserver.wfs.ReprojectionTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.522 sec
+Running org.geoserver.wfs.ReprojectionWriteTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.638 sec
+Running org.geoserver.wfs.ResourceAccessManagerWFSTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.575 sec
+Running org.geoserver.wfs.RetypingTransactionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 sec
+Running org.geoserver.wfs.SQLViewTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.705 sec
+Running org.geoserver.wfs.SecuredGetFeatureTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.919 sec
+Running org.geoserver.wfs.SrsNameTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 sec
+Running org.geoserver.wfs.StoredQueryProviderTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 sec
+Running org.geoserver.wfs.TransactionListenerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 sec
+Running org.geoserver.wfs.TransactionTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.215 sec
+Running org.geoserver.wfs.WFSCascadedStoredQueryConfigurationParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running org.geoserver.wfs.WFSDisabledTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 sec
+Running org.geoserver.wfs.WFSExceptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.wfs.WFSReprojectionUtilTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.geoserver.wfs.WFSServiceExceptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 sec
+Running org.geoserver.wfs.WFSWorkspaceQualifierTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.geoserver.wfs.WFSXStreamLoaderTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.595 sec
+Running org.geoserver.wfs.json.GeoJSONBuilderTest
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running org.geoserver.wfs.json.GeoJSONTest
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.624 sec
+Running org.geoserver.wfs.json.GeoJsonDescribeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 sec
+Running org.geoserver.wfs.json.JSONTypeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.geoserver.wfs.json.RoundingUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 sec
+Running org.geoserver.wfs.kvp.Filter_1_0_0_KvpParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Running org.geoserver.wfs.kvp.Filter_1_1_0_KvpParserTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Running org.geoserver.wfs.kvp.Filter_2_0_0_KvpParserTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.geoserver.wfs.kvp.GetFeatureKvpRequestReaderTest
+Feature type cite:InvalidTypeName unknown
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 sec
+Running org.geoserver.wfs.response.CSVOutputFormatTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec
+Running org.geoserver.wfs.response.ShapeZipTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.064 sec
+Running org.geoserver.wfs.response.WfsXmlWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec
+Running org.geoserver.wfs.v1_1.AliasTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.438 sec
+Running org.geoserver.wfs.v1_1.BoundingBox3DTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 sec
+Running org.geoserver.wfs.v1_1.CapabilitiesTransformerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec
+Running org.geoserver.wfs.v1_1.DescribeFeatureResponseTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 sec
+Running org.geoserver.wfs.v1_1.DescribeFeatureTypeTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.518 sec
+Running org.geoserver.wfs.v1_1.GetCapabilitiesTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 sec
+Running org.geoserver.wfs.v1_1.GetFeatureBboxTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 sec
+Running org.geoserver.wfs.v1_1.GetFeatureTest
+Tests run: 31, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 1.999 sec <<< FAILURE!
+testPostWithMatchingUrnBboxFilter(org.geoserver.wfs.v1_1.GetFeatureTest)  Time elapsed: 100 sec  <<< FAILURE!
+java.lang.AssertionError:
+Expected: Document where the list of nodes matching "wfs:FeatureCollection" is a collection containing an instance of org.w3c.dom.Node
+     but:
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at org.geoserver.wfs.v1_1.GetFeatureTest.testPostWithMatchingUrnBboxFilter(GetFeatureTest.java:291)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testWithSRS(org.geoserver.wfs.v1_1.GetFeatureTest)  Time elapsed: 95 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at org.geoserver.wfs.v1_1.GetFeatureTest.testWithSRS(GetFeatureTest.java:337)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testPostWithBboxFilter(org.geoserver.wfs.v1_1.GetFeatureTest)  Time elapsed: 115 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.geoserver.wfs.v1_1.GetFeatureTest.testPostWithBboxFilter(GetFeatureTest.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testPostWithBoundsEnabled(org.geoserver.wfs.v1_1.GetFeatureTest)  Time elapsed: 70 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.geoserver.wfs.v1_1.GetFeatureTest.testPostWithBoundsEnabled(GetFeatureTest.java:411)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testWithSillyLiteral(org.geoserver.wfs.v1_1.GetFeatureTest)  Time elapsed: 80 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.geoserver.wfs.v1_1.GetFeatureTest.testWithSillyLiteral(GetFeatureTest.java:355)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testWithGmlObjectId(org.geoserver.wfs.v1_1.GetFeatureTest)  Time elapsed: 64 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.geoserver.wfs.v1_1.GetFeatureTest.testWithGmlObjectId(GetFeatureTest.java:368)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running org.geoserver.wfs.v1_1.GetFeatureWithLockTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 sec
+Running org.geoserver.wfs.v1_1.LockFeatureTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.341 sec
+Running org.geoserver.wfs.v1_1.Transaction3DTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 sec
+Running org.geoserver.wfs.v1_1.TransactionCurveTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.694 sec
+Running org.geoserver.wfs.v1_1.TransactionTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.13 sec
+Running org.geoserver.wfs.v1_1.VersionNegotiationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.26 sec
+Running org.geoserver.wfs.v1_1.WFSReprojectionTest
+[500225.0, 500025.0, 500275.0, 500075.0]
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.504 sec
+Running org.geoserver.wfs.v1_1.WFSReprojectionWriteTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 sec
+Running org.geoserver.wfs.v1_1.WFSXmlTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec
+Running org.geoserver.wfs.v2_0.BoundingBox3DTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 sec
+Running org.geoserver.wfs.v2_0.DescribeFeatureTypeTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.923 sec
+Running org.geoserver.wfs.v2_0.ExtendedOperatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.441 sec
+Running org.geoserver.wfs.v2_0.GetCapabilitiesTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.144 sec
+Running org.geoserver.wfs.v2_0.GetFeatureCurvesTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec
+Running org.geoserver.wfs.v2_0.GetFeatureJoinTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.153 sec
+Running org.geoserver.wfs.v2_0.GetFeaturePagingTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.089 sec
+Running org.geoserver.wfs.v2_0.GetFeatureTest
+Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.531 sec
+Running org.geoserver.wfs.v2_0.GetFeatureWithLockTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.053 sec
+Running org.geoserver.wfs.v2_0.GetPropertyValueTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.346 sec
+Running org.geoserver.wfs.v2_0.LockFeatureTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 sec
+Running org.geoserver.wfs.v2_0.SrsNameRequestTest
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.8 sec
+Running org.geoserver.wfs.v2_0.SrsNameTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 sec
+Running org.geoserver.wfs.v2_0.StoredQueryTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.629 sec
+Running org.geoserver.wfs.v2_0.TransactionCurveTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.442 sec
+Running org.geoserver.wfs.v2_0.TransactionTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.84 sec
+Running org.geoserver.wfs.xml.FeatureTypeInfoSchemaBuilderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.355 sec
+Running org.geoserver.wfs.xml.GML3FeatureProducerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 sec
+Running org.geoserver.wfs.xml.GMLOutputFormatTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.325 sec
+Running org.geoserver.wfs.xml.WFSURIHandlerTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.012 sec
+Running org.geoserver.wfs.xml.v1_1.XMLParsingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec
+Running org.vfny.geoserver.wfs.servlets.TestWfsPostTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+
+Results :
+
+Failed tests:   testPostWithMatchingUrnBboxFilter(org.geoserver.wfs.v1_1.GetFeatureTest): (..)
+  testWithSRS(org.geoserver.wfs.v1_1.GetFeatureTest): expected:<1> but was:<0>
+  testPostWithBboxFilter(org.geoserver.wfs.v1_1.GetFeatureTest): expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+  testPostWithBoundsEnabled(org.geoserver.wfs.v1_1.GetFeatureTest): expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+  testWithSillyLiteral(org.geoserver.wfs.v1_1.GetFeatureTest): expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+  testWithGmlObjectId(org.geoserver.wfs.v1_1.GetFeatureTest): expected:<[wfs:FeatureCollection]> but was:<[ows:ExceptionReport]>
+
+Tests run: 631, Failures: 6, Errors: 0, Skipped: 2
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] GeoServer .......................................... SUCCESS [  3.094 s]
+[INFO] Core Platform Module ............................... SUCCESS [  8.703 s]
+[INFO] Open Web Service Module ............................ SUCCESS [  2.755 s]
+[INFO] Main Module ........................................ SUCCESS [01:31 min]
+[INFO] GeoServer Security Modules ......................... SUCCESS [  0.003 s]
+[INFO] GeoServer JDBC Security Module ..................... SUCCESS [ 14.430 s]
+[INFO] GeoServer LDAP Security Module ..................... SUCCESS [ 13.762 s]
+[INFO] Web Coverage Service Module ........................ SUCCESS [  0.067 s]
+[INFO] Web Coverage Service 1.0 Module .................... SUCCESS [ 12.906 s]
+[INFO] Web Coverage Service 1.1 Module .................... SUCCESS [ 16.045 s]
+[INFO] Web Coverage Service 2.0 Module .................... SUCCESS [ 39.613 s]
+[INFO] Web Feature Service Module ......................... FAILURE [01:02 min]
+[INFO] Web Map Service Module ............................. SKIPPED
+[INFO] KML support for GeoServer .......................... SKIPPED
+[INFO] GeoWebCache (GWC) Module ........................... SKIPPED
+[INFO] gs-rest ............................................ SKIPPED
+[INFO] gs-restconfig ...................................... SKIPPED
+[INFO] GeoServer Web Modules .............................. SKIPPED
+[INFO] Core UI Module ..................................... SKIPPED
+[INFO] WMS UI Module ...................................... SKIPPED
+[INFO] GWC UI Module ...................................... SKIPPED
+[INFO] WFS UI Module ...................................... SKIPPED
+[INFO] Demos Module ....................................... SKIPPED
+[INFO] WCS UI Module ...................................... SKIPPED
+[INFO] Security UI Modules ................................ SKIPPED
+[INFO] Security UI Core Module ............................ SKIPPED
+[INFO] Security UI JDBC Module ............................ SKIPPED
+[INFO] Security UI LDAP Module ............................ SKIPPED
+[INFO] REST UI Module ..................................... SKIPPED
+[INFO] GeoServer Web Application .......................... SKIPPED
+[INFO] Community Space .................................... SKIPPED
+[INFO] GeoServer Extensions ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 04:26 min
+[INFO] Finished at: 2017-04-15T22:56:57+02:00
+[INFO] Final Memory: 83M/1150M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.3:test (default-test) on project gs-wfs: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/geoserver/geoserver/219928152/src/wfs/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :gs-wfs
