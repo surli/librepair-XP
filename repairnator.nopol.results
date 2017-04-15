@@ -1,0 +1,16 @@
+nopolinfo #0
+location: FailureLocation{className='com.facebook.presto.spi.type.TestTypeSignature', failingMethods=[com.facebook.presto.spi.type.TestTypeSignature#parseRowSignature, com.facebook.presto.spi.type.TestTypeSignature#parseSignature, com.facebook.presto.spi.type.TestTypeSignature#testIsCalculated], erroringMethods=[], failures=[FailureType{failureName='java.lang.IllegalArgumentException', failureDetail='Bad type signature: 'array(row(col0 bigint,col1 double))'', isError=false}, FailureType{failureName='java.lang.IllegalArgumentException', failureDetail='Bad type signature: 'array(timestamp with time zone)'', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='expected [true] but found [false]', isError=false}], nbFailures=3, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 20:42:28 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/prestodb/presto/219784241/presto-spi/src/main/java], projectClasspath='[Ljava.net.URL;@aa5455e', projectTests=[com.facebook.presto.spi.type.TestTypeSignature], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
