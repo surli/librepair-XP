@@ -6,7 +6,8 @@
     "CloneRepository": 35,
     "ResolveDependency": 172,
     "TestProject": 28,
-    "BuildProject": 770
+    "BuildProject": 770,
+    "SquashRepository": 11
   },
   "workspace": "./workspace",
   "totalNumberErroringTests": 0,
