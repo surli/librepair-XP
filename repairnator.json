@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 3
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "albers/docker-client",
+  "pr-head-commit-id": "3790f6c4aafddb9bd10de3523183cf9d18e38317",
+  "pr-id": 707,
+  "repo": "spotify/docker-client",
+  "pr-head-commit-id-url": "https://github.com/albers/docker-client/commit/3790f6c4aafddb9bd10de3523183cf9d18e38317",
+  "is-pr": "true",
+  "buildid": 219018167,
+  "pr-base-commit-id-url": "https://github.com/spotify/docker-client/commit/dc0945a24fc56c8397ece73d63f3194527104662",
+  "pr-base-commit-id": "dc0945a24fc56c8397ece73d63f3194527104662"
+}
