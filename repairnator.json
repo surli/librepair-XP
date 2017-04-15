@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 5,
-    "ResolveDependency": 23
+    "ResolveDependency": 23,
+    "BuildProject": 75
   },
   "workspace": "./workspace",
   "pr-remote-repo": "fredriko/twitter4j",
