@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mariadb-java-client 1.5.9
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ mariadb-java-client ---
+[INFO] Wrote classpath file '/root/workspace/MariaDB/mariadb-connector-j/219712525/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.755 s
+[INFO] Finished at: 2017-04-15T15:42:17+02:00
+[INFO] Final Memory: 26M/1214M
+[INFO] ------------------------------------------------------------------------
