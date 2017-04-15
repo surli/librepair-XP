@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 2,
     "CloneRepository": 11,
     "ResolveDependency": 24,
     "TestProject": 47,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 5,
     "SquashRepository": 4
   },
+  "nbLibraries": 43,
   "workspace": "./workspace",
   "totalNumberErroringTests": 619,
   "repo": "nutzam/nutz",
