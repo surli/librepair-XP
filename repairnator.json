@@ -1,14 +1,41 @@
 {
-  "bugRepo": "square/wire",
+  "totalNumberSkippingTests": 4,
   "step-durations": {
     "CheckoutBuild": 2,
+    "": 0,
     "CloneRepository": 3,
     "ResolveDependency": 29,
     "TestProject": 16,
     "BuildProject": 42
   },
-  "buildid": 220406712,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "square/wire",
-  "bugCommit": "https://github.com/square/wire/compare/6e455b589901...643bb3f0d81c"
+  "bugCommit": "https://github.com/square/wire/compare/6e455b589901...643bb3f0d81c",
+  "failingModule": "/root/workspace/square/wire/220406712/wire-tests",
+  "buildid": 220406712,
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 421,
+  "failing-test-cases": [
+    {
+      "className": "com.squareup.wire.java.JavaGeneratorTest",
+      "failingMethods": [
+        "com.squareup.wire.java.JavaGeneratorTest#generateAbstractAdapter"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c... CoinFlip coin_flip,[] Map\u003cString, Bar\u003e ba...\u003e but was:\u003c... CoinFlip coin_flip,[      ] Map\u003cString, Bar\u003e ba...\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "square/wire"
 }
