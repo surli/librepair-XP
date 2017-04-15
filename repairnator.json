@@ -1,14 +1,72 @@
 {
-  "bugRepo": "geoserver/geoserver",
+  "totalNumberSkippingTests": 88,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 38,
     "ResolveDependency": 252,
     "TestProject": 267,
     "BuildProject": 187
   },
-  "buildid": 219906541,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "geoserver/geoserver",
-  "bugCommit": "https://github.com/geoserver/geoserver/compare/bb61c8d19398...590fff0c79c6"
+  "bugCommit": "https://github.com/geoserver/geoserver/compare/bb61c8d19398...590fff0c79c6",
+  "failingModule": "/root/workspace/geoserver/geoserver/219906541/src/wfs",
+  "buildid": 219906541,
+  "totalNumberFailingTests": 6,
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberRunningTests": 2179,
+  "failing-test-cases": [
+    {
+      "className": "org.geoserver.wfs.v1_1.GetFeatureTest",
+      "failingMethods": [
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testWithSRS",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testPostWithBoundsEnabled",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testWithSillyLiteral",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testPostWithMatchingUrnBboxFilter",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testPostWithBboxFilter",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testWithGmlObjectId"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: Document where the list of nodes matching \"wfs:FeatureCollection\" is a collection containing an instance of org.w3c.dom.Node      but: ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "geoserver/geoserver"
 }
