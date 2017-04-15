@@ -1,0 +1,16 @@
+nopolinfo #0
+location: FailureLocation{className='org.owasp.html.TagBalancingHtmlStreamRendererTest', failingMethods=[org.owasp.html.TagBalancingHtmlStreamRendererTest#testTablesGuarded], erroringMethods=[], failures=[FailureType{failureName='junit.framework.ComparisonFailure', failureDetail='expected:<...p><p>How are you</p>[<ul><li><table><tbody><tr><td><b><font><font><p>Cell</p></font></font> </b></td><td><b><b><font><font><p>Cell</p></font></font> </b></b></td></tr></tbody></table></li></ul>]<b><b><p>x</p></b></...> but was:<...p><p>How are you</p>[ <ul><li><table><tbody><tr><td><b><font><font><p>Cell</p></font></font> </b></td><td><b><b><font><font><p>Cell</p></font></font> </b></b></td></tr></tbody></table></li></ul> ]<b><b><p>x</p></b></...>', isError=false}], nbFailures=1, nbErrors=0}
+status: NOPATCH
+dateEnd: Sat Apr 15 23:47:34 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/OWASP/java-html-sanitizer/220085794/src/main/java], projectClasspath='[Ljava.net.URL;@162be91c', projectTests=[org.owasp.html.TagBalancingHtmlStreamRendererTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 373
+nbAngelicValues: 278
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
