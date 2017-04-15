@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 3,
     "CloneRepository": 24,
-    "ResolveDependency": 183
+    "ResolveDependency": 183,
+    "BuildProject": 557
   },
   "workspace": "./workspace",
   "pr-remote-repo": "aleph-zero/presto",
