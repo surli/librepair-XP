@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building docker-client 8.3.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ docker-client ---
+[INFO] Wrote classpath file '/root/workspace/spotify/docker-client/219023049/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.320 s
+[INFO] Finished at: 2017-04-15T09:49:27+02:00
+[INFO] Final Memory: 20M/962M
+[INFO] ------------------------------------------------------------------------
