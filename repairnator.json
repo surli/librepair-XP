@@ -2,7 +2,8 @@
   "bugRepo": "spring-projects/spring-data-mongodb",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 13
+    "CloneRepository": 13,
+    "ResolveDependency": 188
   },
   "buildid": 220451723,
   "workspace": "./workspace",
