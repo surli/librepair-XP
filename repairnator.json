@@ -117,7 +117,8 @@
     "CloneRepository": 1,
     "ResolveDependency": 25,
     "TestProject": 8,
-    "BuildProject": 19
+    "BuildProject": 19,
+    "SquashRepository": 1
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/aws/aws-dynamodb-session-tomcat/commit/4f4816dbd2db1f6239238f7da5e1eed4f7f81ca6",
