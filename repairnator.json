@@ -278,6 +278,7 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 14,
     "ResolveDependency": 30,
     "TestProject": 2150,
@@ -285,6 +286,7 @@
     "PushIncriminatedBuild": 7,
     "SquashRepository": 4
   },
+  "nbLibraries": 10,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/chocoteam/choco-solver/commit/bacaa1094775cfe6d87041bded8cb2cbec6810bc",
   "failingModule": "/root/workspace/chocoteam/choco-solver/218884446"

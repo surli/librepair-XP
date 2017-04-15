@@ -1,0 +1,18 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Choco-4.0.4-SNAPSHOT: an Open-Source Constraint Solver 4.0.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ choco-solver ---
+[INFO] Wrote classpath file '/root/workspace/chocoteam/choco-solver/218884446/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.952 s
+[INFO] Finished at: 2017-04-15T07:50:35+02:00
+[INFO] Final Memory: 26M/1214M
+[INFO] ------------------------------------------------------------------------
