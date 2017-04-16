@@ -677,7 +677,8 @@
     "CloneRepository": 5,
     "ResolveDependency": 23,
     "TestProject": 6,
-    "BuildProject": 75
+    "BuildProject": 75,
+    "SquashRepository": 2
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/yusuke/twitter4j/commit/f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d",
