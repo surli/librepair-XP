@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 14,
-    "ResolveDependency": 219
+    "ResolveDependency": 219,
+    "BuildProject": 333
   },
   "workspace": "./workspace",
   "pr-remote-repo": "Nimfadora/checkstyle",
