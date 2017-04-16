@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 5,
+    "CloneRepository": 29
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "electrum/presto",
+  "pr-head-commit-id": "b16bcbb8ced53cdbe59e887543aa3d85bbc6a5ba",
+  "pr-id": 7725,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/electrum/presto/commit/b16bcbb8ced53cdbe59e887543aa3d85bbc6a5ba",
+  "is-pr": "true",
+  "buildid": 220774804,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/de287e00f27ce29bc5dfdeffdc2ef9da3707ffef",
+  "pr-base-commit-id": "de287e00f27ce29bc5dfdeffdc2ef9da3707ffef"
+}
