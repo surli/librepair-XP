@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 13,
-    "ResolveDependency": 207
+    "ResolveDependency": 207,
+    "BuildProject": 340
   },
   "workspace": "./workspace",
   "pr-remote-repo": "Shubhk15/checkstyle",
