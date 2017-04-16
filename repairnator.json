@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 2,
-    "CloneRepository": 17
+    "CloneRepository": 17,
+    "ResolveDependency": 160
   },
   "workspace": "./workspace",
   "pr-remote-repo": "timurt/checkstyle",
