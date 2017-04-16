@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 14
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "Nimfadora/checkstyle",
+  "pr-head-commit-id": "48935c2ce70c95046cceef7628f5b67babdd56c3",
+  "pr-id": 4116,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/Nimfadora/checkstyle/commit/48935c2ce70c95046cceef7628f5b67babdd56c3",
+  "is-pr": "true",
+  "buildid": 221118127,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/7ecf831b53ead7e5ef0826894ce250ea76c1c4cf",
+  "pr-base-commit-id": "7ecf831b53ead7e5ef0826894ce250ea76c1c4cf"
+}
