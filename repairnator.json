@@ -38,7 +38,8 @@
     "CloneRepository": 23,
     "ResolveDependency": 190,
     "TestProject": 361,
-    "BuildProject": 541
+    "BuildProject": 541,
+    "SquashRepository": 9
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/e1a2af47cddbfa88fe29a07d6ded306d49ecd77b",
