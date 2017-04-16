@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 35,
     "CloneRepository": 20,
-    "ResolveDependency": 191
+    "ResolveDependency": 191,
+    "BuildProject": 538
   },
   "workspace": "./workspace",
   "pr-remote-repo": "Teradata/presto",
