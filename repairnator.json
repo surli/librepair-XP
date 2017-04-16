@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "CloneRepository": 39,
-    "ResolveDependency": 734
+    "ResolveDependency": 734,
+    "BuildProject": 657
   },
   "workspace": "./workspace",
   "pr-remote-repo": "WangTaoTheTonic/flink",
