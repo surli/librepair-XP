@@ -1,0 +1,11 @@
+{
+  "bugRepo": "SonarSource/sonarqube",
+  "step-durations": {
+    "CheckoutBuild": 1,
+    "CloneRepository": 45
+  },
+  "buildid": 220930911,
+  "workspace": "./workspace",
+  "repo": "SonarSource/sonarqube",
+  "bugCommit": "https://github.com/SonarSource/sonarqube/compare/a8a990b0170b...2e6942461f97"
+}
