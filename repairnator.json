@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 4,
     "ResolveDependency": 161,
     "TestProject": 690,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 5,
     "SquashRepository": 2
   },
+  "nbLibraries": 66,
   "workspace": "./workspace",
   "totalNumberErroringTests": 10226,
   "repo": "spring-projects/spring-data-redis",
