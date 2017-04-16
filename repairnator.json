@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 5,
-    "CloneRepository": 27
+    "CloneRepository": 27,
+    "ResolveDependency": 195
   },
   "workspace": "./workspace",
   "pr-remote-repo": "billonahill/presto",
