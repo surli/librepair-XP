@@ -1,14 +1,67 @@
 {
-  "bugRepo": "SonarSource/sonarqube",
+  "totalNumberSkippingTests": 1,
   "step-durations": {
     "CheckoutBuild": 1,
+    "": 0,
     "CloneRepository": 45,
     "ResolveDependency": 55,
     "TestProject": 51,
     "BuildProject": 270
   },
-  "buildid": 220930911,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 3,
   "repo": "SonarSource/sonarqube",
-  "bugCommit": "https://github.com/SonarSource/sonarqube/compare/a8a990b0170b...2e6942461f97"
+  "bugCommit": "https://github.com/SonarSource/sonarqube/compare/a8a990b0170b...2e6942461f97",
+  "failingModule": "/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api",
+  "buildid": 220930911,
+  "totalNumberFailingTests": 2,
+  "error-types": [
+    "org.sonar.api.utils.command.CommandException",
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 1660,
+  "failing-test-cases": [
+    {
+      "className": "org.sonar.api.utils.command.CommandExecutorTest",
+      "failingMethods": [
+        "org.sonar.api.utils.command.CommandExecutorTest#stdErr_consumer_can_throw_exception",
+        "org.sonar.api.utils.command.CommandExecutorTest#stdOut_consumer_can_throw_exception"
+      ],
+      "erroringMethods": [
+        "org.sonar.api.utils.command.CommandExecutorTest#should_use_working_directory_to_store_argument_and_environment_variable",
+        "org.sonar.api.utils.command.CommandExecutorTest#should_consume_StdOut_and_StdErr",
+        "org.sonar.api.utils.command.CommandExecutorTest#should_stop_after_timeout"
+      ],
+      "failures": [
+        {
+          "failureName": "org.sonar.api.utils.command.CommandException",
+          "failureDetail": "java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit1150748389560922161/should_consume_StdOut_and_StdErr\"): error\u003d13, Permission denied",
+          "isError": true
+        },
+        {
+          "failureName": "org.sonar.api.utils.command.CommandException",
+          "failureDetail": "java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/forever.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit438052314335068142/should_stop_after_timeout\"): error\u003d13, Permission denied",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: (an instance of org.sonar.api.utils.command.CommandException and exception with message a string containing \"Error inside stdErr stream\")\n     but: exception with message a string containing \"Error inside stdErr stream\" message was \"java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2276828455126742934/stdErr_consumer_can_throw_exception\"): error\u003d13, Permission denied\"\nStacktrace was: org.sonar.api.utils.command.CommandException: java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2276828455126742934/stdErr_consumer_can_throw_exception\"): error\u003d13, Permission denied\n at org.sonar.api.utils.command.CommandExecutor.execute(CommandExecutor.java:102)\n at org.sonar.api.utils.command.CommandExecutorTest.stdErr_consumer_can_throw_exception(CommandExecutorTest.java:97)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)\n at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.lang.Thread.run(Thread.java:745)\nCaused by: java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2276828455126742934/stdErr_consumer_can_throw_exception\"): error\u003d13, Permission denied\n at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)\n at org.sonar.api.utils.command.CommandExecutor.execute(CommandExecutor.java:74)\n ... 13 more\nCaused by: java.io.IOException: error\u003d13, Permission denied\n at java.lang.UNIXProcess.forkAndExec(Native Method)\n at java.lang.UNIXProcess.\u003cinit\u003e(UNIXProcess.java:247)\n at java.lang.ProcessImpl.start(ProcessImpl.java:134)\n at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)\n ... 14 more\n",
+          "isError": false
+        },
+        {
+          "failureName": "org.sonar.api.utils.command.CommandException",
+          "failureDetail": "java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/echo.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2514086516581767915/should_use_working_directory_to_store_argument_and_environment_variable\"): error\u003d13, Permission denied",
+          "isError": true
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected: (an instance of org.sonar.api.utils.command.CommandException and exception with message a string containing \"Error inside stdOut stream\")\n     but: exception with message a string containing \"Error inside stdOut stream\" message was \"java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2776052275225002500/stdOut_consumer_can_throw_exception\"): error\u003d13, Permission denied\"\nStacktrace was: org.sonar.api.utils.command.CommandException: java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2776052275225002500/stdOut_consumer_can_throw_exception\"): error\u003d13, Permission denied\n at org.sonar.api.utils.command.CommandExecutor.execute(CommandExecutor.java:102)\n at org.sonar.api.utils.command.CommandExecutorTest.stdOut_consumer_can_throw_exception(CommandExecutorTest.java:89)\n at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n at java.lang.reflect.Method.invoke(Method.java:498)\n at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)\n at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)\n at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)\n at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)\n at java.util.concurrent.FutureTask.run(FutureTask.java:266)\n at java.lang.Thread.run(Thread.java:745)\nCaused by: java.io.IOException: Cannot run program \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/src/test/scripts/output.sh\" (in directory \"/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/target/junit2776052275225002500/stdOut_consumer_can_throw_exception\"): error\u003d13, Permission denied\n at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)\n at org.sonar.api.utils.command.CommandExecutor.execute(CommandExecutor.java:74)\n ... 13 more\nCaused by: java.io.IOException: error\u003d13, Permission denied\n at java.lang.UNIXProcess.forkAndExec(Native Method)\n at java.lang.UNIXProcess.\u003cinit\u003e(UNIXProcess.java:247)\n at java.lang.ProcessImpl.start(ProcessImpl.java:134)\n at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)\n ... 14 more\n",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 3
+    }
+  ],
+  "bugRepo": "SonarSource/sonarqube"
 }
