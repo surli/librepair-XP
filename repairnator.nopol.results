@@ -1,0 +1,848 @@
+nopolinfo #0
+location: FailureLocation{className='org.mariadb.jdbc.TimezoneDaylightSavingTimeTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.TimezoneDaylightSavingTimeTest#org.mariadb.jdbc.TimezoneDaylightSavingTimeTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='Can't set default locale to NULL', isError=true}], nbFailures=0, nbErrors=2}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:39:51 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@19fe4644', projectTests=[org.mariadb.jdbc.TimezoneDaylightSavingTimeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='org.mariadb.jdbc.ConnectionPoolTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ConnectionPoolTest#org.mariadb.jdbc.ConnectionPoolTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:44:48 CEST 2017
+allocatedtime: 117minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@3dffc764', projectTests=[org.mariadb.jdbc.ConnectionPoolTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='org.mariadb.jdbc.ErrorMessageTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ErrorMessageTest#org.mariadb.jdbc.ErrorMessageTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:49:43 CEST 2017
+allocatedtime: 115minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@67e0ff3a', projectTests=[org.mariadb.jdbc.ErrorMessageTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='org.mariadb.jdbc.ParserTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ParserTest#org.mariadb.jdbc.ParserTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:54:34 CEST 2017
+allocatedtime: 113minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@305b43ca', projectTests=[org.mariadb.jdbc.ParserTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #4
+location: FailureLocation{className='org.mariadb.jdbc.CancelTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.CancelTest#org.mariadb.jdbc.CancelTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:59:30 CEST 2017
+allocatedtime: 111minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@283e1759', projectTests=[org.mariadb.jdbc.CancelTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #5
+location: FailureLocation{className='org.mariadb.jdbc.BigQueryTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.BigQueryTest#org.mariadb.jdbc.BigQueryTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:04:29 CEST 2017
+allocatedtime: 109minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@4af606e9', projectTests=[org.mariadb.jdbc.BigQueryTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #6
+location: FailureLocation{className='org.mariadb.jdbc.FetchSizeTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.FetchSizeTest#org.mariadb.jdbc.FetchSizeTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:09:27 CEST 2017
+allocatedtime: 107minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@267b678f', projectTests=[org.mariadb.jdbc.FetchSizeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #7
+location: FailureLocation{className='org.mariadb.jdbc.ExecuteBatchTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ExecuteBatchTest#org.mariadb.jdbc.ExecuteBatchTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:14:31 CEST 2017
+allocatedtime: 105minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@2bf2523f', projectTests=[org.mariadb.jdbc.ExecuteBatchTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #8
+location: FailureLocation{className='org.mariadb.jdbc.MariaDbDatabaseMetaDataTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.MariaDbDatabaseMetaDataTest#org.mariadb.jdbc.MariaDbDatabaseMetaDataTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:17:01 CEST 2017
+allocatedtime: 103minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@309ac89e', projectTests=[org.mariadb.jdbc.MariaDbDatabaseMetaDataTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 156
+nbAngelicValues: 94
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #9
+location: FailureLocation{className='org.mariadb.jdbc.BasicBatchTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.BasicBatchTest#org.mariadb.jdbc.BasicBatchTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:22:06 CEST 2017
+allocatedtime: 102minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@77c66ac2', projectTests=[org.mariadb.jdbc.BasicBatchTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #10
+location: FailureLocation{className='org.mariadb.jdbc.CatalogTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.CatalogTest#org.mariadb.jdbc.CatalogTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:27:10 CEST 2017
+allocatedtime: 99minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@799bb4ed', projectTests=[org.mariadb.jdbc.CatalogTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #11
+location: FailureLocation{className='org.mariadb.jdbc.PasswordEncodingTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.PasswordEncodingTest#org.mariadb.jdbc.PasswordEncodingTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:29:51 CEST 2017
+allocatedtime: 97minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@384d0e1f', projectTests=[org.mariadb.jdbc.PasswordEncodingTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 156
+nbAngelicValues: 94
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #12
+location: FailureLocation{className='org.mariadb.jdbc.ServerPrepareStatementTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ServerPrepareStatementTest#org.mariadb.jdbc.ServerPrepareStatementTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:35:32 CEST 2017
+allocatedtime: 96minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1cd6769b', projectTests=[org.mariadb.jdbc.ServerPrepareStatementTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #13
+location: FailureLocation{className='org.mariadb.jdbc.PooledConnectionTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.PooledConnectionTest#org.mariadb.jdbc.PooledConnectionTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:40:46 CEST 2017
+allocatedtime: 93minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@69fbc5f', projectTests=[org.mariadb.jdbc.PooledConnectionTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #14
+location: FailureLocation{className='org.mariadb.jdbc.DataTypeUnsignedTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DataTypeUnsignedTest#org.mariadb.jdbc.DataTypeUnsignedTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:46:12 CEST 2017
+allocatedtime: 91minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@7ba92958', projectTests=[org.mariadb.jdbc.DataTypeUnsignedTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #15
+location: FailureLocation{className='org.mariadb.jdbc.ClientPreparedStatementParsingTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ClientPreparedStatementParsingTest#org.mariadb.jdbc.ClientPreparedStatementParsingTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:51:57 CEST 2017
+allocatedtime: 88minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@6da075fe', projectTests=[org.mariadb.jdbc.ClientPreparedStatementParsingTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #16
+location: FailureLocation{className='org.mariadb.jdbc.CallStatementTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.CallStatementTest#org.mariadb.jdbc.CallStatementTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 10:57:47 CEST 2017
+allocatedtime: 86minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@2539b745', projectTests=[org.mariadb.jdbc.CallStatementTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #17
+location: FailureLocation{className='org.mariadb.jdbc.ScrollTypeTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ScrollTypeTest#org.mariadb.jdbc.ScrollTypeTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:03:12 CEST 2017
+allocatedtime: 83minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@78fa8bb5', projectTests=[org.mariadb.jdbc.ScrollTypeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #18
+location: FailureLocation{className='org.mariadb.jdbc.GeneratedTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.GeneratedTest#org.mariadb.jdbc.GeneratedTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:05:58 CEST 2017
+allocatedtime: 81minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@4cd85d52', projectTests=[org.mariadb.jdbc.GeneratedTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 156
+nbAngelicValues: 94
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #19
+location: FailureLocation{className='org.mariadb.jdbc.BooleanTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.BooleanTest#org.mariadb.jdbc.BooleanTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:11:23 CEST 2017
+allocatedtime: 80minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@6c0959f4', projectTests=[org.mariadb.jdbc.BooleanTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #20
+location: FailureLocation{className='org.mariadb.jdbc.MariaDbCompatibilityTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.MariaDbCompatibilityTest#org.mariadb.jdbc.MariaDbCompatibilityTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:16:49 CEST 2017
+allocatedtime: 77minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@37baf62a', projectTests=[org.mariadb.jdbc.MariaDbCompatibilityTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #21
+location: FailureLocation{className='org.mariadb.jdbc.CollationTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.CollationTest#org.mariadb.jdbc.CollationTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:22:21 CEST 2017
+allocatedtime: 75minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@4824083', projectTests=[org.mariadb.jdbc.CollationTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #22
+location: FailureLocation{className='org.mariadb.jdbc.MultiTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.MultiTest#org.mariadb.jdbc.MultiTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:29:16 CEST 2017
+allocatedtime: 72minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1f5e7fe1', projectTests=[org.mariadb.jdbc.MultiTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #23
+location: FailureLocation{className='org.mariadb.jdbc.ConnectionTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ConnectionTest#org.mariadb.jdbc.ConnectionTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:34:57 CEST 2017
+allocatedtime: 69minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@7dddd011', projectTests=[org.mariadb.jdbc.ConnectionTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #24
+location: FailureLocation{className='org.mariadb.jdbc.DataNTypeTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DataNTypeTest#org.mariadb.jdbc.DataNTypeTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:40:24 CEST 2017
+allocatedtime: 67minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@5bd5ed6', projectTests=[org.mariadb.jdbc.DataNTypeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #25
+location: FailureLocation{className='org.mariadb.jdbc.BufferTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.BufferTest#org.mariadb.jdbc.BufferTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:46:32 CEST 2017
+allocatedtime: 64minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1a38040', projectTests=[org.mariadb.jdbc.BufferTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #26
+location: FailureLocation{className='org.mariadb.jdbc.TruncateExceptionTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.TruncateExceptionTest#org.mariadb.jdbc.TruncateExceptionTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:52:17 CEST 2017
+allocatedtime: 61minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@5e4f1dc9', projectTests=[org.mariadb.jdbc.TruncateExceptionTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #27
+location: FailureLocation{className='org.mariadb.jdbc.LocalInfileDisableTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.LocalInfileDisableTest#org.mariadb.jdbc.LocalInfileDisableTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 11:55:06 CEST 2017
+allocatedtime: 59minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@26af38f1', projectTests=[org.mariadb.jdbc.LocalInfileDisableTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 156
+nbAngelicValues: 94
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #28
+location: FailureLocation{className='org.mariadb.jdbc.DateTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DateTest#org.mariadb.jdbc.DateTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:01:39 CEST 2017
+allocatedtime: 58minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@36e275ac', projectTests=[org.mariadb.jdbc.DateTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #29
+location: FailureLocation{className='org.mariadb.jdbc.SslTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.SslTest#org.mariadb.jdbc.SslTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:08:50 CEST 2017
+allocatedtime: 55minutes 
+passingTime: 7minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@2b09242d', projectTests=[org.mariadb.jdbc.SslTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #30
+location: FailureLocation{className='org.mariadb.jdbc.DataSourceTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DataSourceTest#org.mariadb.jdbc.DataSourceTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:14:54 CEST 2017
+allocatedtime: 51minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@5a8c3b20', projectTests=[org.mariadb.jdbc.DataSourceTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #31
+location: FailureLocation{className='org.mariadb.jdbc.ResultSetTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ResultSetTest#org.mariadb.jdbc.ResultSetTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:21:30 CEST 2017
+allocatedtime: 48minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1221611f', projectTests=[org.mariadb.jdbc.ResultSetTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #32
+location: FailureLocation{className='org.mariadb.jdbc.StatementTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.StatementTest#org.mariadb.jdbc.StatementTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:27:47 CEST 2017
+allocatedtime: 45minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@218dd55c', projectTests=[org.mariadb.jdbc.StatementTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #33
+location: FailureLocation{className='org.mariadb.jdbc.CheckDataTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.CheckDataTest#org.mariadb.jdbc.CheckDataTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:33:39 CEST 2017
+allocatedtime: 42minutes 
+passingTime: 5minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@5c528f0c', projectTests=[org.mariadb.jdbc.CheckDataTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #34
+location: FailureLocation{className='org.mariadb.jdbc.DatabaseMetadataTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DatabaseMetadataTest#org.mariadb.jdbc.DatabaseMetadataTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:42:03 CEST 2017
+allocatedtime: 40minutes 
+passingTime: 8minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1b07a2ed', projectTests=[org.mariadb.jdbc.DatabaseMetadataTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #35
+location: FailureLocation{className='org.mariadb.jdbc.StoredProcedureTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.StoredProcedureTest#org.mariadb.jdbc.StoredProcedureTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:50:11 CEST 2017
+allocatedtime: 36minutes 
+passingTime: 8minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@2c87bc5d', projectTests=[org.mariadb.jdbc.StoredProcedureTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #36
+location: FailureLocation{className='org.mariadb.jdbc.DatatypeTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DatatypeTest#org.mariadb.jdbc.DatatypeTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 12:57:29 CEST 2017
+allocatedtime: 32minutes 
+passingTime: 7minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@7a7a07c2', projectTests=[org.mariadb.jdbc.DatatypeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #37
+location: FailureLocation{className='org.mariadb.jdbc.AllowMultiQueriesTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.AllowMultiQueriesTest#org.mariadb.jdbc.AllowMultiQueriesTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 13:03:29 CEST 2017
+allocatedtime: 28minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@7f3a71ce', projectTests=[org.mariadb.jdbc.AllowMultiQueriesTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #38
+location: FailureLocation{className='org.mariadb.jdbc.DriverTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DriverTest#org.mariadb.jdbc.DriverTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 13:13:22 CEST 2017
+allocatedtime: 25minutes 
+passingTime: 9minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@4686705e', projectTests=[org.mariadb.jdbc.DriverTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #39
+location: FailureLocation{className='org.mariadb.jdbc.UnicodeTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.UnicodeTest#org.mariadb.jdbc.UnicodeTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 13:19:38 CEST 2017
+allocatedtime: 21minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@7998bfe4', projectTests=[org.mariadb.jdbc.UnicodeTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #40
+location: FailureLocation{className='org.mariadb.jdbc.DatatypeCompatibilityTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DatatypeCompatibilityTest#org.mariadb.jdbc.DatatypeCompatibilityTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 13:25:57 CEST 2017
+allocatedtime: 18minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1f37ad', projectTests=[org.mariadb.jdbc.DatatypeCompatibilityTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #41
+location: FailureLocation{className='org.mariadb.jdbc.GeneratedKeysTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.GeneratedKeysTest#org.mariadb.jdbc.GeneratedKeysTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 13:31:59 CEST 2017
+allocatedtime: 15minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@1cdd67dc', projectTests=[org.mariadb.jdbc.GeneratedKeysTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #42
+location: FailureLocation{className='org.mariadb.jdbc.ResultSetMetaDataTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ResultSetMetaDataTest#org.mariadb.jdbc.ResultSetMetaDataTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 13:38:05 CEST 2017
+allocatedtime: 12minutes 
+passingTime: 6minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@4ee9b9d7', projectTests=[org.mariadb.jdbc.ResultSetMetaDataTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 190
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #43
+location: FailureLocation{className='org.mariadb.jdbc.ResultSetUnsupportedMethodsTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ResultSetUnsupportedMethodsTest#org.mariadb.jdbc.ResultSetUnsupportedMethodsTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 13:47:06 CEST 2017
+allocatedtime: 9minutes 
+passingTime: 9minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@2ecd3df0', projectTests=[org.mariadb.jdbc.ResultSetUnsupportedMethodsTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 130
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #44
+location: FailureLocation{className='org.mariadb.jdbc.GeometryTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.GeometryTest#org.mariadb.jdbc.GeometryTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 13:51:07 CEST 2017
+allocatedtime: 4minutes 
+passingTime: 4minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@767f7820', projectTests=[org.mariadb.jdbc.GeometryTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 133
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #45
+location: FailureLocation{className='org.mariadb.jdbc.ComMultiPrepareStatementTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.ComMultiPrepareStatementTest#org.mariadb.jdbc.ComMultiPrepareStatementTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 13:53:09 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@76a5e119', projectTests=[org.mariadb.jdbc.ComMultiPrepareStatementTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 156
+nbAngelicValues: 56
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #46
+location: FailureLocation{className='org.mariadb.jdbc.PrepareFetchTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.PrepareFetchTest#org.mariadb.jdbc.PrepareFetchTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 13:55:10 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@11f3111c', projectTests=[org.mariadb.jdbc.PrepareFetchTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 62
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #47
+location: FailureLocation{className='org.mariadb.jdbc.BlobTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.BlobTest#org.mariadb.jdbc.BlobTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 13:57:12 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@7e0b0516', projectTests=[org.mariadb.jdbc.BlobTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 52
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #48
+location: FailureLocation{className='org.mariadb.jdbc.TimeoutTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.TimeoutTest#org.mariadb.jdbc.TimeoutTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 13:59:14 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@3c54ee1a', projectTests=[org.mariadb.jdbc.TimeoutTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 63
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #49
+location: FailureLocation{className='org.mariadb.jdbc.DataTypeSignedTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.DataTypeSignedTest#org.mariadb.jdbc.DataTypeSignedTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 14:01:15 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@63662958', projectTests=[org.mariadb.jdbc.DataTypeSignedTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 60
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #50
+location: FailureLocation{className='org.mariadb.jdbc.PreparedStatementTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.PreparedStatementTest#org.mariadb.jdbc.PreparedStatementTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 14:03:17 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@2a83eea3', projectTests=[org.mariadb.jdbc.PreparedStatementTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 43
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #51
+location: FailureLocation{className='org.mariadb.jdbc.failover.OldFailoverTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.failover.OldFailoverTest#org.mariadb.jdbc.failover.OldFailoverTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 14:05:18 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@19048d39', projectTests=[org.mariadb.jdbc.failover.OldFailoverTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 61
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #52
+location: FailureLocation{className='org.mariadb.jdbc.LocalInfileInputStreamTest', failingMethods=[], erroringMethods=[org.mariadb.jdbc.LocalInfileInputStreamTest#org.mariadb.jdbc.LocalInfileInputStreamTest], failures=[FailureType{failureName='java.sql.SQLNonTransientConnectionException', failureDetail='Could not connect to address=(host=localhost)(port=3306)(type=master) : Connection refused (Connection refused)', isError=true}], nbFailures=0, nbErrors=1}
+status: TIMEOUT
+dateEnd: Sun Apr 16 14:07:20 CEST 2017
+allocatedtime: 2minutes 
+passingTime: 2minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/MariaDB/mariadb-connector-j/221019689/src/main/java], projectClasspath='[Ljava.net.URL;@36a899f8', projectTests=[org.mariadb.jdbc.LocalInfileInputStreamTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 278
+nbAngelicValues: 55
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
