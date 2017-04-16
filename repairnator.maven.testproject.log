@@ -1,0 +1,1609 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] everit-org/json-schema
+[INFO] org.everit.json.schema.parent
+[INFO] org.everit.json.schema.tests
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building everit-org/json-schema 1.5.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (default-prepare-agent) @ org.everit.json.schema ---
+[INFO] surefireArgLine set to -javaagent:/root/./workspace/everit-org/json-schema/220957180/.m2/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/root/workspace/everit-org/json-schema/220957180/core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ org.everit.json.schema ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/everit-org/json-schema/220957180/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ org.everit.json.schema ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ org.everit.json.schema ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ org.everit.json.schema ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ org.everit.json.schema ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 8.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 46.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 651.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.everit.json.schema.ValidationExceptionTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 sec - in org.everit.json.schema.ValidationExceptionTest
+Running org.everit.json.schema.ReferenceSchemaTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Ref
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+{"properties":{"prop":{"$ref":"#/definitions/Ref"}}}
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.863 sec - in org.everit.json.schema.ReferenceSchemaTest
+Running org.everit.json.schema.NumberSchemaTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 sec - in org.everit.json.schema.NumberSchemaTest
+Running org.everit.json.schema.EnumSchemaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in org.everit.json.schema.EnumSchemaTest
+Running org.everit.json.schema.CombinedSchemaTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.153 sec - in org.everit.json.schema.CombinedSchemaTest
+Running org.everit.json.schema.SchemaExceptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.everit.json.schema.SchemaExceptionTest
+Running org.everit.json.schema.StringSchemaTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 sec - in org.everit.json.schema.StringSchemaTest
+Running org.everit.json.schema.loader.ObjectSchemaLoaderTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+boolProp -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+stringProp -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+IDCardNumber -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+isIndividual -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.016 sec - in org.everit.json.schema.loader.ObjectSchemaLoaderTest
+Running org.everit.json.schema.loader.ExtendTest
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.everit.json.schema.loader.ExtendTest
+Running org.everit.json.schema.loader.LoadingStateTest
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=http://x.y
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.everit.json.schema.loader.LoadingStateTest
+Running org.everit.json.schema.loader.SchemaLoaderTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+a -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/PropDef
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+foo -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+foo -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+	SchemaLoader ctor got id http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+prop -- http://example.org/schema/
+	SchemaLoader ctor got id http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=http://example.org/schema/
+looking up: http://example.org/schema/ , schema.json
+http://example.org/schema/schema.json
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id http://example.org/schema/schema.json
+created LoadingState with id=http://example.org/schema/schema.json
+created LoadingState with id=http://example.org/schema/
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/nested/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=http://x.y.z/rootschema.json#
+created LoadingState with id=http://x.y.z/rootschema.json#
+	SchemaLoader ctor got id http://x.y.z/rootschema.json#
+created LoadingState with id=http://x.y.z/rootschema.json#
+created LoadingState with id=http://x.y.z/rootschema.json#
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Prop
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+subprop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Prop
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+	SchemaLoader ctor got id http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/rootschema.json
+idPathChange -- http://example.org/rootschema.json
+	SchemaLoader ctor got id http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/rootschema.json
+created LoadingState with id=http://example.org/rootschema.json
+created LoadingState with id=http://example.org/rootschema.json
+created LoadingState with id=http://example.org/rootschema.json
+prop -- http://example.org/rootschema.json
+	SchemaLoader ctor got id http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/rootschema.json
+looking up: http://example.org/ , otherschema.json
+http://example.org/otherschema.json
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id http://example.org/otherschema.json
+created LoadingState with id=http://example.org/otherschema.json
+created LoadingState with id=http://example.org/rootschema.json
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+prop -- http://example.org/
+	SchemaLoader ctor got id http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+looking up: http://example.org/ , asd
+http://example.org/asd
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id http://example.org/asd
+created LoadingState with id=http://example.org/asd
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/folder/
+folderChange -- http://example.org/folder/
+	SchemaLoader ctor got id http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+schemaInFolder -- http://example.org/folder/
+	SchemaLoader ctor got id http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/folder/
+looking up: http://example.org/ , subschemaInFolder.json
+http://example.org/subschemaInFolder.json
+created LoadingState with id=null
+created LoadingState with id=myId
+created LoadingState with id=myId
+	SchemaLoader ctor got id myId
+created LoadingState with id=myId
+created LoadingState with id=myId
+created LoadingState with id=myId
+created LoadingState with id=myId
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/items/0
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Object
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 40, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.423 sec <<< FAILURE! - in org.everit.json.schema.loader.SchemaLoaderTest
+remotePointerResulion(org.everit.json.schema.loader.SchemaLoaderTest)  Time elapsed: 0.016 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.everit.json.schema.loader.SchemaLoaderTest.remotePointerResulion(SchemaLoaderTest.java:230)
+
+Running org.everit.json.schema.loader.internal.TypeBasedMultiplexerTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.everit.json.schema.loader.internal.TypeBasedMultiplexerTest
+Running org.everit.json.schema.loader.internal.ReferenceResolverTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.everit.json.schema.loader.internal.ReferenceResolverTest
+Running org.everit.json.schema.loader.ResolutionScopeTest
+created LoadingState with id=null
+created LoadingState with id=http://x.y.z/rootschema.json#
+created LoadingState with id=http://x.y.z/rootschema.json#
+	SchemaLoader ctor got id http://x.y.z/rootschema.json#
+created LoadingState with id=http://x.y.z/rootschema.json#
+created LoadingState with id=http://x.y.z/rootschema.json#
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.everit.json.schema.loader.ResolutionScopeTest
+Running org.everit.json.schema.loader.CustomFormatValidatorTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+id -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+id -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+id -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.everit.json.schema.loader.CustomFormatValidatorTest
+Running org.everit.json.schema.loader.JsonValueTest
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.everit.json.schema.loader.JsonValueTest
+Running org.everit.json.schema.loader.ArraySchemaLoaderTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.everit.json.schema.loader.ArraySchemaLoaderTest
+Running org.everit.json.schema.loader.JsonObjectTest
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=http://example.org/
+root.ls.id = http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/
+created LoadingState with id=http://example.org/folder/
+fc.ls.id = http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+created LoadingState with id=http://example.org/folder/
+sIF.ls.id = http://example.org/folder/
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=http://x.y
+created LoadingState with id=http://x.y
+created LoadingState with id=http://x.y
+created LoadingState with id=http://x.y
+created LoadingState with id=http://x.y
+created LoadingState with id=http://x.y/z#zzz
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.everit.json.schema.loader.JsonObjectTest
+Running org.everit.json.schema.loader.CombinedSchemaLoaderTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.everit.json.schema.loader.CombinedSchemaLoaderTest
+Running org.everit.json.schema.loader.JsonArrayTest
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.everit.json.schema.loader.JsonArrayTest
+Running org.everit.json.schema.loader.DefinesPropertyTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+a~b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Prop
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+c/d -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+1stLevel -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+3rdLev -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Prop
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+subprop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Prop
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+a -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+a -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+1stLevel -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+3rdLev -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.everit.json.schema.loader.DefinesPropertyTest
+Running org.everit.json.schema.BooleanSchemaTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.everit.json.schema.BooleanSchemaTest
+Running org.everit.json.schema.internal.JSONPrinterTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.everit.json.schema.internal.JSONPrinterTest
+Running org.everit.json.schema.internal.DefaultFormatValidatorTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 sec - in org.everit.json.schema.internal.DefaultFormatValidatorTest
+Running org.everit.json.schema.FormatValidatorTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.everit.json.schema.FormatValidatorTest
+Running org.everit.json.schema.NotSchemaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 sec - in org.everit.json.schema.NotSchemaTest
+Running org.everit.json.schema.PointerBubblingTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+a -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+rectangle -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/Rectangle
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+a -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+b -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+looking up: null , #/definitions/size
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.everit.json.schema.PointerBubblingTest
+Running org.everit.json.schema.ArraySchemaTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec - in org.everit.json.schema.ArraySchemaTest
+Running org.everit.json.schema.NullSchemaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec - in org.everit.json.schema.NullSchemaTest
+Running org.everit.json.schema.ObjectSchemaTest
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop2 -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+prop3 -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+numprop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+numprop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+numprop -- null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+	SchemaLoader ctor got id null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+created LoadingState with id=null
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in org.everit.json.schema.ObjectSchemaTest
+Running org.everit.json.schema.EmptySchemaTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec - in org.everit.json.schema.EmptySchemaTest
+
+Results :
+
+Tests in error: 
+  SchemaLoaderTest.remotePointerResulion:230 » NullPointer
+
+Tests run: 346, Failures: 0, Errors: 1, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] everit-org/json-schema ............................. FAILURE [  6.466 s]
+[INFO] org.everit.json.schema.parent ...................... SKIPPED
+[INFO] org.everit.json.schema.tests ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.265 s
+[INFO] Finished at: 2017-04-16T08:11:00+02:00
+[INFO] Final Memory: 26M/904M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project org.everit.json.schema: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /root/workspace/everit-org/json-schema/220957180/core/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
