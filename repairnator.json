@@ -2,7 +2,8 @@
   "bugRepo": "everit-org/json-schema",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 2
+    "CloneRepository": 2,
+    "ResolveDependency": 29
   },
   "buildid": 220957180,
   "workspace": "./workspace",
