@@ -39,6 +39,7 @@
     "ResolveDependency": 201,
     "TestProject": 1059,
     "BuildProject": 504,
+    "PushIncriminatedBuild": 7,
     "SquashRepository": 8
   },
   "workspace": "./workspace",
