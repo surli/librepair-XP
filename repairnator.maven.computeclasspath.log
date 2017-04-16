@@ -1,0 +1,24 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.release: debian
+[INFO] os.detected.release.version: 8
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SonarQube :: Plugin API 6.3.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ sonar-plugin-api ---
+[INFO] Wrote classpath file '/root/workspace/SonarSource/sonarqube/220930911/sonar-plugin-api/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.855 s
+[INFO] Finished at: 2017-04-16T07:44:33+02:00
+[INFO] Final Memory: 26M/1214M
+[INFO] ------------------------------------------------------------------------
