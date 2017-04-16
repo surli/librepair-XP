@@ -2,7 +2,8 @@
   "bugRepo": "MariaDB/mariadb-connector-j",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 4
+    "CloneRepository": 4,
+    "ResolveDependency": 34
   },
   "buildid": 221019689,
   "workspace": "./workspace",
