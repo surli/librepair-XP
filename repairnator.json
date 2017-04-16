@@ -1,19 +1,77 @@
 {
+  "pr-base-commit-id": "d1901de15f727ba87bcaaf3f194e88ac45a638ba",
+  "pr-head-commit-id": "4647b32216a8dd4e7e81f89581f89b596925fd1e",
+  "totalNumberSkippingTests": 86,
+  "pr-remote-repo": "nmco/geoserver",
+  "error-types": [
+    "java.lang.AssertionError",
+    "org.junit.ComparisonFailure"
+  ],
+  "totalNumberFailingTests": 6,
+  "buildid": 220930647,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 2139,
+  "pr-head-commit-id-url": "https://github.com/nmco/geoserver/commit/4647b32216a8dd4e7e81f89581f89b596925fd1e",
+  "pr-id": 2227,
+  "repo": "geoserver/geoserver",
+  "failing-test-cases": [
+    {
+      "className": "org.geoserver.wfs.v1_1.GetFeatureTest",
+      "failingMethods": [
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testWithSRS",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testPostWithBoundsEnabled",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testWithSillyLiteral",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testPostWithMatchingUrnBboxFilter",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testPostWithBboxFilter",
+        "org.geoserver.wfs.v1_1.GetFeatureTest#testWithGmlObjectId"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": " Expected: Document where the list of nodes matching \"wfs:FeatureCollection\" is a collection containing an instance of org.w3c.dom.Node      but: ",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "expected:\u003c1\u003e but was:\u003c0\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        },
+        {
+          "failureName": "org.junit.ComparisonFailure",
+          "failureDetail": "expected:\u003c[wfs:FeatureCollection]\u003e but was:\u003c[ows:ExceptionReport]\u003e",
+          "isError": false
+        }
+      ],
+      "nbFailures": 6,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 7,
+    "": 0,
     "CloneRepository": 44,
     "ResolveDependency": 348,
     "TestProject": 267,
     "BuildProject": 182
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "nmco/geoserver",
-  "pr-head-commit-id": "4647b32216a8dd4e7e81f89581f89b596925fd1e",
-  "pr-id": 2227,
-  "repo": "geoserver/geoserver",
-  "pr-head-commit-id-url": "https://github.com/nmco/geoserver/commit/4647b32216a8dd4e7e81f89581f89b596925fd1e",
-  "is-pr": "true",
-  "buildid": 220930647,
   "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/d1901de15f727ba87bcaaf3f194e88ac45a638ba",
-  "pr-base-commit-id": "d1901de15f727ba87bcaaf3f194e88ac45a638ba"
+  "failingModule": "/root/workspace/geoserver/geoserver/220930647/src/wfs"
 }
