@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 2,
-    "ResolveDependency": 19
+    "ResolveDependency": 19,
+    "BuildProject": 12
   },
   "workspace": "./workspace",
   "pr-remote-repo": "Gaboso/ripme",
