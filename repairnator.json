@@ -3828,7 +3828,8 @@
     "CloneRepository": 7,
     "ResolveDependency": 22,
     "TestProject": 48,
-    "BuildProject": 18
+    "BuildProject": 18,
+    "SquashRepository": 4
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/nutzam/nutz/commit/d4601cbca661208a8ae993db4e78f65889d3c767",
