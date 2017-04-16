@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 3
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "CGNonofr/docker-client",
+  "pr-head-commit-id": "ed5f4a86bc320a384b47a0e37e6465938b94446e",
+  "pr-id": 703,
+  "repo": "spotify/docker-client",
+  "pr-head-commit-id-url": "https://github.com/CGNonofr/docker-client/commit/ed5f4a86bc320a384b47a0e37e6465938b94446e",
+  "is-pr": "true",
+  "buildid": 221009559,
+  "pr-base-commit-id-url": "https://github.com/spotify/docker-client/commit/0a4a646d0fa37f1d65cce3a0c0adc9631f181403",
+  "pr-base-commit-id": "0a4a646d0fa37f1d65cce3a0c0adc9631f181403"
+}
