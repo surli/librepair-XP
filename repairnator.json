@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 13
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "Shubhk15/checkstyle",
+  "pr-head-commit-id": "401983a810fa8983269eab163533a64563c1badd",
+  "pr-id": 4195,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/Shubhk15/checkstyle/commit/401983a810fa8983269eab163533a64563c1badd",
+  "is-pr": "true",
+  "buildid": 221361181,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/db64216a19b480855058d85f489d22fface4ff13",
+  "pr-base-commit-id": "db64216a19b480855058d85f489d22fface4ff13"
+}
