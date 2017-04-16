@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 13,
     "ResolveDependency": 384,
     "TestProject": 157,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 8,
     "SquashRepository": 5
   },
+  "nbLibraries": 70,
   "workspace": "./workspace",
   "totalNumberErroringTests": 0,
   "repo": "apache/syncope",
