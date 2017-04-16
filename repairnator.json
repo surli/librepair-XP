@@ -1,14 +1,40 @@
 {
-  "bugRepo": "apache/syncope",
+  "totalNumberSkippingTests": 0,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 14,
     "ResolveDependency": 348,
     "TestProject": 146,
     "BuildProject": 571
   },
-  "buildid": 221655772,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 0,
   "repo": "apache/syncope",
-  "bugCommit": "https://github.com/apache/syncope/compare/5221e60efa43...107e51f5bb50"
+  "bugCommit": "https://github.com/apache/syncope/compare/5221e60efa43...107e51f5bb50",
+  "failingModule": "/root/workspace/apache/syncope/221655772/client/enduser",
+  "buildid": 221655772,
+  "totalNumberFailingTests": 1,
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberRunningTests": 283,
+  "failing-test-cases": [
+    {
+      "className": "org.apache.syncope.client.enduser.util.UserRequestValidatorTest",
+      "failingMethods": [
+        "org.apache.syncope.client.enduser.util.UserRequestValidatorTest#testCompliant"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
+  "bugRepo": "apache/syncope"
 }
