@@ -1,0 +1,11 @@
+{
+  "bugRepo": "everit-org/json-schema",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 2
+  },
+  "buildid": 220957180,
+  "workspace": "./workspace",
+  "repo": "everit-org/json-schema",
+  "bugCommit": "https://github.com/everit-org/json-schema/compare/1ce8a95ce8b9...fe47188c7acc"
+}
