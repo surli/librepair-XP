@@ -1,0 +1,17 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:1.106 is missing, no dependency information available
+[WARNING] Failed to build parent project for org.jenkins-ci.plugins:jacoco:hpi:2.2.1-SNAPSHOT
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins JaCoCo plugin 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.3:build-classpath (default-cli) @ jacoco ---
+[INFO] Wrote classpath file '/root/workspace/jenkinsci/jacoco-plugin/221637355/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.258 s
+[INFO] Finished at: 2017-04-16T16:39:50+02:00
+[INFO] Final Memory: 37M/1214M
+[INFO] ------------------------------------------------------------------------
