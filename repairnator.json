@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 11,
+    "CloneRepository": 37
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "nezihyigitbasi/presto",
+  "pr-head-commit-id": "82e6ae2fb3ea0d0cc5800db7db7d0da116c2da55",
+  "pr-id": 7800,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/nezihyigitbasi/presto/commit/82e6ae2fb3ea0d0cc5800db7db7d0da116c2da55",
+  "is-pr": "true",
+  "buildid": 220766080,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/914bb7df6466d24dbb9c9c3e340635e511d46cc1",
+  "pr-base-commit-id": "914bb7df6466d24dbb9c9c3e340635e511d46cc1"
+}
