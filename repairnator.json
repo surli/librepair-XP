@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 2,
-    "CloneRepository": 20
+    "CloneRepository": 20,
+    "ResolveDependency": 176
   },
   "workspace": "./workspace",
   "pr-remote-repo": "subkrish/checkstyle",
