@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 5,
+    "CloneRepository": 39
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "WangTaoTheTonic/flink",
+  "pr-head-commit-id": "cc0f1cdc80e17c6804e2dbe6e9081c87a80c89e2",
+  "pr-id": 3599,
+  "repo": "apache/flink",
+  "pr-head-commit-id-url": "https://github.com/WangTaoTheTonic/flink/commit/cc0f1cdc80e17c6804e2dbe6e9081c87a80c89e2",
+  "is-pr": "true",
+  "buildid": 220526085,
+  "pr-base-commit-id-url": "https://github.com/apache/flink/commit/2afb58a57389dc1f49cb4398612ccc903cc0cb71",
+  "pr-base-commit-id": "2afb58a57389dc1f49cb4398612ccc903cc0cb71"
+}
