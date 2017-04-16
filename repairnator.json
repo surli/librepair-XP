@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 3,
-    "ResolveDependency": 38
+    "ResolveDependency": 38,
+    "BuildProject": 59
   },
   "workspace": "./workspace",
   "pr-remote-repo": "CGNonofr/docker-client",
