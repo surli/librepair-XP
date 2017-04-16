@@ -1,0 +1,16 @@
+[INFO] BuildTimeEventSpy is registered.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building presto-resource-group-managers 0.173-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:build-classpath (default-cli) @ presto-resource-group-managers ---
+[INFO] Wrote classpath file '/root/workspace/prestodb/presto/220766080/presto-resource-group-managers/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.136 s
+[INFO] Finished at: 2017-04-16T06:25:44+02:00
+[INFO] Final Memory: 29M/1214M
+[INFO] ------------------------------------------------------------------------

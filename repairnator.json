@@ -35,6 +35,7 @@
   "step-durations": {
     "CheckoutBuild": 11,
     "": 0,
+    "ComputeClasspath": 4,
     "CloneRepository": 37,
     "ResolveDependency": 169,
     "TestProject": 378,
@@ -42,6 +43,7 @@
     "PushIncriminatedBuild": 7,
     "SquashRepository": 8
   },
+  "nbLibraries": 133,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/914bb7df6466d24dbb9c9c3e340635e511d46cc1",
   "failingModule": "/root/workspace/prestodb/presto/220766080/presto-resource-group-managers"
