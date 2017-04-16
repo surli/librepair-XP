@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 7,
-    "ResolveDependency": 22
+    "ResolveDependency": 22,
+    "BuildProject": 18
   },
   "workspace": "./workspace",
   "pr-remote-repo": "crskyp/nutz",
