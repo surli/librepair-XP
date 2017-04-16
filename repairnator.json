@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 35,
+    "CloneRepository": 20
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "Teradata/presto",
+  "pr-head-commit-id": "bd75fbf4cefe25ade2d9393fd4fb007fa6165d4d",
+  "pr-id": 7808,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/Teradata/presto/commit/bd75fbf4cefe25ade2d9393fd4fb007fa6165d4d",
+  "is-pr": "true",
+  "buildid": 221493159,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/19c58f9af00cf699b1c424484c55d54d92d657c3",
+  "pr-base-commit-id": "19c58f9af00cf699b1c424484c55d54d92d657c3"
+}
