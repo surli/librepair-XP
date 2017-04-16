@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 8,
     "ResolveDependency": 46,
     "TestProject": 20,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 5,
     "SquashRepository": 2
   },
+  "nbLibraries": 27,
   "workspace": "./workspace",
   "totalNumberErroringTests": 12,
   "repo": "rinde/RinSim",
