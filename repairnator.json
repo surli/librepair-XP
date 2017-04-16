@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 20
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "subkrish/checkstyle",
+  "pr-head-commit-id": "5b84cf2290f4d1fc8116c95df188e995e12a0268",
+  "pr-id": 4181,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/subkrish/checkstyle/commit/5b84cf2290f4d1fc8116c95df188e995e12a0268",
+  "is-pr": "true",
+  "buildid": 221717972,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/888f258e2b14637cd7447dc4dbecc1c96d711109",
+  "pr-base-commit-id": "888f258e2b14637cd7447dc4dbecc1c96d711109"
+}
