@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 2,
     "ResolveDependency": 29,
     "TestProject": 8,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 4,
     "SquashRepository": 1
   },
+  "nbLibraries": 13,
   "workspace": "./workspace",
   "totalNumberErroringTests": 1,
   "repo": "everit-org/json-schema",
