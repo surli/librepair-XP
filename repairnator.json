@@ -2,7 +2,8 @@
   "bugRepo": "spring-projects/spring-data-redis",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 7
+    "CloneRepository": 7,
+    "ResolveDependency": 161
   },
   "buildid": 220544790,
   "workspace": "./workspace",
