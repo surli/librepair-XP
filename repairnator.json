@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 2
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "Gaboso/ripme",
+  "pr-head-commit-id": "fe45349f289a7f10b375e3c94f9736714bf96269",
+  "pr-id": 338,
+  "repo": "4pr0n/ripme",
+  "pr-head-commit-id-url": "https://github.com/Gaboso/ripme/commit/fe45349f289a7f10b375e3c94f9736714bf96269",
+  "is-pr": "true",
+  "buildid": 221443597,
+  "pr-base-commit-id-url": "https://github.com/4pr0n/ripme/commit/c4fe08d54f9e37b937c5f024da19133d983447c6",
+  "pr-base-commit-id": "c4fe08d54f9e37b937c5f024da19133d983447c6"
+}
