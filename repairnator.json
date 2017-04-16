@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 3,
     "CloneRepository": 23,
-    "ResolveDependency": 190
+    "ResolveDependency": 190,
+    "BuildProject": 541
   },
   "workspace": "./workspace",
   "pr-remote-repo": "janewangfb/presto",
