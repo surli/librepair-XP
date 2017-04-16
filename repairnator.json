@@ -1,0 +1,11 @@
+{
+  "bugRepo": "apache/syncope",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 14
+  },
+  "buildid": 221655772,
+  "workspace": "./workspace",
+  "repo": "apache/syncope",
+  "bugCommit": "https://github.com/apache/syncope/compare/5221e60efa43...107e51f5bb50"
+}
