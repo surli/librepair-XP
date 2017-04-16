@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 5
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "takke/twitter4j",
+  "pr-head-commit-id": "034b490ff33ce2761bad4dd22ea49b5286a14502",
+  "pr-id": 260,
+  "repo": "yusuke/twitter4j",
+  "pr-head-commit-id-url": "https://github.com/takke/twitter4j/commit/034b490ff33ce2761bad4dd22ea49b5286a14502",
+  "is-pr": "true",
+  "buildid": 221997321,
+  "pr-base-commit-id-url": "https://github.com/yusuke/twitter4j/commit/f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d",
+  "pr-base-commit-id": "f2ff1eaac54468e6cfd21edcd2543bf2c1bcdb5d"
+}
