@@ -3,6 +3,7 @@
   "step-durations": {
     "CheckoutBuild": 0,
     "": 0,
+    "ComputeClasspath": 2,
     "CloneRepository": 4,
     "ResolveDependency": 34,
     "TestProject": 8,
@@ -10,6 +11,7 @@
     "PushIncriminatedBuild": 6,
     "SquashRepository": 0
   },
+  "nbLibraries": 87,
   "workspace": "./workspace",
   "totalNumberErroringTests": 54,
   "repo": "MariaDB/mariadb-connector-j",
