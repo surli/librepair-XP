@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 23
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "janewangfb/presto",
+  "pr-head-commit-id": "4ed73fbd23d844f84f122a4f512504c778b32deb",
+  "pr-id": 7801,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/janewangfb/presto/commit/4ed73fbd23d844f84f122a4f512504c778b32deb",
+  "is-pr": "true",
+  "buildid": 221439399,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/e1a2af47cddbfa88fe29a07d6ded306d49ecd77b",
+  "pr-base-commit-id": "e1a2af47cddbfa88fe29a07d6ded306d49ecd77b"
+}
