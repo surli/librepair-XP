@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 5,
+    "CloneRepository": 27
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "billonahill/presto",
+  "pr-head-commit-id": "c95af6396a8e68f5002b423123b31d8c5ffffed5",
+  "pr-id": 4939,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/billonahill/presto/commit/c95af6396a8e68f5002b423123b31d8c5ffffed5",
+  "is-pr": "true",
+  "buildid": 221447913,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/e1a2af47cddbfa88fe29a07d6ded306d49ecd77b",
+  "pr-base-commit-id": "e1a2af47cddbfa88fe29a07d6ded306d49ecd77b"
+}
