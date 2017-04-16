@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 3,
+    "CloneRepository": 4
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "lopescan/snacktory",
+  "pr-head-commit-id": "05f93cad031f28d2ce391612cf8ae515799624e2",
+  "pr-id": 57,
+  "repo": "karussell/snacktory",
+  "pr-head-commit-id-url": "https://github.com/lopescan/snacktory/commit/05f93cad031f28d2ce391612cf8ae515799624e2",
+  "is-pr": "true",
+  "buildid": 221044815,
+  "pr-base-commit-id-url": "https://github.com/karussell/snacktory/commit/869dc14c28c0c33dac07acfd244530c54ccb7473",
+  "pr-base-commit-id": "869dc14c28c0c33dac07acfd244530c54ccb7473"
+}
