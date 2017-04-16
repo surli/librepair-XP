@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Web Feature Service Module 2.12-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ gs-wfs ---
+[INFO] Wrote classpath file '/root/workspace/geoserver/geoserver/222054981/src/wfs/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.859 s
+[INFO] Finished at: 2017-04-16T18:42:10+02:00
+[INFO] Final Memory: 28M/1214M
+[INFO] ------------------------------------------------------------------------
