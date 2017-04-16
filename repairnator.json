@@ -1,0 +1,11 @@
+{
+  "bugRepo": "rinde/RinSim",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 8
+  },
+  "buildid": 221002168,
+  "workspace": "./workspace",
+  "repo": "rinde/RinSim",
+  "bugCommit": "https://github.com/rinde/RinSim/compare/fd3a8edd6aae...e47fcdfb012b"
+}
