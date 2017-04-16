@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 1,
+    "CloneRepository": 2
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "seanf/jacoco-plugin",
+  "pr-head-commit-id": "66c51ece170d0ab8cc0e222a6c878c150a26ddd5",
+  "pr-id": 86,
+  "repo": "jenkinsci/jacoco-plugin",
+  "pr-head-commit-id-url": "https://github.com/seanf/jacoco-plugin/commit/66c51ece170d0ab8cc0e222a6c878c150a26ddd5",
+  "is-pr": "true",
+  "buildid": 221637355,
+  "pr-base-commit-id-url": "https://github.com/jenkinsci/jacoco-plugin/commit/a729cfa21fb3e070bcd666d5e16dcf47a92bacf8",
+  "pr-base-commit-id": "a729cfa21fb3e070bcd666d5e16dcf47a92bacf8"
+}
