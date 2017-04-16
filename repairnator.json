@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 22
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "hellium01/presto",
+  "pr-head-commit-id": "bb19933c0a304afddb5ee077467cff8c7d9b9751",
+  "pr-id": 7832,
+  "repo": "prestodb/presto",
+  "pr-head-commit-id-url": "https://github.com/hellium01/presto/commit/bb19933c0a304afddb5ee077467cff8c7d9b9751",
+  "is-pr": "true",
+  "buildid": 221981963,
+  "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/caf64b3a4ffca05fc5c7aa39fc4dc78ffbdab3db",
+  "pr-base-commit-id": "caf64b3a4ffca05fc5c7aa39fc4dc78ffbdab3db"
+}
