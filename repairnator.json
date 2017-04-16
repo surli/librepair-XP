@@ -74,7 +74,8 @@
     "CloneRepository": 2,
     "ResolveDependency": 469,
     "TestProject": 37,
-    "BuildProject": 83
+    "BuildProject": 83,
+    "SquashRepository": 1
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/jenkinsci/jacoco-plugin/commit/a729cfa21fb3e070bcd666d5e16dcf47a92bacf8",
