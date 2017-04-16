@@ -1,19 +1,46 @@
 {
+  "pr-base-commit-id": "e1a2af47cddbfa88fe29a07d6ded306d49ecd77b",
+  "pr-head-commit-id": "4ed73fbd23d844f84f122a4f512504c778b32deb",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "janewangfb/presto",
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberFailingTests": 1,
+  "buildid": 221439399,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 3022,
+  "pr-head-commit-id-url": "https://github.com/janewangfb/presto/commit/4ed73fbd23d844f84f122a4f512504c778b32deb",
+  "pr-id": 7801,
+  "repo": "prestodb/presto",
+  "failing-test-cases": [
+    {
+      "className": "com.facebook.presto.resourceGroups.TestFileResourceGroupConfigurationManager",
+      "failingMethods": [
+        "com.facebook.presto.resourceGroups.TestFileResourceGroupConfigurationManager#testInvalid"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "\nExpected (re) :Must use \"weight\" scheduling policy when using scheduling weight\nActual        :Must use \"weighted\" scheduling policy when using scheduling weight expected [true] but found [false]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 3,
+    "": 0,
     "CloneRepository": 23,
     "ResolveDependency": 190,
     "TestProject": 361,
     "BuildProject": 541
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "janewangfb/presto",
-  "pr-head-commit-id": "4ed73fbd23d844f84f122a4f512504c778b32deb",
-  "pr-id": 7801,
-  "repo": "prestodb/presto",
-  "pr-head-commit-id-url": "https://github.com/janewangfb/presto/commit/4ed73fbd23d844f84f122a4f512504c778b32deb",
-  "is-pr": "true",
-  "buildid": 221439399,
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/e1a2af47cddbfa88fe29a07d6ded306d49ecd77b",
-  "pr-base-commit-id": "e1a2af47cddbfa88fe29a07d6ded306d49ecd77b"
+  "failingModule": "/root/workspace/prestodb/presto/221439399/presto-resource-group-managers"
 }
