@@ -1,0 +1,11 @@
+{
+  "bugRepo": "chocoteam/choco-solver",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 14
+  },
+  "buildid": 221374134,
+  "workspace": "./workspace",
+  "repo": "chocoteam/choco-solver",
+  "bugCommit": "https://github.com/chocoteam/choco-solver/compare/1e0a59f6ad51...0b25133b75c6"
+}
