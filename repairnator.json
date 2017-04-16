@@ -2,7 +2,8 @@
   "bugRepo": "rinde/RinSim",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 8
+    "CloneRepository": 8,
+    "ResolveDependency": 46
   },
   "buildid": 221002168,
   "workspace": "./workspace",
