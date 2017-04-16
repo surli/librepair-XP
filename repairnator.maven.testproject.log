@@ -1,0 +1,260 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:1.106 is missing, no dependency information available
+[WARNING] Failed to build parent project for org.jenkins-ci.plugins:jacoco:hpi:2.2.1-SNAPSHOT
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins JaCoCo plugin 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:validate (default-validate) @ jacoco ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ jacoco ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ jacoco ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_121 normalized as: 1.8.0-121
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.7.0-1.el7.elrepo.x86_64
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.8:prepare-agent (jacoco-initialize) @ jacoco ---
+[INFO] argLine set to -javaagent:/root/./workspace/jenkinsci/jacoco-plugin/221637355/.m2/org/jacoco/org.jacoco.agent/0.7.8/org.jacoco.agent-0.7.8-runtime.jar=destfile=/root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.exec,excludes=**/Messages.*
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jacoco ---
+[INFO] Source directory: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/generated-sources/localizer added.
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-localizer-source-folder) @ jacoco ---
+[INFO] Source directory: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/generated-sources/localizer added.
+[INFO]
+[INFO] --- maven-localizer-plugin:1.14:generate (default) @ jacoco ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jacoco ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 66 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ jacoco ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:hpi (default) @ jacoco ---
+[INFO] Generating /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco/META-INF/MANIFEST.MF
+[INFO] Checking for attached .jar artifact ...
+[INFO] Generating jar /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar
+[INFO] Building jar: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar
+[INFO] Exploding webapp...
+[INFO] Copy webapp webResources to /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco
+[INFO] Assembling webapp jacoco in /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco
+[INFO] Generating hpi /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi
+[INFO] Building jar: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi
+[INFO]
+[INFO] --- access-modifier-checker:1.7:enforce (default-enforce) @ jacoco ---
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:insert-test (default-insert-test) @ jacoco ---
+[INFO]
+[INFO] --- gmaven-plugin:1.5-jenkins-1:generateTestStubs (test-in-groovy) @ jacoco ---
+[INFO] No sources found for Java stub generation
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jacoco ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ jacoco ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:test-hpl (default-test-hpl) @ jacoco ---
+[INFO] Generating /root/workspace/jenkinsci/jacoco-plugin/221637355/target/test-classes/the.hpl
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:resolve-test-dependencies (default-resolve-test-dependencies) @ jacoco ---
+[INFO]
+[INFO] --- gmaven-plugin:1.5-jenkins-1:testCompile (test-in-groovy) @ jacoco ---
+[INFO] No sources found to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ jacoco ---
+[INFO] Surefire report directory: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/surefire-reports
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.pom (3 KB at 3.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-providers/2.16/surefire-providers-2.16.pom (3 KB at 8.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit4/2.16/surefire-junit4-2.16.jar (63 KB at 131.4 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running InjectedTest
+Running hudson.plugins.jacococoveragecolumn.CoverageRangeTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec - in hudson.plugins.jacococoveragecolumn.CoverageRangeTest
+Running hudson.plugins.jacococoveragecolumn.JaCoCoColumnTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec - in hudson.plugins.jacococoveragecolumn.JaCoCoColumnTest
+Running hudson.plugins.jacoco.BuildOverBuildTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.772 sec - in hudson.plugins.jacoco.BuildOverBuildTest
+Running hudson.plugins.jacoco.ExecutionFileLoaderTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 sec - in hudson.plugins.jacoco.ExecutionFileLoaderTest
+Running hudson.plugins.jacoco.model.CoverageGraphLayoutTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in hudson.plugins.jacoco.model.CoverageGraphLayoutTest
+Running hudson.plugins.jacoco.model.CoverageObjectGraphTest
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1.076 sec <<< FAILURE! - in hudson.plugins.jacoco.model.CoverageObjectGraphTest
+multipleAccessAndDifferentCoverageType(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.627 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=16493 actual.length=17495
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.multipleAccessAndDifferentCoverageType(CoverageObjectGraphTest.java:116)
+
+singeBuildCoverage(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.073 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=5597 actual.length=6348
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.singeBuildCoverage(CoverageObjectGraphTest.java:87)
+
+baseStroke(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.071 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=11115 actual.length=11942
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.baseStroke(CoverageObjectGraphTest.java:99)
+
+simpleLineCoverage(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.077 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=11302 actual.length=12131
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.simpleLineCoverage(CoverageObjectGraphTest.java:74)
+
+crop5(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.07 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=7466 actual.length=8005
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.crop5(CoverageObjectGraphTest.java:128)
+
+crop100(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.049 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=6367 actual.length=6882
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.crop100(CoverageObjectGraphTest.java:140)
+
+skipZero(hudson.plugins.jacoco.model.CoverageObjectGraphTest)  Time elapsed: 0.05 sec  <<< FAILURE!
+java.lang.AssertionError: array lengths differed, expected.length=6856 actual.length=7396
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.internal.ComparisonCriteria.assertArraysAreSameLength(ComparisonCriteria.java:76)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:37)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:341)
+	at org.junit.Assert.assertArrayEquals(Assert.java:352)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:184)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.assertGraph(CoverageObjectGraphTest.java:197)
+	at hudson.plugins.jacoco.model.CoverageObjectGraphTest.skipZero(CoverageObjectGraphTest.java:151)
+
+Running hudson.plugins.jacoco.model.CoverageObjectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.plugins.jacoco.model.CoverageObjectTest
+Running hudson.plugins.jacoco.JacocoHealthReportDeltaThresholdsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.plugins.jacoco.JacocoHealthReportDeltaThresholdsTest
+Running hudson.plugins.jacoco.JacocoPublisherTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.984 sec - in hudson.plugins.jacoco.JacocoPublisherTest
+Running hudson.plugins.jacoco.portlet.chart.JacocoBuilderTrendChartTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in hudson.plugins.jacoco.portlet.chart.JacocoBuilderTrendChartTest
+Running hudson.plugins.jacoco.portlet.utils.UtilsHudsonTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.817 sec - in InjectedTest
+Running hudson.plugins.jacoco.portlet.utils.UtilsParameterizedTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in hudson.plugins.jacoco.portlet.utils.UtilsParameterizedTest
+Running hudson.plugins.jacoco.portlet.utils.UtilsComparisonTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in hudson.plugins.jacoco.portlet.utils.UtilsComparisonTest
+Running hudson.plugins.jacoco.portlet.JacocoDeltaCoverageResultSummaryTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.412 sec - in hudson.plugins.jacoco.portlet.JacocoDeltaCoverageResultSummaryTest
+Running hudson.plugins.jacoco.portlet.JacocoLoadDataHudsonTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.98 sec - in hudson.plugins.jacoco.portlet.utils.UtilsHudsonTest
+Running hudson.plugins.jacoco.portlet.bean.JacocoCoverageResultSummaryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.plugins.jacoco.portlet.bean.JacocoCoverageResultSummaryTest
+Running hudson.plugins.jacoco.JacocoBuildActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in hudson.plugins.jacoco.JacocoBuildActionTest
+Running hudson.plugins.jacoco.report.AbstractReportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in hudson.plugins.jacoco.report.AbstractReportTest
+Running hudson.plugins.jacoco.report.AggregatedReportTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.plugins.jacoco.report.AggregatedReportTest
+Running hudson.plugins.jacoco.report.MethodReportTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in hudson.plugins.jacoco.report.MethodReportTest
+Running hudson.plugins.jacoco.report.PackageReportTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in hudson.plugins.jacoco.report.PackageReportTest
+Running hudson.plugins.jacoco.report.SourceFileReportTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in hudson.plugins.jacoco.report.SourceFileReportTest
+Running hudson.plugins.jacoco.report.CoverageReportTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in hudson.plugins.jacoco.report.CoverageReportTest
+Running hudson.plugins.jacoco.report.SourceAnnotatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in hudson.plugins.jacoco.report.SourceAnnotatorTest
+Running hudson.plugins.jacoco.report.ClassReportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in hudson.plugins.jacoco.report.ClassReportTest
+Running hudson.plugins.jacoco.CoverageReportTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec - in hudson.plugins.jacoco.CoverageReportTest
+Running hudson.plugins.jacoco.JacocoConfigSubmitTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.plugins.jacoco.JacocoConfigSubmitTest
+Running hudson.plugins.jacoco.CoverageTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in hudson.plugins.jacoco.CoverageTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.773 sec - in hudson.plugins.jacoco.portlet.JacocoLoadDataHudsonTest
+
+Results :
+
+Failed tests:
+  CoverageObjectGraphTest.multipleAccessAndDifferentCoverageType:116->assertGraph:197->assertGraph:184 array lengths differed, expected.length=16493 actual.length=17495
+  CoverageObjectGraphTest.singeBuildCoverage:87->assertGraph:197->assertGraph:184 array lengths differed, expected.length=5597 actual.length=6348
+  CoverageObjectGraphTest.baseStroke:99->assertGraph:197->assertGraph:184 array lengths differed, expected.length=11115 actual.length=11942
+  CoverageObjectGraphTest.simpleLineCoverage:74->assertGraph:197->assertGraph:184 array lengths differed, expected.length=11302 actual.length=12131
+  CoverageObjectGraphTest.crop5:128->assertGraph:197->assertGraph:184 array lengths differed, expected.length=7466 actual.length=8005
+  CoverageObjectGraphTest.crop100:140->assertGraph:197->assertGraph:184 array lengths differed, expected.length=6367 actual.length=6882
+  CoverageObjectGraphTest.skipZero:151->assertGraph:197->assertGraph:184 array lengths differed, expected.length=6856 actual.length=7396
+
+Tests run: 143, Failures: 7, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 35.575 s
+[INFO] Finished at: 2017-04-16T16:39:36+02:00
+[INFO] Final Memory: 52M/1518M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.16:test (default-test) on project jacoco: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/jenkinsci/jacoco-plugin/221637355/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
