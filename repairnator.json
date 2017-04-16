@@ -1,14 +1,40 @@
 {
-  "bugRepo": "everit-org/json-schema",
+  "totalNumberSkippingTests": 1,
   "step-durations": {
     "CheckoutBuild": 0,
+    "": 0,
     "CloneRepository": 2,
     "ResolveDependency": 29,
     "TestProject": 8,
     "BuildProject": 36
   },
-  "buildid": 220957180,
   "workspace": "./workspace",
+  "totalNumberErroringTests": 1,
   "repo": "everit-org/json-schema",
-  "bugCommit": "https://github.com/everit-org/json-schema/compare/1ce8a95ce8b9...fe47188c7acc"
+  "bugCommit": "https://github.com/everit-org/json-schema/compare/1ce8a95ce8b9...fe47188c7acc",
+  "failingModule": "/root/workspace/everit-org/json-schema/220957180/core",
+  "buildid": 220957180,
+  "totalNumberFailingTests": 0,
+  "error-types": [
+    "java.lang.NullPointerException"
+  ],
+  "totalNumberRunningTests": 346,
+  "failing-test-cases": [
+    {
+      "className": "org.everit.json.schema.loader.SchemaLoaderTest",
+      "failingMethods": [],
+      "erroringMethods": [
+        "org.everit.json.schema.loader.SchemaLoaderTest#remotePointerResulion"
+      ],
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true
+        }
+      ],
+      "nbFailures": 0,
+      "nbErrors": 1
+    }
+  ],
+  "bugRepo": "everit-org/json-schema"
 }
