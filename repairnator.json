@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "CloneRepository": 3,
-    "ResolveDependency": 35
+    "ResolveDependency": 35,
+    "BuildProject": 60
   },
   "workspace": "./workspace",
   "pr-remote-repo": "albers/docker-client",
