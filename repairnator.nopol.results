@@ -1,0 +1,112 @@
+nopolinfo #0
+location: FailureLocation{className='com.github.rinde.rinsim.ui.renderers.UiSchemaTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.renderers.UiSchemaTest#getColorFail, com.github.rinde.rinsim.ui.renderers.UiSchemaTest#getColor], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}, FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}, FailureType{failureName='java.lang.NullPointerException', failureDetail='null', isError=true}], nbFailures=0, nbErrors=4}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:04 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@4ae33a11', projectTests=[com.github.rinde.rinsim.ui.renderers.UiSchemaTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.github.rinde.rinsim.ui.ViewTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.ViewTest#closeWindowWhilePlaying, com.github.rinde.rinsim.ui.ViewTest#testRealtime, com.github.rinde.rinsim.ui.ViewTest#testRenderer], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}, FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}, FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}], nbFailures=0, nbErrors=3}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:06 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@407873d3', projectTests=[com.github.rinde.rinsim.ui.ViewTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #2
+location: FailureLocation{className='com.github.rinde.rinsim.ui.renderers.PDPModelRendererTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.renderers.PDPModelRendererTest#test], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:08 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@27abb6ca', projectTests=[com.github.rinde.rinsim.ui.renderers.PDPModelRendererTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #3
+location: FailureLocation{className='com.github.rinde.rinsim.ui.renderers.RoadUserRendererTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.renderers.RoadUserRendererTest#test], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:09 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@183fc2fa', projectTests=[com.github.rinde.rinsim.ui.renderers.RoadUserRendererTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #4
+location: FailureLocation{className='com.github.rinde.rinsim.ui.PanelTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.PanelTest#panelTest], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:11 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@4a9b92c6', projectTests=[com.github.rinde.rinsim.ui.PanelTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #5
+location: FailureLocation{className='com.github.rinde.rinsim.ui.renderers.GraphBasedRenderersTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.renderers.GraphBasedRenderersTest#testRenderer], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:12 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@13374ca6', projectTests=[com.github.rinde.rinsim.ui.renderers.GraphBasedRenderersTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #6
+location: FailureLocation{className='com.github.rinde.rinsim.ui.renderers.CommRendererTest', failingMethods=[], erroringMethods=[com.github.rinde.rinsim.ui.renderers.CommRendererTest#testRenderer], failures=[FailureType{failureName='org.eclipse.swt.SWTError', failureDetail='No more handles [gtk_init_check() failed]', isError=true}], nbFailures=0, nbErrors=1}
+status: NOPATCH
+dateEnd: Sun Apr 16 09:25:14 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/rinde/RinSim/221002168/ui/src/main/java], projectClasspath='[Ljava.net.URL;@1e9d721', projectTests=[com.github.rinde.rinsim.ui.renderers.CommRendererTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
