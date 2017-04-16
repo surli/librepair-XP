@@ -2,7 +2,8 @@
   "bugRepo": "prestodb/presto",
   "step-durations": {
     "CheckoutBuild": 0,
-    "CloneRepository": 25
+    "CloneRepository": 25,
+    "ResolveDependency": 172
   },
   "buildid": 221412885,
   "workspace": "./workspace",
