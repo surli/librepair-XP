@@ -1,0 +1,16 @@
+nopolinfo #0
+location: FailureLocation{className='hudson.plugins.jacoco.model.CoverageObjectGraphTest', failingMethods=[hudson.plugins.jacoco.model.CoverageObjectGraphTest#multipleAccessAndDifferentCoverageType, hudson.plugins.jacoco.model.CoverageObjectGraphTest#simpleLineCoverage, hudson.plugins.jacoco.model.CoverageObjectGraphTest#singeBuildCoverage, hudson.plugins.jacoco.model.CoverageObjectGraphTest#crop5, hudson.plugins.jacoco.model.CoverageObjectGraphTest#crop100, hudson.plugins.jacoco.model.CoverageObjectGraphTest#skipZero, hudson.plugins.jacoco.model.CoverageObjectGraphTest#baseStroke], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=16493 actual.length=17495', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=5597 actual.length=6348', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=11115 actual.length=11942', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=11302 actual.length=12131', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=7466 actual.length=8005', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=6367 actual.length=6882', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='array lengths differed, expected.length=6856 actual.length=7396', isError=false}], nbFailures=7, nbErrors=0}
+status: NOPATCH
+dateEnd: Sun Apr 16 16:40:02 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/jenkinsci/jacoco-plugin/221637355/src/main/java], projectClasspath='[Ljava.net.URL;@aa5455e', projectTests=[hudson.plugins.jacoco.model.CoverageObjectGraphTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
