@@ -1,0 +1,32 @@
+nopolinfo #0
+location: FailureLocation{className='com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest', failingMethods=[com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#xhamsterAlbumsTest, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#vineRipTest, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#deviantartAlbumTest, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#deviantartNSFWAlbumTest, com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest#eightmusesAlbumTest], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Failed to download a single file from http://xhamster.com/photos/gallery/1462237/alyssa_gadson.html', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Failed to rip http://faterkcx.deviantart.com/gallery/ : No images found at http://faterkcx.deviantart.com/gallery/', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Failed to rip http://vine.co/u/954440445776334848 : Failed to load https://vine.co/api/timelines/users/954440445776334848 after 1 attempts', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Failed to rip http://airgee.deviantart.com/gallery/ : No images found at http://airgee.deviantart.com/gallery/', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Failed to rip https://www.8muses.com/album/jab-comics/a-model-life : null', isError=false}], nbFailures=5, nbErrors=0}
+status: NOPATCH
+dateEnd: Sun Apr 16 15:15:39 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/4pr0n/ripme/221443597/src/main/java], projectClasspath='[Ljava.net.URL;@6ac4944a', projectTests=[com.rarchives.ripme.tst.ripper.rippers.BasicRippersTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
+nopolinfo #1
+location: FailureLocation{className='com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest', failingMethods=[com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest#pornhubRipperTest, com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest#vineRipperTest], erroringMethods=[], failures=[FailureType{failureName='java.lang.AssertionError', failureDetail='Error while ripping http://www.pornhub.com/view_video.php?viewkey=993166542 : java.io.IOException: java.io.IOException: Unable to find encrypted video URL at http://www.pornhub.com/view_video.php?viewkey=993166542', isError=false}, FailureType{failureName='java.lang.AssertionError', failureDetail='Error while ripping https://vine.co/v/hteQnv7lEnB : java.io.IOException: Could not find meta property 'twitter:player:stream' at https://vine.co/v/hteQnv7lEnB', isError=false}], nbFailures=2, nbErrors=0}
+status: NOPATCH
+dateEnd: Sun Apr 16 15:15:42 CEST 2017
+allocatedtime: 120minutes 
+passingTime: 0minutes 
+nb patches: 0
+nopol context: Config{synthesisDepth=3, collectStaticMethods=true, collectStaticFields=false, collectLiterals=false, onlyOneSynthesisResult=false, sortExpressions=true, maxLineInvocationPerTest=250, timeoutMethodInvocation=2000, dataCollectionTimeoutInSecondForSynthesis=900, addWeight=0.19478, subWeight=0.04554, mulWeight=0.0102, divWeight=0.00613, andWeight=0.10597, orWeight=0.05708, eqWeight=0.22798, nEqWeight=0.0, lessEqWeight=0.0255, lessWeight=0.0947, methodCallWeight=0.1, fieldAccessWeight=0.08099, constantWeight=0.14232, variableWeight=0.05195, mode=REPAIR, type=COND_THEN_PRE, synthesis=DYNAMOTH, oracle=ANGELIC, solver=Z3, solverPath='./z3_for_linux', projectSources=[/root/workspace/4pr0n/ripme/221443597/src/main/java], projectClasspath='[Ljava.net.URL;@4483d35', projectTests=[com.rarchives.ripme.tst.ripper.rippers.VideoRippersTest], complianceLevel=8, outputFolder=null, json=false}
+exception: null
+nbStatements: 0
+nbAngelicValues: 0
+ignoreStatus: NOTHING_TO_IGNORE
+----------
+
+
+
