@@ -1,0 +1,11 @@
+{
+  "bugRepo": "spring-projects/spring-data-mongodb",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 5
+  },
+  "buildid": 220847584,
+  "workspace": "./workspace",
+  "repo": "spring-projects/spring-data-mongodb",
+  "bugCommit": "https://github.com/spring-projects/spring-data-mongodb/compare/8f5091b2d5e1...859d9d5d831f"
+}
