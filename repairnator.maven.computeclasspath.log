@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Snacktory 1.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ snacktory ---
+[INFO] Wrote classpath file '/root/workspace/karussell/snacktory/221044815/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.534 s
+[INFO] Finished at: 2017-04-16T09:42:48+02:00
+[INFO] Final Memory: 21M/1214M
+[INFO] ------------------------------------------------------------------------
