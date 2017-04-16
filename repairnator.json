@@ -48,5 +48,6 @@
   "nbLibraries": 133,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/e1a2af47cddbfa88fe29a07d6ded306d49ecd77b",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/prestodb/presto/221439399/presto-resource-group-managers"
 }
