@@ -2,7 +2,8 @@
   "bugRepo": "SonarSource/sonarqube",
   "step-durations": {
     "CheckoutBuild": 1,
-    "CloneRepository": 45
+    "CloneRepository": 45,
+    "ResolveDependency": 55
   },
   "buildid": 220930911,
   "workspace": "./workspace",
