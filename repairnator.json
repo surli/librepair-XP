@@ -69,7 +69,8 @@
     "CloneRepository": 40,
     "ResolveDependency": 366,
     "TestProject": 296,
-    "BuildProject": 192
+    "BuildProject": 192,
+    "SquashRepository": 11
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/0d6a705e3f41381888437663e1cb3bde3b43a1b4",
