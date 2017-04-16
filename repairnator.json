@@ -1,0 +1,11 @@
+{
+  "bugRepo": "spring-projects/spring-data-redis",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 4
+  },
+  "buildid": 220544783,
+  "workspace": "./workspace",
+  "repo": "spring-projects/spring-data-redis",
+  "bugCommit": "https://github.com/spring-projects/spring-data-redis/compare/820001a19a74...a1e16aa5c9b0"
+}
