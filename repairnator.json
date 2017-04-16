@@ -84,5 +84,6 @@
   "nbLibraries": 286,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/jenkinsci/jacoco-plugin/commit/a729cfa21fb3e070bcd666d5e16dcf47a92bacf8",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/jenkinsci/jacoco-plugin/221637355"
 }
