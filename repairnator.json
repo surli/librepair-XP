@@ -35,6 +35,7 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "": 0,
+    "ComputeClasspath": 4,
     "CloneRepository": 29,
     "ResolveDependency": 201,
     "TestProject": 1059,
@@ -42,6 +43,7 @@
     "PushIncriminatedBuild": 7,
     "SquashRepository": 8
   },
+  "nbLibraries": 141,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/de287e00f27ce29bc5dfdeffdc2ef9da3707ffef",
   "failingModule": "/root/workspace/prestodb/presto/220774804/presto-tests"
