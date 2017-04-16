@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 8,
     "CloneRepository": 44,
-    "ResolveDependency": 380
+    "ResolveDependency": 380,
+    "BuildProject": 192
   },
   "workspace": "./workspace",
   "pr-remote-repo": "dvntucker/geoserver",
