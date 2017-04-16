@@ -1,0 +1,11 @@
+{
+  "bugRepo": "spotify/docker-client",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 4
+  },
+  "buildid": 221051621,
+  "workspace": "./workspace",
+  "repo": "spotify/docker-client",
+  "bugCommit": "https://github.com/spotify/docker-client/compare/0a4a646d0fa3...92ccc26381c2"
+}
