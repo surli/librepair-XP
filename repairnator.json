@@ -1,19 +1,46 @@
 {
+  "pr-base-commit-id": "77251f076eee469494e68b8e0d0d696ceb3f800b",
+  "pr-head-commit-id": "6a3f5209b3f344a7b649d8c86feebbedb729cae4",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "AkshitaKukreja30/checkstyle",
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberFailingTests": 1,
+  "buildid": 221846642,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 2031,
+  "pr-head-commit-id-url": "https://github.com/AkshitaKukreja30/checkstyle/commit/6a3f5209b3f344a7b649d8c86feebbedb729cae4",
+  "pr-id": 4214,
+  "repo": "checkstyle/checkstyle",
+  "failing-test-cases": [
+    {
+      "className": "com.puppycrawl.tools.checkstyle.internal.CommitValidationTest",
+      "failingMethods": [
+        "com.puppycrawl.tools.checkstyle.internal.CommitValidationTest#testCommitMessageHasProperStructure"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Commit d69ed9230d54001167d0e3d7441b52506ad70c10 message: \"repairnator: add log and properties \\nCommit done at the end of step BuildProject\" is invalid\nProper commit message should adhere to the following rules:\n    1) Must match one of the following patterns:\n        ^Issue #\\d+: .*$\n        ^Pull #\\d+: .*$\n        ^(minor|config|infra|doc|spelling): .*$\n    2) It contains only one line of text\n    3) Must not end with a period, space, or tab\n    4) Commit message should be less than or equal to 200 characters\n\nThe rule broken was: 1",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 2,
+    "": 0,
     "CloneRepository": 14,
     "ResolveDependency": 169,
     "TestProject": 53,
     "BuildProject": 275
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "AkshitaKukreja30/checkstyle",
-  "pr-head-commit-id": "6a3f5209b3f344a7b649d8c86feebbedb729cae4",
-  "pr-id": 4214,
-  "repo": "checkstyle/checkstyle",
-  "pr-head-commit-id-url": "https://github.com/AkshitaKukreja30/checkstyle/commit/6a3f5209b3f344a7b649d8c86feebbedb729cae4",
-  "is-pr": "true",
-  "buildid": 221846642,
   "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/77251f076eee469494e68b8e0d0d696ceb3f800b",
-  "pr-base-commit-id": "77251f076eee469494e68b8e0d0d696ceb3f800b"
+  "failingModule": "/root/workspace/checkstyle/checkstyle/221846642"
 }
