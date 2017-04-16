@@ -35,6 +35,7 @@
   "step-durations": {
     "CheckoutBuild": 2,
     "": 0,
+    "ComputeClasspath": 3,
     "CloneRepository": 13,
     "ResolveDependency": 207,
     "TestProject": 59,
@@ -42,6 +43,7 @@
     "PushIncriminatedBuild": 5,
     "SquashRepository": 5
   },
+  "nbLibraries": 34,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/db64216a19b480855058d85f489d22fface4ff13",
   "failingModule": "/root/workspace/checkstyle/checkstyle/221275246"
