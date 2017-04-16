@@ -38,7 +38,8 @@
     "CloneRepository": 14,
     "ResolveDependency": 169,
     "TestProject": 53,
-    "BuildProject": 275
+    "BuildProject": 275,
+    "SquashRepository": 4
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/77251f076eee469494e68b8e0d0d696ceb3f800b",
