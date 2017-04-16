@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 11,
     "CloneRepository": 37,
-    "ResolveDependency": 169
+    "ResolveDependency": 169,
+    "BuildProject": 545
   },
   "workspace": "./workspace",
   "pr-remote-repo": "nezihyigitbasi/presto",
