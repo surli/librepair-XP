@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 4,
-    "CloneRepository": 22
+    "CloneRepository": 22,
+    "ResolveDependency": 208
   },
   "workspace": "./workspace",
   "pr-remote-repo": "hellium01/presto",
