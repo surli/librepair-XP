@@ -1,0 +1,11 @@
+{
+  "bugRepo": "prestodb/presto",
+  "step-durations": {
+    "CheckoutBuild": 0,
+    "CloneRepository": 22
+  },
+  "buildid": 221465649,
+  "workspace": "./workspace",
+  "repo": "prestodb/presto",
+  "bugCommit": "https://github.com/prestodb/presto/compare/e1a2af47cddb...ea138ba7d0fe"
+}
