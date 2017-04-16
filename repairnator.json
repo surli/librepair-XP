@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 4,
+    "CloneRepository": 29
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "huawei-flink/flink",
+  "pr-head-commit-id": "4e792eac7ff24992921f1750cd757ebf83dc97e2",
+  "pr-id": 3714,
+  "repo": "apache/flink",
+  "pr-head-commit-id-url": "https://github.com/huawei-flink/flink/commit/4e792eac7ff24992921f1750cd757ebf83dc97e2",
+  "is-pr": "true",
+  "buildid": 221402095,
+  "pr-base-commit-id-url": "https://github.com/apache/flink/commit/e651df99f47a0e738c4aa7fb7b8957acca901197",
+  "pr-base-commit-id": "e651df99f47a0e738c4aa7fb7b8957acca901197"
+}
