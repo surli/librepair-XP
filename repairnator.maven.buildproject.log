@@ -1,0 +1,684 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:1.106 is missing, no dependency information available
+[WARNING] Failed to build parent project for org.jenkins-ci.plugins:jacoco:hpi:2.2.1-SNAPSHOT
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins JaCoCo plugin 2.2.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:validate (default-validate) @ jacoco ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.pom (4 KB at 3.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.pom (4 KB at 12.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom (2 KB at 3.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom (2 KB at 4.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-10/doxia-sink-api-1.0-alpha-10.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar (10 KB at 33.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-api/1.0.1/enforcer-api-1.0.1.jar (10 KB at 27.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-10/doxia-sink-api-1.0-alpha-10.jar (10 KB at 27.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/enforcer/enforcer-rules/1.0.1/enforcer-rules-1.0.1.jar (60 KB at 109.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.jar (262 KB at 364.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar (276 KB at 289.6 KB/sec)
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ jacoco ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_121 normalized as: 1.8.0-121
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.7.0-1.el7.elrepo.x86_64
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.8:prepare-agent (jacoco-initialize) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/junit/junit/4.8.2/junit-4.8.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/junit/junit/4.8.2/junit-4.8.2.pom (2 KB at 5.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.pom (2 KB at 4.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.1.2/doxia-sink-api-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.1.2/doxia-sink-api-1.1.2.pom (2 KB at 5.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia/1.1.2/doxia-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia/1.1.2/doxia-1.1.2.pom (18 KB at 44.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-logging-api/1.1.2/doxia-logging-api-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-logging-api/1.1.2/doxia-logging-api-1.1.2.pom (2 KB at 5.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.1.2/doxia-core-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.1.2/doxia-core-1.1.2.pom (4 KB at 12.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.12/plexus-utils-1.5.12.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.12/plexus-utils-1.5.12.pom (6 KB at 18.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.1.2/doxia-site-renderer-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.1.2/doxia-site-renderer-1.1.2.pom (6 KB at 21.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sitetools/1.1.2/doxia-sitetools-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sitetools/1.1.2/doxia-sitetools-1.1.2.pom (15 KB at 39.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.1.2/doxia-decoration-model-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.1.2/doxia-decoration-model-1.1.2.pom (3 KB at 10.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.1.2/doxia-module-xhtml-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.1.2/doxia-module-xhtml-1.1.2.pom (2 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-modules/1.1.2/doxia-modules-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-modules/1.1.2/doxia-modules-1.1.2.pom (3 KB at 8.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.1.2/doxia-module-fml-1.1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.1.2/doxia-module-fml-1.1.2.pom (6 KB at 19.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/junit/junit/4.8.2/junit-4.8.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar (13 KB at 41.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar (48 KB at 100.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar (79 KB at 164.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar (86 KB at 176.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.1.2/doxia-core-1.1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/junit/junit/4.8.2/junit-4.8.2.jar (232 KB at 353.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar (12 KB at 14.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/commons-codec/commons-codec/1.2/commons-codec-1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar (13 KB at 14.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.1.2/doxia-site-renderer-1.1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar (240 KB at 253.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.1.2/doxia-decoration-model-1.1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.1.2/doxia-core-1.1.2.jar (155 KB at 146.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.1.2/doxia-module-xhtml-1.1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/commons-codec/commons-codec/1.2/commons-codec-1.2.jar (30 KB at 26.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.1.2/doxia-module-fml-1.1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/commons-lang/commons-lang/2.4/commons-lang-2.4.jar (256 KB at 197.0 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.1.2/doxia-site-renderer-1.1.2.jar (50 KB at 37.7 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.1.2/doxia-decoration-model-1.1.2.jar (52 KB at 36.4 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.1.2/doxia-module-xhtml-1.1.2.jar (15 KB at 10.3 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.1.2/doxia-module-fml-1.1.2.jar (37 KB at 24.1 KB/sec)
+[INFO] argLine set to -javaagent:/root/./workspace/jenkinsci/jacoco-plugin/221637355/.m2/org/jacoco/org.jacoco.agent/0.7.8/org.jacoco.agent-0.7.8-runtime.jar=destfile=/root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.exec,excludes=**/Messages.*
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom (7 KB at 22.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom (2 KB at 5.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom (2 KB at 4.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.jar (35 KB at 88.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.jar (48 KB at 100.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar (56 KB at 115.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar (85 KB at 175.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.jar (114 KB at 197.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.jar (29 KB at 37.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar (10 KB at 12.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar (149 KB at 173.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.jar (21 KB at 23.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar (6 KB at 6.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar (24 KB at 21.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar (14 KB at 11.7 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 KB at 10.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.jar (37 KB at 29.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.jar (11 KB at 8.2 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.jar (86 KB at 53.5 KB/sec)
+[INFO] Source directory: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/generated-sources/localizer added.
+[INFO]
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-localizer-source-folder) @ jacoco ---
+[INFO] Source directory: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/generated-sources/localizer added.
+[INFO]
+[INFO] --- maven-localizer-plugin:1.14:generate (default) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.0/ant-1.7.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.0/ant-1.7.0.pom (10 KB at 33.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant-parent/1.7.0/ant-parent-1.7.0.pom (5 KB at 14.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.pom (3 KB at 7.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/com/sun/codemodel/codemodel/2.1/codemodel-2.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/com/sun/codemodel/codemodel/2.1/codemodel-2.1.pom (2 KB at 4.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/com/sun/codemodel/2.1/codemodel-2.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/com/sun/codemodel/2.1/codemodel-2.1.pom (4 KB at 13.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jvnet/localizer/localizer/1.14/localizer-1.14.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jvnet/localizer/localizer/1.14/localizer-1.14.pom (690 B at 2.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.0/ant-1.7.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/junit/junit/3.8/junit-3.8.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/com/sun/codemodel/codemodel/2.1/codemodel-2.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.0/ant-launcher-1.7.0.jar (12 KB at 41.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jvnet/localizer/localizer/1.14/localizer-1.14.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jvnet/localizer/localizer/1.14/localizer-1.14.jar (7 KB at 12.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/junit/junit/3.8/junit-3.8.jar (119 KB at 208.1 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar (160 KB at 279.2 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/com/sun/codemodel/codemodel/2.1/codemodel-2.1.jar (137 KB at 207.5 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.0/ant-1.7.0.jar (1260 KB at 1444.5 KB/sec)
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-filtering/1.0/maven-filtering-1.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-filtering/1.0/maven-filtering-1.0.pom (6 KB at 19.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom (889 B at 3.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/spice/spice-parent/10/spice-parent-10.pom (3 KB at 10.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/forge/forge-parent/3/forge-parent-3.pom (5 KB at 17.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom (890 B at 2.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-filtering/1.0/maven-filtering-1.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar (7 KB at 19.4 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-filtering/1.0/maven-filtering-1.0.jar (42 KB at 88.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar (60 KB at 125.5 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar (218 KB at 335.8 KB/sec)
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 66 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (3 KB at 7.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (4 KB at 12.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (6 KB at 17.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (4 KB at 10.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (3 KB at 8.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (2 KB at 4.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (8 KB at 26.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (6 KB at 18.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 KB at 37.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (7 KB at 22.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (3 KB at 7.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (2 KB at 6.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (3 KB at 7.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (3 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (2 KB at 5.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (8 KB at 25.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (3 KB at 6.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (4 KB at 12.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (2 KB at 6.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.pom (5 KB at 16.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom (5 KB at 15.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/commons-io/commons-io/2.5/commons-io-2.5.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/commons-io/commons-io/2.5/commons-io-2.5.pom (13 KB at 45.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/commons/commons-parent/39/commons-parent-39.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/commons/commons-parent/39/commons-parent-39.pom (61 KB at 128.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (5 KB at 12.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom (4 KB at 13.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom (5 KB at 16.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm/6.0_ALPHA/asm-6.0_ALPHA.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm/6.0_ALPHA/asm-6.0_ALPHA.pom (2 KB at 6.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-parent/6.0_ALPHA/asm-parent-6.0_ALPHA.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-parent/6.0_ALPHA/asm-parent-6.0_ALPHA.pom (6 KB at 19.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-api/2.8.1/plexus-compiler-api-2.8.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-api/2.8.1/plexus-compiler-api-2.8.1.pom (893 B at 3.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler/2.8.1/plexus-compiler-2.8.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler/2.8.1/plexus-compiler-2.8.1.pom (5 KB at 17.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom (3 KB at 7.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-manager/2.8.1/plexus-compiler-manager-2.8.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-manager/2.8.1/plexus-compiler-manager-2.8.1.pom (713 B at 2.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-javac/2.8.1/plexus-compiler-javac-2.8.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-javac/2.8.1/plexus-compiler-javac-2.8.1.pom (794 B at 2.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compilers/2.8.1/plexus-compilers-2.8.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compilers/2.8.1/plexus-compilers-2.8.1.pom (2 KB at 4.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/3.0/maven-model-3.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar (48 KB at 101.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/3.0/maven-model-3.0.jar (161 KB at 284.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar (150 KB at 259.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar (197 KB at 301.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar (461 KB at 605.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar (51 KB at 55.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar (46 KB at 44.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar (37 KB at 32.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar (217 KB at 178.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar (30 KB at 22.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/3.0/maven-core-3.0.jar (515 KB at 389.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar (145 KB at 92.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar (50 KB at 31.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar (14 KB at 7.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar (104 KB at 58.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/commons-io/commons-io/2.5/commons-io-2.5.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar (73 KB at 40.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar (46 KB at 21.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm/6.0_ALPHA/asm-6.0_ALPHA.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar (106 KB at 49.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-api/2.8.1/plexus-compiler-api-2.8.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 KB at 6.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-manager/2.8.1/plexus-compiler-manager-2.8.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar (160 KB at 71.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-javac/2.8.1/plexus-compiler-javac-2.8.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/commons-io/commons-io/2.5/commons-io-2.5.jar (204 KB at 84.1 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-manager/2.8.1/plexus-compiler-manager-2.8.1.jar (5 KB at 1.9 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-api/2.8.1/plexus-compiler-api-2.8.1.jar (26 KB at 10.3 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm/6.0_ALPHA/asm-6.0_ALPHA.jar (55 KB at 21.5 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-compiler-javac/2.8.1/plexus-compiler-javac-2.8.1.jar (20 KB at 7.5 KB/sec)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 33 source files to /root/workspace/jenkinsci/jacoco-plugin/221637355/target/classes
+[INFO] /root/workspace/jenkinsci/jacoco-plugin/221637355/src/main/java/hudson/plugins/jacoco/report/AbstractReport.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/jenkinsci/jacoco-plugin/221637355/src/main/java/hudson/plugins/jacoco/report/AbstractReport.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:hpi (default) @ jacoco ---
+[INFO] Generating /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco/META-INF/MANIFEST.MF
+[INFO] Checking for attached .jar artifact ...
+[INFO] Generating jar /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar
+[INFO] Building jar: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar
+[INFO] Exploding webapp...
+[INFO] Copy webapp webResources to /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco
+[INFO] Assembling webapp jacoco in /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco
+[INFO] Generating hpi /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi
+[INFO] Building jar: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi
+[INFO]
+[INFO] --- access-modifier-checker:1.7:enforce (default-enforce) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/kohsuke/access-modifier-annotation/1.7/access-modifier-annotation-1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/kohsuke/access-modifier-annotation/1.7/access-modifier-annotation-1.7.pom (855 B at 2.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom (6 KB at 15.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/kohsuke/metainf-services/metainf-services/1.1/metainf-services-1.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/kohsuke/metainf-services/metainf-services/1.1/metainf-services-1.1.pom (2 KB at 6.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/kohsuke/access-modifier-annotation/1.7/access-modifier-annotation-1.7.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/annotation-indexer/1.4/annotation-indexer-1.4.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/kohsuke/metainf-services/metainf-services/1.1/metainf-services-1.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/kohsuke/metainf-services/metainf-services/1.1/metainf-services-1.1.jar (7 KB at 23.7 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/kohsuke/access-modifier-annotation/1.7/access-modifier-annotation-1.7.jar (7 KB at 24.4 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/annotation-indexer/1.4/annotation-indexer-1.4.jar (16 KB at 43.0 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-debug-all/5.0.3/asm-debug-all-5.0.3.jar (370 KB at 492.4 KB/sec)
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:insert-test (default-insert-test) @ jacoco ---
+[INFO]
+[INFO] --- gmaven-plugin:1.5-jenkins-1:generateTestStubs (test-in-groovy) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-api/1.5-jenkins-1/gmaven-runtime-api-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-api/1.5-jenkins-1/gmaven-runtime-api-1.5-jenkins-1.pom (2 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime/1.5-jenkins-1/gmaven-runtime-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime/1.5-jenkins-1/gmaven-runtime-1.5-jenkins-1.pom (4 KB at 13.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-api/1.5-jenkins-1/gmaven-feature-api-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-api/1.5-jenkins-1/gmaven-feature-api-1.5-jenkins-1.pom (2 KB at 6.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature/1.5-jenkins-1/gmaven-feature-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature/1.5-jenkins-1/gmaven-feature-1.5-jenkins-1.pom (2 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.5-jenkins-1/gmaven-runtime-loader-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.5-jenkins-1/gmaven-runtime-loader-1.5-jenkins-1.pom (3 KB at 9.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.pom (3 KB at 9.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/slf4j/slf4j-parent/1.5.10/slf4j-parent-1.5.10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/slf4j/slf4j-parent/1.5.10/slf4j-parent-1.5.10.pom (9 KB at 29.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-support/1.5-jenkins-1/gmaven-feature-support-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-support/1.5-jenkins-1/gmaven-feature-support-1.5-jenkins-1.pom (2 KB at 5.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/gossip/gossip/1.2/gossip-1.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/gossip/gossip/1.2/gossip-1.2.pom (20 KB at 43.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-support/1.5-jenkins-1/gmaven-runtime-support-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-support/1.5-jenkins-1/gmaven-runtime-support-1.5-jenkins-1.pom (3 KB at 7.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/gshell/gshell-io/2.4/gshell-io-2.4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/gshell/gshell-io/2.4/gshell-io-2.4.pom (2 KB at 4.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/gshell/gshell/2.4/gshell-2.4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/gshell/gshell/2.4/gshell-2.4.pom (18 KB at 45.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/com/thoughtworks/qdox/qdox/1.12/qdox-1.12.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/com/thoughtworks/qdox/qdox/1.12/qdox-1.12.pom (19 KB at 47.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.10/maven-plugin-descriptor-2.0.10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.10/maven-plugin-descriptor-2.0.10.pom (3 KB at 7.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.pom (3 KB at 7.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.pom (3 KB at 8.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.pom (902 B at 3.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting/2.0.4/maven-reporting-2.0.4.pom (700 B at 2.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven/2.0.4/maven-2.0.4.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven/2.0.4/maven-2.0.4.pom (11 KB at 38.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.pom (5 KB at 14.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sitetools/1.0-alpha-10/doxia-sitetools-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sitetools/1.0-alpha-10/doxia-sitetools-1.0-alpha-10.pom (8 KB at 26.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.pom (3 KB at 10.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.pom (3 KB at 7.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-modules/1.0-alpha-10/doxia-modules-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-modules/1.0-alpha-10/doxia-modules-1.0-alpha-10.pom (3 KB at 8.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.pom (3 KB at 8.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.pom (3 KB at 7.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.pom (2 KB at 5.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-api/1.5-jenkins-1/gmaven-runtime-api-1.5-jenkins-1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-api/1.5-jenkins-1/gmaven-feature-api-1.5-jenkins-1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-support/1.5-jenkins-1/gmaven-feature-support-1.5-jenkins-1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.5-jenkins-1/gmaven-runtime-loader-1.5-jenkins-1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-support/1.5-jenkins-1/gmaven-runtime-support-1.5-jenkins-1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-support/1.5-jenkins-1/gmaven-feature-support-1.5-jenkins-1.jar (14 KB at 36.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/gshell/gshell-io/2.4/gshell-io-2.4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-api/1.5-jenkins-1/gmaven-runtime-api-1.5-jenkins-1.jar (22 KB at 59.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/com/thoughtworks/qdox/qdox/1.12/qdox-1.12.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/feature/gmaven-feature-api/1.5-jenkins-1/gmaven-feature-api-1.5-jenkins-1.jar (18 KB at 46.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.0.10/maven-plugin-api-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.5-jenkins-1/gmaven-runtime-loader-1.5-jenkins-1.jar (25 KB at 65.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-support/1.5-jenkins-1/gmaven-runtime-support-1.5-jenkins-1.jar (79 KB at 165.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/gshell/gshell-io/2.4/gshell-io-2.4.jar (29 KB at 38.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.0.10/maven-plugin-api-2.0.10.jar (13 KB at 17.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.jar (49 KB at 57.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/log4j/log4j/1.2.12/log4j-1.2.12.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.jar (20 KB at 22.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/com/thoughtworks/qdox/qdox/1.12/qdox-1.12.jar (176 KB at 188.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar (44 KB at 33.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.0.10/maven-artifact-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar (131 KB at 95.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.10/maven-plugin-descriptor-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar (212 KB at 151.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/log4j/log4j/1.2.12/log4j-1.2.12.jar (350 KB at 233.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-project/2.0.10/maven-project-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/com/google/collections/google-collections/1.0/google-collections-1.0.jar (625 KB at 368.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.0.10/maven-settings-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0.10/maven-plugin-descriptor-2.0.10.jar (39 KB at 21.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-profile/2.0.10/maven-profile-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.jar (19 KB at 10.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.0.10/maven-model-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.0.10/maven-artifact-2.0.10.jar (88 KB at 49.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-registry/2.0.10/maven-plugin-registry-2.0.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-project/2.0.10/maven-project-2.0.10.jar (121 KB at 58.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-profile/2.0.10/maven-profile-2.0.10.jar (37 KB at 17.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-registry/2.0.10/maven-plugin-registry-2.0.10.jar (30 KB at 13.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.0.10/maven-settings-2.0.10.jar (50 KB at 23.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.0.10/maven-model-2.0.10.jar (94 KB at 40.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.jar (5 KB at 2.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar (35 KB at 14.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.jar (54 KB at 20.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.jar (45 KB at 17.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.jar (18 KB at 6.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.jar (46 KB at 15.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/gossip/gossip/1.2/gossip-1.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.jar (49 KB at 16.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.jar (27 KB at 9.1 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.jar (21 KB at 7.0 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar (24 KB at 7.3 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/gossip/gossip/1.2/gossip-1.2.jar (75 KB at 22.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-1.6/1.5-jenkins-1/gmaven-runtime-1.6-1.5-jenkins-1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-1.6/1.5-jenkins-1/gmaven-runtime-1.6-1.5-jenkins-1.pom (4 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/sonatype/gossip/gossip/1.3/gossip-1.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/sonatype/gossip/gossip/1.3/gossip-1.3.pom (20 KB at 50.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy-all/1.6.9/groovy-all-1.6.9.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy-all/1.6.9/groovy-all-1.6.9.pom (25 KB at 65.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.1/ant-1.7.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.1/ant-1.7.1.pom (10 KB at 34.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant-parent/1.7.1/ant-parent-1.7.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant-parent/1.7.1/ant-parent-1.7.1.pom (5 KB at 15.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom (3 KB at 7.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-1.6/1.5-jenkins-1/gmaven-runtime-1.6-1.5-jenkins-1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy-all/1.6.9/groovy-all-1.6.9.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.1/ant-1.7.1.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.jar (12 KB at 42.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/gmaven/runtime/gmaven-runtime-1.6/1.5-jenkins-1/gmaven-runtime-1.6-1.5-jenkins-1.jar (42 KB at 93.2 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/ant/ant/1.7.1/ant-1.7.1.jar (1292 KB at 1381.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy-all/1.6.9/groovy-all-1.6.9.jar (4481 KB at 3958.2 KB/sec)
+[INFO] No sources found for Java stub generation
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jacoco ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ jacoco ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /root/workspace/jenkinsci/jacoco-plugin/221637355/target/test-classes
+[INFO] /root/workspace/jenkinsci/jacoco-plugin/221637355/src/test/java/hudson/plugins/jacoco/portlet/utils/UtilsParameterizedTest.java: Some input files use or override a deprecated API.
+[INFO] /root/workspace/jenkinsci/jacoco-plugin/221637355/src/test/java/hudson/plugins/jacoco/portlet/utils/UtilsParameterizedTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /root/workspace/jenkinsci/jacoco-plugin/221637355/src/test/java/hudson/plugins/jacoco/portlet/bean/JacocoCoverageResultSummaryTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /root/workspace/jenkinsci/jacoco-plugin/221637355/src/test/java/hudson/plugins/jacoco/portlet/bean/JacocoCoverageResultSummaryTest.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:test-hpl (default-test-hpl) @ jacoco ---
+[INFO] Generating /root/workspace/jenkinsci/jacoco-plugin/221637355/target/test-classes/the.hpl
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:resolve-test-dependencies (default-resolve-test-dependencies) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/main/maven-plugin/1.403/maven-plugin-1.403.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/main/maven-plugin/1.403/maven-plugin-1.403.hpi (7676 KB at 4794.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/ant/1.2/ant-1.2.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/ant/1.2/ant-1.2.hpi (89 KB at 196.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/antisamy-markup-formatter/1.0/antisamy-markup-formatter-1.0.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/antisamy-markup-formatter/1.0/antisamy-markup-formatter-1.0.hpi (110 KB at 203.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/dashboard-view/2.1/dashboard-view-2.1.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/dashboard-view/2.1/dashboard-view-2.1.hpi (557 KB at 587.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/junit/1.2-beta-4/junit-1.2-beta-4.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/junit/1.2-beta-4/junit-1.2-beta-4.hpi (324 KB at 501.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/mailer/1.10/mailer-1.10.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/mailer/1.10/mailer-1.10.hpi (126 KB at 231.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/matrix-auth/1.0.2/matrix-auth-1.0.2.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/matrix-auth/1.0.2/matrix-auth-1.0.2.hpi (77 KB at 154.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/matrix-project/1.4.1/matrix-project-1.4.1.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/matrix-project/1.4.1/matrix-project-1.4.1.hpi (234 KB at 282.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/script-security/1.13/script-security-1.13.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/script-security/1.13/script-security-1.13.hpi (161 KB at 293.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/structs/1.2/structs-1.2.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/structs/1.2/structs-1.2.hpi (44 KB at 96.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/subversion/1.45/subversion-1.45.hpi
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/jenkins-ci/plugins/subversion/1.45/subversion-1.45.hpi (4264 KB at 3565.2 KB/sec)
+[INFO]
+[INFO] --- gmaven-plugin:1.5-jenkins-1:testCompile (test-in-groovy) @ jacoco ---
+[INFO] No sources found to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/maven-surefire-common/2.16/maven-surefire-common-2.16.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/maven-surefire-common/2.16/maven-surefire-common-2.16.pom (6 KB at 20.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom (2 KB at 5.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom (17 KB at 42.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-api/2.16/surefire-api-2.16.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-api/2.16/surefire-api-2.16.pom (3 KB at 7.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-booter/2.16/surefire-booter-2.16.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-booter/2.16/surefire-booter-2.16.pom (3 KB at 9.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (4 KB at 12.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/maven-surefire-common/2.16/maven-surefire-common-2.16.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-booter/2.16/surefire-booter-2.16.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-api/2.16/surefire-api-2.16.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-booter/2.16/surefire-booter-2.16.jar (39 KB at 102.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-api/2.16/surefire-api-2.16.jar (146 KB at 257.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar (206 KB at 315.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/maven-surefire-common/2.16/maven-surefire-common-2.16.jar (259 KB at 386.6 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (309 KB at 461.7 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar (38 KB at 49.2 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar (15 KB at 15.7 KB/sec)
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- animal-sniffer-maven-plugin:1.9:check (default) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/mojo/animal-sniffer/1.9/animal-sniffer-1.9.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/mojo/animal-sniffer/1.9/animal-sniffer-1.9.pom (3 KB at 3.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.pom (2 KB at 6.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/mojo/java-boot-classpath-detector/1.9/java-boot-classpath-detector-1.9.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/mojo/java-boot-classpath-detector/1.9/java-boot-classpath-detector-1.9.pom (3 KB at 3.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/mojo/animal-sniffer/1.9/animal-sniffer-1.9.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/mojo/java-boot-classpath-detector/1.9/java-boot-classpath-detector-1.9.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/mojo/java-boot-classpath-detector/1.9/java-boot-classpath-detector-1.9.jar (5 KB at 12.0 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/mojo/animal-sniffer/1.9/animal-sniffer-1.9.jar (31 KB at 69.5 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar (245 KB at 371.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/ow2/asm/asm-all/4.0/asm-all-4.0.jar (208 KB at 235.8 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-archiver/1.0-alpha-7/plexus-archiver-1.0-alpha-7.jar (139 KB at 153.9 KB/sec)
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java17:1.0
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/mojo/signature/java17/1.0/java17-1.0.signature
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/mojo/signature/java17/1.0/java17-1.0.signature (649 KB at 854.9 KB/sec)
+[INFO]
+[INFO] --- maven-license-plugin:1.7:process (default) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy/1.6.5/groovy-1.6.5.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy/1.6.5/groovy-1.6.5.pom (27 KB at 70.1 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/antlr/antlr/2.7.7/antlr-2.7.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/antlr/antlr/2.7.7/antlr-2.7.7.pom (632 B at 2.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm/2.2.3/asm-2.2.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm/2.2.3/asm-2.2.3.pom (266 B at 0.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-parent/2.2.3/asm-parent-2.2.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-parent/2.2.3/asm-parent-2.2.3.pom (3 KB at 8.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-util/2.2.3/asm-util-2.2.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-util/2.2.3/asm-util-2.2.3.pom (411 B at 1.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-tree/2.2.3/asm-tree-2.2.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-tree/2.2.3/asm-tree-2.2.3.pom (406 B at 1.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-analysis/2.2.3/asm-analysis-2.2.3.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-analysis/2.2.3/asm-analysis-2.2.3.pom (419 B at 1.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/2.0/maven-core-2.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.0/maven-settings-2.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-parameter-documenter/2.0/maven-plugin-parameter-documenter-2.0.jar
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar (10 KB at 35.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/doxia/doxia-sink-api/1.0-alpha-4/doxia-sink-api-1.0-alpha-4.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/reporting/maven-reporting-api/2.0/maven-reporting-api-2.0.jar (7 KB at 22.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-parameter-documenter/2.0/maven-plugin-parameter-documenter-2.0.jar (18 KB at 47.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.0/maven-model-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/2.0/maven-settings-2.0.jar (43 KB at 90.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/doxia/doxia-sink-api/1.0-alpha-4/doxia-sink-api-1.0-alpha-4.jar (5 KB at 7.5 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/2.0/maven-core-2.0.jar (133 KB at 233.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar (30 KB at 45.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-error-diagnostics/2.0/maven-error-diagnostics-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model/2.0/maven-model-2.0.jar (77 KB at 92.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-project/2.0/maven-project-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar (77 KB at 82.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-registry/2.0/maven-plugin-registry-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar (21 KB at 21.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0/maven-plugin-descriptor-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-error-diagnostics/2.0/maven-error-diagnostics-2.0.jar (11 KB at 10.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar (191 KB at 169.8 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/apache/maven/maven-monitor/2.0/maven-monitor-2.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-descriptor/2.0/maven-plugin-descriptor-2.0.jar (33 KB at 24.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy/1.6.5/groovy-1.6.5.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar (50 KB at 35.4 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/antlr/antlr/2.7.7/antlr-2.7.7.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-project/2.0/maven-project-2.0.jar (103 KB at 73.0 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm/2.2.3/asm-2.2.3.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-monitor/2.0/maven-monitor-2.0.jar (8 KB at 5.3 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/junit/junit/3.8.2/junit-3.8.2.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/apache/maven/maven-plugin-registry/2.0/maven-plugin-registry-2.0.jar (25 KB at 16.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-util/2.2.3/asm-util-2.2.3.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm/2.2.3/asm-2.2.3.jar (35 KB at 19.2 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-analysis/2.2.3/asm-analysis-2.2.3.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-util/2.2.3/asm-util-2.2.3.jar (35 KB at 18.7 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/asm/asm-tree/2.2.3/asm-tree-2.2.3.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/junit/junit/3.8.2/junit-3.8.2.jar (118 KB at 60.0 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/antlr/antlr/2.7.7/antlr-2.7.7.jar (435 KB at 203.1 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-tree/2.2.3/asm-tree-2.2.3.jar (16 KB at 7.2 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/asm/asm-analysis/2.2.3/asm-analysis-2.2.3.jar (18 KB at 7.9 KB/sec)
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/groovy/groovy/1.6.5/groovy-1.6.5.jar (3872 KB at 1605.6 KB/sec)
+[INFO] Generated /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco/WEB-INF/licenses.xml
+[INFO]
+[INFO] --- maven-hpi-plugin:1.121:hpi (default-hpi) @ jacoco ---
+[INFO] Generating /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco/META-INF/MANIFEST.MF
+[INFO] Checking for attached .jar artifact ...
+[INFO] Found attached .jar artifact: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar
+[INFO] Exploding webapp...
+[INFO] Copy webapp webResources to /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco
+[INFO] Assembling webapp jacoco in /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco
+[INFO] Generating hpi /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi
+[INFO] Building jar: /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi
+[INFO]
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ jacoco ---
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (2 KB at 3.6 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5 KB at 16.9 KB/sec)
+[INFO] Downloading: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+[INFO] Downloaded: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 KB at 42.3 KB/sec)
+[INFO] Installing /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.hpi to /root/./workspace/jenkinsci/jacoco-plugin/221637355/.m2/org/jenkins-ci/plugins/jacoco/2.2.1-SNAPSHOT/jacoco-2.2.1-SNAPSHOT.hpi
+[INFO] Installing /root/workspace/jenkinsci/jacoco-plugin/221637355/pom.xml to /root/./workspace/jenkinsci/jacoco-plugin/221637355/.m2/org/jenkins-ci/plugins/jacoco/2.2.1-SNAPSHOT/jacoco-2.2.1-SNAPSHOT.pom
+[INFO] Installing /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar to /root/./workspace/jenkinsci/jacoco-plugin/221637355/.m2/org/jenkins-ci/plugins/jacoco/2.2.1-SNAPSHOT/jacoco-2.2.1-SNAPSHOT.jar
+[INFO] Installing /root/workspace/jenkinsci/jacoco-plugin/221637355/target/jacoco.jar to /root/./workspace/jenkinsci/jacoco-plugin/221637355/.m2/org/jenkins-ci/plugins/jacoco/2.2.1-SNAPSHOT/jacoco-2.2.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:21 min
+[INFO] Finished at: 2017-04-16T16:38:58+02:00
+[INFO] Final Memory: 123M/1882M
+[INFO] ------------------------------------------------------------------------
