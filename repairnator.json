@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 7,
+    "CloneRepository": 44
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "nmco/geoserver",
+  "pr-head-commit-id": "4647b32216a8dd4e7e81f89581f89b596925fd1e",
+  "pr-id": 2227,
+  "repo": "geoserver/geoserver",
+  "pr-head-commit-id-url": "https://github.com/nmco/geoserver/commit/4647b32216a8dd4e7e81f89581f89b596925fd1e",
+  "is-pr": "true",
+  "buildid": 220930647,
+  "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/d1901de15f727ba87bcaaf3f194e88ac45a638ba",
+  "pr-base-commit-id": "d1901de15f727ba87bcaaf3f194e88ac45a638ba"
+}
