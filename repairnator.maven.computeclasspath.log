@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Nutz 1.r.61-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:build-classpath (default-cli) @ nutz ---
+[INFO] Wrote classpath file '/root/workspace/nutzam/nutz/220875085/classpath.info'.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.451 s
+[INFO] Finished at: 2017-04-16T07:11:19+02:00
+[INFO] Final Memory: 22M/1214M
+[INFO] ------------------------------------------------------------------------
