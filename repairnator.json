@@ -1,19 +1,52 @@
 {
+  "pr-base-commit-id": "caf64b3a4ffca05fc5c7aa39fc4dc78ffbdab3db",
+  "pr-head-commit-id": "bb19933c0a304afddb5ee077467cff8c7d9b9751",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "hellium01/presto",
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberFailingTests": 2,
+  "buildid": 221981963,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 3008,
+  "pr-head-commit-id-url": "https://github.com/hellium01/presto/commit/bb19933c0a304afddb5ee077467cff8c7d9b9751",
+  "pr-id": 7832,
+  "repo": "prestodb/presto",
+  "failing-test-cases": [
+    {
+      "className": "com.facebook.presto.sql.analyzer.TestFeaturesConfig",
+      "failingMethods": [
+        "com.facebook.presto.sql.analyzer.TestFeaturesConfig#testDefaults",
+        "com.facebook.presto.sql.analyzer.TestFeaturesConfig#testExplicitPropertyMappings"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Untested attributes: [DistinctRemovedFromSemiJoin]",
+          "isError": false
+        },
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "Untested properties [optimizer.remove-distinct-from-semijoin]",
+          "isError": false
+        }
+      ],
+      "nbFailures": 2,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 4,
+    "": 0,
     "CloneRepository": 22,
     "ResolveDependency": 208,
     "TestProject": 360,
     "BuildProject": 545
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "hellium01/presto",
-  "pr-head-commit-id": "bb19933c0a304afddb5ee077467cff8c7d9b9751",
-  "pr-id": 7832,
-  "repo": "prestodb/presto",
-  "pr-head-commit-id-url": "https://github.com/hellium01/presto/commit/bb19933c0a304afddb5ee077467cff8c7d9b9751",
-  "is-pr": "true",
-  "buildid": 221981963,
   "pr-base-commit-id-url": "https://github.com/prestodb/presto/commit/caf64b3a4ffca05fc5c7aa39fc4dc78ffbdab3db",
-  "pr-base-commit-id": "caf64b3a4ffca05fc5c7aa39fc4dc78ffbdab3db"
+  "failingModule": "/root/workspace/prestodb/presto/221981963/presto-main"
 }
