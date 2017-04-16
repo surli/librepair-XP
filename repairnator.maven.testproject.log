@@ -1,0 +1,1155 @@
+[INFO] Scanning for projects...
+[INFO] Computing target platform for MavenProject: org.apache.syncope.ide.eclipse:org.apache.syncope.ide.eclipse.plugin:2.0.3-SNAPSHOT @ /root/workspace/apache/syncope/221655772/ide/eclipse/bundles/org.apache.syncope.ide.eclipse.plugin/pom.xml
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/mars/ (0B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/releases/mars
+[INFO] Fetching p2.index from http://download.eclipse.org/technology/epp/packages/mars/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/mars/201506241002/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/mars/201510021000/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/mars/201602261000/ (0B at 0B/s)
+[INFO] Resolving dependencies of MavenProject: org.apache.syncope.ide.eclipse:org.apache.syncope.ide.eclipse.plugin:2.0.3-SNAPSHOT @ /root/workspace/apache/syncope/221655772/ide/eclipse/bundles/org.apache.syncope.ide.eclipse.plugin/pom.xml
+[INFO] Resolving class path of MavenProject: org.apache.syncope.ide.eclipse:org.apache.syncope.ide.eclipse.plugin:2.0.3-SNAPSHOT @ /root/workspace/apache/syncope/221655772/ide/eclipse/bundles/org.apache.syncope.ide.eclipse.plugin/pom.xml
+[INFO] Computing target platform for MavenProject: org.apache.syncope.ide.eclipse:org.apache.syncope.ide.eclipse.site:2.0.3-SNAPSHOT @ /root/workspace/apache/syncope/221655772/ide/eclipse/releng/org.apache.syncope.ide.eclipse.site/pom.xml
+[INFO] Resolving dependencies of MavenProject: org.apache.syncope.ide.eclipse:org.apache.syncope.ide.eclipse.site:2.0.3-SNAPSHOT @ /root/workspace/apache/syncope/221655772/ide/eclipse/releng/org.apache.syncope.ide.eclipse.site/pom.xml
+[INFO] Resolving class path of MavenProject: org.apache.syncope.ide.eclipse:org.apache.syncope.ide.eclipse.site:2.0.3-SNAPSHOT @ /root/workspace/apache/syncope/221655772/ide/eclipse/releng/org.apache.syncope.ide.eclipse.site/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Apache Syncope
+[INFO] Apache Syncope Common
+[INFO] Apache Syncope Common Lib
+[INFO] Apache Syncope Common REST API
+[INFO] Apache Syncope Core
+[INFO] Apache Syncope Core Persistence API
+[INFO] Apache Syncope Core Provisioning API
+[INFO] Apache Syncope Core Workflow API
+[INFO] Apache Syncope Core Spring
+[INFO] Apache Syncope Core Persistence JPA
+[INFO] Apache Syncope Core Workflow Java
+[INFO] Apache Syncope Core Provisioning Java
+[INFO] Apache Syncope Core Workflow Activiti
+[INFO] Apache Syncope Core Workflow Flowable
+[INFO] Apache Syncope Core Logic
+[INFO] Apache Syncope Core REST CXF
+[INFO] Apache Syncope Core Migration
+[INFO] Apache Syncope Client
+[INFO] Apache Syncope Client Lib
+[INFO] Apache Syncope Client Console
+[INFO] Apache Syncope Client CLI
+[INFO] Apache Syncope Client Enduser
+[INFO] Apache Syncope FIT
+[INFO] Apache Syncope FIT Build Tools
+[INFO] Apache Syncope Ext
+[INFO] Apache Syncope Ext: Camel
+[INFO] Apache Syncope Ext: Camel Common Lib
+[INFO] Apache Syncope Ext: Camel REST API
+[INFO] Apache Syncope Ext: Camel Persistence API
+[INFO] Apache Syncope Ext: Camel Provisioning API
+[INFO] Apache Syncope Ext: Camel Provisioning
+[INFO] Apache Syncope Ext: Camel Logic
+[INFO] Apache Syncope Ext: Camel REST CXF
+[INFO] Apache Syncope Ext: Camel Client Console
+[INFO] Apache Syncope Ext: SAML2 SP
+[INFO] Apache Syncope Ext: SAML2 SP Common Lib
+[INFO] Apache Syncope Ext: SAML2 SP REST API
+[INFO] Apache Syncope Ext: SAML2 SP Persistence API
+[INFO] Apache Syncope Ext: SAML2 SP Provisioning API
+[INFO] Apache Syncope Ext: SAML2 SP Provisioning Java
+[INFO] Apache Syncope Ext: SAML2 SP Logic
+[INFO] Apache Syncope Ext: SAML2 SP REST CXF
+[INFO] Apache Syncope Ext: SAML2 SP Agent
+[INFO] Apache Syncope Ext: SAML2 SP Client Console
+[INFO] Apache Syncope Ext: Camel Persistence JPA
+[INFO] Apache Syncope Ext: SAML2 SP Persistence JPA
+[INFO] Apache Syncope Ext: Swagger UI
+[INFO] Apache Syncope FIT Core Reference
+[INFO] Apache Syncope FIT Console Reference
+[INFO] Apache Syncope Ext: SAML2 SP Client Enduser
+[INFO] Apache Syncope FIT Enduser Reference
+[INFO] Apache Syncope Archetype
+[INFO] Apache Syncope Standalone Distribution
+[INFO] Apache Syncope Deb
+[INFO] Apache Syncope Deb Core
+[INFO] Apache Syncope Deb Console
+[INFO] Apache Syncope Deb Enduser
+[INFO] Apache Syncope Installer
+[INFO] Apache Syncope IDE
+[INFO] Apache Syncope IDE Eclipse
+[INFO] Apache Syncope IDE Eclipse Plugin
+[INFO] Apache Syncope IDE Eclipse P2 Site
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Common 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-common ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-common ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Common Lib 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-common-lib ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-common-lib ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-common-lib ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-common-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/common/lib/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-common-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-common-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-common-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-common-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/common/lib/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-common-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-common-lib ---
+[INFO] Downloading: http://repository.apache.org/snapshots/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (4 KB at 8.9 KB/sec)
+[INFO] Downloading: http://repository.apache.org/snapshots/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (3 KB at 43.2 KB/sec)
+[INFO] Downloading: http://repository.apache.org/snapshots/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (74 KB at 613.8 KB/sec)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.common.lib.AnyOperationsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.apache.syncope.common.lib.AnyOperationsTest
+Running org.apache.syncope.common.lib.JAXBTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.467 sec - in org.apache.syncope.common.lib.JAXBTest
+Running org.apache.syncope.common.lib.JSONTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.29 sec - in org.apache.syncope.common.lib.JSONTest
+Running org.apache.syncope.common.lib.search.SyncopeFiqlParserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 sec - in org.apache.syncope.common.lib.search.SyncopeFiqlParserTest
+
+Results :
+
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Common REST API 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-common-rest-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-common-rest-api ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-common-rest-api ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-common-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/common/rest-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-common-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-common-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-common-rest-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-common-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/common/rest-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-common-rest-api ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-common-rest-api ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Persistence API 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-persistence-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-persistence-api ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-persistence-api ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-persistence-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/persistence-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-persistence-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-persistence-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-persistence-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-persistence-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/persistence-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-persistence-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-persistence-api ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.core.persistence.api.search.SearchCondConverterTest
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 sec - in org.apache.syncope.core.persistence.api.search.SearchCondConverterTest
+
+Results :
+
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Provisioning API 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-provisioning-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-provisioning-api ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-provisioning-api ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-provisioning-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/provisioning-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-provisioning-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-provisioning-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-provisioning-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-provisioning-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/provisioning-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-provisioning-api ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-provisioning-api ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Workflow API 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-workflow-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-workflow-api ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-workflow-api ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-workflow-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/workflow-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-workflow-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-workflow-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-workflow-api ---
+[INFO] Compiling 1 source file to /root/workspace/apache/syncope/221655772/core/workflow-api/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.7
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-workflow-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/workflow-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-workflow-api ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-workflow-api ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Spring 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-spring ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-spring ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-spring ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/spring/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-spring ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.core.spring.security.EncryptorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 sec - in org.apache.syncope.core.spring.security.EncryptorTest
+Running org.apache.syncope.core.spring.security.PasswordGeneratorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in org.apache.syncope.core.spring.security.PasswordGeneratorTest
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Persistence JPA 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-persistence-jpa ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-persistence-jpa ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-persistence-jpa ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-persistence-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- openjpa-maven-plugin:2.4.2:enhance (enhancer) @ syncope-core-persistence-jpa ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-persistence-jpa ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-persistence-jpa ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-persistence-jpa ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.core.persistence.jpa.inner.AnyObjectTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.249 sec - in org.apache.syncope.core.persistence.jpa.inner.AnyObjectTest
+Running org.apache.syncope.core.persistence.jpa.inner.AnySearchTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.667 sec - in org.apache.syncope.core.persistence.jpa.inner.AnySearchTest
+Running org.apache.syncope.core.persistence.jpa.inner.AnyTypeClassTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 sec - in org.apache.syncope.core.persistence.jpa.inner.AnyTypeClassTest
+Running org.apache.syncope.core.persistence.jpa.inner.AnyTypeTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec - in org.apache.syncope.core.persistence.jpa.inner.AnyTypeTest
+Running org.apache.syncope.core.persistence.jpa.inner.ConfTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec - in org.apache.syncope.core.persistence.jpa.inner.ConfTest
+Running org.apache.syncope.core.persistence.jpa.inner.ConnInstanceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.66 sec - in org.apache.syncope.core.persistence.jpa.inner.ConnInstanceTest
+Running org.apache.syncope.core.persistence.jpa.inner.DerSchemaTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 sec - in org.apache.syncope.core.persistence.jpa.inner.DerSchemaTest
+Running org.apache.syncope.core.persistence.jpa.inner.DomainTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.06 sec - in org.apache.syncope.core.persistence.jpa.inner.DomainTest
+Running org.apache.syncope.core.persistence.jpa.inner.GroupTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.842 sec - in org.apache.syncope.core.persistence.jpa.inner.GroupTest
+Running org.apache.syncope.core.persistence.jpa.inner.MailTemplateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec - in org.apache.syncope.core.persistence.jpa.inner.MailTemplateTest
+Running org.apache.syncope.core.persistence.jpa.inner.MultitenancyTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.198 sec - in org.apache.syncope.core.persistence.jpa.inner.MultitenancyTest
+Running org.apache.syncope.core.persistence.jpa.inner.NotificationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 sec - in org.apache.syncope.core.persistence.jpa.inner.NotificationTest
+Running org.apache.syncope.core.persistence.jpa.inner.PlainAttrTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.486 sec - in org.apache.syncope.core.persistence.jpa.inner.PlainAttrTest
+Running org.apache.syncope.core.persistence.jpa.inner.PlainSchemaTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.436 sec - in org.apache.syncope.core.persistence.jpa.inner.PlainSchemaTest
+Running org.apache.syncope.core.persistence.jpa.inner.PolicyTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 sec - in org.apache.syncope.core.persistence.jpa.inner.PolicyTest
+Running org.apache.syncope.core.persistence.jpa.inner.RealmTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.apache.syncope.core.persistence.jpa.inner.RealmTest
+Running org.apache.syncope.core.persistence.jpa.inner.RelationshipTypeTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in org.apache.syncope.core.persistence.jpa.inner.RelationshipTypeTest
+Running org.apache.syncope.core.persistence.jpa.inner.ReportTemplateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec - in org.apache.syncope.core.persistence.jpa.inner.ReportTemplateTest
+Running org.apache.syncope.core.persistence.jpa.inner.ReportTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.apache.syncope.core.persistence.jpa.inner.ReportTest
+Running org.apache.syncope.core.persistence.jpa.inner.ResourceTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.622 sec - in org.apache.syncope.core.persistence.jpa.inner.ResourceTest
+Running org.apache.syncope.core.persistence.jpa.inner.RoleTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 sec - in org.apache.syncope.core.persistence.jpa.inner.RoleTest
+Running org.apache.syncope.core.persistence.jpa.inner.SecurityQuestionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 sec - in org.apache.syncope.core.persistence.jpa.inner.SecurityQuestionTest
+Running org.apache.syncope.core.persistence.jpa.inner.TaskExecTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.syncope.core.persistence.jpa.inner.TaskExecTest
+Running org.apache.syncope.core.persistence.jpa.inner.TaskTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec - in org.apache.syncope.core.persistence.jpa.inner.TaskTest
+Running org.apache.syncope.core.persistence.jpa.inner.UserTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.198 sec - in org.apache.syncope.core.persistence.jpa.inner.UserTest
+Running org.apache.syncope.core.persistence.jpa.inner.VirSchemaTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 sec - in org.apache.syncope.core.persistence.jpa.inner.VirSchemaTest
+Running org.apache.syncope.core.persistence.jpa.outer.AccessTokenTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec - in org.apache.syncope.core.persistence.jpa.outer.AccessTokenTest
+Running org.apache.syncope.core.persistence.jpa.outer.AnySearchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.681 sec - in org.apache.syncope.core.persistence.jpa.outer.AnySearchTest
+Running org.apache.syncope.core.persistence.jpa.outer.AnyTypeClassTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.57 sec - in org.apache.syncope.core.persistence.jpa.outer.AnyTypeClassTest
+Running org.apache.syncope.core.persistence.jpa.outer.AnyTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec - in org.apache.syncope.core.persistence.jpa.outer.AnyTypeTest
+Running org.apache.syncope.core.persistence.jpa.outer.ConfTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.syncope.core.persistence.jpa.outer.ConfTest
+Running org.apache.syncope.core.persistence.jpa.outer.ConnInstanceTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.01 sec - in org.apache.syncope.core.persistence.jpa.outer.ConnInstanceTest
+Running org.apache.syncope.core.persistence.jpa.outer.GroupTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.077 sec - in org.apache.syncope.core.persistence.jpa.outer.GroupTest
+Running org.apache.syncope.core.persistence.jpa.outer.PlainAttrTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.475 sec - in org.apache.syncope.core.persistence.jpa.outer.PlainAttrTest
+Running org.apache.syncope.core.persistence.jpa.outer.PlainSchemaTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.61 sec - in org.apache.syncope.core.persistence.jpa.outer.PlainSchemaTest
+Running org.apache.syncope.core.persistence.jpa.outer.RealmTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 sec - in org.apache.syncope.core.persistence.jpa.outer.RealmTest
+Running org.apache.syncope.core.persistence.jpa.outer.ReportTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec - in org.apache.syncope.core.persistence.jpa.outer.ReportTest
+Running org.apache.syncope.core.persistence.jpa.outer.ResourceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.441 sec - in org.apache.syncope.core.persistence.jpa.outer.ResourceTest
+Running org.apache.syncope.core.persistence.jpa.outer.RoleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.375 sec - in org.apache.syncope.core.persistence.jpa.outer.RoleTest
+Running org.apache.syncope.core.persistence.jpa.outer.SecurityQuestionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.485 sec - in org.apache.syncope.core.persistence.jpa.outer.SecurityQuestionTest
+Running org.apache.syncope.core.persistence.jpa.outer.TaskTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 sec - in org.apache.syncope.core.persistence.jpa.outer.TaskTest
+Running org.apache.syncope.core.persistence.jpa.outer.UserTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.791 sec - in org.apache.syncope.core.persistence.jpa.outer.UserTest
+Running org.apache.syncope.core.persistence.jpa.outer.VirSchemaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in org.apache.syncope.core.persistence.jpa.outer.VirSchemaTest
+
+Results :
+
+Tests run: 229, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Workflow Java 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-workflow-java ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-workflow-java ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-workflow-java ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-workflow-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-workflow-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-workflow-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-workflow-java ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-workflow-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/workflow-java/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-workflow-java ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-workflow-java ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Provisioning Java 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-provisioning-java ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-provisioning-java ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-provisioning-java ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-provisioning-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-provisioning-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-provisioning-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-provisioning-java ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-provisioning-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.0:copy (set-bundles) @ syncope-core-provisioning-java ---
+[INFO] Configured Artifact: net.tirasa.connid.bundles.soap:net.tirasa.connid.bundles.soap:1.4.1:jar
+[INFO] Configured Artifact: net.tirasa.connid.bundles:net.tirasa.connid.bundles.rest:1.0.1:jar
+[INFO] Configured Artifact: net.tirasa.connid.bundles:net.tirasa.connid.bundles.csvdir:0.8.5:jar
+[INFO] Configured Artifact: net.tirasa.connid.bundles.db:net.tirasa.connid.bundles.db.table:2.2.4:jar
+[INFO] Configured Artifact: net.tirasa.connid.bundles.db:net.tirasa.connid.bundles.db.scriptedsql:2.2.4:jar
+[INFO] Configured Artifact: net.tirasa.connid.bundles:net.tirasa.connid.bundles.ldap:1.5.1:jar
+[INFO] Configured Artifact: net.tirasa.connid.bundles:net.tirasa.connid.bundles.ad:1.3.2:jar
+[INFO] net.tirasa.connid.bundles.soap:net.tirasa.connid.bundles.soap:1.4.1:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO] net.tirasa.connid.bundles:net.tirasa.connid.bundles.rest:1.0.1:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO] net.tirasa.connid.bundles:net.tirasa.connid.bundles.csvdir:0.8.5:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO] net.tirasa.connid.bundles.db:net.tirasa.connid.bundles.db.table:2.2.4:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO] net.tirasa.connid.bundles.db:net.tirasa.connid.bundles.db.scriptedsql:2.2.4:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO] net.tirasa.connid.bundles:net.tirasa.connid.bundles.ldap:1.5.1:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO] net.tirasa.connid.bundles:net.tirasa.connid.bundles.ad:1.3.2:jar already exists in /root/workspace/apache/syncope/221655772/core/provisioning-java/target/bundles
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-provisioning-java ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-provisioning-java ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.core.provisioning.java.ConnectorManagerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.266 sec - in org.apache.syncope.core.provisioning.java.ConnectorManagerTest
+Running org.apache.syncope.core.provisioning.java.DerAttrTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.716 sec - in org.apache.syncope.core.provisioning.java.DerAttrTest
+Running org.apache.syncope.core.provisioning.java.IntAttrNameParserTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.37 sec - in org.apache.syncope.core.provisioning.java.IntAttrNameParserTest
+Running org.apache.syncope.core.provisioning.java.MailTemplateTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 sec - in org.apache.syncope.core.provisioning.java.MailTemplateTest
+Running org.apache.syncope.core.provisioning.java.MappingTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.47 sec - in org.apache.syncope.core.provisioning.java.MappingTest
+Running org.apache.syncope.core.provisioning.java.ResourceDataBinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.905 sec - in org.apache.syncope.core.provisioning.java.ResourceDataBinderTest
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Workflow Activiti 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-workflow-activiti ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-workflow-activiti ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-workflow-activiti ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-workflow-activiti ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-workflow-activiti ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-workflow-activiti ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-workflow-activiti ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-workflow-activiti ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/workflow-activiti/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-workflow-activiti ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-workflow-activiti ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Workflow Flowable 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-workflow-flowable ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-workflow-flowable ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-workflow-flowable ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-workflow-flowable ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-workflow-flowable ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-workflow-flowable ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-workflow-flowable ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-workflow-flowable ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/workflow-flowable/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-workflow-flowable ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-workflow-flowable ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Logic 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-logic ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-logic ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-logic ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-logic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-logic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-logic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-logic ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-logic ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/logic/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-logic ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-logic ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core REST CXF 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-rest-cxf ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-rest-cxf ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-rest-cxf ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-rest-cxf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-rest-cxf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-rest-cxf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-rest-cxf ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-rest-cxf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/rest-cxf/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-rest-cxf ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-rest-cxf ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Core Migration 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-core-migration ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-core-migration ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-core-migration ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-core-migration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-core-migration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-core-migration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-core-migration ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-core-migration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/core/migration/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-core-migration ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-core-migration ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Client 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-client ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-client ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Client Lib 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-client-lib ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-client-lib ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-client-lib ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-client-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-client-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-client-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-client-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-client-lib ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/client/lib/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-client-lib ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-client-lib ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.client.lib.ConcurrencyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.54 sec - in org.apache.syncope.client.lib.ConcurrencyTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Client Console 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-client-console ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-client-console ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-client-console ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-client-console ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 247 resources
+[INFO] Copying 475 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-client-console ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-client-console ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-client-console ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-client-console ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/workspace/apache/syncope/221655772/client/console/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-client-console ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-client-console ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Client CLI 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-client-cli ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-client-cli ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-client-cli ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-client-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-client-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-client-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-client-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-client-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-client-cli ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-client-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.client.cli.commands.MigrateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.181 sec - in org.apache.syncope.client.cli.commands.MigrateTest
+Running org.apache.syncope.client.cli.util.CommandUtilsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 sec - in org.apache.syncope.client.cli.util.CommandUtilsTest
+Running org.apache.syncope.client.cli.util.JasyptUtilsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec - in org.apache.syncope.client.cli.util.JasyptUtilsTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Syncope Client Enduser 2.0.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ syncope-client-enduser ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- gmaven-plugin:1.5:execute (default) @ syncope-client-enduser ---
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ syncope-client-enduser ---
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ syncope-client-enduser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 82 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-artifact-legal-files) @ syncope-client-enduser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:copy-resources (copy-javadoc-legal-files) @ syncope-client-enduser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ syncope-client-enduser ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ syncope-client-enduser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ syncope-client-enduser ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ syncope-client-enduser ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+OpenJDK 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+Running org.apache.syncope.client.enduser.util.UserRequestValidatorTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.304 sec <<< FAILURE! - in org.apache.syncope.client.enduser.util.UserRequestValidatorTest
+testCompliant(org.apache.syncope.client.enduser.util.UserRequestValidatorTest)  Time elapsed: 0.243 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.syncope.client.enduser.util.UserRequestValidatorTest.testCompliant(UserRequestValidatorTest.java:52)
+
+
+Results :
+
+Failed tests:
+  UserRequestValidatorTest.testCompliant:52
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] Apache Syncope ..................................... SUCCESS [  2.406 s]
+[INFO] Apache Syncope Common .............................. SUCCESS [  1.123 s]
+[INFO] Apache Syncope Common Lib .......................... SUCCESS [  5.032 s]
+[INFO] Apache Syncope Common REST API ..................... SUCCESS [  1.464 s]
+[INFO] Apache Syncope Core ................................ SUCCESS [  1.106 s]
+[INFO] Apache Syncope Core Persistence API ................ SUCCESS [  2.352 s]
+[INFO] Apache Syncope Core Provisioning API ............... SUCCESS [  1.595 s]
+[INFO] Apache Syncope Core Workflow API ................... SUCCESS [  1.603 s]
+[INFO] Apache Syncope Core Spring ......................... SUCCESS [  2.964 s]
+[INFO] Apache Syncope Core Persistence JPA ................ SUCCESS [01:03 min]
+[INFO] Apache Syncope Core Workflow Java .................. SUCCESS [  1.666 s]
+[INFO] Apache Syncope Core Provisioning Java .............. SUCCESS [ 13.609 s]
+[INFO] Apache Syncope Core Workflow Activiti .............. SUCCESS [  1.964 s]
+[INFO] Apache Syncope Core Workflow Flowable .............. SUCCESS [  1.495 s]
+[INFO] Apache Syncope Core Logic .......................... SUCCESS [  1.633 s]
+[INFO] Apache Syncope Core REST CXF ....................... SUCCESS [  1.834 s]
+[INFO] Apache Syncope Core Migration ...................... SUCCESS [  1.359 s]
+[INFO] Apache Syncope Client .............................. SUCCESS [  1.009 s]
+[INFO] Apache Syncope Client Lib .......................... SUCCESS [  7.597 s]
+[INFO] Apache Syncope Client Console ...................... SUCCESS [  2.154 s]
+[INFO] Apache Syncope Client CLI .......................... SUCCESS [  4.643 s]
+[INFO] Apache Syncope Client Enduser ...................... FAILURE [  2.489 s]
+[INFO] Apache Syncope FIT ................................. SKIPPED
+[INFO] Apache Syncope FIT Build Tools ..................... SKIPPED
+[INFO] Apache Syncope Ext ................................. SKIPPED
+[INFO] Apache Syncope Ext: Camel .......................... SKIPPED
+[INFO] Apache Syncope Ext: Camel Common Lib ............... SKIPPED
+[INFO] Apache Syncope Ext: Camel REST API ................. SKIPPED
+[INFO] Apache Syncope Ext: Camel Persistence API .......... SKIPPED
+[INFO] Apache Syncope Ext: Camel Provisioning API ......... SKIPPED
+[INFO] Apache Syncope Ext: Camel Provisioning ............. SKIPPED
+[INFO] Apache Syncope Ext: Camel Logic .................... SKIPPED
+[INFO] Apache Syncope Ext: Camel REST CXF ................. SKIPPED
+[INFO] Apache Syncope Ext: Camel Client Console ........... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP ....................... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Common Lib ............ SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP REST API .............. SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Persistence API ....... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Provisioning API ...... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Provisioning Java ..... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Logic ................. SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP REST CXF .............. SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Agent ................. SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Client Console ........ SKIPPED
+[INFO] Apache Syncope Ext: Camel Persistence JPA .......... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Persistence JPA ....... SKIPPED
+[INFO] Apache Syncope Ext: Swagger UI ..................... SKIPPED
+[INFO] Apache Syncope FIT Core Reference .................. SKIPPED
+[INFO] Apache Syncope FIT Console Reference ............... SKIPPED
+[INFO] Apache Syncope Ext: SAML2 SP Client Enduser ........ SKIPPED
+[INFO] Apache Syncope FIT Enduser Reference ............... SKIPPED
+[INFO] Apache Syncope Archetype ........................... SKIPPED
+[INFO] Apache Syncope Standalone Distribution ............. SKIPPED
+[INFO] Apache Syncope Deb ................................. SKIPPED
+[INFO] Apache Syncope Deb Core ............................ SKIPPED
+[INFO] Apache Syncope Deb Console ......................... SKIPPED
+[INFO] Apache Syncope Deb Enduser ......................... SKIPPED
+[INFO] Apache Syncope Installer ........................... SKIPPED
+[INFO] Apache Syncope IDE ................................. SKIPPED
+[INFO] Apache Syncope IDE Eclipse ......................... SKIPPED
+[INFO] Apache Syncope IDE Eclipse Plugin .................. SKIPPED
+[INFO] Apache Syncope IDE Eclipse P2 Site ................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:24 min
+[INFO] Finished at: 2017-04-16T17:19:18+02:00
+[INFO] Final Memory: 175M/2886M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project syncope-client-enduser: There are test failures.
+[ERROR]
+[ERROR] Please refer to /root/workspace/apache/syncope/221655772/client/enduser/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :syncope-client-enduser
