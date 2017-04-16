@@ -84,7 +84,8 @@
     "CloneRepository": 2,
     "ResolveDependency": 19,
     "TestProject": 72,
-    "BuildProject": 12
+    "BuildProject": 12,
+    "SquashRepository": 0
   },
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/4pr0n/ripme/commit/c4fe08d54f9e37b937c5f024da19133d983447c6",
