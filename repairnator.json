@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 7
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "crskyp/nutz",
+  "pr-head-commit-id": "62208554a5622d81d6cf1464b6fe4cd090867658",
+  "pr-id": 1244,
+  "repo": "nutzam/nutz",
+  "pr-head-commit-id-url": "https://github.com/crskyp/nutz/commit/62208554a5622d81d6cf1464b6fe4cd090867658",
+  "is-pr": "true",
+  "buildid": 220934271,
+  "pr-base-commit-id-url": "https://github.com/nutzam/nutz/commit/d4601cbca661208a8ae993db4e78f65889d3c767",
+  "pr-base-commit-id": "d4601cbca661208a8ae993db4e78f65889d3c767"
+}
