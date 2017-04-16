@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 5,
     "CloneRepository": 29,
-    "ResolveDependency": 201
+    "ResolveDependency": 201,
+    "BuildProject": 504
   },
   "workspace": "./workspace",
   "pr-remote-repo": "electrum/presto",
