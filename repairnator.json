@@ -2,7 +2,8 @@
   "step-durations": {
     "CheckoutBuild": 3,
     "CloneRepository": 4,
-    "ResolveDependency": 92
+    "ResolveDependency": 92,
+    "BuildProject": 10
   },
   "workspace": "./workspace",
   "pr-remote-repo": "lopescan/snacktory",
