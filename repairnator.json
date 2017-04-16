@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 2,
+    "CloneRepository": 17
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "timurt/checkstyle",
+  "pr-head-commit-id": "bb9f0e13eefb36b851b374eda97fbf7a72c7e600",
+  "pr-id": 4209,
+  "repo": "checkstyle/checkstyle",
+  "pr-head-commit-id-url": "https://github.com/timurt/checkstyle/commit/bb9f0e13eefb36b851b374eda97fbf7a72c7e600",
+  "is-pr": "true",
+  "buildid": 221589573,
+  "pr-base-commit-id-url": "https://github.com/checkstyle/checkstyle/commit/77251f076eee469494e68b8e0d0d696ceb3f800b",
+  "pr-base-commit-id": "77251f076eee469494e68b8e0d0d696ceb3f800b"
+}
