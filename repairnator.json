@@ -1,19 +1,46 @@
 {
+  "pr-base-commit-id": "e651df99f47a0e738c4aa7fb7b8957acca901197",
+  "pr-head-commit-id": "67cdedd4f6a7fb2bdd95a7922f1ae7020583c76c",
+  "totalNumberSkippingTests": 0,
+  "pr-remote-repo": "lingjinjiang/flink",
+  "error-types": [
+    "java.lang.AssertionError"
+  ],
+  "totalNumberFailingTests": 1,
+  "buildid": 221685776,
+  "totalNumberErroringTests": 0,
+  "is-pr": "true",
+  "totalNumberRunningTests": 2155,
+  "pr-head-commit-id-url": "https://github.com/lingjinjiang/flink/commit/67cdedd4f6a7fb2bdd95a7922f1ae7020583c76c",
+  "pr-id": 3711,
+  "repo": "apache/flink",
+  "failing-test-cases": [
+    {
+      "className": "org.apache.flink.util.FileUtilsTest",
+      "failingMethods": [
+        "org.apache.flink.util.FileUtilsTest#testDeleteDirectory"
+      ],
+      "erroringMethods": [],
+      "failures": [
+        {
+          "failureName": "java.lang.AssertionError",
+          "failureDetail": "this should fail with an exception",
+          "isError": false
+        }
+      ],
+      "nbFailures": 1,
+      "nbErrors": 0
+    }
+  ],
   "step-durations": {
     "CheckoutBuild": 4,
+    "": 0,
     "CloneRepository": 31,
     "ResolveDependency": 170,
     "TestProject": 27,
     "BuildProject": 659
   },
   "workspace": "./workspace",
-  "pr-remote-repo": "lingjinjiang/flink",
-  "pr-head-commit-id": "67cdedd4f6a7fb2bdd95a7922f1ae7020583c76c",
-  "pr-id": 3711,
-  "repo": "apache/flink",
-  "pr-head-commit-id-url": "https://github.com/lingjinjiang/flink/commit/67cdedd4f6a7fb2bdd95a7922f1ae7020583c76c",
-  "is-pr": "true",
-  "buildid": 221685776,
   "pr-base-commit-id-url": "https://github.com/apache/flink/commit/e651df99f47a0e738c4aa7fb7b8957acca901197",
-  "pr-base-commit-id": "e651df99f47a0e738c4aa7fb7b8957acca901197"
+  "failingModule": "/root/workspace/apache/flink/221685776/flink-core"
 }
