@@ -1,7 +1,8 @@
 {
   "step-durations": {
     "CheckoutBuild": 1,
-    "CloneRepository": 2
+    "CloneRepository": 2,
+    "ResolveDependency": 469
   },
   "workspace": "./workspace",
   "pr-remote-repo": "seanf/jacoco-plugin",
