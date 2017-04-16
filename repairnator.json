@@ -47,5 +47,6 @@
   "nbLibraries": 20,
   "workspace": "./workspace",
   "pr-base-commit-id-url": "https://github.com/karussell/snacktory/commit/869dc14c28c0c33dac07acfd244530c54ccb7473",
+  "lastStep": "NopolRepair",
   "failingModule": "/root/workspace/karussell/snacktory/221044815"
 }
