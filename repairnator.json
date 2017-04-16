@@ -1,0 +1,16 @@
+{
+  "step-durations": {
+    "CheckoutBuild": 8,
+    "CloneRepository": 44
+  },
+  "workspace": "./workspace",
+  "pr-remote-repo": "dvntucker/geoserver",
+  "pr-head-commit-id": "d1b856b39951072b83613e58902da71066253274",
+  "pr-id": 2225,
+  "repo": "geoserver/geoserver",
+  "pr-head-commit-id-url": "https://github.com/dvntucker/geoserver/commit/d1b856b39951072b83613e58902da71066253274",
+  "is-pr": "true",
+  "buildid": 220745127,
+  "pr-base-commit-id-url": "https://github.com/geoserver/geoserver/commit/3518cdb07ec159c1ac365fc8583da7ff4b9da89b",
+  "pr-base-commit-id": "3518cdb07ec159c1ac365fc8583da7ff4b9da89b"
+}
